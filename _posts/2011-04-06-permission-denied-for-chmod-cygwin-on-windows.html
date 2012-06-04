@@ -1,0 +1,13 @@
+---
+permalink: /permission-denied-for-chmod-cygwin-on-windows/index.html
+layout: post
+title: ! 'Permission Denied for chmod: Cygwin on Windows 7 doesn''t play nice with
+  files in Dropbox'
+published: true
+categories:
+- technical
+---
+<p>I spent a fair amount of time earlier today trying to set up todo.txt with Cygwin on my Windows 7 boot. For the longest time, I was getting "Permission Denied" whenever I tried to write to files inside of Dropbox. &nbsp;</p>
+<p>This was a result of some misconfiguration of cygwin and Dropbox; long story short, if you run into this problem, chmod-ing the files with the necessary permissions didn't (sadly) work. <a href="http://stackoverflow.com/questions/357314/file-permissions-in-cygwin-and-mvfs">Stack Overflow suggests</a>&nbsp;playing around with /etc/passwd inside of cygwin, and even offers a <a href="http://cygwin.com/cygwin-ug-net/ntsec.html">pretty cool guide </a>about how Cygwin maps Windows to POSIX-like permissions. &nbsp;</p>
+<p><img src="/images/solution.png" alt="Permission Denied for chmod: Cygwin on Windows 7 doesn't play nice with files in Dropbox" /></p>
+<p>Ultimately, the solution that worked for me was the simplest one: in Windows, I opened the file and gave everybody full permission for it.&nbsp;</p>
