@@ -68,7 +68,7 @@ while posts.any?
     }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 
     content = post.body_html
-
+    
     # awefull hack, do not use on vlog or podcast
     # may not have any images
     post.media['images'].each do |img|
