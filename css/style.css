@@ -656,7 +656,7 @@ pre {
   margin-top: 0;
 }
 .unit-article a:link {
-  /*/border-bottom: 1px dashed #c26164; */
+  border-bottom: 1px dashed #c26164;
 }
 .unit-article a:visited {
   border-bottom: 1px dashed #ad4346;
@@ -1481,4 +1481,13 @@ hr {
 .right {
   *display: inline;
   float: right;
+}
+
+/* AlexeyMK Hacky stuff */
+h1 a {
+  border: none !important;
+}
+
+h1 a:hover {
+  border-bottom: 1px dashed #d08688 !important;
 }
