@@ -1068,14 +1068,14 @@ pre {
     -o-box-shadow: #ffffff 0px 0px 2px;
     float: left;
     width: 81%;
-    margin-right: -450px;
+    margin-right: -350px;
   }
   .body .unit-body {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: #ffffff 0px 0px 2px;
     -moz-box-shadow: #ffffff 0px 0px 2px;
     -o-box-shadow: #ffffff 0px 0px 2px;
-    margin-right: 450px;
+    margin-right: 350px;
     padding: 26px 52px;
     min-height: 1050px;
   }
@@ -1085,7 +1085,7 @@ pre {
     display: block;
     float: left;
     padding: 26px 0 0 26px;
-    width: 420px;
+    max-width: 320px;
   }
   .the-footer h4 {
     font-size: 30px;
