@@ -4,7 +4,7 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">{{ post.title }}</h1>
+            <h1 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
@@ -14,7 +14,7 @@
 					{{ post.content }}
 					<div class="meta">
 						<p class="date-publish">
-							Published: 
+							Published:
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
 							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
 							<span class="day">{{ page.date | date: '%d' }}</span>
