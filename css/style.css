@@ -891,7 +891,9 @@ pre {
   font-style: normal;
 }
 .the-footer .license {
+  float: bottom;
   clear: both;
+  font-size: 12px;
 }
 .the-footer .license p {
   margin-bottom: 0;
