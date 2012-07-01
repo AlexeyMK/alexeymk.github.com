@@ -65,7 +65,7 @@ while posts.any?
       'title' => post.title.to_s,
       'published' => published,
       'date' => "%02d-%02d-%02d %02d:%02d:%02d" % [date.year, date.month, date.day, date.hour, date.minute, date.second],
-      'categories' => tags,
+      'tags' => tags,
     }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
 
     content = post.body_html

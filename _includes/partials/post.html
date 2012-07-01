@@ -21,10 +21,12 @@
 				<div class="entry-content">
           {{ post.content }}
 					<div class="meta">
-						<ul class="list-category list-linear">
 						<ul class="list-tag list-linear">
 							<li class="list-head">tags: </li>
 							{% assign tags_list = post.tags %}
+              {% for tag in tags_list %}
+              <li>{{ tag }}{% if forloop.last != true %},{% endif %}</li>
+              {% endfor %}
 						</ul>
 					</div><!-- meta -->
 				</div><!-- entry-content -->
