@@ -982,7 +982,8 @@ pre {
   }
   .the-header .unit-head .nav-global .logo a {
     font-size: 30px;
-    line-height: normal;
+    /*line-height: normal;*/
+    line-height: 18px;
   }
   .the-header .unit-head .nav-global .logo a:hover {
     background-color: transparent;
