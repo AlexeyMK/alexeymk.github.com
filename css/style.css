@@ -987,6 +987,9 @@ pre {
   .the-header .unit-head .nav-global .logo a:hover {
     background-color: transparent;
   }
+  img {
+    max-width: 660px !important;
+  }
 }
 /*
 	Not that old computer layout
@@ -1021,6 +1024,9 @@ pre {
     float: left;
     padding: 0 0 0 26px;
     width: 420px;
+  }
+  img {
+    max-width: 660px !important;
   }
 }
 /*
@@ -1092,6 +1098,9 @@ pre {
     line-height: 52px;
     margin-top: 0;
     margin-bottom: 26px;
+  }
+  img {
+    max-width: 660px !important;
   }
 }
 pre .c {
