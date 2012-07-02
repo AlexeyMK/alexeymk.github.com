@@ -6,7 +6,7 @@
 					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 					</div><!-- unit-inner -->
-            {% if is_page == false %}
+            {% if post.date %}
               <p class="date-publish">
                 Published:
                 <date class="date-pub" title="{{ post.date | date_to_xmlschema }}" datetime="{{ post.date | date_to_xmlschema }}" pubdate>
@@ -22,7 +22,7 @@
 			<div class="bd">
 				<div class="entry-content">
           {{ post.content }}
-          {% if is_post %}
+          {% if post.date %}
             <div class="meta">
               <ul class="list-tag list-linear">
                 <li class="list-head">tags: </li>
