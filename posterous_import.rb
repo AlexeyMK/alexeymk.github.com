@@ -45,6 +45,7 @@ end
 
 while posts.any?
   posts.each do |post|
+    sleep 1 # second
     puts post.title
     slug = post.slug.gsub('/', '-')
     date = DateTime.parse(post.display_date)
@@ -64,9 +65,12 @@ while posts.any?
       'layout' => 'post',
       'title' => post.title.to_s,
       'published' => published,
-      'date' => "%02d-%02d-%02d %02d:%02d:%02d" % [date.year, date.month, date.day, date.hour, date.minute, date.second],
+      'date' => 'QUOTEHACK%02d-%02d-%02d %02d:%02d:%02d' % [date.year, date.month, date.day, date.hour, date.minute, date.second],
       'tags' => tags,
     }.delete_if { |k,v| v.nil? || v == ''}.to_yaml
+
+    # force YAML to not wrap strings around the date.
+    data.gsub!("QUOTEHACK", "")
 
     content = post.body_html
 
