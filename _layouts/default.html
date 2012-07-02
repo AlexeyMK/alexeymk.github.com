@@ -12,8 +12,22 @@
   {% comment %} SUCH A HACK {% endcomment %}
 	<link href='../css/style.css' rel="stylesheet" media="all">
 	<link href='css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script type="text/javascript">
+    // google analytics
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18901708-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 <body>
 <div id="page" class="hentry">
@@ -74,8 +88,6 @@
 		fjs.parentNode.insertBefore(js, fjs);
 		};
 	load('//platform.twitter.com/widgets.js', 'tweetjs');
-	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
-	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	}(document, 'script'));
 </script>
 <script>
