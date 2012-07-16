@@ -2,10 +2,8 @@ Still to do (bugs/migrations/etc)
 - Tags pages (/tag/hackathons)
 - Tags sidebar
 - missing images
-- font issue (titles take a while to show)
 - font issue (in quotes all looks bold)
-- twitter button isn't post-specific
+- twitter button isn't post-specific (on home page)
 - host images on imgur
 - paginate home page
-- differentiate headers/design
 - read counts, as on Posterous
