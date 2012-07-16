@@ -1,8 +1,8 @@
 ---
 layout: post
-title: My New Posts title
+title: {title}
 published: true
-date: Date here in format like:2012-06-19 02:34:00
+date: {date}
 tags:
 - first tag
 - second tag
@@ -11,5 +11,5 @@ tags:
 Markdown!
 =========
 
-- Don't forget to move this to _posts/year-mo-da-postname.md
+- title already exists, just start typing!
 - second
