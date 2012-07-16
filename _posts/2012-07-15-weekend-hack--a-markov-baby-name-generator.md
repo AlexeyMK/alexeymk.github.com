@@ -42,7 +42,7 @@ The code
 
 <script src="https://gist.github.com/3119751.js"> </script>
 
-See also, [a discussion on Markov Chain implementations in Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/sec153.html)
+See also, [a discussion on Markov Chain implementations in Programming Pearls](http://www.cs.bell-labs.com/cm/cs/pearls/sec153.html).
 
 Possible extensions
 -------------------
