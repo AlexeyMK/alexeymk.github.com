@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Weekend Hack: A Markov Baby Name Generator in Jekyll'
+title: ! 'Weekend Hack: A Markov Baby Name Generator'
 published: true
 date: 2012-07-15 18:00:11
 tags:
