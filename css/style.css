@@ -401,7 +401,9 @@ Calculation should be done via  http://j.mp/rNg5uA
 No styleguide reference.
 */
 body {
-  font-family: consolas, monaco, monospace;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+
   font-size: 1em;
   line-height: 1.625em;
 }
@@ -418,7 +420,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 h1,
 .h1 {
@@ -590,7 +592,7 @@ pre {
 /* HEADER
 --------------------------------------------------------------------------------- */
 .the-header .logo {
-  font-family: UbuntuMono-B, consolas, monaco, monospace;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   margin: 0;
 }
 .the-header .logo a:visited {
