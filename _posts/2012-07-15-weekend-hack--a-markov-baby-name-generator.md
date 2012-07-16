@@ -32,7 +32,7 @@ Results
 -------
 
 The result are a rather eclectic set of names.  Some are silly and non-sensical (C, Ieahaholijayson), while others seem pretty reasonable (Marin, Gacon).  A lot of them sound like they belong in Middle Earth (Miaviria), to Weseteros (Josth, Mindron).  Occasionaly it'll accidentally recreate a real name. Those are my favorite.
-k
+
 [@MarkovBaby](http://twitter.com/markovbaby) may be suitable for an expecting couple with just the appropriate amount of eccentricity and love of statistics.
 
 The code
