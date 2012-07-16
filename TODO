@@ -1,5 +1,5 @@
 Still to do (bugs/migrations/etc)
-- twitter button isn't post-specific (on home page)
+x twitter button isn't post-specific (on home page) TODO - include domain
 - Tags pages (/tag/hackathons)
 - Tags sidebar
 - missing images
