@@ -20,7 +20,7 @@ What is a Markov Chain?
 -----------------------
 Read [the wikipedia entry](http://en.wikipedia.org/wiki/Markov_chain) for a more thorough introduction, but in our case, a Markov Chain is a simple random process to generate text that looks sort of like other text.
 
-For example: as we're generating baby names, say we start with the letter "C".  What should be our next letter?  Well, what kind of letters usually come after a "C" in names?  Let's look through our list of existing names and see what usually comes next.
+For example: as we're generating baby names, say we start with the letter "C".  What should be our next letter?  Well, what kind of letters usually come after a "C" in names?  Let's look through our [list of existing names](https://github.com/AlexeyMK/markov-baby-names/blob/master/boys.txt) and see what usually comes next.
 
 <img src="/images/letters_after_c.png"></img>
 
