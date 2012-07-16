@@ -452,9 +452,6 @@ aside {
 .font-size-default {
   font-size: 1em;
 }
-blockquote {
-  font-weight: bold;
-}
 blockquote cite {
   font-weight: normal;
 }
