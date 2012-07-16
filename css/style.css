@@ -103,6 +103,7 @@ strong {
 }
 blockquote {
   margin: 1em 40px;
+  font-size: 14px;
 }
 dfn {
   font-style: italic;
@@ -1504,4 +1505,8 @@ h1 a {
 
 h1 a:hover {
   border-bottom: 1px dashed #d08688 !important;
+}
+
+.gist {
+  font-size: 14px;
 }
