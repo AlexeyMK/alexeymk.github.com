@@ -13,6 +13,10 @@ Whenever a friend visits our HQ, I proudly show off my [combination sit/stand de
 
 <a href="http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20"><img src="http://ecx.images-amazon.com/images/I/91EnHQnu6iL._AA1500_.jpg"></img></a>
 
+Wait, why a standing desk?
+--------------------------
+[Sitting is killing you](http://www.medicalbillingandcoding.org/sitting-kills/), apparently. I don't get as much exercise as I'd like now that I'm out of college, and at the least, standing for part of the day means I'm getting at least *some* exercise.
+
 The options I explored
 ----------------------
 - There have been a few "[Standing desk for cheap](http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html)" blog posts on Hacker News recently, but none of those allow me to easily move from sitting to standing. I could sit on a high stool, certainly, but that didn't seem particularly ergonomic.  So, I went for the cheapest effective adjustable setup I could find.
