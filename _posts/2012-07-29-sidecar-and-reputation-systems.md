@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sidecar and Digigal Reputation Systems
+title: Sidecar and Digital Reputation Systems
 published: true
 date: 2012-07-29 23:23:57
 tags:
