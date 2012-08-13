@@ -1,6 +1,6 @@
 ---
 layout: post
-title: {title}
+title: ! '{title}'
 published: true
 date: {date}
 tags:
