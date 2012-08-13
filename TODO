@@ -1,9 +1,10 @@
 Still to do (bugs/migrations/etc)
-x twitter button isn't post-specific (on home page) TODO - include domain
+x TODO - include domain
 - Tags pages (/tag/hackathons)
 - Tags sidebar
 - missing images
 - read counts, as on Posterous
+- images should work locally
 
 Probably not until way later:
 - host images on imgur
