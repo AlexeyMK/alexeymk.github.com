@@ -25,8 +25,8 @@ Except that it does.
 -------------------------
 Boris and Alex of [FundersClub](http://thefundersclub.com) have found a way around the credibility problem, by having it to start with.  As part of the summer 2012 YCombinator class, the team has the implicit (and explicit) endorsement of Paul Graham, godfather of legit startups.  The two themselves have [a rather impressive background](https://thefundersclub.com/site/about/) As a result, the [initial 5 companies](https://thefundersclub.com/investments/) raising money on FundersClub are [some of the most interesting startups](http://pandodaily.com/2012/08/01/eight-y-combinator-companies-to-watch/) of the group.
 
-<img src="images/startuptoprow.png"></img>
-<img src="images/startupbottomrow.png"></img>
+<img src="/images/startuptoprow.png"></img>
+<img src="/images/startupbottomrow.png"></img>
 
 These are the cream of the crop.  Most are likely to be over-subscribed come Demo Day. As an investor, if you aren't well connected to YCombinator (and probably even if you are), you'll be stuck on the sidelines wishing you had a way into their seed rounds.
 
