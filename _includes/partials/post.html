@@ -28,7 +28,7 @@
                 <li class="list-head">tags: </li>
                 {% assign tags_list = post.tags %}
                 {% for tag in tags_list %}
-                <li>{{ tag }}{% if forloop.last != true %},{% endif %}</li>
+                <li><a href="/tag/{{tag}}/">{{ tag }}</a>{% if forloop.last != true %},{% endif %}</li>
                 {% endfor %}
               </ul>
             </div><!-- meta -->
