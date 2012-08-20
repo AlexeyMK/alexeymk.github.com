@@ -1,6 +1,6 @@
 Still to do (bugs/migrations/etc)
 x TODO - include domain
-- cloudflare the damn thing
+x cloudflare the damn thing [nvm, let github deal with caching]
 - Tags pages (/tag/hackathons)
 - Tags sidebar
 - missing images
