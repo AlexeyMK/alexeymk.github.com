@@ -15,7 +15,6 @@ jekyll build --destination $PUBLISH_DIR
 
 # commit everything
 cd $PUBLISH_DIR
-git checkout $PUBLISH_BRANCH
 git add .
 git commit -am "$*"
 git push
