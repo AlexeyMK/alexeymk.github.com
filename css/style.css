@@ -636,6 +636,9 @@ a:hover {
   margin-left: 0;
   margin-right: 0;
 }
+.entry-content ul ul {
+  margin-left: 20px !important;
+}
 .unit-article ul,
 .unit-article ol,
 .unit-article dl {
@@ -704,7 +707,7 @@ a:hover {
   margin-bottom: 0;
 }
 .unit-article .list-linear .list-head {
-  margin-right: 4px;
+  margin-right: 12px;
 }
 .unit-article .list-category a,
 .unit-article .list-tag a {
@@ -1171,4 +1174,8 @@ h1 a:hover {
 
 .gist {
   font-size: 14px;
+}
+
+.footer-portrait {
+  width: 200px;
 }

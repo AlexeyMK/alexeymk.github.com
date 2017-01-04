@@ -1,8 +1,10 @@
 Still to do (bugs/migrations/etc)
 x TODO - include domain
-- cloudflare the damn thing
-- Tags pages (/tag/hackathons)
+x cloudflare the damn thing [nvm, let github deal with caching]
+x Tags pages (/tag/hackathons) (todo, nicer things like tag headings, etc)
 - Tags sidebar
+- clean up tags
+- paginate
 - missing images
 - read counts, as on Posterous
 - images should work locally

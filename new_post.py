@@ -5,7 +5,7 @@ from datetime import datetime
 from sys import argv
 
 
-TEMPLATE_FILE = 'new_post_template.md'
+TEMPLATE_FILE = '_new_post_template.md'
 
 def generate_new_post(name, date):
   content = open(TEMPLATE_FILE, 'r').read()

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Alexey needs a Web Presence</title>
+	<meta name="author" content="">
+	<link href='/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="Alexey needs a Web Presence" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script type="text/javascript">
+    // google analytics
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18901708-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    // Heap
+    window.heap=window.heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+    heap.load("2484576110");
+  </script>
+</head>
+<body>
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+          <ul>
+            <li class="logo"><a href="/">Alexey needs a web presence</a></li>
+            <div id="stick-together">
+              <li class="page"><a href="/about">about</a></li>
+              <li class="page"><a href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence">subscribe</a></li>
+              <li class="page"><a href="http://twitter.com/alexeymk">twitter</a></li>
+              <li class="page"><a href="mailto:alexey.at.alexeymk.com">contact</a></li>
+            </div>
+          </ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					<div id="posts">
+  <ol>
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/xsanyuri-doesnt-allow-ampersands/index.html">xs:anyURI requires ampersands to be escaped</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2010-11-28T14:42:00-08:00" datetime="2010-11-28T14:42:00-08:00" pubdate>
+                <span class="month"><abbr>November</abbr></span>
+                <span class="day">28</span>
+                <span class="year">2010</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>Quick heads-up, in case anybody else runs into this problem.</p>
+<p><strong><span style="font-size: medium;">Background</span>:</strong></p>
+<p>I've been working with passing an ExternalQuestion to MechanicalTurk, and have learned (the hard way) that the 'ExternalURL' component, set up as a "xs:anyURI" in the MTurk AWS schema, does not allow ampersands '&amp;' except if escaped via '&amp;amp;'.&nbsp;</p>
+<p>That was not at all obvious. The AWS exception gives is:</p>
+<div class="CodeRay">
+  <div class="code"><pre>&lt;CreateHITResponse&gt;
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;...&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;False&lt;/IsValid&gt;
+      &lt;Errors&gt;
+        &lt;Error&gt;
+          &lt;Code&gt;AWS.MechanicalTurk.XMLParseError&lt;/Code&gt;
+          &lt;Message&gt;There was an error parsing the XML question or answer data in your request.  Please make sure the data is well-formed and validates against the appropriate schema. (1291006584155 s)&lt;/Message&gt;
+        &lt;/Error&gt;
+      &lt;/Errors&gt;
+    &lt;/Request&gt;
+  &lt;/HIT&gt;/
+&lt;/CreateHITResponse&gt;</pre></div>
+</div>
+
+<p><span style="font-size: medium;"><strong>Solution:&nbsp;</strong></span></p>
+<p><span style="font-size: small;">Replace any instance of &amp; in the ExternalQuestion URI (IE, <a href="http://www.yoursite.com/mturk/a.php?foo=true&amp;bar=false">www.yoursite.com/mturk/a.php?foo=true&amp;bar=false</a>) with &amp;amp;&nbsp;(IE, <a href="http://www.yoursite.com/mturk/a.php?foo=true&amp;amp;bar=false">www.yoursite.com/mturk/a.php?foo=true&amp;amp;bar=false</a>).</span></p>
+<p>That'll fix it.</p>
+<p><span style="font-size: medium;"><strong>Reference</strong></span>:&nbsp;</p>
+<p><a href="http://developer.ebay.com/devzone/xml/docs/reference/ebay/types/simpleTypes.html">ebay developer docs</a>&nbsp;(strangely enough),&nbsp;<a href="http://docs.amazonwebservices.com/AWSMechanicalTurkRequester/2008-02-14/ApiReference_ExternalQuestionArticle.html">External Question documentation</a>.</p>
+<p>&nbsp;</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/mturk/">mturk</a>,</li>
+                
+                <li><a href="/tag/technical/">technical</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/xsanyuri-doesnt-allow-ampersands/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/h-file-generator/index.html">.h file generator</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2010-11-02T04:33:00-07:00" datetime="2010-11-02T04:33:00-07:00" pubdate>
+                <span class="month"><abbr>November</abbr></span>
+                <span class="day">02</span>
+                <span class="year">2010</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p><strong>TL; DR</strong>: want to auto-generate .h files from .c files? Type <a href="#sol">this</a> into vim.</p>
+<p><strong>C sucks.</strong> <em>[Disclaimer: OK, I don't like C; I'm a python/functional languages guy. You may love it. Whatever.]</em></p>
+<p>There's lots of little annoying things about C; memory management, using #ifdefs for header file declarations, manually written header files, etc. The good news is, I've half-solved the last issue. &nbsp;</p>
+<p>Say you have a simple main file, as follows</p>
+<div class="CodeRay">
+  <div class="code"><pre>int main(int argc, char ** argv) {
+  char* str = malloc(sizeof(char*) * 3);
+  str[0] = getFirstChar();
+  str[1] = 'F';
+  str[2] = '\0';
+  printf(&quot;%s&quot;, str);
+  free(str);
+  return 0;
+}
+
+char getFirstChar() {
+  return 'A';
+}</pre></div>
+</div>
+
+<p>Dead-simple. Unfortunately, you get the following issue when trying to compile:</p>
+<div class="CodeRay">
+  <div class="code"><pre>main.c:11: error: conflicting types for ‘getFirstChar’
+main.c:3: note: previous implicit declaration of ‘getFirstChar’ was here</pre></div>
+</div>
+
+<p>Here's why this happens: the C compiler parses your c file once. The first time it sees getFirstChar, it realizes that it hasn't seen a method declaration for it yet, so it creates an implicit one. Unfortunately, an implicit declaration, or stub, will always assume a return type of int, while the actual type is a char. So, type mismatch.</p>
+<p>There are a couple of ways to solve this problem:</p>
+<ol>
+<li><strong>Put getFirstChar above of main.</strong> This <em>kind of</em> works, but now you've got to order your functions based on some partial order you can't control. If you've got an instance of two functions calling one another in some proto-co-recursive way, this won't work at all.  In general, less flexibility than you'd like.</li>
+<li><strong>Declare the method headers at the top of the file/create a header file</strong>
+<div class="CodeRay">
+  <div class="code"><pre>int main(int argc, char** argv);
+char getFirstChar(); 
+...
+#include &quot;main.h&quot;</pre></div>
+</div>
+
+This it the 'proper' way to solve the problem, but now you've got a header file you've got to keep current. If you're the kind of person to plan all of your code out before you write it, you're paying a one-time cost to create a header file. If you're making updates, however, or if you're like me and you figure out what methods you should have as you go along, this means you're updating the header files every time you edit a method name, just to freaking compile, all to solve a problem other languages <strong>don't even have.</strong></li>
+</ol>
+<h3><a name="sol">The solution</a></h3>
+<p>In its most basic iteration, a header file is just your method declarations w/ semicolons instead of open braces. It shouldn't be that hard to just auto-generate the header file whenever you make a difference, or whenever you compile. So that's what I started doing. I'm a vim guy. With a bit of research and poking around, here's a quick command you can run in vim to generate a simple .h file from a given .c file:</p>
+<div class="CodeRay">
+  <div class="code"><pre>:%s/^\(\w.*{\t*$\)\@!.*\n//
+then:
+:%s/ {/;</pre></div>
+</div>
+
+<p><em>[Disclaimer: Do not use this in its exact form for a serious project. Header files are a bit more complicated than the version we're dealing with.&nbsp; The current proposal is best suited for homework assignments or quick one-off projects]</em></p>
+<p><strong>What this does:</strong> The commands above remove all lines that don't look like a method declaration, then swaps open braces for semicolons. Note that it assumes that you don't indent your method declarations and that you inline the opening brace of function declarations. To use the commands, just copy the .c file to a .h, open the .h and run those commands.</p>
+<h3>Next Steps</h3>
+<p>I don't have to write any more C for another week or so, but I think the following steps make sense for taking .h file generation to the next level:</p>
+<ol>
+<li><strong>Rewrite as shell or python script.</strong>&nbsp; Switching from vim commands to python is probably going to add some flexibility.</li>
+<li><strong>Incorporate the script directly into a Makefile.&nbsp; </strong>In this scenario, make will depend on header files being re-generated, and only then call GCC.</li>
+<li><strong>Include some of the other stuff .h files typically include</strong> This current approach makes the assumption that all relevant comments, #includes, structs and typedefs in your program belong in the .c file exclusively. Typically, at least some of those belongs in .h instead. A future version would potentially modify ensure that previous .h files are not overridden but instead amended.&nbsp; </li>
+</ol>
+<p>Hopefully the commands will come in handy to others as spoiled by HLL as me, who can't believe that C doesn't already to these things for you.</p>
+<p>Thoughts/feedback?</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/technical/">technical</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/h-file-generator/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/first-also-a-placeholder/index.html">First! (also, a placeholder)</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2010-10-03T13:51:00-07:00" datetime="2010-10-03T13:51:00-07:00" pubdate>
+                <span class="month"><abbr>October</abbr></span>
+                <span class="day">03</span>
+                <span class="year">2010</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>This is going to be the personal/professional blog of Alexey Komissarouk (that'd be me), where I'm going to write about my particular interests: the hazy intersection between Web 2.0y-things, Data Mining, the Social Graph, Behavioral Econ, Product and UX Design, Data Visualization, Tech@Penn, and really any other buzzwords that will feel appropriate. I'm planning to do a reasonbly-sized post at least weekly, and potentially throw in some shorter stuff here and there.</p>
+<p>The point is, sometimes I have these thoughts that aren't completely idiotic. It's about damn time I aggregate and centralize them, to feed the google, etc.</p>
+<p>I leave you with<a href="http://pennapps2010.posterous.com/keep-it-simple-keep-it-relevant"> an interview I did with Soleio</a> (a Designer with Facebook and overall awesome guy) for<a href="http://pennapps.com"> PennApps 2010</a>.</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/first-also-a-placeholder/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+  </ol>
+</div>
+<!-- Pagination links -->
+<div class="pagination">
+  <span class="page_number ">Page: 13 of 13</span>
+  
+</div>
+
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+          
+          <h4>about</h4>
+
+<p><img class="footer-portrait" src="/images/alexey.jpg" /></p>
+
+<ul>
+<li>Based in SF, since April 2016.</li>
+<li><a href="http://hackerparadise.org">Hacker Paradise</a>, a boutique work+travel company</li>
+<li><a href="http://calldownmule.com">Mule Consulting</a>, a product engineering consultancy.</li>
+<li>Spent 2014-2016 as a "digital nomad"</li>
+<li><p>UPenn <a href="http://www.cis.upenn.edu/">CIS '12</a></p></li>
+<li><p>Projects you may know me for:</p>
+
+<ul>
+<li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
+<li><a href="http://ggl.to">ggl.to</a>, google-powered URL shortener</li>
+<li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
+<li><a href="http://pennapps.com">PennApps Hackathon</a></li>
+</ul>
+</li>
+</ul>
+
+
+<p>More at <a href="/about">about.alexeymk.com</a></p>
+
+      </div><!-- misc -->
+        <br />
+				<p class="license">
+					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+</body>
+</html>
