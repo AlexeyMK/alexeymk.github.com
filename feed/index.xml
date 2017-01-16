@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-01-16T15:25:36-08:00</updated>
+ <updated>2017-01-16T15:54:12-08:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -320,7 +320,21 @@ That’s not a question. Also, politics is hard! If you want to help, consider s
    <link href="http://alexeymk.com/2013/06/18/migrating-divvy-configurations-between-computers.html"/>
    <updated>2013-06-18T20:27:28-07:00</updated>
    <id>http://alexeymk.com/2013/06/18/migrating-divvy-configurations-between-computers</id>
-   <content type="html">&lt;p&gt;I’ve been using &lt;a href=&quot;http://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; the tiling tool for OSX (and windows) ever since I switched to using Macs full-time in 2010. It’s great.&lt;/p&gt;
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;August 2016 Update&lt;/strong&gt;: Divvy now has &lt;a href=&quot;http://mizage.clarify-it.com/d/nxr9qg&quot;&gt;a native guide&lt;/a&gt; for migrations. Use that instead.&lt;/p&gt;
+
+  &lt;p&gt;If you’re having trouble importing, it might be because the URL Divvy gives you is too long. I solved this (on a Mac) by, rather than pasting the URL into the browser, opening a terminal window and typing.&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;open ‘Divvy Backup URL’&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;instead. (Where the ‘Divvy Backup URL’ is the one you got when exporting&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I’ve been using &lt;a href=&quot;http://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; the tiling tool for OSX (and windows) ever since I switched to using Macs full-time in 2010. It’s great.&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve been using &lt;a href=&quot;http://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; the tiling tool for OSX (and windows) ever since I switched to using Macs full-time in 2010. It’s great.&lt;/p&gt;
 
 &lt;p&gt;Migrating it between installs isn’t so great, and unfortunately googling “migrate divvy preferences” doesn’t help.  So, while moving to yet another Mac, I emailed support@mizage and asked what to do.&lt;/p&gt;
 
