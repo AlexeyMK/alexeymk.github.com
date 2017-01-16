@@ -62,6 +62,105 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/xsanyuri-doesnt-allow-ampersands/index.html">xs:anyURI requires ampersands to be escaped</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2010-11-28T14:42:00-08:00" datetime="2010-11-28T14:42:00-08:00" pubdate>
+                <span class="month"><abbr>November</abbr></span>
+                <span class="day">28</span>
+                <span class="year">2010</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>Quick heads-up, in case anybody else runs into this problem.</p>
+<p><strong><span style="font-size: medium;">Background</span>:</strong></p>
+<p>I've been working with passing an ExternalQuestion to MechanicalTurk, and have learned (the hard way) that the 'ExternalURL' component, set up as a "xs:anyURI" in the MTurk AWS schema, does not allow ampersands '&amp;' except if escaped via '&amp;amp;'.&nbsp;</p>
+<p>That was not at all obvious. The AWS exception gives is:</p>
+<div class="CodeRay">
+  <div class="code"><pre>&lt;CreateHITResponse&gt;
+  &lt;OperationRequest&gt;
+    &lt;RequestId&gt;...&lt;/RequestId&gt;
+  &lt;/OperationRequest&gt;
+  &lt;HIT&gt;
+    &lt;Request&gt;
+      &lt;IsValid&gt;False&lt;/IsValid&gt;
+      &lt;Errors&gt;
+        &lt;Error&gt;
+          &lt;Code&gt;AWS.MechanicalTurk.XMLParseError&lt;/Code&gt;
+          &lt;Message&gt;There was an error parsing the XML question or answer data in your request.  Please make sure the data is well-formed and validates against the appropriate schema. (1291006584155 s)&lt;/Message&gt;
+        &lt;/Error&gt;
+      &lt;/Errors&gt;
+    &lt;/Request&gt;
+  &lt;/HIT&gt;/
+&lt;/CreateHITResponse&gt;</pre></div>
+</div>
+
+<p><span style="font-size: medium;"><strong>Solution:&nbsp;</strong></span></p>
+<p><span style="font-size: small;">Replace any instance of &amp; in the ExternalQuestion URI (IE, <a href="http://www.yoursite.com/mturk/a.php?foo=true&amp;bar=false">www.yoursite.com/mturk/a.php?foo=true&amp;bar=false</a>) with &amp;amp;&nbsp;(IE, <a href="http://www.yoursite.com/mturk/a.php?foo=true&amp;amp;bar=false">www.yoursite.com/mturk/a.php?foo=true&amp;amp;bar=false</a>).</span></p>
+<p>That'll fix it.</p>
+<p><span style="font-size: medium;"><strong>Reference</strong></span>:&nbsp;</p>
+<p><a href="http://developer.ebay.com/devzone/xml/docs/reference/ebay/types/simpleTypes.html">ebay developer docs</a>&nbsp;(strangely enough),&nbsp;<a href="http://docs.amazonwebservices.com/AWSMechanicalTurkRequester/2008-02-14/ApiReference_ExternalQuestionArticle.html">External Question documentation</a>.</p>
+<p>&nbsp;</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/mturk/">mturk</a>,</li>
+                
+                <li><a href="/tag/technical/">technical</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/xsanyuri-doesnt-allow-ampersands/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/h-file-generator/index.html">.h file generator</a></h1>
 					</div><!-- unit-inner -->
             
@@ -270,27 +369,26 @@ then:
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
           
-          <h4>about</h4>
-
+          <h4 id="about">about</h4>
 <p><img class="footer-portrait" src="/images/alexey.jpg" /></p>
 
 <ul>
-<li>Based in SF, since April 2016.</li>
-<li><a href="http://hackerparadise.org">Hacker Paradise</a>, a boutique work+travel company</li>
-<li><a href="http://calldownmule.com">Mule Consulting</a>, a product engineering consultancy.</li>
-<li>Spent 2014-2016 as a "digital nomad"</li>
-<li><p>UPenn <a href="http://www.cis.upenn.edu/">CIS '12</a></p></li>
-<li><p>Projects you may know me for:</p>
-
-<ul>
-<li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
-<li><a href="http://ggl.to">ggl.to</a>, google-powered URL shortener</li>
-<li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
-<li><a href="http://pennapps.com">PennApps Hackathon</a></li>
+  <li>Based in SF, since April 2016.</li>
+  <li><a href="http://hackerparadise.org">Hacker Paradise</a>, a boutique work+travel company</li>
+  <li><a href="http://calldownmule.com">Mule Consulting</a>, a product engineering consultancy.</li>
+  <li>Spent 2014-2016 as a “digital nomad”</li>
+  <li>
+    <p>UPenn <a href="http://www.cis.upenn.edu/">CIS ‘12</a></p>
+  </li>
+  <li>Projects you may know me for:
+    <ul>
+      <li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
+      <li><a href="http://ggl.to">ggl.to</a>, google-powered URL shortener</li>
+      <li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
+      <li><a href="http://pennapps.com">PennApps Hackathon</a></li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
-
 
 <p>More at <a href="/about">about.alexeymk.com</a></p>
 

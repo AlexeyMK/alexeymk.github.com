@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-01-04T13:21:15-08:00</updated>
+ <updated>2017-01-16T15:25:36-08:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -17,69 +17,101 @@
    <link href="http://alexeymk.com/2017/01/03/two-steps-forward-two-steps-back.html"/>
    <updated>2017-01-03T10:31:37-08:00</updated>
    <id>http://alexeymk.com/2017/01/03/two-steps-forward-two-steps-back</id>
-   <content type="html">&lt;p&gt;Two steps forward, two steps back: 2016 in review.&lt;/p&gt;
+   <content type="html">&lt;p&gt;2015 and 2016 could not have been more different.&lt;/p&gt;
 
-&lt;p&gt;I spent most of 2015 living out of a carry-on bag, traveling from Estonia and Berlin to Tokyo and Taipei helping run trips for, and building, Hacker Paradise.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2015&lt;/strong&gt; was mostly spent living out of a carry-on bag, traveling from Estonia and Berlin to Tokyo and Taipei helping run trips for, and building, &lt;a href=&quot;http://hackerparadise.org&quot;&gt;Hacker Paradise&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;It was great. That said, one year was plenty. After getting an H1-B visa, I moved back to the Bay Area in April 2016 and decided to get a job.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/bicycle_trip.jpg&quot; style=&quot;max-width: 100%  !important;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;2015 and 2016 ended up as stark contrasts; here&#39;s how becoming sedentary and employed has turned out so far, relative to expectations.&lt;/p&gt;
+&lt;p&gt;It was great. Wanderlust: satisfied.&lt;/p&gt;
 
-&lt;h2&gt;The Good&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;2016&lt;/strong&gt; found me receiving an H1-B visa, moving back to the Bay Area, and obtaining honest-to-goodness employment. Different.&lt;/p&gt;
 
+&lt;p&gt;Here’s how becoming sedentary and employed has turned out so far, relative to expectations.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-good&quot;&gt;The Good&lt;/h2&gt;
 &lt;p&gt;Basically, stability.&lt;/p&gt;
 
-&lt;h3&gt;Engaged&lt;/h3&gt;
+&lt;h3 id=&quot;engaged&quot;&gt;Engaged&lt;/h3&gt;
+&lt;p&gt;My partner Mari&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and I are (at long last) engaged! After 5 years of being together, we’re back to living together and have a place in Bernal Heights that feels like our own. We’re so domestic we even got an L-shaped couch and the kind of mattress they advertise on podcasts.&lt;/p&gt;
 
-&lt;p&gt;My partner and I are (at long last) engaged! After 5 years of being together, we&#39;re back to living together and have a place in Bernal Heights that feels like our own. We&#39;re so domestic we even got an Ikea couch and a Casper-esque mattress. There&#39;s something very warm and comforting in having a good sense of whom you are going to spend the rest of your life with. Mari is like an anchor that  makes disruption in other parts of your life easier to handle.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/casper.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h3&gt;Friendship &amp;amp; Community&lt;/h3&gt;
+&lt;p&gt;There’s something very warm and comforting in having a good sense of who you are going to spend the rest of your life with. Mari has been an anchor, making the disruption in other parts of my life that much more manageable.&lt;/p&gt;
 
-&lt;p&gt;It&#39;s also been rewarding to be able to engage and re-engage in meaningful friendships. One of the toughest parts of traveling with Hacker Paradise had been meeting new people every month (great people, mind you) and forging friendships with them. At some point the task becomes exhausting and you yearn for the comfort of existing friendships where you don&#39;t need to provide context for your jokes and are largely accepted, quirks and all.&lt;/p&gt;
+&lt;h3 id=&quot;friendship--community&quot;&gt;Friendship &amp;amp; Community&lt;/h3&gt;
+&lt;p&gt;It’s also been rewarding to be able to engage and re-engage in meaningful friendships. One of the toughest parts of traveling full-time turned out to be meeting new people every month (great people, mind you) and forging friendships with them. At some point, the task became exhausting. I yearned for the comfort of spending time with the sort of friend that already knew my jokes were overly-complicated and terrible and would laugh anyway, if only on the inside.&lt;/p&gt;
 
-&lt;p&gt;Part of the motivation for coming back was to return to my existing friends and spend more time with them, without the fear that in a few weeks we&#39;re going to go our own ways. I&#39;m still not 100% back to feeling integrated or satisfied with the depth of my relationships, but compared to full-time travel the improvement has been remarkable and the last few months of 2016 felt much better than when we had just moved back.&lt;/p&gt;
+&lt;p&gt;I’m still not 100% back to feeling integrated or satisfied with the depth of my relationships back in San Francisco, but compared to full-time travel, the improvement has been remarkable and the last few months of 2016 felt much better than the months prior.&lt;/p&gt;
 
-&lt;h3&gt;J.O.B.&lt;/h3&gt;
+&lt;h3 id=&quot;job&quot;&gt;J.O.B.&lt;/h3&gt;
+&lt;p&gt;I joined &lt;a href=&quot;https://opendoor.com/?src=alexey&quot;&gt;Opendoor&lt;/a&gt; in September. Part of the motivation of being an employee was to have co-workers I would learn from &amp;amp; enjoy working with. This came true.  Another part, which I was more surprised to learn, was that “Growth Engineering” - a term I would have thought ridiculous back in college, and as a sell-out-sort-of-a-thing-to-do, is actually quite engaging and satisfying.  It feels like I’m doing behavioral economics research again, but with higher stakes. I’m very grateful to &lt;a href=&quot;https://twitter.com/remis&quot;&gt;Remi Gabillet&lt;/a&gt;, for first identifying this role for me.&lt;/p&gt;
 
-&lt;p&gt;After a brief stint at Sprig, I ended up joining Opendoor in September. Part of the motivation of being an employee was to have co-workers I would learn from &amp;amp; enjoy working with. This came true.  Another part, which I was more suprised to learn, was that &quot;Growth Engineering&quot; - a term I would have thought ridiculous back in college, and as a sell-out-sort-of-a-thing-to-do, is actually quite engaging and satisfying. I&#39;m very pleased to have discovered a role outside of doing pure engineering or product work where interdisciplinary skills are such a strong asset. It feels like I&#39;m doing behavioral economics research again, but with higher stakes. I&#39;m very greatful to Remi Gabillet, my manager from Sprig, for seeing that this kind of role would fit well for me.&lt;/p&gt;
+&lt;p&gt;Opendoor has easily met expectations in terms of the company’s growth, the quality of my coworkers, my faith in the executive team, and my ability to have an impact as an individual contributor joining a 150+ person company.&lt;/p&gt;
 
-&lt;p&gt;Opendoor has easily met expectations in terms of the company&#39;s growth, my faith in management and the executive team, and my ability to have an impact as an individual contributor joining a 150+ person company.&lt;/p&gt;
+&lt;h2 id=&quot;the-bad&quot;&gt;The Bad&lt;/h2&gt;
+&lt;p&gt;There’s no better crutch for procrastination than employment.&lt;/p&gt;
 
-&lt;h2&gt;The Bad&lt;/h2&gt;
+&lt;h3 id=&quot;balance&quot;&gt;Balance&lt;/h3&gt;
+&lt;p&gt;A problem that I’ve seen a fair bit with engineers and especially founders in tech is this mission-at-all-costs mentality. Like political operatives on a critical campaign or soldiers in the middle of a war, it’s easy to say “this thing I’m part of is more important. I can postpone [personal thing that I should get done] for now, because if we win we can always deal with it later.”&lt;/p&gt;
 
-&lt;p&gt;There&#39;s no better crutch for procrastination then employment.  A problem that I see a lot of engineers and founders in tech can have is this mission-at-all-costs mentality; like political operatives on a critical campaign or soldiers in the middle of a war, it&#39;s easy to say &quot;this thing I&#39;m part of is more important. I can postpone [personal thing that I should get done] for now, because if we win we can always deal with it later.&quot; And then the  mission comes to an end and we&#39;re sort of stuck figuring out that we&#39;ve got to find a way to do our own laundry and maybe go to the gym more often and make sure we have the proper healthcare.&lt;/p&gt;
+&lt;p&gt;And then the mission comes to an end and we’re stuck figuring out that we’ve got to find a way to do our own laundry and maybe go to the gym more often and our last annual check-up was in the last decade. Maybe you deal with it, but often you start hoping and searching for another mission to come along because it’s easier and you don’t have to do boring, mundane things like take care of yourself.&lt;/p&gt;
 
-&lt;p&gt;One of the reasons for deciding to get a job rather than starting another company was that I could use the superior work-life balance to get the rest of my shit in order, and pull back no the mission mentality.&lt;/p&gt;
+&lt;p&gt;One of the reasons for deciding to get a job rather than starting another company was that I could use the superior work-life balance to get the rest of my shit in order, and avoid getting caught in the mission-at-all-costs mentality.&lt;/p&gt;
 
-&lt;p&gt;That hasn&#39;t really happened. It did, a little bit, at Sprig. But at Opendoor, working harder, staying longer, has been too easy and too rewarding to be easily avoided, and I fall back into using mission excuses.&lt;/p&gt;
+&lt;p&gt;That hasn’t really happened.&lt;/p&gt;
 
-&lt;p&gt;As a result, I&#39;ve definitely gained some weight (something that did not happen while traveling and eating at restaurants full-time for a year and a half). I&#39;ve ignored a doctor&#39;s note to start watching my cholestorol. I missed a dentist appointment. I bike to work but don&#39;t have a regular gym schedule.&lt;/p&gt;
+&lt;p&gt;It did, a little bit, at Sprig. But at Opendoor, working harder and staying longer has been too gratifying, too tempting to be easily avoided, and I found myself slowly falling back into using mission-at-all-costs excuses&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;p&gt;I also have yet to deal with setting up some nuances relating to my Health Savings Account. I have an accident claim from a rental car that got broken into that is still open since September.&lt;/p&gt;
+&lt;h3 id=&quot;consequences&quot;&gt;Consequences&lt;/h3&gt;
+&lt;p&gt;As a result, I’ve definitely gained some weight (something that did not happen while traveling and eating at restaurants full-time for a year and a half). I’ve ignored a doctor’s note to start watching my cholesterol. I missed a dentist appointment. I bike to work but have failed to follow a regular gym schedule.&lt;/p&gt;
 
-&lt;p&gt;I planned to set concrete mental health goals around building perseverance and good habits, and start seeing a therapist regularly. That hasn&#39;t happened.&lt;/p&gt;
+&lt;p&gt;I also have yet to deal with setting up some nuances relating to my Health Savings Account. I have an accident claim from a rental car that got broken into that has been pending since September.&lt;/p&gt;
 
-&lt;p&gt;Instead, I&#39;ve reverted to occassionally staying up way later than I should and then being less productive at work the next day - essentially a high-school version of myself but with more severe impact to my productivity, given I&#39;m not sixteen anymore.&lt;/p&gt;
+&lt;p&gt;I planned to set concrete mental health goals around building resilience and good habits, and meet with a therapist regularly&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Still TBD.&lt;/p&gt;
 
-&lt;p&gt;I consume more alcohol on a weekly basis than I did while traveling (San Francisco, you cray!).  I spend more on rent than I used to on everything.&lt;/p&gt;
+&lt;p&gt;Instead, I’ve reverted to occasionally staying up way later than I should and then being less productive at work the next day - essentially a high-school version of myself but with more severe impact to my productivity, given I’m not sixteen anymore.&lt;/p&gt;
 
-&lt;p&gt;Basically I find myself easily falling into many of the typical priveleged-engineer-at-legit-startup-in-bay-area traps. It&#39;s funny but also a little dissapointing, since I was well aware of (and caution others) against this kind of self-neglect. It would be more productive to be making &lt;em&gt;new&lt;/em&gt; mistakes.&lt;/p&gt;
+&lt;p&gt;My lifestyle has me eating less healthily and drinking more than when I was traveling, on “vacation”.&lt;/p&gt;
 
-&lt;h2&gt;All in all&lt;/h2&gt;
+&lt;p&gt;I find myself easily falling into many of the typical privileged-engineer-at-a-legit-startup-in-the-bay-area traps. It’s funny but also a little disappointing, since I was well aware of (and caution others) against this kind of self-neglect. I’d rather be making &lt;em&gt;new&lt;/em&gt; mistakes.&lt;/p&gt;
 
-&lt;p&gt;Some good, some bad.  As far as new year&#39;s resolutions go, I&#39;m going to need to make sure to be hitting my original goals.&lt;/p&gt;
+&lt;h2 id=&quot;all-in-all&quot;&gt;All in all&lt;/h2&gt;
+&lt;p&gt;Some good, some bad.  As far as new year’s resolutions go, I’m going to need to make sure to be hitting the original goals I had in mind when I moved back to San Francisco.&lt;/p&gt;
 
-&lt;h2&gt;2017 Goals:&lt;/h2&gt;
+&lt;h2 id=&quot;goals&quot;&gt;2017 Goals&lt;/h2&gt;
 
-&lt;p&gt;&lt;em&gt;Sleep&lt;/em&gt; Maintain a healthy sleep schedule (7+ hours of sleep and in bed by 1AM, 95% of the days of the year)
-&lt;em&gt;Exercise&lt;/em&gt; Do something (bouldering, gym, or new sports) 3+ days a week, 95% of weeks except vacation. Reach and maintain target weight of around 10 pounds less than Jan 1st, 2016.
-&lt;em&gt;Mental Health&lt;/em&gt; Build mental resilience (either pick a book or hire a therapist by Jan 30; create a growth plan; follow said plan).
-&lt;em&gt;Physical Health&lt;/em&gt;
+&lt;p&gt;&lt;strong&gt;Sleep&lt;/strong&gt;
+Maintain a healthy sleep schedule (7+ hours of sleep and in bed by 1AM, 95% of the days of the year).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exercise&lt;/strong&gt; Do something (bouldering, gym, or other form of exerfise) 3+ days a week, 95% of weeks except vacation. Reach and maintain target weight of around 10 pounds less than Jan 1st, 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mental Health&lt;/strong&gt; Build mental resilience (either follow a book or hire a therapist by Jan 30; create a growth plan; follow said plan).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Physical Health&lt;/strong&gt;
 - Schedule &amp;amp; attend follow-up physical by Jan 30; follow recommendations.
-- Schedule &amp;amp; attend dentist appointment by Feb 30.
-&lt;em&gt;Writing (AKA, other interests)&lt;/em&gt;
-- Begin
+- Schedule &amp;amp; attend dentist appointment by Feb 30.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Writing (AKA, other interests)&lt;/strong&gt;
 - Publish a 500+ word piece once a month, including receiving quality feedback from friends.&lt;/p&gt;
+
+&lt;p&gt;Fingers crossed.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I have to say I’m pretty stoked to stop explaining why I use “partner” and just saying “fiancee”. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;More caveats: Opendoor is a great place to work and if I haven’t tried convincing you to join yet, ping me. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I assume that by 2017 this is not a controversial position. To be explicit: I’m not in any particular trouble, other than the sort of typical garden-variety depression and anxiety you’ll often see in ambitious over-achievers. You don’t wait until you’re overweight to start exercising; you shouldn’t wait to be struggling emotionally to work with a professional to build resilience and maintain mental health. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </content>
  </entry>
  
@@ -92,22 +124,18 @@
 
 &lt;p&gt;Many services - flattr, bountysource and gratify, among others, offer widgets that developers can put on their projects to encourage subscription donations. None has been a breakout success.&lt;/p&gt;
 
-&lt;p&gt;There needs to be a fast and straightforward tool to empower an engineering manager to say &quot;sure, let&#39;s do it.&quot;&lt;/p&gt;
+&lt;p&gt;There needs to be a fast and straightforward tool to empower an engineering manager to say “sure, let’s do it.”&lt;/p&gt;
 
-&lt;h3&gt;Dependonate&lt;/h3&gt;
+&lt;h3 id=&quot;dependonate&quot;&gt;Dependonate&lt;/h3&gt;
+&lt;p&gt;Here’s how it would work.&lt;/p&gt;
 
-&lt;p&gt;Here&#39;s how it would work.&lt;/p&gt;
-
-&lt;h4&gt;Dependency File&lt;/h4&gt;
-
+&lt;h4 id=&quot;dependency-file&quot;&gt;Dependency File&lt;/h4&gt;
 &lt;p&gt;Most projects I work on these days have a file with a list of package dependencies - &lt;code&gt;Gemfile&lt;/code&gt; for ruby, &lt;code&gt;requirements.txt&lt;/code&gt; for python, &lt;code&gt;package.json&lt;/code&gt; for node, and plenty more.&lt;/p&gt;
 
-&lt;h4&gt;List of Dependencies&lt;/h4&gt;
+&lt;h4 id=&quot;list-of-dependencies&quot;&gt;List of Dependencies&lt;/h4&gt;
+&lt;p&gt;Piggybacking on package managers files, Dependonate would take a project’s dependency file and generate a list of direct and indirect projects. Each of those projects can then be parsed to see whether their Readme file includes links to any of the popular donate options (flattr, bountysource, gratify, paypal, etc).&lt;/p&gt;
 
-&lt;p&gt;Piggybacking on package managers files, Dependonate would take a project&#39;s dependency file and generate a list of direct and indirect projects. Each of those projects can then be parsed to see whether their Readme file includes links to any of the popular donate options (flattr, bountysource, gratify, paypal, etc).&lt;/p&gt;
-
-&lt;h4&gt;Actionable Next Steps&lt;/h4&gt;
-
+&lt;h4 id=&quot;actionable-next-steps&quot;&gt;Actionable Next Steps&lt;/h4&gt;
 &lt;p&gt;Finally, Dependonate would open up the various URLs that would make donating as registering and entering your credit card on the services above, the lists of desired projects to contribute to having been auto-filled.&lt;/p&gt;
 
 &lt;p&gt;Dependonate would also generate a pretty report for the company to put up on their website as proponents of Open Source, somewhere near the engineering hiring page.&lt;/p&gt;
@@ -123,8 +151,7 @@
    <id>http://alexeymk.com/2015/06/22/hackathon---a-retrospective---a-talk</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/nickemeyer&quot;&gt;Nick Meyer&lt;/a&gt; and I gave a talk at &lt;a href=&quot;http://hackcon.io&quot;&gt;HackCon II&lt;/a&gt; in February about a hackathon we ostensibly threw.&lt;/p&gt;
 
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/cBRMuPBtTN0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/cBRMuPBtTN0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://hackcon.io&quot;&gt;Hackcon III&lt;/a&gt; is at Github HQ in SF this summer.&lt;/p&gt;
 </content>
@@ -135,17 +162,18 @@
    <link href="http://alexeymk.com/2014/08/01/did-i-say-estonia%253F-i-meant-costa-rica.html"/>
    <updated>2014-08-01T04:27:40-07:00</updated>
    <id>http://alexeymk.com/2014/08/01/did-i-say-estonia%3F-i-meant-costa-rica</id>
-   <content type="html">&lt;p&gt;I&#39;m putting &lt;a href=&quot;/2014/07/03/when-visas-turn-into-pumpkins.html&quot;&gt;Estonia&lt;/a&gt; on hold - still excited to go there, and hoping to do so in April or May, once it warms up again.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I’m putting &lt;a href=&quot;/2014/07/03/when-visas-turn-into-pumpkins.html&quot;&gt;Estonia&lt;/a&gt; on hold - still excited to go there, and hoping to do so in April or May, once it warms up again.&lt;/p&gt;
 
-&lt;p&gt;In the meanwhile, I&#39;m heading to Costa Rica to help facilitate &lt;a href=&quot;http://hackerparadise.org&quot;&gt;Hacker Paradise&lt;/a&gt; a 12-week digital retreat. The location has all the benefits of nomadism (cheap, beautiful location with delicious food and friendly people) while bringing together a small community of hackers working on individual learning, contracting or their own companies.&lt;/p&gt;
+&lt;p&gt;In the meanwhile, I’m heading to Costa Rica to help facilitate &lt;a href=&quot;http://hackerparadise.org&quot;&gt;Hacker Paradise&lt;/a&gt; a 12-week digital retreat. The location has all the benefits of nomadism (cheap, beautiful location with delicious food and friendly people) while bringing together a small community of hackers working on individual learning, contracting or their own companies.&lt;/p&gt;
 
-&lt;p&gt;Here&#39;s how it happened: &lt;a href=&quot;https://twitter.com/CaseyRosengren&quot;&gt;Casey Rosengren&lt;/a&gt;, a Penn classmate and fellow &lt;a href=&quot;http://www.hackthechange.org/&quot;&gt;Penn Hackathon organizer&lt;/a&gt;, was doing the whole travel-and-freelance thing and did some work for a boutique hotel that was down to give Casey the entire place for a couple of months, leading to the creation of Hacker Paradise. I saw one of Casey&#39;s posts about the place, and offered to come help.&lt;/p&gt;
+&lt;p&gt;Here’s how it happened: &lt;a href=&quot;https://twitter.com/CaseyRosengren&quot;&gt;Casey Rosengren&lt;/a&gt;, a Penn classmate and fellow &lt;a href=&quot;http://www.hackthechange.org/&quot;&gt;Penn Hackathon organizer&lt;/a&gt;, was doing the whole travel-and-freelance thing and did some work for a boutique hotel that was down to give Casey the entire place for a couple of months, leading to the creation of Hacker Paradise. I saw one of Casey’s posts about the place, and offered to come help.&lt;/p&gt;
 
-&lt;p&gt;In short: I&#39;ll be hacking by the pool in Costa Rica until November if you need me.&lt;/p&gt;
+&lt;p&gt;In short: I’ll be hacking by the pool in Costa Rica until November if you need me.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.hackerparadise.org/assets/img/portfolio/xfolio04.jpg.pagespeed.ic.7kj395nNtx.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.hackerparadise.org/assets/img/portfolio/xfolio04.jpg.pagespeed.ic.7kj395nNtx.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;PS. Care to join, either for the whole 12 weeks or for a shorter trip? We&#39;re &lt;a href=&quot;http://hackerparadise.org&quot;&gt;keeping a couple of spots open&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;PS. Care to join, either for the whole 12 weeks or for a shorter trip? We’re &lt;a href=&quot;http://hackerparadise.org&quot;&gt;keeping a couple of spots open&lt;/a&gt;.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -154,41 +182,49 @@
    <link href="http://alexeymk.com/2014/07/03/when-visas-turn-into-pumpkins.html"/>
    <updated>2014-07-03T18:06:24-07:00</updated>
    <id>http://alexeymk.com/2014/07/03/when-visas-turn-into-pumpkins</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: My US work visa runs out in a month, so I&#39;m leaving for about a year to go travel. I start on August 2014.&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: My US work visa runs out in a month, so I’m leaving for about a year to go travel. I start on August 2014.&lt;/p&gt;
 
-&lt;p&gt;...actually, that&#39;s it.&lt;/p&gt;
+&lt;p&gt;…actually, that’s it.&lt;/p&gt;
 
-&lt;h3&gt;FAQ&lt;/h3&gt;
-
+&lt;h3 id=&quot;faq&quot;&gt;FAQ&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Wait, you&#39;re not American?&lt;/strong&gt; I&#39;m an Israeli citizen born in Ukraine. I came to the US for my undergraduate degree. I kind of sound American because I went to the &lt;a href=&quot;http://wbais.org&quot;&gt;American International School&lt;/a&gt; for elementary through high school in Israel.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;So what&#39;s the story with the visas?&lt;/strong&gt;
-I was able to stay in the US on my F-1 (student) visa for two a half years after graduation through OPT and STEM. This year, I applied for an H1-B visa with a sponsor - there were &lt;a href=&quot;http://www.happyschools.com/172500-h1b-visa-2015-petitions-lottery-complete/&quot;&gt;172k people for 85k slots&lt;/a&gt;.  There was a lottery, and I didn&#39;t make it. &lt;a href=&quot;http://sites.middlebury.edu/individualandthesociety/files/2010/09/jackson_lottery.pdf&quot;&gt;Could have been worse&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Well, that sucks. Anything I can do to help?&lt;/strong&gt; It&#39;s fine, really. Thanks for your concern! I&#39;ve been meaning to travel for a while, so the timing works out. If you&#39;d like to help,&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Recommend particular cities that you think would be great places to live for 2 months&lt;/li&gt;
-&lt;li&gt;If you know any good companies that do remote work, I might be interested&lt;/li&gt;
-&lt;li&gt;...actually, if you have the space and aren&#39;t planning to move for a year, I wouldn&#39;t mind storing a bit of stuff in your basement&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;What&#39;s the plan?&lt;/strong&gt;
-Largely TBD, but the tentative plan is to live in six different locations for about two months each.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;The first stop is &lt;strong&gt;Tallinn, the capital of Estonia&lt;/strong&gt;.  Why? &lt;a href=&quot;http://www.wired.co.uk/magazine/archive/2011/09/european-startups&quot;&gt;Wired swears by it&lt;/a&gt;, and my further research confirms Tallinn should be an interesting place. I don&#39;t know if I want to work on my own ideas or contract remotely yet - time will tell. Plans are still up in the air for the next destination, but I &lt;em&gt;am&lt;/em&gt; hoping to get a couple of months of skiing in over January &amp;amp; February.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;That sounds fun! Can I come visit?&lt;/strong&gt;
-Absolutely. My plan is, rent prices permitting, to have a guest bedroom in every place I&#39;ll be living in.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;...so, are you coming back?&lt;/strong&gt;
-I certainly plan to. I love it here.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Our immigration policies are ridiculous!&lt;/strong&gt;
-That&#39;s not a question. Also, politics is hard! If you want to help, consider supporting &lt;a href=&quot;http://fwd.us&quot;&gt;fwd.us&lt;/a&gt; or one of many other immigration reform groups.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Let&#39;s hang out before you leave!&lt;/strong&gt; Totes. &lt;a href=&quot;mailto:alexey+beforeyouleave@alexeymk.com&quot;&gt;Email me&lt;/a&gt; and let&#39;s try to find a time and a place.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Wait, you’re not American?&lt;/strong&gt; I’m an Israeli citizen born in Ukraine. I came to the US for my undergraduate degree. I kind of sound American because I went to the &lt;a href=&quot;http://wbais.org&quot;&gt;American International School&lt;/a&gt; for elementary through high school in Israel.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;So what’s the story with the visas?&lt;/strong&gt;
+I was able to stay in the US on my F-1 (student) visa for two a half years after graduation through OPT and STEM. This year, I applied for an H1-B visa with a sponsor - there were &lt;a href=&quot;http://www.happyschools.com/172500-h1b-visa-2015-petitions-lottery-complete/&quot;&gt;172k people for 85k slots&lt;/a&gt;.  There was a lottery, and I didn’t make it. &lt;a href=&quot;http://sites.middlebury.edu/individualandthesociety/files/2010/09/jackson_lottery.pdf&quot;&gt;Could have been worse&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Well, that sucks. Anything I can do to help?&lt;/strong&gt; It’s fine, really. Thanks for your concern! I’ve been meaning to travel for a while, so the timing works out. If you’d like to help,
+    &lt;ul&gt;
+      &lt;li&gt;Recommend particular cities that you think would be great places to live for 2 months&lt;/li&gt;
+      &lt;li&gt;If you know any good companies that do remote work, I might be interested&lt;/li&gt;
+      &lt;li&gt;…actually, if you have the space and aren’t planning to move for a year, I wouldn’t mind storing a bit of stuff in your basement&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What’s the plan?&lt;/strong&gt;
+Largely TBD, but the tentative plan is to live in six different locations for about two months each.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;The first stop is &lt;strong&gt;Tallinn, the capital of Estonia&lt;/strong&gt;.  Why? &lt;a href=&quot;http://www.wired.co.uk/magazine/archive/2011/09/european-startups&quot;&gt;Wired swears by it&lt;/a&gt;, and my further research confirms Tallinn should be an interesting place. I don’t know if I want to work on my own ideas or contract remotely yet - time will tell. Plans are still up in the air for the next destination, but I &lt;em&gt;am&lt;/em&gt; hoping to get a couple of months of skiing in over January &amp;amp; February.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;That sounds fun! Can I come visit?&lt;/strong&gt;
+Absolutely. My plan is, rent prices permitting, to have a guest bedroom in every place I’ll be living in.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;…so, are you coming back?&lt;/strong&gt;
+I certainly plan to. I love it here.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Our immigration policies are ridiculous!&lt;/strong&gt;
+That’s not a question. Also, politics is hard! If you want to help, consider supporting &lt;a href=&quot;http://fwd.us&quot;&gt;fwd.us&lt;/a&gt; or one of many other immigration reform groups.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Let’s hang out before you leave!&lt;/strong&gt; Totes. &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#043;&amp;#098;&amp;#101;&amp;#102;&amp;#111;&amp;#114;&amp;#101;&amp;#121;&amp;#111;&amp;#117;&amp;#108;&amp;#101;&amp;#097;&amp;#118;&amp;#101;&amp;#064;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#109;&amp;#107;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;Email me&lt;/a&gt; and let’s try to find a time and a place.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
@@ -212,18 +248,17 @@ That&#39;s not a question. Also, politics is hard! If you want to help, consider
    <id>http://alexeymk.com/2013/12/19/houston-admin-talk-at-meteor-devshop-10</id>
    <content type="html">&lt;p&gt;I gave a talk at the latest Meteor Devshop a couple of weeks ago about &lt;a href=&quot;http://github.com/gterrono/houston&quot;&gt;Houston&lt;/a&gt;, the Django-Admin like tool that Greg, Geoff and I are working on for Meteor.&lt;/p&gt;
 
-&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/8ASwWEZsAog&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/8ASwWEZsAog&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
+&lt;p&gt;With over &lt;a href=&quot;http://github.com/gterrono/houston&quot;&gt;200 stars on Github&lt;/a&gt;, I think we might &lt;em&gt;almost&lt;/em&gt; be real Open Source Contributors now. It’s fun!&lt;/p&gt;
 
-&lt;p&gt;With over &lt;a href=&quot;http://github.com/gterrono/houston&quot;&gt;200 stars on Github&lt;/a&gt;, I think we might &lt;em&gt;almost&lt;/em&gt; be real Open Source Contributors now. It&#39;s fun!&lt;/p&gt;
-
-&lt;p&gt;If you&#39;re into web development and Javascript and real-timey things, check out &lt;a href=&quot;http://meteor.com&quot;&gt;Meteor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you’re into web development and Javascript and real-timey things, check out &lt;a href=&quot;http://meteor.com&quot;&gt;Meteor&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you already know about Meteor, you should try &lt;a href=&quot;https://atmosphere.meteor.com/package/houston&quot;&gt;Houston&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;If you already use Houston (whoa, thanks!) check out the &lt;a href=&quot;https://github.com/gterrono/houston/#wishlist&quot;&gt;feature wishlist&lt;/a&gt; and send us some pull requests!&lt;/p&gt;
 
-&lt;p&gt;PS. I thoroughly enjoyed TA-ing in college and I miss it, so public speaking on technical subjects is a ton of fun (though nerve-wrecking) for me.  If you&#39;ve got tips for things I should work on after seeing the talk, please email me!&lt;/p&gt;
+&lt;p&gt;PS. I thoroughly enjoyed TA-ing in college and I miss it, so public speaking on technical subjects is a ton of fun (though nerve-wrecking) for me.  If you’ve got tips for things I should work on after seeing the talk, please email me!&lt;/p&gt;
 </content>
  </entry>
  
@@ -232,54 +267,51 @@ That&#39;s not a question. Also, politics is hard! If you want to help, consider
    <link href="http://alexeymk.com/2013/10/20/the-last-10-months.html"/>
    <updated>2013-10-20T09:25:18-07:00</updated>
    <id>http://alexeymk.com/2013/10/20/the-last-10-months</id>
-   <content type="html">&lt;p&gt;2013 hasn&#39;t been a great year for new content on this blog. Let me try to change that.&lt;/p&gt;
+   <content type="html">&lt;p&gt;2013 hasn’t been a great year for new content on this blog. Let me try to change that.&lt;/p&gt;
 
-&lt;h3&gt;First, what&#39;ve I been up to since January?&lt;/h3&gt;
+&lt;h3 id=&quot;first-whatve-i-been-up-to-since-january&quot;&gt;First, what’ve I been up to since January?&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;I did some &lt;a href=&quot;http://calldownmule.com&quot;&gt;engineering consulting work&lt;/a&gt;, with the bulk of the time spent working for &lt;a href=&quot;http://baydin.com&quot;&gt;Baydin&lt;/a&gt;, &lt;a href=&quot;http://tencent.com&quot;&gt;Tencent&lt;/a&gt; and &lt;a href=&quot;http://dropbox.com&quot;&gt;Dropbox&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Started &lt;a href=&quot;http://theinternproject.com&quot;&gt;The InternProject&lt;/a&gt;, a &quot;let&#39;s make sure interns in the bay area have a great time&quot; non-profit with &lt;a href=&quot;https://twitter.com/theAlexPoon&quot;&gt;Alex&lt;/a&gt;, with major help from &lt;a href=&quot;http://tessrinearson.com/&quot;&gt;Tess&lt;/a&gt;, &lt;a href=&quot;http://yef.im&quot;&gt;Geoff&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/jofeuereisen&quot;&gt;James&lt;/a&gt; and countless others.&lt;/li&gt;
-&lt;li&gt;Became a &lt;a href=&quot;https://github.com/gterrono/meteor-admin-ui&quot;&gt;real open-source contributor&lt;/a&gt; via &lt;a href=&quot;https://atmosphere.meteor.com/package/z-mongo-admin&quot;&gt;ZMA&lt;/a&gt;, a CRUD Admin tool for Meteor, with Geoff and &lt;a href=&quot;https://github.com/gterrono&quot;&gt;Greg&lt;/a&gt;. Greg&#39;s been keeping the project updated. I need to contribute more.&lt;/li&gt;
-&lt;li&gt;Worked with &lt;a href=&quot;https://twitter.com/amyquispe&quot;&gt;Amy&lt;/a&gt; to start the &lt;a href=&quot;http://campusdatasummit.com&quot;&gt;Campus Data Summit&lt;/a&gt;, creating the &lt;a href=&quot;http://campusdata.org&quot;&gt;Campus Data&lt;/a&gt; Guidebook for students starting PennAppsLabs-like organizations at their schools.&lt;/li&gt;
-&lt;li&gt;Generally speaking, figured out what I enjoy and what I don&#39;t enjoy, and what I want to do next.&lt;/li&gt;
+  &lt;li&gt;I did some &lt;a href=&quot;http://calldownmule.com&quot;&gt;engineering consulting work&lt;/a&gt;, with the bulk of the time spent working for &lt;a href=&quot;http://baydin.com&quot;&gt;Baydin&lt;/a&gt;, &lt;a href=&quot;http://tencent.com&quot;&gt;Tencent&lt;/a&gt; and &lt;a href=&quot;http://dropbox.com&quot;&gt;Dropbox&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Started &lt;a href=&quot;http://theinternproject.com&quot;&gt;The InternProject&lt;/a&gt;, a “let’s make sure interns in the bay area have a great time” non-profit with &lt;a href=&quot;https://twitter.com/theAlexPoon&quot;&gt;Alex&lt;/a&gt;, with major help from &lt;a href=&quot;http://tessrinearson.com/&quot;&gt;Tess&lt;/a&gt;, &lt;a href=&quot;http://yef.im&quot;&gt;Geoff&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/jofeuereisen&quot;&gt;James&lt;/a&gt; and countless others.&lt;/li&gt;
+  &lt;li&gt;Became a &lt;a href=&quot;https://github.com/gterrono/meteor-admin-ui&quot;&gt;real open-source contributor&lt;/a&gt; via &lt;a href=&quot;https://atmosphere.meteor.com/package/z-mongo-admin&quot;&gt;ZMA&lt;/a&gt;, a CRUD Admin tool for Meteor, with Geoff and &lt;a href=&quot;https://github.com/gterrono&quot;&gt;Greg&lt;/a&gt;. Greg’s been keeping the project updated. I need to contribute more.&lt;/li&gt;
+  &lt;li&gt;Worked with &lt;a href=&quot;https://twitter.com/amyquispe&quot;&gt;Amy&lt;/a&gt; to start the &lt;a href=&quot;http://campusdatasummit.com&quot;&gt;Campus Data Summit&lt;/a&gt;, creating the &lt;a href=&quot;http://campusdata.org&quot;&gt;Campus Data&lt;/a&gt; Guidebook for students starting PennAppsLabs-like organizations at their schools.&lt;/li&gt;
+  &lt;li&gt;Generally speaking, figured out what I enjoy and what I don’t enjoy, and what I want to do next.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;=========&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&quot;contracting&quot;&gt;Contracting&lt;/h3&gt;
 
-&lt;h3&gt;Contracting&lt;/h3&gt;
+&lt;p&gt;It took a while to get my first gig - the first 7 or 8 companies I spoke with all ended up passing, for various reasons, which put a fair bit of dent in my plans. I came up with lots of ways to get more inbound flow, but didn’t have the energy to execute any of it because I was so tired of rejection. Basically, if you’re burnt out and trying to recover, putting yourself in a position to get rejected a lot is not a great idea.&lt;/p&gt;
 
-&lt;p&gt;It took a while to get my first gig - the first 7 or 8 companies I spoke with all ended up passing, for various reasons, which put a fair bit of dent in my plans. I came up with lots of ways to get more inbound flow, but didn&#39;t have the energy to execute any of it because I was so tired of rejection. Basically, if you&#39;re burnt out and trying to recover, putting yourself in a position to get rejected a lot is not a great idea.&lt;/p&gt;
+&lt;p&gt;Eventually, I &lt;a href=&quot;http://calldownmule.com&quot;&gt;refined and simplified my pitch&lt;/a&gt;, going from “co-founder for rent”/”on-demand hiring manager” to a much simpler one - “I can code, and I don’t need to be micro-managed on product.”  That worked.&lt;/p&gt;
 
-&lt;p&gt;Eventually, I &lt;a href=&quot;http://calldownmule.com&quot;&gt;refined and simplified my pitch&lt;/a&gt;, going from &quot;co-founder for rent&quot;/&quot;on-demand hiring manager&quot; to a much simpler one - &quot;I can code, and I don&#39;t need to be micro-managed on product.&quot;  That worked.&lt;/p&gt;
-
-&lt;p&gt;I spent the first ~10 weeks at Baydin, the makers of &lt;a href=&quot;http://boomerangforgmail.com&quot;&gt;Boomerang for Gmail&lt;/a&gt;, pitching and then adding a feature to &lt;a href=&quot;http://thenextweb.com/apps/2013/09/19/no-more-to-and-fro-boomerang-calendar-plugin-now-lets-you-schedule-meetings-within-a-single-email/&quot;&gt;Boomerang Calendar&lt;/a&gt;. I&#39;ve been &lt;a href=&quot;http://alexeymk.com/too-cool-for-tungleme/&quot;&gt;fascinated by scheduling tools&lt;/a&gt; ever since I saw Tungle.me, so it was tremendously rewarding to work on this problem, and the Boomerang team both provided awesome leverage and feedback, as well as giving me a lot more autonomy than should be reasonable. An awesome and very small (&amp;lt;10) person team in Mountain View - a fantastic place to work. My updates to Boomerang Calendar deserve their own blog post. Hopefully.&lt;/p&gt;
+&lt;p&gt;I spent the first ~10 weeks at Baydin, the makers of &lt;a href=&quot;http://boomerangforgmail.com&quot;&gt;Boomerang for Gmail&lt;/a&gt;, pitching and then adding a feature to &lt;a href=&quot;http://thenextweb.com/apps/2013/09/19/no-more-to-and-fro-boomerang-calendar-plugin-now-lets-you-schedule-meetings-within-a-single-email/&quot;&gt;Boomerang Calendar&lt;/a&gt;. I’ve been &lt;a href=&quot;http://alexeymk.com/too-cool-for-tungleme/&quot;&gt;fascinated by scheduling tools&lt;/a&gt; ever since I saw Tungle.me, so it was tremendously rewarding to work on this problem, and the Boomerang team both provided awesome leverage and feedback, as well as giving me a lot more autonomy than should be reasonable. An awesome and very small (&amp;lt;10) person team in Mountain View - a fantastic place to work. My updates to Boomerang Calendar deserve their own blog post. Hopefully.&lt;/p&gt;
 
 &lt;p&gt;Next, I worked at Tencent, a giant Chinese tech company (think AOL or IAC, but more successful) with an office in a church in Palo Alto.  The people were great and I appreciated the opportunity to work with them, but the biggest thing I learned was that larger, more traditional companies are not places I thrive.&lt;/p&gt;
 
-&lt;p&gt;Finally, I spent two and a half months at Dropbox, working on &lt;a href=&quot;http://dropbox.com/business&quot;&gt;Dropbox for Business&lt;/a&gt;. From Soleio to Guido to Aditya and Ruchi, to (more anecdotally) a few friends I have a ton of respect for, Dropbox has been making some killer hires over the past year and I couldn&#39;t help but want to see why. Now I know (hint: it&#39;s the &lt;a href=&quot;http://www.yelp.com/biz/tuck-shop-san-francisco#hrid:Gt4mhrYlre763rv1CMXpDA&quot;&gt;cafeteria&lt;/a&gt;). Dropbox is an absolutely fantastic company with a rather talented group of people, and (I imagine) a lot like what Facebook felt like in 2008 or 2009. Drew is a fantastic public speaker and generally an affable guy.&lt;/p&gt;
+&lt;p&gt;Finally, I spent two and a half months at Dropbox, working on &lt;a href=&quot;http://dropbox.com/business&quot;&gt;Dropbox for Business&lt;/a&gt;. From Soleio to Guido to Aditya and Ruchi, to (more anecdotally) a few friends I have a ton of respect for, Dropbox has been making some killer hires over the past year and I couldn’t help but want to see why. Now I know (hint: it’s the &lt;a href=&quot;http://www.yelp.com/biz/tuck-shop-san-francisco#hrid:Gt4mhrYlre763rv1CMXpDA&quot;&gt;cafeteria&lt;/a&gt;). Dropbox is an absolutely fantastic company with a rather talented group of people, and (I imagine) a lot like what Facebook felt like in 2008 or 2009. Drew is a fantastic public speaker and generally an affable guy.&lt;/p&gt;
 
 &lt;p&gt;Each of the three gigs above was a 4-day-a-week kind of job, and I learned a lot from each. The thing that most stuck with me - and I was a little surprised by this - was how much fun I had working on Boomerang Calendar. I worked in a mostly-solo capacity, but with design and library engineering support when needed and great product people to brainstorm and prioritize with. I want to do more of that.&lt;/p&gt;
 
-&lt;h3&gt;The InternProject&lt;/h3&gt;
-
-&lt;p&gt;I&#39;ve written a whole bunch about recruiting and internships in the Bay before, and started the 2012 Bay Area interns Facebook group. Still, the problem of &quot;how do you make sure people doing internships in the Bay Area get the value out of it that they can&quot; - admittedly a first-world problem, but &lt;em&gt;my&lt;/em&gt; first-world problem, didn&#39;t feel completely-solved.&lt;/p&gt;
+&lt;h3 id=&quot;the-internproject&quot;&gt;The InternProject&lt;/h3&gt;
+&lt;p&gt;I’ve written a whole bunch about recruiting and internships in the Bay before, and started the 2012 Bay Area interns Facebook group. Still, the problem of “how do you make sure people doing internships in the Bay Area get the value out of it that they can” - admittedly a first-world problem, but &lt;em&gt;my&lt;/em&gt; first-world problem, didn’t feel completely-solved.&lt;/p&gt;
 
 &lt;p&gt;I had met Alex Poon the prior year, when he organized a number of intern dinners. We brainstormed about what the ideal solution would look like - a &lt;a href=&quot;http://theinternproject.com&quot;&gt;single website&lt;/a&gt; with everything you need to know, a big kick-off event for interns from small companies to meet others to hang out with during the summer, and a way to generally keep in the loop on what the good events were. Out of this came &lt;a href=&quot;http://theinternproject.com&quot;&gt;the InternProject&lt;/a&gt;, which (it seems, so far) met our goals for the summer and then exceeded them.&lt;/p&gt;
 
-&lt;p&gt;We&#39;re still figuring out how to transition the project to being student run - Alex and Tess dropped out of school and I graduated. We&#39;ll see.  The important thing is that the ~2,500 students on our list-serv found it to be valuable, according to click and open rates.&lt;/p&gt;
+&lt;p&gt;We’re still figuring out how to transition the project to being student run - Alex and Tess dropped out of school and I graduated. We’ll see.  The important thing is that the ~2,500 students on our list-serv found it to be valuable, according to click and open rates.&lt;/p&gt;
 
-&lt;h3&gt;What&#39;s next&lt;/h3&gt;
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s next&lt;/h3&gt;
+&lt;p&gt;I’ve begun to consider folks like &lt;a href=&quot;http://marco.org&quot;&gt;Marco Arment&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/lorenb&quot;&gt;Loren Bricter&lt;/a&gt; as role models rather than just fascinating people. In the long run, I’d love to get into a place where I can make apps that I consider interesting, ideally focused on productivity or developer tools, and have the occassional engineering/design/product support necessary to keep me focused, all the while avoiding management as much as possible. Baydin was a &lt;em&gt;ton&lt;/em&gt; of fun. I’d love to replicate that experience, if I can.&lt;/p&gt;
 
-&lt;p&gt;I&#39;ve begun to consider folks like &lt;a href=&quot;http://marco.org&quot;&gt;Marco Arment&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/lorenb&quot;&gt;Loren Bricter&lt;/a&gt; as role models rather than just fascinating people. In the long run, I&#39;d love to get into a place where I can make apps that I consider interesting, ideally focused on productivity or developer tools, and have the occassional engineering/design/product support necessary to keep me focused, all the while avoiding management as much as possible. Baydin was a &lt;em&gt;ton&lt;/em&gt; of fun. I&#39;d love to replicate that experience, if I can.&lt;/p&gt;
-
-&lt;p&gt;In the meanwhile, I&#39;m playing with an entirely different idea that probably deserves its own blog post.&lt;/p&gt;
+&lt;p&gt;In the meanwhile, I’m playing with an entirely different idea that probably deserves its own blog post.&lt;/p&gt;
 
 &lt;p&gt;I want to explore whether the reasons that recruiters have a poor reputation in the industry (spam, sketchiness, competence) are an unavoidable side-effect of the industry model.&lt;/p&gt;
 
-&lt;p&gt;To do that, I&#39;m spending the next few months figuring what its like to be a full-time technical recruiter, but eliminating all the parts I don&#39;t like.&lt;/p&gt;
+&lt;p&gt;To do that, I’m spending the next few months figuring what its like to be a full-time technical recruiter, but eliminating all the parts I don’t like.&lt;/p&gt;
 
-&lt;p&gt;We&#39;re focusing on seeing if we can be Talent Advocates, helping rising seniors in CS figure out what to do with their lives and monetizing by putting students in touch with companies that help them get there. I want to know if (1) there&#39;s a business here, (2) if I can add enough value to have a clean conscience, and (3) if I can do the work. Follow along at &lt;a href=&quot;http://threesat.com&quot;&gt;threesat.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We’re focusing on seeing if we can be Talent Advocates, helping rising seniors in CS figure out what to do with their lives and monetizing by putting students in touch with companies that help them get there. I want to know if (1) there’s a business here, (2) if I can add enough value to have a clean conscience, and (3) if I can do the work. Follow along at &lt;a href=&quot;http://threesat.com&quot;&gt;threesat.com&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -288,44 +320,46 @@ That&#39;s not a question. Also, politics is hard! If you want to help, consider
    <link href="http://alexeymk.com/2013/06/18/migrating-divvy-configurations-between-computers.html"/>
    <updated>2013-06-18T20:27:28-07:00</updated>
    <id>http://alexeymk.com/2013/06/18/migrating-divvy-configurations-between-computers</id>
-   <content type="html">&lt;p&gt;I&#39;ve been using &lt;a href=&quot;http://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; the tiling tool for OSX (and windows) ever since I switched to using Macs full-time in 2010. It&#39;s great.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I’ve been using &lt;a href=&quot;http://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; the tiling tool for OSX (and windows) ever since I switched to using Macs full-time in 2010. It’s great.&lt;/p&gt;
 
-&lt;p&gt;Migrating it between installs isn&#39;t so great, and unfortunately googling &quot;migrate divvy preferences&quot; doesn&#39;t help.  So, while moving to yet another Mac, I emailed support@mizage and asked what to do.&lt;/p&gt;
+&lt;p&gt;Migrating it between installs isn’t so great, and unfortunately googling “migrate divvy preferences” doesn’t help.  So, while moving to yet another Mac, I emailed support@mizage and asked what to do.&lt;/p&gt;
 
 &lt;p&gt;Here (with their permission) is how to migrate your divvy settings / preferences / configurations / setup / whatever to a new computer:&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;h4&gt;If you&#39;re on Windows:&lt;/h4&gt;
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;if-youre-on-windows&quot;&gt;If you’re on Windows:&lt;/h4&gt;
 
-&lt;p&gt;0) Quit Divvy on both PCs.&lt;/p&gt;
+  &lt;p&gt;0) Quit Divvy on both PCs.&lt;/p&gt;
 
-&lt;p&gt;1) Click Start &gt; Run, and paste in this command:&lt;/p&gt;
+  &lt;p&gt;1) Click Start &amp;gt; Run, and paste in this command:&lt;/p&gt;
 
-&lt;p&gt;   %USERPROFILE%\Local Settings\Application Data\Mizage LLC\Divvy&lt;/p&gt;
+  &lt;p&gt;%USERPROFILE%\Local Settings\Application Data\Mizage LLC\Divvy&lt;/p&gt;
 
-&lt;p&gt;2) This should open a new Explorer window.&lt;/p&gt;
+  &lt;p&gt;2) This should open a new Explorer window.&lt;/p&gt;
 
-&lt;p&gt;3) Locate the file shortcuts.db&lt;/p&gt;
+  &lt;p&gt;3) Locate the file shortcuts.db&lt;/p&gt;
 
-&lt;p&gt;4) Copy that file to the same location on your second computer.&lt;/p&gt;
+  &lt;p&gt;4) Copy that file to the same location on your second computer.&lt;/p&gt;
 
-&lt;h4&gt;If you&#39;re on Mac:&lt;/h4&gt;
+  &lt;h4 id=&quot;if-youre-on-mac&quot;&gt;If you’re on Mac:&lt;/h4&gt;
 
-&lt;p&gt;0) Quit Divvy on both Macs.&lt;/p&gt;
+  &lt;p&gt;0) Quit Divvy on both Macs.&lt;/p&gt;
 
-&lt;p&gt;1a) If you&#39;re on Snow Leopard, go into your User&#39;s Library folder in Finder.&lt;/p&gt;
+  &lt;p&gt;1a) If you’re on Snow Leopard, go into your User’s Library folder in Finder.&lt;/p&gt;
 
-&lt;p&gt;1b) If you&#39;re on Lion or later, open a Finder window, now hold the Option (alt) key and choose the &quot;Go &gt; Library&quot; menu item.&lt;/p&gt;
+  &lt;p&gt;1b) If you’re on Lion or later, open a Finder window, now hold the Option (alt) key and choose the “Go &amp;gt; Library” menu item.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;(AMK Note: this is at ~/Library/Preferences)&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;(AMK Note: this is at ~/Library/Preferences)&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;2) Go into the Preferences folder.&lt;/p&gt;
+  &lt;p&gt;2) Go into the Preferences folder.&lt;/p&gt;
 
-&lt;p&gt;3) Locate the file com.mizage.Divvy.plist&lt;/p&gt;
+  &lt;p&gt;3) Locate the file com.mizage.Divvy.plist&lt;/p&gt;
 
-&lt;p&gt;4) Copy that file to the same location on your second Mac.&lt;/p&gt;
+  &lt;p&gt;4) Copy that file to the same location on your second Mac.&lt;/p&gt;
 
-&lt;p&gt;Regards,
-Steve&lt;/p&gt;&lt;/blockquote&gt;
+  &lt;p&gt;Regards,
+Steve&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Thanks Steve!&lt;/p&gt;
 </content>
@@ -336,67 +370,70 @@ Steve&lt;/p&gt;&lt;/blockquote&gt;
    <link href="http://alexeymk.com/2013/04/07/on-rejection-letters.html"/>
    <updated>2013-04-07T16:11:47-07:00</updated>
    <id>http://alexeymk.com/2013/04/07/on-rejection-letters</id>
-   <content type="html">&lt;p&gt;At an event last week, I was introduced to the CEO of a post series-A startup I&#39;d been following and found quite interesting. We spoke about his company for a few minutes, and he asked me to email him in case there were any opportunities for me as a freelancer to help.&lt;/p&gt;
+   <content type="html">&lt;p&gt;At an event last week, I was introduced to the CEO of a post series-A startup I’d been following and found quite interesting. We spoke about his company for a few minutes, and he asked me to email him in case there were any opportunities for me as a freelancer to help.&lt;/p&gt;
 
 &lt;p&gt;I followed up. A few days later, I got the following email:&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Hi Alexey,&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Hi Alexey,&lt;/p&gt;
 
-&lt;p&gt;Thanks for your interest in [Company].  We don&#39;t have immediate needs for hiring more engineers at the moment but would be happy to keep you on file for future opportunities.&lt;/p&gt;
+  &lt;p&gt;Thanks for your interest in [Company].  We don’t have immediate needs for hiring more engineers at the moment but would be happy to keep you on file for future opportunities.&lt;/p&gt;
 
-&lt;p&gt;Please let me know if you have additional questions.&lt;/p&gt;
+  &lt;p&gt;Please let me know if you have additional questions.&lt;/p&gt;
 
-&lt;p&gt;- [Recruiter], [Company]&lt;/p&gt;&lt;/blockquote&gt;
+  &lt;p&gt;- [Recruiter], [Company]&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Ouch.&lt;/p&gt;
 
-&lt;h4&gt;Who are you, again?&lt;/h4&gt;
+&lt;h4 id=&quot;who-are-you-again&quot;&gt;Who are you, again?&lt;/h4&gt;
 
-&lt;p&gt;I spent a good portion of 2012 running recruiting for the company I&#39;d helped start, growing our team from 3 to 12. I&#39;ve had a chance to deal a few dozen candidate rejections, and made my fair share of mistakes.  Before that, I spent two years applying to internships.  As such, some advice for would-be rejection-letter writers:&lt;/p&gt;
+&lt;p&gt;I spent a good portion of 2012 running recruiting for the company I’d helped start, growing our team from 3 to 12. I’ve had a chance to deal a few dozen candidate rejections, and made my fair share of mistakes.  Before that, I spent two years applying to internships.  As such, some advice for would-be rejection-letter writers:&lt;/p&gt;
 
-&lt;h4&gt;The effort going into the rejection should match the effort spent in the process.&lt;/h4&gt;
+&lt;h4 id=&quot;the-effort-going-into-the-rejection-should-match-the-effort-spent-in-the-process&quot;&gt;The effort going into the rejection should match the effort spent in the process.&lt;/h4&gt;
 
 &lt;p&gt;At my last company, we flew a candidate in for a trial and ended up passing. The next day, I sent a two paragraph email saying, effectively, thank you but no thank you.&lt;/p&gt;
 
 &lt;p&gt;That was wrong. The guy deserved at least a phone call after giving us a week of his time.&lt;/p&gt;
 
-&lt;p&gt;Last week&#39;s CEO &lt;strong&gt;asked&lt;/strong&gt; me to email him; I was interested in the possibility of work, but I also just wanted to have a chance to chat and seek his advice. I got a response, without context, from somebody else entirely, treating me as yet another applicant. I hadn&#39;t even sent in a resume.&lt;/p&gt;
+&lt;p&gt;Last week’s CEO &lt;strong&gt;asked&lt;/strong&gt; me to email him; I was interested in the possibility of work, but I also just wanted to have a chance to chat and seek his advice. I got a response, without context, from somebody else entirely, treating me as yet another applicant. I hadn’t even sent in a resume.&lt;/p&gt;
 
-&lt;p&gt;Not that every possible candidate deserves a 500-word essay; a generic application or cold-email, (&quot;Dear Sir or Madam...&quot;) should absolutely receive a friendly, templated rejection.&lt;/p&gt;
+&lt;p&gt;Not that every possible candidate deserves a 500-word essay; a generic application or cold-email, (“Dear Sir or Madam…”) should absolutely receive a friendly, templated rejection.&lt;/p&gt;
 
-&lt;h4&gt;There&#39;s a difference between a euphemism and a lie.&lt;/h4&gt;
+&lt;h4 id=&quot;theres-a-difference-between-a-euphemism-and-a-lie&quot;&gt;There’s a difference between a euphemism and a lie.&lt;/h4&gt;
 
-&lt;p&gt;On Tuesday, the CEO told me they were looking for engineers. On Thursday, I was told the opposite. Either their hiring priorities changed on Wednesday, or (hint: it&#39;s this one) &#39;not hiring&#39; was an excuse.  As a candidate I can tell, and it reflects poorly on the company.&lt;/p&gt;
+&lt;p&gt;On Tuesday, the CEO told me they were looking for engineers. On Thursday, I was told the opposite. Either their hiring priorities changed on Wednesday, or (hint: it’s this one) ‘not hiring’ was an excuse.  As a candidate I can tell, and it reflects poorly on the company.&lt;/p&gt;
 
-&lt;p&gt;The flip-side is, of course, you don&#39;t want to be incredibly specific in every rejection, because the occassional candidate is going to argue that in fact they ARE great at X and were just having a bad day and now you&#39;re in this terrible position of saying &quot;dude, no.&quot;  The industry standard seems to be some variant of &quot;not a fit&quot; or &quot;no positions available that you would be well-suited for,&quot; ending with &quot;at this time.&quot;&lt;/p&gt;
+&lt;p&gt;The flip-side is, of course, you don’t want to be incredibly specific in every rejection, because the occassional candidate is going to argue that in fact they ARE great at X and were just having a bad day and now you’re in this terrible position of saying “dude, no.”  The industry standard seems to be some variant of “not a fit” or “no positions available that you would be well-suited for,” ending with “at this time.”&lt;/p&gt;
 
-&lt;h4&gt;If you have an opportunity for a cop-out, take it!&lt;/h4&gt;
+&lt;h4 id=&quot;if-you-have-an-opportunity-for-a-cop-out-take-it&quot;&gt;If you have an opportunity for a cop-out, take it!&lt;/h4&gt;
 
-&lt;p&gt;A rejection is a bit like an needle injection; yeah, it&#39;s not going to be pleasant, but at least you can make an effort to minimize the discomfort.&lt;/p&gt;
+&lt;p&gt;A rejection is a bit like an needle injection; yeah, it’s not going to be pleasant, but at least you can make an effort to minimize the discomfort.&lt;/p&gt;
 
-&lt;p&gt;In this case, I was rejected because they didn&#39;t want to deal with contractors, or my background isn&#39;t impressive enough, or I wouldn&#39;t fit in; who knows.  Regardless, you could say:&lt;/p&gt;
+&lt;p&gt;In this case, I was rejected because they didn’t want to deal with contractors, or my background isn’t impressive enough, or I wouldn’t fit in; who knows.  Regardless, you could say:&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Alexey,&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Alexey,&lt;/p&gt;
 
-&lt;p&gt;Thanks for following up, it was good to meet you.&lt;/p&gt;
+  &lt;p&gt;Thanks for following up, it was good to meet you.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, I checked with our head of recruiting and we&#39;re focused entirely on full-time roles right now for engineering.  Thanks again for following up after we met on Tuesday and best of luck with your career!&lt;/p&gt;&lt;/blockquote&gt;
+  &lt;p&gt;Unfortunately, I checked with our head of recruiting and we’re focused entirely on full-time roles right now for engineering.  Thanks again for following up after we met on Tuesday and best of luck with your career!&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;And it&#39;s not like I have grounds to be upset: I get it, and you haven&#39;t told me that there&#39;s something wrong with me. Other effective cop-outs that help a candidate save face including H1-B difficulties for internationals or a lack of experience or exposure to a particular technology or industry.&lt;/p&gt;
+&lt;p&gt;And it’s not like I have grounds to be upset: I get it, and you haven’t told me that there’s something wrong with me. Other effective cop-outs that help a candidate save face including H1-B difficulties for internationals or a lack of experience or exposure to a particular technology or industry.&lt;/p&gt;
 
-&lt;h4&gt;Why does this even matter?&lt;/h4&gt;
-
-&lt;p&gt;From a friend at Google, their philosophy on recruiting is, roughly, &quot;we should be really nice to the engineers we interview, because most engineers out there will remember Google as that company they applied to and got rejected from, and these are the people recommending technology to their parents and advising friends on where to apply.&quot;&lt;/p&gt;
+&lt;h4 id=&quot;why-does-this-even-matter&quot;&gt;Why does this even matter?&lt;/h4&gt;
+&lt;p&gt;From a friend at Google, their philosophy on recruiting is, roughly, “we should be really nice to the engineers we interview, because most engineers out there will remember Google as that company they applied to and got rejected from, and these are the people recommending technology to their parents and advising friends on where to apply.”&lt;/p&gt;
 
 &lt;p&gt;In 2011, I was introduced to Stripe (/dev/payments at the time) as a potential summer intern, and had a great conversation with Patrick.  They asked for a code sample, and I sent them one.&lt;/p&gt;
 
-&lt;p&gt;It wasn&#39;t very good.&lt;/p&gt;
+&lt;p&gt;It wasn’t very good.&lt;/p&gt;
 
-&lt;p&gt;They rejected me, going with something along the lines of &quot;we realized we didn&#39;t have nearly the bandwidth for interns this summer as we had hoped.&quot;  Since then, I&#39;ve sent or recommended Stripe to several of my most impressive friends as potential hires because of the goodwill generated from that process.&lt;/p&gt;
+&lt;p&gt;They rejected me, going with something along the lines of “we realized we didn’t have nearly the bandwidth for interns this summer as we had hoped.”  Since then, I’ve sent or recommended Stripe to several of my most impressive friends as potential hires because of the goodwill generated from that process.&lt;/p&gt;
 
-&lt;p&gt;Rejecting candidates correctly isn&#39;t the most glamorous part of starting a company.&lt;/p&gt;
+&lt;p&gt;Rejecting candidates correctly isn’t the most glamorous part of starting a company.&lt;/p&gt;
 
-&lt;p&gt;Still, it&#39;s worth getting right.&lt;/p&gt;
+&lt;p&gt;Still, it’s worth getting right.&lt;/p&gt;
 </content>
  </entry>
  
@@ -405,37 +442,36 @@ Steve&lt;/p&gt;&lt;/blockquote&gt;
    <link href="http://alexeymk.com/2013/02/24/2012--lessons-learned.html"/>
    <updated>2013-02-24T09:45:51-08:00</updated>
    <id>http://alexeymk.com/2013/02/24/2012--lessons-learned</id>
-   <content type="html">&lt;h4&gt;1. Where were you in 2012?&lt;/h4&gt;
-
+   <content type="html">&lt;h4 id=&quot;where-were-you-in-2012&quot;&gt;1. Where were you in 2012?&lt;/h4&gt;
 &lt;p&gt;Fourteen months ago, in my last semester of college, I began working on a start-up idea with a few folks I had met through school. The company we started is off to a good start.&lt;/p&gt;
 
-&lt;p&gt;As it turned out, (as &lt;a href=&quot;http://news.ycombinator.com/item?id=4833550&quot;&gt;it surprisingly often does&lt;/a&gt;) it&#39;s not always a great idea to start companies with people you know only by reputation. We spent quite a bit of time over the second half of 2012 looking for ways to work together productively, and then separately came to the same conclusion: I had to go.&lt;/p&gt;
+&lt;p&gt;As it turned out, (as &lt;a href=&quot;http://news.ycombinator.com/item?id=4833550&quot;&gt;it surprisingly often does&lt;/a&gt;) it’s not always a great idea to start companies with people you know only by reputation. We spent quite a bit of time over the second half of 2012 looking for ways to work together productively, and then separately came to the same conclusion: I had to go.&lt;/p&gt;
 
-&lt;h4&gt;2. What&#39;s it like?&lt;/h4&gt;
-
+&lt;h4 id=&quot;whats-it-like&quot;&gt;2. What’s it like?&lt;/h4&gt;
 &lt;p&gt;It sucks. Leaving a cause that you spent the last 12 months of your life enveloped in, is a painful experience even when the departure is as amicable and unanimous as ours.  Nothing really compares to the satisfaction gained from throwing all of your available energy, every day, to a cause you believe in on a fundamental level.&lt;/p&gt;
 
-&lt;p&gt;Still, there are upsides. More time with the girlfriend, more catching up with old friends and fascinating acquaintances, a chance to get in better shape, write, maybe travel.  I&#39;ve had a chance to step off the &lt;a href=&quot;http://www.thedp.com/article/2011/12/alexey_komissarouk_whats_college_like_at_25&quot;&gt;high school to college to job&lt;/a&gt; conveyer belt before, and was better off as a result. The important thing (I hope) is to take note of lessons learned and keep my eyes open.&lt;/p&gt;
+&lt;p&gt;Still, there are upsides. More time with the girlfriend, more catching up with old friends and fascinating acquaintances, a chance to get in better shape, write, maybe travel.  I’ve had a chance to step off the &lt;a href=&quot;http://www.thedp.com/article/2011/12/alexey_komissarouk_whats_college_like_at_25&quot;&gt;high school to college to job&lt;/a&gt; conveyer belt before, and was better off as a result. The important thing (I hope) is to take note of lessons learned and keep my eyes open.&lt;/p&gt;
 
-&lt;h4&gt;3. Lessons Learned&lt;/h4&gt;
-
+&lt;h4 id=&quot;lessons-learned&quot;&gt;3. Lessons Learned&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;I&#39;m not &lt;a href=&quot;http://theoatmeal.com/comics/sriracha&quot;&gt;sriracha&lt;/a&gt;&lt;/strong&gt;. I don&#39;t go well with absolutely everything.  Some teams and environments make me dramatically more happy and productive than others.  In the future, I&#39;ll be a lot more picky and careful about who I work with, both for their sake and for mine.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Date before Marriage&lt;/strong&gt;. I was very hesitant to join my 2012 team, since we hadn&#39;t worked much before. In retrospect, the apprehensions were correct, and ignoring a wealth of advice about having worked together before was wrong.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;I’m not &lt;a href=&quot;http://theoatmeal.com/comics/sriracha&quot;&gt;sriracha&lt;/a&gt;&lt;/strong&gt;. I don’t go well with absolutely everything.  Some teams and environments make me dramatically more happy and productive than others.  In the future, I’ll be a lot more picky and careful about who I work with, both for their sake and for mine.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Date before Marriage&lt;/strong&gt;. I was very hesitant to join my 2012 team, since we hadn’t worked much before. In retrospect, the apprehensions were correct, and ignoring a wealth of advice about having worked together before was wrong.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;From now on, if (and when) I start a new venture, it’ll be with folks I’ve worked with before successfully, or at least after a non-trivial trial period.&lt;/p&gt;
 
-&lt;p&gt;From now on, if (and when) I start a new venture, it&#39;ll be with folks I&#39;ve worked with before successfully, or at least after a non-trivial trial period.&lt;/p&gt;
+&lt;h4 id=&quot;what-now-update-april-2013&quot;&gt;4. What now? [Update: April 2013]&lt;/h4&gt;
 
-&lt;h4&gt;4. What now? [Update: April 2013]&lt;/h4&gt;
-
-&lt;p&gt;I&#39;m currently spending 3 days a week working freelance for &lt;a href=&quot;http://baydin.com&quot;&gt;Baydin&lt;/a&gt;, the creators of the &lt;a href=&quot;http://boomeranggmail.com&quot;&gt;Boomerang&lt;/a&gt; Gmail plug-in.  I&#39;m working on &lt;a href=&quot;http://boomerangcalendar.com&quot;&gt;Boomerang Calendar&lt;/a&gt;, trying to make the ping-pong that is meeting scheduling over email a little bit less painful. Baydin are an awesome bunch of folks (who deserve their own blog post), and I&#39;ve been thinking about &lt;a href=&quot;/too-cool-for-tungleme/&quot;&gt;scheduling as a problem&lt;/a&gt; before, so the gig has been pretty fantastic.&lt;/p&gt;
+&lt;p&gt;I’m currently spending 3 days a week working freelance for &lt;a href=&quot;http://baydin.com&quot;&gt;Baydin&lt;/a&gt;, the creators of the &lt;a href=&quot;http://boomeranggmail.com&quot;&gt;Boomerang&lt;/a&gt; Gmail plug-in.  I’m working on &lt;a href=&quot;http://boomerangcalendar.com&quot;&gt;Boomerang Calendar&lt;/a&gt;, trying to make the ping-pong that is meeting scheduling over email a little bit less painful. Baydin are an awesome bunch of folks (who deserve their own blog post), and I’ve been thinking about &lt;a href=&quot;/too-cool-for-tungleme/&quot;&gt;scheduling as a problem&lt;/a&gt; before, so the gig has been pretty fantastic.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;If you&#39;ve got feedback or ideas for Boomerang Calendar (or want to try it out), &lt;a href=&quot;mailto:alexey@alexeymk.com&quot;&gt;let me know!&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;If you&#39;re in need of a freelancer and want a full-stack generalist who loves product and has some experience with &lt;a href=&quot;/tag/hackathons&quot;&gt;hackathons&lt;/a&gt;: &lt;a href=&quot;mailto:alexey+muleconsulting@alexeymk.com&quot;&gt;that, also, is me&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If you’ve got feedback or ideas for Boomerang Calendar (or want to try it out), &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#064;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#109;&amp;#107;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;let me know!&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;If you’re in need of a freelancer and want a full-stack generalist who loves product and has some experience with &lt;a href=&quot;/tag/hackathons&quot;&gt;hackathons&lt;/a&gt;: &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#043;&amp;#109;&amp;#117;&amp;#108;&amp;#101;&amp;#099;&amp;#111;&amp;#110;&amp;#115;&amp;#117;&amp;#108;&amp;#116;&amp;#105;&amp;#110;&amp;#103;&amp;#064;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#109;&amp;#107;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;that, also, is me&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-
 </content>
  </entry>
  
@@ -444,151 +480,142 @@ Steve&lt;/p&gt;&lt;/blockquote&gt;
    <link href="http://alexeymk.com/2012/10/12/hackathon-organizers-hacks.html"/>
    <updated>2012-10-12T12:48:10-07:00</updated>
    <id>http://alexeymk.com/2012/10/12/hackathon-organizers-hacks</id>
-   <content type="html">&lt;p&gt;Hackathons are &lt;a href=&quot;http://www.wired.com/magazine/2012/02/ff_hackathons/&quot;&gt;a thing&lt;/a&gt; now. Over the past two years I&#39;ve had the benefit of participating, helping organize, watching demos for, and (soon) judging more than 15 hackathons.  One of my favorite things about the hackathon community has been how quickly best practices have spread from organizer to organizer.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Hackathons are &lt;a href=&quot;http://www.wired.com/magazine/2012/02/ff_hackathons/&quot;&gt;a thing&lt;/a&gt; now. Over the past two years I’ve had the benefit of participating, helping organize, watching demos for, and (soon) judging more than 15 hackathons.  One of my favorite things about the hackathon community has been how quickly best practices have spread from organizer to organizer.&lt;/p&gt;
 
-&lt;p&gt;To that end, here are some &quot;hackathon hacks&quot; I&#39;ve noticed or come up with over the past few years. If you&#39;re working on putting together your next hackathon, I hope they help!&lt;/p&gt;
+&lt;p&gt;To that end, here are some “hackathon hacks” I’ve noticed or come up with over the past few years. If you’re working on putting together your next hackathon, I hope they help!&lt;/p&gt;
 
-&lt;h1&gt;Events around the hackathon&lt;/h1&gt;
+&lt;h1 id=&quot;events-around-the-hackathon&quot;&gt;Events around the hackathon&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_1.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Pre-Hackathon Tutorials&lt;/strong&gt;. Especially for a college hackathon,  something like or git/python/html-css/javascript for beginners, and particular new interesting frameworks/tech for hackathon veterans are a great way to get the word out and build confidence. You&#39;re not going to teach anybody Ruby on Rails in sixty minutes, so consider the tutorials to be a chance to plant seeds and offer a technical head start.  Newbies appreciate having at least some initial guidance and a rough path they can continue to take during the hackathon. Experienced hackers get a sense of what kinds of things might be fun to explore during the hackathon. I&#39;ve seen PennApps put these together the week before and the Friday afternoon of the hackathon, both to solid attendance.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;. Greylock Hackathon from this summer (and I&#39;m sure others before them) have explored the possibility of having Tech luminaries drop by and take meetings during the hackathon. The best time for office hours is probably about half or two-thirds of the way through the event, once participants already have a sense of what they&#39;re working on but are not so close to the end that they only have time for small changes.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;h1&gt;Hack Breaks&lt;/h1&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_swag.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_1.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Swag Raffles&lt;/strong&gt; I picked this idea up from Philly Game Jam in 2010, and it was deployed to great success throughout various PennAppses.  The basic premise is simple: offer participants a chance to win free stuff given out by sponsors if they meet some criteria (usually, being up late or answering a trivia question).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pre-Hackathon Tutorials&lt;/strong&gt;. Especially for a college hackathon,  something like or git/python/html-css/javascript for beginners, and particular new interesting frameworks/tech for hackathon veterans are a great way to get the word out and build confidence. You’re not going to teach anybody Ruby on Rails in sixty minutes, so consider the tutorials to be a chance to plant seeds and offer a technical head start.  Newbies appreciate having at least some initial guidance and a rough path they can continue to take during the hackathon. Experienced hackers get a sense of what kinds of things might be fun to explore during the hackathon. I’ve seen PennApps put these together the week before and the Friday afternoon of the hackathon, both to solid attendance.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;. Greylock Hackathon from this summer (and I’m sure others before them) have explored the possibility of having Tech luminaries drop by and take meetings during the hackathon. The best time for office hours is probably about half or two-thirds of the way through the event, once participants already have a sense of what they’re working on but are not so close to the end that they only have time for small changes.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h1 id=&quot;hack-breaks&quot;&gt;Hack Breaks&lt;/h1&gt;
 
-&lt;p&gt;Originally, this was (largely) a ploy to get students to have a reason to stay late, since drawings occurred every hour from midnight to 6AM, and the prizes (as well as your odds) got better the later you stayed. Since then, it&#39;s become a great way to distribute swag available in limited quantities, get participants to follow you on twitter (by announcing winners there), and generally create a fun environment for everybody. I worry about  the impact of too many disruptions, but using something like Twitter to announce winners (and setting a time limit to collect) has mitigated the concern.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_swag.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Late Night Athletics&lt;/strong&gt; There&#39;s a kind of euphoria I tend to get around 2 or 3 in the morning, after spending more time than is reasonable working and knowing that the end is not yet in sight.  Euphoria with a good mix of fatigue.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Swag Raffles&lt;/strong&gt; I picked this idea up from Philly Game Jam in 2010, and it was deployed to great success throughout various PennAppses.  The basic premise is simple: offer participants a chance to win free stuff given out by sponsors if they meet some criteria (usually, being up late or answering a trivia question).&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;p&gt;Athletics help.  Taking a bunch of friends and strangers and going &quot;alright, now let&#39;s do something silly&quot; is fun.  PennApps has a midnight run tradition that is exactly what it sounds like: at midnight (really, closer to 1:20 AM) everybody who is up for it heads out and goes for a 10-minute jog around campus, jeans and not-quite-running shoes and everything. Tis a blast; highlights include the time when we jogged Dave from Andreessen Horowitz back to his hotel.  More recently, a 3AM game of ultimate frisbee (complete with glow-in-the-dark frisbee) made me happy the organizers had not neglected gatorade a drink option.  I&#39;ve also heard of impromptu juggling lessons.&lt;/p&gt;
-
-&lt;p&gt;Late night athletic events have the benefit of being both fun and sufficiently out of place to be memorable.  Plus, it&#39;s nice to get out and stretch your legs.&lt;/p&gt;
+&lt;p&gt;Originally, this was (largely) a ploy to get students to have a reason to stay late, since drawings occurred every hour from midnight to 6AM, and the prizes (as well as your odds) got better the later you stayed. Since then, it’s become a great way to distribute swag available in limited quantities, get participants to follow you on twitter (by announcing winners there), and generally create a fun environment for everybody. I worry about  the impact of too many disruptions, but using something like Twitter to announce winners (and setting a time limit to collect) has mitigated the concern.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt; Bubble Tea and other excesses &lt;/strong&gt;  Some of the more fun food hacks/surprises involve ordering several gallons of Bubble Tea (at PennApps), Red Bull Jello Shots (really) at the Greylock Hackathon, and late night cheese-steaks (via Venmo at now-every PennApps), and Ice Cream Sandwiches (HackNY).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Late Night Athletics&lt;/strong&gt; There’s a kind of euphoria I tend to get around 2 or 3 in the morning, after spending more time than is reasonable working and knowing that the end is not yet in sight.  Euphoria with a good mix of fatigue.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Athletics help.  Taking a bunch of friends and strangers and going “alright, now let’s do something silly” is fun.  PennApps has a midnight run tradition that is exactly what it sounds like: at midnight (really, closer to 1:20 AM) everybody who is up for it heads out and goes for a 10-minute jog around campus, jeans and not-quite-running shoes and everything. Tis a blast; highlights include the time when we jogged Dave from Andreessen Horowitz back to his hotel.  More recently, a 3AM game of ultimate frisbee (complete with glow-in-the-dark frisbee) made me happy the organizers had not neglected gatorade a drink option.  I’ve also heard of impromptu juggling lessons.&lt;/p&gt;
 
-&lt;p&gt;I&#39;m still waiting for somebody to cater a pancake/crepe maker to make breakfast crepes on demand, for the morning of demos. There&#39;s probably no better sign of how hackathon-spoiled I am that I&#39;m waiting for that.&lt;/p&gt;
+&lt;p&gt;Late night athletic events have the benefit of being both fun and sufficiently out of place to be memorable.  Plus, it’s nice to get out and stretch your legs.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;** Bubble Tea and other excesses **  Some of the more fun food hacks/surprises involve ordering several gallons of Bubble Tea (at PennApps), Red Bull Jello Shots (really) at the Greylock Hackathon, and late night cheese-steaks (via Venmo at now-every PennApps), and Ice Cream Sandwiches (HackNY).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m still waiting for somebody to cater a pancake/crepe maker to make breakfast crepes on demand, for the morning of demos. There’s probably no better sign of how hackathon-spoiled I am that I’m waiting for that.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; HackNY and Michigan email/tweet me to provide photo evidence of said crepes/pancakes. I love the internet.&lt;/p&gt;
 
 &lt;p&gt;HackNY Fall 2012:
-&lt;a href=&quot;http://www.flickr.com/photos/hackny/8048192463/&quot; title=&quot;fall 2012 hackNY student hackathon by hackNY, on Flickr&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8459/8048192463_6d9d15ab5e_z.jpg&quot; width=&quot;427&quot; height=&quot;640&quot; alt=&quot;fall 2012 hackNY student hackathon&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;http://www.flickr.com/photos/hackny/8048192463/&quot; title=&quot;fall 2012 hackNY student hackathon by hackNY, on Flickr&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8459/8048192463_6d9d15ab5e_z.jpg&quot; width=&quot;427&quot; height=&quot;640&quot; alt=&quot;fall 2012 hackNY student hackathon&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Michigan&#39;s Learn To Hack:
-&lt;img src=&quot;/images/michigan_pancakes.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;Michigan’s Learn To Hack:
+&lt;img src=&quot;/images/michigan_pancakes.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;h1&gt;Logistics Hacks&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Catering&lt;/strong&gt; Figuring out catering for a hackathon ends up being rather non-trivial; the location you&#39;re having may have union or contract rules that say you can&#39;t bring in outside vendors, and traditional catering options are expensive and kind of &#39;meh&#39; (no, we don&#39;t want another sandwich plate).&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Some of the best food I&#39;ve seen at hackathons comes from working with existing favorite choices, from bringing in popular food carts or popular choices from campus or the city, and getting a bulk discount based on the traditional pitch that you are exposing desirable customers to their menu.  I&#39;ve also heard that Chipotle and Red Bull representatives (amongst others) don&#39;t have a problem providing some amount of free or heavily discounted merchandise to hackathon organizers.&lt;/p&gt;
-
-&lt;p&gt;Provide variety throughout the event, provide (reasonably healthy) and vegetarian options.  Whatever you do, don&#39;t order Pizza. Not even once. OK, maybe once if you get desperate.&lt;/p&gt;
+&lt;h1 id=&quot;logistics-hacks&quot;&gt;Logistics Hacks&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Room For Improvement:&lt;/strong&gt; Organizers&#39; Sleep Schedules. PennApps recently moved to a &quot;who sleeps on what night&quot; rotation, meaning that event organizers will likely get a reasonable night&#39;s sleep on the first night or the second. This is certainly better than the previous ordeal (organizers sleep when they can no longer stay awake) but can still lead to an organizing team in charge of demos at less than 100%.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Catering&lt;/strong&gt; Figuring out catering for a hackathon ends up being rather non-trivial; the location you’re having may have union or contract rules that say you can’t bring in outside vendors, and traditional catering options are expensive and kind of ‘meh’ (no, we don’t want another sandwich plate).&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Some of the best food I’ve seen at hackathons comes from working with existing favorite choices, from bringing in popular food carts or popular choices from campus or the city, and getting a bulk discount based on the traditional pitch that you are exposing desirable customers to their menu.  I’ve also heard that Chipotle and Red Bull representatives (amongst others) don’t have a problem providing some amount of free or heavily discounted merchandise to hackathon organizers.&lt;/p&gt;
 
-&lt;p&gt;Here&#39;s my proposal: break the organizing team into two: a Hackerspace team responsible for during-the-hacking events, and an Event team in charge of everything surrounding the hacking: Kickoff and API Tutorials before the start, and the Demo Session and Awards after.  A dedicated event team means folks that have gotten a ton of sleep before each event and are wide awake to move quickly and deal with any issues that come up at the last minute.  I&#39;d love to hear from anybody that has an approach they&#39;ve tried and liked, and that works.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_drinks.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;Provide variety throughout the event, provide (reasonably healthy) and vegetarian options.  Whatever you do, don’t order Pizza. Not even once. OK, maybe once if you get desperate.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Room for Improvement&lt;/strong&gt;: Drinks Vendors.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Room For Improvement:&lt;/strong&gt; Organizers’ Sleep Schedules. PennApps recently moved to a “who sleeps on what night” rotation, meaning that event organizers will likely get a reasonable night’s sleep on the first night or the second. This is certainly better than the previous ordeal (organizers sleep when they can no longer stay awake) but can still lead to an organizing team in charge of demos at less than 100%.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Here’s my proposal: break the organizing team into two: a Hackerspace team responsible for during-the-hacking events, and an Event team in charge of everything surrounding the hacking: Kickoff and API Tutorials before the start, and the Demo Session and Awards after.  A dedicated event team means folks that have gotten a ton of sleep before each event and are wide awake to move quickly and deal with any issues that come up at the last minute.  I’d love to hear from anybody that has an approach they’ve tried and liked, and that works.&lt;/p&gt;
 
-&lt;p&gt;Anybody who&#39;s had a summer internship at a big-enough, &#39;tech&#39; company knows about the contents of the Facebook/Google/Twitter beverage fridge, full of fresh fruit juices and various ice teas and all sorts of goodness. Since the first PennApps, I did my best to replicate that experience, to make (by any means necessary) to make the point that there were some benefits to working at a startup, and look: here they are, an always stocked, no limits free fridge of goodness.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_drinks.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Room for Improvement&lt;/strong&gt;: Drinks Vendors.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anybody who’s had a summer internship at a big-enough, ‘tech’ company knows about the contents of the Facebook/Google/Twitter beverage fridge, full of fresh fruit juices and various ice teas and all sorts of goodness. Since the first PennApps, I did my best to replicate that experience, to make (by any means necessary) to make the point that there were some benefits to working at a startup, and look: here they are, an always stocked, no limits free fridge of goodness.&lt;/p&gt;
 
 &lt;p&gt;I learned that getting a see-through beverage fridge, as well as actually obtaining the necessary drinks for the fridge (Honest Tea, anybody) is a bit of a challenge.  Those types of fridges are a headache to rent, and Honest Tea is just not for sale at Costco.&lt;/p&gt;
 
-&lt;p&gt;I&#39;ve since learned that &lt;a href=&quot;http://osullivanvending.com/&quot;&gt;O&#39;Sullivan Vending&lt;/a&gt; provides drink catering to Google, Facebook, and most tech companies in the Bay Area.  They are expanding to other areas, though not quickly enough.&lt;/p&gt;
+&lt;p&gt;I’ve since learned that &lt;a href=&quot;http://osullivanvending.com/&quot;&gt;O’Sullivan Vending&lt;/a&gt; provides drink catering to Google, Facebook, and most tech companies in the Bay Area.  They are expanding to other areas, though not quickly enough.&lt;/p&gt;
 
-&lt;p&gt;If anybody has seen any hackathon do an awesome job of their drinks catering, from the fridge to the selection to the constant availability, let me know - I&#39;d love to learn and share how.&lt;/p&gt;
+&lt;p&gt;If anybody has seen any hackathon do an awesome job of their drinks catering, from the fridge to the selection to the constant availability, let me know - I’d love to learn and share how.&lt;/p&gt;
 
-&lt;h2&gt;Demo Hacks&lt;/h2&gt;
+&lt;h2 id=&quot;demo-hacks&quot;&gt;Demo Hacks&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_2.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_2.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;With a seemingly endless supply of teams hoping to demo and an exhausted audience, lots and lots of things are continuously trying to go wrong.  Some hacks towards making demos run more smoothly:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Demoing mobile apps&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Demoing mobile apps&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Ideally, obtain a document projector (like back in middle school) a few days before the event, set the focus (once) properly, and put up a big sign saying “don’t touch this knob.”  Explain this principle to demoers, and make it trivial to switch one of the on-screen views to the mobile projector.&lt;/p&gt;
 
-&lt;p&gt;Ideally, obtain a document projector (like back in middle school) a few days before the event, set the focus (once) properly, and put up a big sign saying &quot;don&#39;t touch this knob.&quot;  Explain this principle to demoers, and make it trivial to switch one of the on-screen views to the mobile projector.&lt;/p&gt;
+&lt;p&gt;If not, I’ve had a surprising amount of success with taking the demo laptop and using it’s webcam to show off the mobile experience. It’s hacky, and should be prepared way beforehand, but it works.&lt;/p&gt;
 
-&lt;p&gt;If not, I&#39;ve had a surprising amount of success with taking the demo laptop and using it&#39;s webcam to show off the mobile experience. It&#39;s hacky, and should be prepared way beforehand, but it works.&lt;/p&gt;
-
-&lt;p&gt;Emulators are a bad idea; they involve plugging in somebody else&#39;s laptop into the projector.  Pain this way lies.&lt;/p&gt;
+&lt;p&gt;Emulators are a bad idea; they involve plugging in somebody else’s laptop into the projector.  Pain this way lies.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Preparing teams for their demo:&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Preparing teams for their demo:&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;blockquote&gt;
+  &lt;p&gt;Folks, X by Y is the resolution you’re going to demo on. Better be ready.&lt;/p&gt;
 
-&lt;blockquote&gt;&lt;p&gt;Folks, X by Y is the resolution you&#39;re going to demo on. Better be ready.&lt;/p&gt;
+  &lt;p&gt;Don’t rely on Wi-Fi working. There’s no place like 127.0.0.1.&lt;/p&gt;
 
-&lt;p&gt;Don&#39;t rely on Wi-Fi working. There&#39;s no place like 127.0.0.1.&lt;/p&gt;
+  &lt;p&gt;In general, if you have any special requirements let the organizers know way in advance.&lt;/p&gt;
 
-&lt;p&gt;In general, if you have any special requirements let the organizers know way in advance.&lt;/p&gt;
-
-&lt;p&gt;No using your own laptop unless you absolutely, unequivocally, have no choice whatsoever (IE, desktop app).  If so, let the organizers know in advance and we&#39;ll see how we can accommodate you.&lt;/p&gt;&lt;/blockquote&gt;
+  &lt;p&gt;No using your own laptop unless you absolutely, unequivocally, have no choice whatsoever (IE, desktop app).  If so, let the organizers know in advance and we’ll see how we can accommodate you.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Ideally, have a second (identical) set-up in a nearby room for teams to practice on a few minutes before they demo, as part of the demo queue.  If not, at least make the demo setup available morning-of the demos and encourage teams taking a chance to practice.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_3.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_3.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Demo Order&lt;/strong&gt;  Use things like HackerLeague (or just Google Forms) to organize the demo submissions and order.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Demo Order&lt;/strong&gt;  Use things like HackerLeague (or just Google Forms) to organize the demo submissions and order.&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;p&gt;Does anybody have to leave early? Put them in front. Otherwise, randomize demo order.&lt;/p&gt;
 
 &lt;p&gt;Publicize demo order ASAP, and make it obvious where it is. It really helps teams to know where they are in the queue in case any of them sneak out to the bathroom, etc..&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_judging.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/pennapps2012_judging.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Needs Improvement:&lt;/strong&gt; Demoing with &gt;50 teams
-If you have more than 30 or so teams demoing (and especially more than 50), consider exploring ways to cut down to either about 30 demos or about 15 demos with judge interaction.  I&#39;ve heard about the LinkedIn Intern hackathons doing this well, and Greylock Hackathon and AngelHack both did a good job as well.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Needs Improvement:&lt;/strong&gt; Demoing with &amp;gt;50 teams
+If you have more than 30 or so teams demoing (and especially more than 50), consider exploring ways to cut down to either about 30 demos or about 15 demos with judge interaction.  I’ve heard about the LinkedIn Intern hackathons doing this well, and Greylock Hackathon and AngelHack both did a good job as well.&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;p&gt;The worry with multi-tiered judging is this: imagine you spent your entire weekend sleepless.  Your implicit reward, prizes or not, is that a hundred or more people will get to see what you did and, prizes or not, applaud your effort.  Instead, you go into a tiny closed conference with 4 older-looking folks who listen to you for two minutes and then wait for an email with the list of finalists - a list you&#39;re not on.&lt;/p&gt;
+&lt;p&gt;The worry with multi-tiered judging is this: imagine you spent your entire weekend sleepless.  Your implicit reward, prizes or not, is that a hundred or more people will get to see what you did and, prizes or not, applaud your effort.  Instead, you go into a tiny closed conference with 4 older-looking folks who listen to you for two minutes and then wait for an email with the list of finalists - a list you’re not on.&lt;/p&gt;
 
 &lt;p&gt;That sucks.&lt;/p&gt;
 
-&lt;p&gt;Multi-tiered demoing needs to be done in a way that recognizes the work hackers put in.  I don&#39;t know how to do that yet; having three demo auditoriums for the first round feels a bit of a logistical mess. Open for ideas - email me on this one.&lt;/p&gt;
+&lt;p&gt;Multi-tiered demoing needs to be done in a way that recognizes the work hackers put in.  I don’t know how to do that yet; having three demo auditoriums for the first round feels a bit of a logistical mess. Open for ideas - email me on this one.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Updates:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;A couple of minor fixes. Thanks to DJ, Ayaka, Jennifer and Jonathan!&lt;/li&gt;
-&lt;li&gt;See the &lt;a href=&quot;http://news.ycombinator.com/item?id=4681304&quot;&gt;HN Commentary&lt;/a&gt;, for discussion on Multi-Tier Voting and charging attendees; in particular, Greg (from AngelHack)&#39;s post on his experience &lt;a href=&quot;http://news.ycombinator.com/item?id=4682191&quot;&gt;fund-raising for grown-up (non-college) hackathon&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Check out &lt;a href=&quot;/tag/hackathons&quot;&gt;my other hackathon posts&lt;/a&gt;, and are curious about advice on fundraising and timing, and lots of other goodness.&lt;/li&gt;
+  &lt;li&gt;A couple of minor fixes. Thanks to DJ, Ayaka, Jennifer and Jonathan!&lt;/li&gt;
+  &lt;li&gt;See the &lt;a href=&quot;http://news.ycombinator.com/item?id=4681304&quot;&gt;HN Commentary&lt;/a&gt;, for discussion on Multi-Tier Voting and charging attendees; in particular, Greg (from AngelHack)’s post on his experience &lt;a href=&quot;http://news.ycombinator.com/item?id=4682191&quot;&gt;fund-raising for grown-up (non-college) hackathon&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Check out &lt;a href=&quot;/tag/hackathons&quot;&gt;my other hackathon posts&lt;/a&gt;, and are curious about advice on fundraising and timing, and lots of other goodness.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content>
@@ -599,9 +626,9 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <link href="http://alexeymk.com/2012/08/26/labs-manifesto--how-pennapps-labs-started.html"/>
    <updated>2012-08-26T14:38:18-07:00</updated>
    <id>http://alexeymk.com/2012/08/26/labs-manifesto--how-pennapps-labs-started</id>
-   <content type="html">&lt;h3&gt;I still remember the first project I ever worked on that went viral.&lt;/h3&gt;
+   <content type="html">&lt;h3 id=&quot;i-still-remember-the-first-project-i-ever-worked-on-that-went-viral&quot;&gt;I still remember the first project I ever worked on that went viral.&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://pennapps.com&quot;&gt;Cobol on Rails&lt;/a&gt; was a re-design of the Penn&#39;s online Course Review system. The original was written as a Senior Design project a decade ago and kept on life support by the University IT.  It was (by the time we got to it) rather outdated.  It looked like this.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://pennapps.com&quot;&gt;Cobol on Rails&lt;/a&gt; was a re-design of the Penn’s online Course Review system. The original was written as a Senior Design project a decade ago and kept on life support by the University IT.  It was (by the time we got to it) rather outdated.  It looked like this.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/original_pcr.png&quot; alt=&quot;Original PCR&quot; /&gt;&lt;/p&gt;
 
@@ -609,29 +636,30 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
 
 &lt;p&gt;We worked weekend after weekend, in 12-hour sprints, learning things like what the hell a border-radius was.  I still recall var_dump as a fond friend; good times.&lt;/p&gt;
 
-&lt;p&gt;It worked.  I emailed a link the Course Review folks.  &quot;We&#39;re done, check it out!&quot;  A few of the others emailed their friends.&lt;/p&gt;
+&lt;p&gt;It worked.  I emailed a link the Course Review folks.  “We’re done, check it out!”  A few of the others emailed their friends.&lt;/p&gt;
 
 &lt;p&gt;A few days later, we were on &lt;a href=&quot;http://underthebutton.com&quot;&gt;Under the Button&lt;/a&gt;, a well-read student newspaper blog.  The initial emails had gone viral as students started to pick their next classes., leading to a couple of thousand unique visitors a day. Every minute between classes that day was spent glued to email, responding to feedback and answering questions. My heart was racing.&lt;/p&gt;
 
-&lt;p&gt;The Course Review folks emailed us too. &quot;I can&#39;t believe you guys did this,&quot; they wrote.  &quot;You promised not to start a competitor!  The Dean is not happy.&quot;&lt;/p&gt;
+&lt;p&gt;The Course Review folks emailed us too. “I can’t believe you guys did this,” they wrote.  “You promised not to start a competitor!  The Dean is not happy.”&lt;/p&gt;
 
-&lt;p&gt;We had to password-protect the thing (the password was &#39;password&#39;, and you could tell it you viewed the source).  Students went back to using the crappy old site, and the Course Review folks were mad enough at us to not take any of our advice about UX improvements seriously.  The experience stuck with me - the substantial improvement we made, and the politics that brought back the status quo.&lt;/p&gt;
+&lt;p&gt;We had to password-protect the thing (the password was ‘password’, and you could tell it you viewed the source).  Students went back to using the crappy old site, and the Course Review folks were mad enough at us to not take any of our advice about UX improvements seriously.  The experience stuck with me - the substantial improvement we made, and the politics that brought back the status quo.&lt;/p&gt;
 
-&lt;h3&gt;I was friends with Cynthia from Penn&#39;s Student Government.&lt;/h3&gt;
+&lt;h3 id=&quot;i-was-friends-with-cynthia-from-penns-student-government&quot;&gt;I was friends with Cynthia from Penn’s Student Government.&lt;/h3&gt;
+&lt;p&gt;She was spending the summer working on student textbooks.  The problem was this: Penn’s bookstore made absurd margins buying back used books.&lt;/p&gt;
 
-&lt;p&gt;She was spending the summer working on student textbooks.  The problem was this: Penn&#39;s bookstore made absurd margins buying back used books.&lt;/p&gt;
+&lt;p&gt;The old, student-run book exchange (BetterThanTheBookstore.com) had closed.  In the summer of 2010, following Princeton’s lead, Penn’s Student Government decided to start their own Book Exchange, &lt;a href=&quot;http://pennua.org/textbook&quot;&gt;Penn Book Bazaar&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;The old, student-run book exchange (BetterThanTheBookstore.com) had closed.  In the summer of 2010, following Princeton&#39;s lead, Penn&#39;s Student Government decided to start their own Book Exchange, &lt;a href=&quot;http://pennua.org/textbook&quot;&gt;Penn Book Bazaar&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt; Cynthia &lt;/strong&gt;: &quot;You know Django, can you make this thing work for us?&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;** Cynthia **: “You know Django, can you make this thing work for us?”&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;I had no desire whatsoever to be a peon for the Student Government.  They went ahead and did it on their own. The result was simple but not ugly and pretty successful.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/pbb.png&quot; alt=&quot;Penn Book Bazaar&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Marketing isn&#39;t so hard if you can email the entire school whenever you&#39;d like.&lt;/p&gt;
+&lt;p&gt;Marketing isn’t so hard if you can email the entire school whenever you’d like.&lt;/p&gt;
 
-&lt;h3&gt;Meanwhile, we hosted our first undergraduate hackathon, &lt;a href=&quot;http://pennapps.com&quot;&gt;PennApps&lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;meanwhile-we-hosted-our-first-undergraduate-hackathon-pennappshttppennappscom&quot;&gt;Meanwhile, we hosted our first undergraduate hackathon, &lt;a href=&quot;http://pennapps.com&quot;&gt;PennApps&lt;/a&gt;.&lt;/h3&gt;
 
 &lt;p&gt;The winning team built an app called &lt;a href=&quot;http://www.androidzoom.com/android_applications/productivity/seasprint_lapw.html&quot;&gt;SEASPrint&lt;/a&gt;, which let students print anywhere in the engineering school directly from their phone.&lt;/p&gt;
 
@@ -639,30 +667,28 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
 
 &lt;p&gt;SEASPrint was awesome, and was more than a prototype - it worked. I used it all throughout college. With time, it would probably start to fall over unless somebody made sure it was up-to-date, and would be forgotten unless discoverable.  But the team had no particular interest in supporting it long term. That sucked.&lt;/p&gt;
 
-&lt;h2&gt;Eventually, it clicked&lt;/h2&gt;
+&lt;h2 id=&quot;eventually-it-clicked&quot;&gt;Eventually, it clicked&lt;/h2&gt;
 
-&lt;p&gt;Campus tech does not have to suck. Apps do not have to become outdated or unsupported. Developers don&#39;t have to quarrel with the administration.&lt;/p&gt;
+&lt;p&gt;Campus tech does not have to suck. Apps do not have to become outdated or unsupported. Developers don’t have to quarrel with the administration.&lt;/p&gt;
 
-&lt;p&gt;Working on campus tech can be rewarding, and deserving of talented engineers&#39; time. Building something your friends use feels great.&lt;/p&gt;
+&lt;p&gt;Working on campus tech can be rewarding, and deserving of talented engineers’ time. Building something your friends use feels great.&lt;/p&gt;
 
 &lt;p&gt;And so, we started &lt;a href=&quot;http://labs.pennapps.com&quot;&gt;PennApps Labs&lt;/a&gt;, a student-run development shop that creates, adopts and maintains student-run campus tech.
 &lt;img src=&quot;/images/labs_logo.png&quot; alt=&quot;Labs Logo&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt; PennApps Labs in a nutshell &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** PennApps Labs in a nutshell **&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;PennApps Labs pays ~5 students a semester TA-like wages to create new applications or update existing ones.&lt;/li&gt;
-&lt;li&gt;Funding comes from the school&#39;s administration and Student Government, which makes cooperation with existing organizations substantially less painful.&lt;/li&gt;
-&lt;li&gt;Other successful student-created projects are supported and promoted, with a potential goal of adoption. Labs helps good projects from becoming stale and lost in the sands of time.&lt;/li&gt;
-&lt;li&gt;PennApps Labs projects strive to be open.  That means open-sourcing whenever possible, accepting and soliciting community contributions, and establishing open APIs for any data created as a side-effect.&lt;/li&gt;
+  &lt;li&gt;PennApps Labs pays ~5 students a semester TA-like wages to create new applications or update existing ones.&lt;/li&gt;
+  &lt;li&gt;Funding comes from the school’s administration and Student Government, which makes cooperation with existing organizations substantially less painful.&lt;/li&gt;
+  &lt;li&gt;Other successful student-created projects are supported and promoted, with a potential goal of adoption. Labs helps good projects from becoming stale and lost in the sands of time.&lt;/li&gt;
+  &lt;li&gt;PennApps Labs projects strive to be open.  That means open-sourcing whenever possible, accepting and soliciting community contributions, and establishing open APIs for any data created as a side-effect.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;labs-readme&quot;&gt;Labs README&lt;/h3&gt;
+&lt;p&gt;I believe Labs is a model worth forking. The problems Penn’s campus tech faces are not substantially different from the problems at scores of other schools.  The sorts of problems that Labs aims to fix benefit from outside collaboration and contributions.&lt;/p&gt;
 
-&lt;h3&gt;Labs README&lt;/h3&gt;
-
-&lt;p&gt;I believe Labs is a model worth forking. The problems Penn&#39;s campus tech faces are not substantially different from the problems at scores of other schools.  The sorts of problems that Labs aims to fix benefit from outside collaboration and contributions.&lt;/p&gt;
-
-&lt;p&gt;I am working on a README that should serve as a guide for starting a sister organization at another school. Drop me a line if you&#39;d be interested in trying something similar are your school, and I&#39;ll make it a priority.&lt;/p&gt;
+&lt;p&gt;I am working on a README that should serve as a guide for starting a sister organization at another school. Drop me a line if you’d be interested in trying something similar are your school, and I’ll make it a priority.&lt;/p&gt;
 </content>
  </entry>
  
@@ -673,32 +699,30 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <id>http://alexeymk.com/2012/08/12/fundersclub---getting-crowdfunding-right</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Warning: Boris and Alex are friends and former classmates. I am utterly biased.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2&gt;Crowdfunding doesn&#39;t work.&lt;/h2&gt;
+&lt;h2 id=&quot;crowdfunding-doesnt-work&quot;&gt;Crowdfunding doesn’t work.&lt;/h2&gt;
+&lt;p&gt;It just doesn’t.  You can’t get the top-tier guys to crowd-raise.  “What for? It’s just more complicated.”  If you can’t get the top-tier companies, you can’t get the companies that follow whatever top-tier companies do.  You end up with wanterpreneurs tricking Grandmas out of their paychecks. You’ve already lost.&lt;/p&gt;
 
-&lt;p&gt;It just doesn&#39;t.  You can&#39;t get the top-tier guys to crowd-raise.  &quot;What for? It&#39;s just more complicated.&quot;  If you can&#39;t get the top-tier companies, you can&#39;t get the companies that follow whatever top-tier companies do.  You end up with wanterpreneurs tricking Grandmas out of their paychecks. You&#39;ve already lost.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/grandma-paycheck.jpg&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/grandma-paycheck.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;As a result, Crowdfunding-ish startups have been tiptoeing around the idea. &lt;a href=&quot;http://angelist.com&quot;&gt;AngelList&lt;/a&gt; will make introductions but not facilitate the financial exchange. &lt;a href=&quot;http://kickstarter.com&quot;&gt;KickStarter&lt;/a&gt; focuses on sponsorship rewards, but stays away from offering equity.  &lt;a href=&quot;http://secondmarket.com&quot;&gt;SecondMarket&lt;/a&gt; works with later-stage companies and requires 6-figure minimums.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt; Tis a shame. &lt;/em&gt;&lt;/strong&gt; A world with crowd-funding for early stage startups would be pretty fun.  Imagine a company being able to reach out to its early users and saying &quot;We&#39;re starting to raise our next round of funding, and you&#39;re welcome to be part of it.&quot;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;** Tis a shame. **&lt;/em&gt; A world with crowd-funding for early stage startups would be pretty fun.  Imagine a company being able to reach out to its early users and saying “We’re starting to raise our next round of funding, and you’re welcome to be part of it.”&lt;/p&gt;
 
-&lt;p&gt;Nobody does that, though - the legal hassle of figuring out what it would take is too great and takes time away from what the company actually does.  Crowdfunding doesn&#39;t work.&lt;/p&gt;
+&lt;p&gt;Nobody does that, though - the legal hassle of figuring out what it would take is too great and takes time away from what the company actually does.  Crowdfunding doesn’t work.&lt;/p&gt;
 
-&lt;h2&gt;Except that it does.&lt;/h2&gt;
-
+&lt;h2 id=&quot;except-that-it-does&quot;&gt;Except that it does.&lt;/h2&gt;
 &lt;p&gt;Boris and Alex of &lt;a href=&quot;http://thefundersclub.com&quot;&gt;FundersClub&lt;/a&gt; have found a way around the credibility problem, by having it to start with.  As part of the summer 2012 YCombinator class, the team has the implicit (and explicit) endorsement of Paul Graham, godfather of legit startups.  The two themselves have &lt;a href=&quot;https://thefundersclub.com/site/about/&quot;&gt;a rather impressive background&lt;/a&gt; As a result, the &lt;a href=&quot;https://thefundersclub.com/investments/&quot;&gt;initial 5 companies&lt;/a&gt; raising money on FundersClub are &lt;a href=&quot;http://pandodaily.com/2012/08/01/eight-y-combinator-companies-to-watch/&quot;&gt;some of the most interesting startups&lt;/a&gt; of the group.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/startuptoprow.png&quot;&gt;&lt;/img&gt;
-&lt;img src=&quot;/images/startupbottomrow.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/startuptoprow.png&quot; /&gt;&amp;lt;/img&amp;gt;
+&lt;img src=&quot;/images/startupbottomrow.png&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;These are the cream of the crop.  Most are likely to be over-subscribed come Demo Day. As an investor, if you aren&#39;t well connected to YCombinator (and probably even if you are), you&#39;ll be stuck on the sidelines wishing you had a way into their seed rounds.&lt;/p&gt;
+&lt;p&gt;These are the cream of the crop.  Most are likely to be over-subscribed come Demo Day. As an investor, if you aren’t well connected to YCombinator (and probably even if you are), you’ll be stuck on the sidelines wishing you had a way into their seed rounds.&lt;/p&gt;
 
 &lt;p&gt;And with FundersClub, &lt;strong&gt;you do&lt;/strong&gt;.  The two have spent several months figuring out how to make everything work legally.  Details are &lt;a href=&quot;https://thefundersclub.com/site/howitworks/&quot;&gt;on their website&lt;/a&gt;, but briefly: when you invest in a company, you become a limited partner in a FundersClub investment fund which then in turn invests in the company.  As in traditional angel investments, accreditation is required (a minimum of $200k income or $1MM in assets).  No grandma paychecks allowed, no dependency on the JOBS act.&lt;/p&gt;
 
 &lt;p&gt;FundersClub has raised almost $1MM on behalf of its launch startups so far, and an investment (&lt;a href=&quot;http://redeye.firstround.com/2012/08/welcome-fundersclub.html&quot;&gt;and glowing review&lt;/a&gt;) from First Round Capital and Josh Kopelman, respectively. Not bad for its first two weeks.&lt;/p&gt;
 
-&lt;p&gt;They&#39;ve got a ways to go, but I for one am looking forward to being able to read a TechCrunch article about a startup and being able to click the &quot;Invest&quot; button at the bottom, adorned with a nice FC logo.&lt;/p&gt;
+&lt;p&gt;They’ve got a ways to go, but I for one am looking forward to being able to read a TechCrunch article about a startup and being able to click the “Invest” button at the bottom, adorned with a nice FC logo.&lt;/p&gt;
 
 &lt;p&gt;Good luck guys.&lt;/p&gt;
 </content>
@@ -711,15 +735,15 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <id>http://alexeymk.com/2012/08/05/be-safe-with-mongodb</id>
    <content type="html">&lt;p&gt;A quick public service announcement about MongoDB, for those of us new to NoSQL land:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt; By default, mongo will not let you know if a query that you ran failed miserably.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;** By default, mongo will not let you know if a query that you ran failed miserably.**&lt;/p&gt;
 
 &lt;p&gt;On the bright side, you on longer need to wait for mongo to unblock for updates or inserts, which makes production code run quicker.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, this also means you&#39;re going to spend more time tracking down bugs that would have been caught by IntegrityErrors (or the equivalent) in good old SQLite.&lt;/p&gt;
+&lt;p&gt;Unfortunately, this also means you’re going to spend more time tracking down bugs that would have been caught by IntegrityErrors (or the equivalent) in good old SQLite.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt; But I LIKE knowing about integrity errors&lt;/strong&gt;.  Me too, especially when testing locally.&lt;/p&gt;
+&lt;p&gt;** But I LIKE knowing about integrity errors**.  Me too, especially when testing locally.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Here&#39;s the fix&lt;/strong&gt;: set &lt;a href=&quot;http://www.mongodb.org/display/DOCS/Connections&quot;&gt;&lt;code&gt;safe=True&lt;/code&gt; in your Mongo connection object&lt;/a&gt;.  In django non-rel, this means setting&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here’s the fix&lt;/strong&gt;: set &lt;a href=&quot;http://www.mongodb.org/display/DOCS/Connections&quot;&gt;&lt;code&gt;safe=True&lt;/code&gt; in your Mongo connection object&lt;/a&gt;.  In django non-rel, this means setting&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;DATABASES = {
   &#39;default&#39;: {
@@ -742,23 +766,21 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <link href="http://alexeymk.com/2012/07/29/sidecar-and-reputation-systems.html"/>
    <updated>2012-07-29T16:23:57-07:00</updated>
    <id>http://alexeymk.com/2012/07/29/sidecar-and-reputation-systems</id>
-   <content type="html">&lt;p&gt;For the past few months I&#39;ve been using &lt;a href=&quot;side.cr&quot;&gt;Sidecar&lt;/a&gt; whenever I&#39;m in SF.  The service is a sort of Uber meets &lt;a href=&quot;http://en.wikipedia.org/wiki/Illegal_taxicab_operation&quot;&gt;Gypsy cabs&lt;/a&gt;, allowing ordering on-demand &lt;strong&gt;everyday drivers&lt;/strong&gt;, who will give you a ride across town at a price comparable or slightly cheaper than a Taxi.&lt;/p&gt;
+   <content type="html">&lt;p&gt;For the past few months I’ve been using &lt;a href=&quot;side.cr&quot;&gt;Sidecar&lt;/a&gt; whenever I’m in SF.  The service is a sort of Uber meets &lt;a href=&quot;http://en.wikipedia.org/wiki/Illegal_taxicab_operation&quot;&gt;Gypsy cabs&lt;/a&gt;, allowing ordering on-demand &lt;strong&gt;everyday drivers&lt;/strong&gt;, who will give you a ride across town at a price comparable or slightly cheaper than a Taxi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/Sidecar.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/Sidecar.png&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;A post about the service&#39;s legal standing is probably worthwhile but not for me to write.  Should you use Sidecar?  Yes, if you&#39;re looking for Uber-like service at Taxi-like prices and aren&#39;t made uncomfortable by just how sketchy the whole thing feels.  The service is invite-only for now, but if you&#39;re in SF: &lt;a href=&quot;http://go.side.cr/oCz&quot;&gt;here, have an invite (and 10 bucks)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A post about the service’s legal standing is probably worthwhile but not for me to write.  Should you use Sidecar?  Yes, if you’re looking for Uber-like service at Taxi-like prices and aren’t made uncomfortable by just how sketchy the whole thing feels.  The service is invite-only for now, but if you’re in SF: &lt;a href=&quot;http://go.side.cr/oCz&quot;&gt;here, have an invite (and 10 bucks)&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1&gt;The Reputation of ETAs&lt;/h1&gt;
-
+&lt;h1 id=&quot;the-reputation-of-etas&quot;&gt;The Reputation of ETAs&lt;/h1&gt;
 &lt;p&gt;I am fascinated by digital reputation systems, having focused on them in my senior thesis.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Wait times matter&lt;/strong&gt;.  In the taxi world (where a few of the drivers I&#39;ve met come from), operators keep track of passengers who repeatedly order cabs and then don&#39;t show up.  After a couple of no-shows, a phone number or address gets the equivalent of &lt;a href=&quot;http://en.wikipedia.org/wiki/Hellbanning&quot;&gt;Hellbanned&lt;/a&gt; - if they order a cab again, the operator will tell them the cab is on its way and then just not send anybody, leaving the passenger stranded.  It&#39;s a cruel sort of system, but in lieu of a real-world consumer reputation system, it&#39;s the only way I can think of for a cab company to punish poor behavior, like a waiter spitting in food.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wait times matter&lt;/strong&gt;.  In the taxi world (where a few of the drivers I’ve met come from), operators keep track of passengers who repeatedly order cabs and then don’t show up.  After a couple of no-shows, a phone number or address gets the equivalent of &lt;a href=&quot;http://en.wikipedia.org/wiki/Hellbanning&quot;&gt;Hellbanned&lt;/a&gt; - if they order a cab again, the operator will tell them the cab is on its way and then just not send anybody, leaving the passenger stranded.  It’s a cruel sort of system, but in lieu of a real-world consumer reputation system, it’s the only way I can think of for a cab company to punish poor behavior, like a waiter spitting in food.&lt;/p&gt;
 
-&lt;p&gt;In Sidecar&#39;s reputation system, a passenger is rated 1-5 by drivers, but only once a ride is complete.  A cancelled ride, then, is not globally stored within Sidecar&#39;s system, at least in a way visible to drivers.  The driver that was telling me this story compensates by &quot;just remembering people&quot; once they have skipped out on a ride or two.  In one case, he accepted a ride that claimed to be fifteen minutes away and proceeded to &quot;walk into a deli, order a sandwich and some chips, make small-talk with the owner, and then eventually come pick the guy up.&quot;&lt;/p&gt;
+&lt;p&gt;In Sidecar’s reputation system, a passenger is rated 1-5 by drivers, but only once a ride is complete.  A cancelled ride, then, is not globally stored within Sidecar’s system, at least in a way visible to drivers.  The driver that was telling me this story compensates by “just remembering people” once they have skipped out on a ride or two.  In one case, he accepted a ride that claimed to be fifteen minutes away and proceeded to “walk into a deli, order a sandwich and some chips, make small-talk with the owner, and then eventually come pick the guy up.”&lt;/p&gt;
 
-&lt;h1&gt;The Solution&lt;/h1&gt;
-
-&lt;p&gt;In Sidecar&#39;s case, I propose a reasonably straightforward solution: give passengers a reasonable window within which to cancel (90 seconds? 120?).  If they don&#39;t cancel, add the notification to their reputation system (late-cancelled 6% of Sidecars).  Let both parties know that this is criteria that drivers will see.  You&#39;ll get fewer cancellation and fewer drivers having to &quot;remember people&quot; and punish them passive-aggressively.&lt;/p&gt;
+&lt;h1 id=&quot;the-solution&quot;&gt;The Solution&lt;/h1&gt;
+&lt;p&gt;In Sidecar’s case, I propose a reasonably straightforward solution: give passengers a reasonable window within which to cancel (90 seconds? 120?).  If they don’t cancel, add the notification to their reputation system (late-cancelled 6% of Sidecars).  Let both parties know that this is criteria that drivers will see.  You’ll get fewer cancellation and fewer drivers having to “remember people” and punish them passive-aggressively.&lt;/p&gt;
 </content>
  </entry>
  
@@ -769,38 +791,32 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <id>http://alexeymk.com/2012/07/22/my-370-dollar-adjustable-sit-stand-desk-setup</id>
    <content type="html">&lt;p&gt;Whenever a friend visits our HQ, I proudly show off my &lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;combination sit/stand desk&lt;/a&gt;. Often, that results in an email asking where one buys such a thing. One buys such a thing on amazon.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/91EnHQnu6iL._AA1500_.jpg&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;&lt;img src=&quot;http://ecx.images-amazon.com/images/I/91EnHQnu6iL._AA1500_.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2&gt;Wait, why a standing desk?&lt;/h2&gt;
+&lt;h2 id=&quot;wait-why-a-standing-desk&quot;&gt;Wait, why a standing desk?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.medicalbillingandcoding.org/sitting-kills/&quot;&gt;Sitting is killing you&lt;/a&gt;, apparently. I don’t get as much exercise as I’d like now that I’m out of college, and at the least, standing for part of the day means I’m getting at least &lt;em&gt;some&lt;/em&gt; exercise.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.medicalbillingandcoding.org/sitting-kills/&quot;&gt;Sitting is killing you&lt;/a&gt;, apparently. I don&#39;t get as much exercise as I&#39;d like now that I&#39;m out of college, and at the least, standing for part of the day means I&#39;m getting at least &lt;em&gt;some&lt;/em&gt; exercise.&lt;/p&gt;
-
-&lt;h2&gt;The options I explored&lt;/h2&gt;
-
+&lt;h2 id=&quot;the-options-i-explored&quot;&gt;The options I explored&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;There have been a few &quot;&lt;a href=&quot;http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html&quot;&gt;Standing desk for cheap&lt;/a&gt;&quot; blog posts on Hacker News recently, but none of those allow me to easily move from sitting to standing. I could sit on a high stool, certainly, but that didn&#39;t seem particularly ergonomic.  So, I went for the cheapest effective adjustable setup I could find.&lt;/li&gt;
-&lt;li&gt;My stand is reasonably cheap ($370) and slides from sitting to standing via a gentle pull of the monitor up or down.  I couldn&#39;t find anything else that offered a similar service for under $600 or so.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href=&quot;http://www.amazon.com/s/ref=bl_sr_pc?_encoding=UTF8&amp;amp;node=172282&amp;amp;field-brandtextbin=Ergotron&amp;amp;ref=alexcom0ca-20&quot;&gt;several models of the Ergotron available&lt;/a&gt;, depending on # and size of monitors you&#39;d like, and whether you need a laptop at standing height as well.  One 30&#39;&#39; was plenty for me, and came in at $370. Adding a second screen or a monitor would have bumped the price, but not by much.&lt;/li&gt;
+  &lt;li&gt;There have been a few “&lt;a href=&quot;http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html&quot;&gt;Standing desk for cheap&lt;/a&gt;” blog posts on Hacker News recently, but none of those allow me to easily move from sitting to standing. I could sit on a high stool, certainly, but that didn’t seem particularly ergonomic.  So, I went for the cheapest effective adjustable setup I could find.&lt;/li&gt;
+  &lt;li&gt;My stand is reasonably cheap ($370) and slides from sitting to standing via a gentle pull of the monitor up or down.  I couldn’t find anything else that offered a similar service for under $600 or so.&lt;/li&gt;
+  &lt;li&gt;There are &lt;a href=&quot;http://www.amazon.com/s/ref=bl_sr_pc?_encoding=UTF8&amp;amp;node=172282&amp;amp;field-brandtextbin=Ergotron&amp;amp;ref=alexcom0ca-20&quot;&gt;several models of the Ergotron available&lt;/a&gt;, depending on # and size of monitors you’d like, and whether you need a laptop at standing height as well.  One 30’’ was plenty for me, and came in at $370. Adding a second screen or a monitor would have bumped the price, but not by much.&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;h2&gt;How I like it.&lt;/h2&gt;
-
+&lt;h2 id=&quot;how-i-like-it&quot;&gt;How I like it.&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Installation was reasonably straightforward (took about a half an hour to build the thing).  The mount expects the back of your monitor to have certain dimensions in the mounting hinge. Check before buying.&lt;/li&gt;
-&lt;li&gt;Overally, I&#39;m pretty happy with the purchase, given the price point.&lt;/li&gt;
-&lt;li&gt;I&#39;d be lying if I say that I&#39;ve gotten myself standing most of the time. I&#39;m writing this sitting down.  But I definitely stand more than I would otherwise; it really depends on my energy on a daily basis.  I&#39;ve definitely still got room for improvement.&lt;/li&gt;
+  &lt;li&gt;Installation was reasonably straightforward (took about a half an hour to build the thing).  The mount expects the back of your monitor to have certain dimensions in the mounting hinge. Check before buying.&lt;/li&gt;
+  &lt;li&gt;Overally, I’m pretty happy with the purchase, given the price point.&lt;/li&gt;
+  &lt;li&gt;I’d be lying if I say that I’ve gotten myself standing most of the time. I’m writing this sitting down.  But I definitely stand more than I would otherwise; it really depends on my energy on a daily basis.  I’ve definitely still got room for improvement.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;&lt;img src=&quot;/images/standingdesk.jpg&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;&lt;img src=&quot;/images/standingdesk.jpg&quot;&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So, that&#39;s my setup.  Feel free to &lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;get one for yourself&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;So, that’s my setup.  Feel free to &lt;a href=&quot;http://www.amazon.com/WorkFit-S-Single-HD-Sit-Stand-Worstation/dp/B003WQ4GXQ/alexcom0ca-20&quot;&gt;get one for yourself&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;PS&lt;/strong&gt;: A friend of mine is running &lt;a href=&quot;http://www.kickstarter.com/projects/1886278358/ninja-standing-desk&quot;&gt;a kickstarter for a portable standing desk&lt;/a&gt;, for $150.  Seems pretty useful if you want to travel and have a standing work setup.&lt;/p&gt;
 
 &lt;iframe width=&quot;640&quot; height=&quot;480&quot; src=&quot;http://www.kickstarter.com/projects/1886278358/ninja-standing-desk/widget/video.html&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
-
 </content>
  </entry>
  
@@ -814,46 +830,41 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
 &lt;p&gt;&lt;strong&gt;The result&lt;/strong&gt;: &lt;a href=&quot;http://twitter.com/markovbaby&quot;&gt;Follow @markovbaby on Twitter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;script src=&quot;http://storify.com/alexeymk/sample-names.js&quot;&gt;&lt;/script&gt;
+&lt;noscript&gt;[&lt;a href=&quot;http://storify.com/alexeymk/sample-names&quot; target=&quot;_blank&quot;&gt;View the story &quot;Sample Names&quot; on Storify&lt;/a&gt;]&lt;/noscript&gt;
 
-
-&lt;p&gt;&lt;noscript&gt;[&lt;a href=&quot;http://storify.com/alexeymk/sample-names&quot; target=&quot;_blank&quot;&gt;View the story &quot;Sample Names&quot; on Storify&lt;/a&gt;]&lt;/noscript&gt;&lt;/p&gt;
-
-&lt;h2&gt;What is a Markov Chain?&lt;/h2&gt;
-
+&lt;h2 id=&quot;what-is-a-markov-chain&quot;&gt;What is a Markov Chain?&lt;/h2&gt;
 &lt;p&gt;Read &lt;a href=&quot;http://en.wikipedia.org/wiki/Markov_chain&quot;&gt;the wikipedia entry&lt;/a&gt; for a more thorough introduction, but in our case, a Markov Chain is a simple random process to generate text that looks sort of like other text.&lt;/p&gt;
 
-&lt;p&gt;For example: as we&#39;re generating baby names, say we start with the letter &quot;C&quot;.  What should be our next letter?  Well, what kind of letters usually come after a &quot;C&quot; in names?  Let&#39;s look through our &lt;a href=&quot;https://github.com/AlexeyMK/markov-baby-names/blob/master/boys.txt&quot;&gt;list of existing names&lt;/a&gt; and see what usually comes next.&lt;/p&gt;
+&lt;p&gt;For example: as we’re generating baby names, say we start with the letter “C”.  What should be our next letter?  Well, what kind of letters usually come after a “C” in names?  Let’s look through our &lt;a href=&quot;https://github.com/AlexeyMK/markov-baby-names/blob/master/boys.txt&quot;&gt;list of existing names&lt;/a&gt; and see what usually comes next.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/letters_after_c.png&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/letters_after_c.png&quot; /&gt;&amp;lt;/img&amp;gt;&lt;/p&gt;
 
-&lt;p&gt;Great.  Let&#39;s pick the next character at random from within this list, weighing each possibility by how often it appears.  If we get &#39;end of word&#39;, we&#39;re done.&lt;/p&gt;
+&lt;p&gt;Great.  Let’s pick the next character at random from within this list, weighing each possibility by how often it appears.  If we get ‘end of word’, we’re done.&lt;/p&gt;
 
-&lt;p&gt;But let&#39;s say we&#39;ve picked &#39;h&#39;.  Great - so far the name starts with a &#39;ch&#39; - let&#39;s look for the next character: what tends to follow an &#39;h&#39; in our existing names?  And so on.&lt;/p&gt;
+&lt;p&gt;But let’s say we’ve picked ‘h’.  Great - so far the name starts with a ‘ch’ - let’s look for the next character: what tends to follow an ‘h’ in our existing names?  And so on.&lt;/p&gt;
 
-&lt;h2&gt;Results&lt;/h2&gt;
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;The result are a rather eclectic set of names.  Some are silly and non-sensical (C, Ieahaholijayson), while others seem pretty reasonable (Marin, Gacon).  A lot of them sound like they belong in Middle Earth (Miaviria), to Weseteros (Josth, Mindron).  Occasionaly it&#39;ll accidentally recreate a real name. Those are my favorite.&lt;/p&gt;
+&lt;p&gt;The result are a rather eclectic set of names.  Some are silly and non-sensical (C, Ieahaholijayson), while others seem pretty reasonable (Marin, Gacon).  A lot of them sound like they belong in Middle Earth (Miaviria), to Weseteros (Josth, Mindron).  Occasionaly it’ll accidentally recreate a real name. Those are my favorite.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://twitter.com/markovbaby&quot;&gt;@MarkovBaby&lt;/a&gt; may be suitable for an expecting couple with just the appropriate amount of eccentricity and love of statistics.&lt;/p&gt;
 
-&lt;h2&gt;The code&lt;/h2&gt;
+&lt;h2 id=&quot;the-code&quot;&gt;The code&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/AlexeyMK/markov-baby-names&quot;&gt;Is available on my github&lt;/a&gt;.  Hopefully nothing too complicated; random.choice and collections.defaultdict proved rather helpful. I hadn&#39;t touched Markov Chains since proving things about them in Randomized Algorithms class, so it was good to know that with a bit of clever python you could write one in a few dozen lines.  For reference, mine was an &#39;order-1&#39; (IE, only look at one previous character) chain.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/AlexeyMK/markov-baby-names&quot;&gt;Is available on my github&lt;/a&gt;.  Hopefully nothing too complicated; random.choice and collections.defaultdict proved rather helpful. I hadn’t touched Markov Chains since proving things about them in Randomized Algorithms class, so it was good to know that with a bit of clever python you could write one in a few dozen lines.  For reference, mine was an ‘order-1’ (IE, only look at one previous character) chain.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/3119751.js&quot;&gt; &lt;/script&gt;
 
-
 &lt;p&gt;See also, &lt;a href=&quot;http://www.cs.bell-labs.com/cm/cs/pearls/sec153.html&quot;&gt;a discussion on Markov Chain implementations in Programming Pearls&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2&gt;Possible extensions&lt;/h2&gt;
+&lt;h2 id=&quot;possible-extensions&quot;&gt;Possible extensions&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Favorite or RT your favorite baby names, and I&#39;ll put up a leaderboard for favorite ones.&lt;/li&gt;
-&lt;li&gt;Apply the same techniques (and same code) to startup names, using crunchbase: Markov 2.0.&lt;/li&gt;
+  &lt;li&gt;Favorite or RT your favorite baby names, and I’ll put up a leaderboard for favorite ones.&lt;/li&gt;
+  &lt;li&gt;Apply the same techniques (and same code) to startup names, using crunchbase: Markov 2.0.&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;p&gt;If you&#39;ve got a twitter bot missing in your life, &lt;a href=&quot;http://twitter.com/markovbaby&quot;&gt;follow @markovbaby on Twitter&lt;/a&gt;.  Or &lt;a href=&quot;http://twitter.com/alexeymk&quot;&gt;follow me&lt;/a&gt;. That would be cool too.&lt;/p&gt;
+&lt;p&gt;If you’ve got a twitter bot missing in your life, &lt;a href=&quot;http://twitter.com/markovbaby&quot;&gt;follow @markovbaby on Twitter&lt;/a&gt;.  Or &lt;a href=&quot;http://twitter.com/alexeymk&quot;&gt;follow me&lt;/a&gt;. That would be cool too.&lt;/p&gt;
 </content>
  </entry>
  
@@ -865,26 +876,20 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <content type="html">&lt;p&gt;I worked on non-technical hiring over this past week.&lt;/p&gt;
 
 &lt;h4&gt;Some Lessons Learned&lt;/h4&gt;
-
-
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;There are a lot of people on craigslist.&lt;/strong&gt;  We got over 160 applicants for our post.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Some are pretty darn good&lt;/strong&gt; 40 or so were potentially interesting, and I ended up with about 5 candidates I was very happy with at the end of the process.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Applications should be hard&lt;/strong&gt; Our application form included several paragraph answers, forcing candidates to think and allowing me to evaluate their writing style.  This proved very helpful.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Templates are your friend&lt;/strong&gt; That means 120 rejections.  For technical hires, I do my absolute best to give feedback, especially for younger candidates, on what to work on.  With this volume of candidates, include many just spray-and-praying their resume, I had to go with a template for most hires.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Duplicate test assignments&lt;/strong&gt; for potentially worthwhile candidates, I came up with a realistic task that would take about an hour and asked them to send me their results before considering an interview.  I learned a ton from seeing more than 20 people complete the same assignment, including what I was looking for in an ideal candidate.  Things like how well they communicate with me, whether they ask questions (and whether these are the right questions or just things they could have googled), whether they are comfortable making assumptions and moving forward if I am unavailable, etc.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Education is a far stronger signal for non-technical hires&lt;/strong&gt; With technical resumes, I may glance over where they got their undergrad but focus much more on experience and publicly available code.  For non-technical hires, places they&#39;ve worked/things they&#39;ve done before aren&#39;t nearly as indicative of quality (at least to me) as for technical roles.  The highest signals of quality (quality measured by &#39;I am interested in hiring this candidate&#39;) ended up being things like caliber of undergraduate education and the candidate&#39;s ability to answer the initial questions well. Being used to the &quot;it doesn&#39;t matter where you went to school, what we care about is what you&#39;ve done&quot; school of thought for technical hiring, this surprised me.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;There are a lot of people on craigslist.&lt;/strong&gt;  We got over 160 applicants for our post.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Some are pretty darn good&lt;/strong&gt; 40 or so were potentially interesting, and I ended up with about 5 candidates I was very happy with at the end of the process.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Applications should be hard&lt;/strong&gt; Our application form included several paragraph answers, forcing candidates to think and allowing me to evaluate their writing style.  This proved very helpful.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Templates are your friend&lt;/strong&gt; That means 120 rejections.  For technical hires, I do my absolute best to give feedback, especially for younger candidates, on what to work on.  With this volume of candidates, include many just spray-and-praying their resume, I had to go with a template for most hires.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Duplicate test assignments&lt;/strong&gt; for potentially worthwhile candidates, I came up with a realistic task that would take about an hour and asked them to send me their results before considering an interview.  I learned a ton from seeing more than 20 people complete the same assignment, including what I was looking for in an ideal candidate.  Things like how well they communicate with me, whether they ask questions (and whether these are the right questions or just things they could have googled), whether they are comfortable making assumptions and moving forward if I am unavailable, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Education is a far stronger signal for non-technical hires&lt;/strong&gt; With technical resumes, I may glance over where they got their undergrad but focus much more on experience and publicly available code.  For non-technical hires, places they’ve worked/things they’ve done before aren’t nearly as indicative of quality (at least to me) as for technical roles.  The highest signals of quality (quality measured by ‘I am interested in hiring this candidate’) ended up being things like caliber of undergraduate education and the candidate’s ability to answer the initial questions well. Being used to the “it doesn’t matter where you went to school, what we care about is what you’ve done” school of thought for technical hiring, this surprised me.&lt;/li&gt;
 &lt;/ul&gt;
-
 
 &lt;h4&gt;Things I&#39;d change next time around&lt;/h4&gt;
-
-
 &lt;ul&gt;
-&lt;li&gt;Send almost all of the candidates through the challenge first.  I met with a lot of candidates in person before sending them the challenge; in retrospect, in a buyer&#39;s market, this should have been reversed.&lt;/li&gt;
-&lt;li&gt;Filter for &#39;having read the requirements&#39; by including a sentence like &quot;Please ensure to include the capital of Denmark somewhere in your application.&quot;  This would have filtered a ton of spray-and-prayers.&lt;/li&gt;
+  &lt;li&gt;Send almost all of the candidates through the challenge first.  I met with a lot of candidates in person before sending them the challenge; in retrospect, in a buyer’s market, this should have been reversed.&lt;/li&gt;
+  &lt;li&gt;Filter for ‘having read the requirements’ by including a sentence like “Please ensure to include the capital of Denmark somewhere in your application.”  This would have filtered a ton of spray-and-prayers.&lt;/li&gt;
 &lt;/ul&gt;
-
 </content>
  </entry>
  
@@ -893,22 +898,21 @@ If you have more than 30 or so teams demoing (and especially more than 50), cons
    <link href="http://alexeymk.com/2012/07/01/moving-to-github-pages-and-jekyll.html"/>
    <updated>2012-07-01T16:30:00-07:00</updated>
    <id>http://alexeymk.com/2012/07/01/moving-to-github-pages-and-jekyll</id>
-   <content type="html">&lt;p&gt;I may be a bit late to the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; party, but with Posterous being acquired by twitter a few months ago, I figured why not try it out. Two weekends later I&#39;ve migrated enough that I&#39;m comfortable shipping, though I imagine a bunch of silly bugs will remain. Please &lt;a href=&quot;mailto:alexey-at-alexeymk.com&quot;&gt;email me&lt;/a&gt; with any issues you find, and I&#39;ll get to them when I can.&lt;/p&gt;
+   <content type="html">&lt;p&gt;I may be a bit late to the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; party, but with Posterous being acquired by twitter a few months ago, I figured why not try it out. Two weekends later I’ve migrated enough that I’m comfortable shipping, though I imagine a bunch of silly bugs will remain. Please &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#045;&amp;#097;&amp;#116;&amp;#045;&amp;#097;&amp;#108;&amp;#101;&amp;#120;&amp;#101;&amp;#121;&amp;#109;&amp;#107;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;email me&lt;/a&gt; with any issues you find, and I’ll get to them when I can.&lt;/p&gt;
 
-&lt;p&gt;In the meantime...&lt;/p&gt;
+&lt;p&gt;In the meantime…&lt;/p&gt;
 
-&lt;h4&gt;Moving from Posterous to Jekyll: What you need to know.&lt;/h4&gt;
+&lt;h4 id=&quot;moving-from-posterous-to-jekyll-what-you-need-to-know&quot;&gt;Moving from Posterous to Jekyll: What you need to know.&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/strong&gt; is a static site generator created by GitHub for GitHub Pages.  It is rather extensible, so people have built things like &lt;a href=&quot;http://str8.to/jekyll-boostrap&quot;&gt;Jekyll-Bootstrap&lt;/a&gt; and &lt;a href=&quot;http://str8.to/jekyll-octopress&quot;&gt;Octopress&lt;/a&gt; on top of it.  I sort of half-used the former (adapted a theme) and didn&#39;t know about the latter until it was too late.  Maybe/probably use Octopress if you go this route.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Migrating from Posterous&lt;/strong&gt; kinda-sorta works.  The migrator that includes images/permalinks is &lt;a href=&quot;https://github.com/pepijndevos/jekyll/blob/patch-1/lib/jekyll/migrators/posterous.rb&quot;&gt;on github here&lt;/a&gt;.  Some ruby required.  Here&#39;s &lt;a href=&quot;https://github.com/AlexeyMK/alexeymk.github.com/blob/master/posterous_import.rb&quot;&gt;my hacky version&lt;/a&gt;, with a couple of updates.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Comments&lt;/strong&gt; I haven&#39;t moved mine yet but a &lt;a href=&quot;http://blog.jrmoran.com/blog/2012/01/31/importing-posterous-comments-into-disqus/&quot;&gt;guide to move posterous comments to disqus&lt;/a&gt; is available.  The decision to have comments (even moderated ones) is not one I&#39;ve made yet. We&#39;ll see.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt; Here&#39;s the &lt;a href=&quot;http://recursive-design.com/blog/2010/09/14/integrating-jekyll-with-feedburner/&quot;&gt;jekyll+feedburner guide&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Developing Locally&lt;/strong&gt; I used &lt;a href=&quot;https://github.com/therabidbanana/guard-jekyll&quot;&gt;guard to auto re-generate pages&lt;/a&gt; as I was iterating on the CSS hackery.  Pretty useful, especially if you&#39;re already reasonably comfortable with guard.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt; GitHub Pages will host for you at yourusername.github.com + let you host on your domain &lt;a href=&quot;http://imakewebthings.com/blog/github-pages-email/&quot;&gt;if you add a CNAME to your distribution&lt;/a&gt;.  I&#39;m about to try it.  Fingers crossed.  Also, I don&#39;t know how much I trust GitHub to be so generous in the long run, but my next migration is going to be far less painful - &quot;it&#39;s just static content&quot;.  &lt;strong&gt;Note&lt;/strong&gt;: I was worried about where to stick draft posts, since the repo needs to be public, and my solution was to have both a public and a private repository, so releasing is &quot;git commit -a &amp;amp;&amp;amp; git push public master.&quot;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Markdown&lt;/strong&gt; I admit I&#39;m not too experienced with Markdown. Here&#39;s &lt;a href=&quot;http://nestacms.com/docs/creating-content/markdown-cheat-sheet&quot;&gt;my cheatsheet&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/strong&gt; is a static site generator created by GitHub for GitHub Pages.  It is rather extensible, so people have built things like &lt;a href=&quot;http://str8.to/jekyll-boostrap&quot;&gt;Jekyll-Bootstrap&lt;/a&gt; and &lt;a href=&quot;http://str8.to/jekyll-octopress&quot;&gt;Octopress&lt;/a&gt; on top of it.  I sort of half-used the former (adapted a theme) and didn’t know about the latter until it was too late.  Maybe/probably use Octopress if you go this route.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Migrating from Posterous&lt;/strong&gt; kinda-sorta works.  The migrator that includes images/permalinks is &lt;a href=&quot;https://github.com/pepijndevos/jekyll/blob/patch-1/lib/jekyll/migrators/posterous.rb&quot;&gt;on github here&lt;/a&gt;.  Some ruby required.  Here’s &lt;a href=&quot;https://github.com/AlexeyMK/alexeymk.github.com/blob/master/posterous_import.rb&quot;&gt;my hacky version&lt;/a&gt;, with a couple of updates.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Comments&lt;/strong&gt; I haven’t moved mine yet but a &lt;a href=&quot;http://blog.jrmoran.com/blog/2012/01/31/importing-posterous-comments-into-disqus/&quot;&gt;guide to move posterous comments to disqus&lt;/a&gt; is available.  The decision to have comments (even moderated ones) is not one I’ve made yet. We’ll see.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;RSS&lt;/strong&gt; Here’s the &lt;a href=&quot;http://recursive-design.com/blog/2010/09/14/integrating-jekyll-with-feedburner/&quot;&gt;jekyll+feedburner guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developing Locally&lt;/strong&gt; I used &lt;a href=&quot;https://github.com/therabidbanana/guard-jekyll&quot;&gt;guard to auto re-generate pages&lt;/a&gt; as I was iterating on the CSS hackery.  Pretty useful, especially if you’re already reasonably comfortable with guard.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt; GitHub Pages will host for you at yourusername.github.com + let you host on your domain &lt;a href=&quot;http://imakewebthings.com/blog/github-pages-email/&quot;&gt;if you add a CNAME to your distribution&lt;/a&gt;.  I’m about to try it.  Fingers crossed.  Also, I don’t know how much I trust GitHub to be so generous in the long run, but my next migration is going to be far less painful - “it’s just static content”.  &lt;strong&gt;Note&lt;/strong&gt;: I was worried about where to stick draft posts, since the repo needs to be public, and my solution was to have both a public and a private repository, so releasing is “git commit -a &amp;amp;&amp;amp; git push public master.”&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Markdown&lt;/strong&gt; I admit I’m not too experienced with Markdown. Here’s &lt;a href=&quot;http://nestacms.com/docs/creating-content/markdown-cheat-sheet&quot;&gt;my cheatsheet&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-
 </content>
  </entry>
  
