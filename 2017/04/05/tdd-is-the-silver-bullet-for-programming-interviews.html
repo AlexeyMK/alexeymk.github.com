@@ -6,10 +6,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>TDD is the silver bullet for programming interviews</title>
+	<title>TDD makes you amazing at technical interviews</title>
 	<meta name="author" content="">
 	<link href='/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="TDD is the silver bullet for programming interviews" type="application/atom+xml">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="TDD makes you amazing at technical interviews" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
   <script type="text/javascript">
     // google analytics
@@ -63,7 +63,7 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2017/04/05/tdd-is-the-silver-bullet-for-programming-interviews.html">TDD is the silver bullet for programming interviews</a></h1>
+            <h1 class="h2 entry-title"><a href="/2017/04/05/tdd-is-the-silver-bullet-for-programming-interviews.html">TDD makes you amazing at technical interviews</a></h1>
 					</div><!-- unit-inner -->
             
               <p class="date-publish">
@@ -80,43 +80,48 @@
 
 			<div class="bd">
 				<div class="entry-content">
-          <p><strong>TDD</strong> stands for <strong>Test Driven Development</strong>. Personally, I don’t care for it.</p>
+          <p><strong>TDD</strong> stands for <strong>Test Driven Development</strong>. Personally, I don’t care for it<sup id="fnref:tdd"><a href="#fn:tdd" class="footnote">1</a></sup>.</p>
 
-<p>Yet when I interview, I use it religiously. It’s the closest thing I’ve seen to a silver bullet.</p>
+<p>Yet when I job-hunt, I use it religiously for coding interviews.</p>
 
 <h4 id="wait-why">Wait, why?</h4>
 <p>Any technical challenge is actually two challenges.</p>
 
 <ol>
-  <li>Can you take a half-baked problem and nail it down into something unambiguous?</li>
+  <li>Can you take a broadly-worded problem and nail it down into something unambiguous?</li>
   <li>Can you implement challenging but unambiguous spec in the allotted time?</li>
 </ol>
 
-<p>TDD forces you into the ideal mindset for nailing down the problem (1). There’s no better way to understand something than to have to think through its test cases. Your clarifying questions also arise naturally.</p>
+<p>TDD forces you into the ideal mindset for nailing down (1) problem definitions. There’s no better way to properly grok a problem than to have to think through all the fun ways an implementation could be slightly off.</p>
+
+<p>The implementation itself (2) also gets easier since you no longer have to assume that your code “probably” works, or fiddle with a REPL each time you’re ready to check.</p>
 
 <h4 id="so-how-do-i-do-it">So how do I do it?</h4>
 <p>As soon as you hear the problem, resist the urge to rush straight to the solution.</p>
 
-<p>Instead, Force yourself to fully think through the test cases for an <em>arbitrary implementation</em>. Think of the fun ways you could catch somebody. Make it a dialog - “what if the array is empty?” Get the interviewer engaged. Show you care.</p>
+<p>Instead, force yourself to fully think through the test cases for an <em>arbitrary implementation</em>. Make it a dialog - “what if the array is empty?” Get the interviewer engaged. Show you care.</p>
 
-<p>By the time you’ve written good tests and the interviewer agrees, you’re all set. First, you can implement with the confidence that your code works. Second, even though you tried not to, you probably already have a decent solution in mind. Third, once you’re done, refactoring with test cases feels way less fragile.</p>
+<p>By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you comfort that subsequent clean up / refactor didn’t inadvertantly break your implemenation.</p>
 
-<h4 id="youre-too-smart-to-get-this-right">You’re too smart to get this right</h4>
-<p>I run into candidates clever enough to power through engineering challenges on pure IQ<sup id="fnref:smarter"><a href="#fn:smarter" class="footnote">1</a></sup>. They implement an <em>ideal</em> solution within fifteen minutes. Then it’s time for tests and they just <strong>can not</strong> think of cases beyond the common path.</p>
+<h4 id="yeah-but-i-can-always-just-write-tests-later">Yeah, but I can always just write tests later.</h4>
+<p>Ocassionally I run into candidates clever enough to power through engineering challenges on raw talent<sup id="fnref:smarter"><a href="#fn:smarter" class="footnote">2</a></sup>. They implement an <em>optimal</em> solution within fifteen minutes. Then it’s time for tests and they just <strong>cannot</strong> think of cases beyond the common path, which makes them look like <a href="http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/">cowboys</a>.</p>
 
 <p>I blame the <a href="https://hbr.org/2006/12/the-curse-of-knowledge;at/1">curse of knowledge</a> - once you’ve solved the problem, it’s harder to think about what wrong turns you could have taken. It all feels trivial.</p>
 
-<h4 id="seriously-though-are-you-going-to-make-me-import-a-testing-framework">Seriously though, are you going to make me import a testing framework?</h4>
-
-<h4 id="like-mocha-or-cucumber-ugh">Like, Mocha or Cucumber? Ugh.</h4>
+<h4 id="seriously-though-are-you-going-to-make-me-import-a-testing-framework-like-mocha-or-cucumber-ugh">Seriously though, are you going to make me import a testing framework? Like, Mocha or Cucumber? Ugh.</h4>
 
 <p>¯\_(ツ)_/¯, I just use asserts and print statements. But you can do that thing where you ask your interviewer if they’d like you to use a proper testing framework first, and of course they don’t, but now it looks like you <em>could</em> and you’re just doing them a favor by using asserts, cause you’re like, super assertive.</p>
 
 <h4 id="ok-so-now-what">Ok so now what?</h4>
-<p>Well obviously you should come <a href="https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p">work at Opendoor</a> with me! We have <a href="https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg">the good coconut water</a> that doesn’t run out until like noon, 12:30 on good days. PLus, there’ss a decent chance you’ll run into me on your phone screen.</p>
+<p>Well obviously you should come <a href="https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p">work at Opendoor</a> with me! We have <a href="https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg">the good coconut water</a> that doesn’t run out until like noon, 12:30 on good days. Plus, there’s a decent chance you’ll run into me on your phone screen.</p>
+
+<hr />
 
 <div class="footnotes">
   <ol>
+    <li id="fn:tdd">
+      <p>Don’t get me wrong, TDD <a href="https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847/">has its uses</a>, but we often mistake what Kent Beck meant by <a href="https://martinfowler.com/bliki/UnitTest.html">‘unit’</a>. Testing ‘just right’ is hard. <a href="#fnref:tdd" class="reversefootnote">&#8617;</a></p>
+    </li>
     <li id="fn:smarter">
       <p>I used to have that problem earlier in my career. I’ve addressed it, largely by becoming dumber. <a href="#fnref:smarter" class="reversefootnote">&#8617;</a></p>
     </li>
@@ -185,15 +190,11 @@
 <p><img class="footer-portrait" src="/images/alexey.jpg" /></p>
 
 <ul>
-  <li>Based in SF, since April 2016.</li>
-  <li><a href="http://hackerparadise.org">Hacker Paradise</a>, a boutique work+travel company</li>
-  <li><a href="http://calldownmule.com">Mule Consulting</a>, a product engineering consultancy.</li>
-  <li>Spent 2014-2016 as a “digital nomad”</li>
-  <li>
-    <p>UPenn <a href="http://www.cis.upenn.edu/">CIS ‘12</a></p>
-  </li>
+  <li>Engineer at <a href="https://opendoor.com">Opendoor</a></li>
+  <li>UPenn <a href="http://www.cis.upenn.edu/">CIS ‘12</a></li>
   <li>Projects you may know me for:
     <ul>
+      <li><a href="http://hackerparadise.org">Hacker Paradise</a>, the remote-work-group-trip thing.</li>
       <li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
       <li><a href="http://ggl.to">ggl.to</a>, google-powered URL shortener</li>
       <li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
