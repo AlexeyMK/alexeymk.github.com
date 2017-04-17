@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-04-07T20:09:20-07:00</updated>
+ <updated>2017-04-16T19:59:30-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Want to ace coding interviews? Start by writing tests</title>
-   <link href="http://alexeymk.com/2017/04/05/tdd-is-the-silver-bullet-for-programming-interviews.html"/>
-   <updated>2017-04-05T11:31:37-07:00</updated>
-   <id>http://alexeymk.com/2017/04/05/tdd-is-the-silver-bullet-for-programming-interviews</id>
+   <title>Testing your way through technical interviews</title>
+   <link href="http://alexeymk.com/2017/04/15/testing-your-way-through-technical-interviews.html"/>
+   <updated>2017-04-15T11:31:37-07:00</updated>
+   <id>http://alexeymk.com/2017/04/15/testing-your-way-through-technical-interviews</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;TDD.&lt;/strong&gt; It stands for &lt;strong&gt;Test Driven Development&lt;/strong&gt;. Personally, I don’t care for it&lt;sup id=&quot;fnref:tdd&quot;&gt;&lt;a href=&quot;#fn:tdd&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Yet when I job-hunt, I use it religiously for  interviews where I code&lt;sup id=&quot;fnref:coding&quot;&gt;&lt;a href=&quot;#fn:coding&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
