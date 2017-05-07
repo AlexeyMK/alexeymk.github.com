@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-04-16T19:59:30-07:00</updated>
+ <updated>2017-05-07T11:59:31-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -13,20 +13,20 @@
 
  
  <entry>
-   <title>Testing your way through technical interviews</title>
-   <link href="http://alexeymk.com/2017/04/15/testing-your-way-through-technical-interviews.html"/>
-   <updated>2017-04-15T11:31:37-07:00</updated>
-   <id>http://alexeymk.com/2017/04/15/testing-your-way-through-technical-interviews</id>
-   <content type="html">&lt;p&gt;&lt;strong&gt;TDD.&lt;/strong&gt; It stands for &lt;strong&gt;Test Driven Development&lt;/strong&gt;. Personally, I don’t care for it&lt;sup id=&quot;fnref:tdd&quot;&gt;&lt;a href=&quot;#fn:tdd&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+   <title>Test Driven Interviewing</title>
+   <link href="http://alexeymk.com/2017/05/06/testing-your-way-through-technical-interviews.html"/>
+   <updated>2017-05-06T11:31:37-07:00</updated>
+   <id>http://alexeymk.com/2017/05/06/testing-your-way-through-technical-interviews</id>
+   <content type="html">&lt;p&gt;For most&lt;sup id=&quot;fnref:tdd&quot;&gt;&lt;a href=&quot;#fn:tdd&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; engineering tasks, I prefer to avoid TDD, or Test Driven Development.&lt;/p&gt;
 
-&lt;p&gt;Yet when I job-hunt, I use it religiously for  interviews where I code&lt;sup id=&quot;fnref:coding&quot;&gt;&lt;a href=&quot;#fn:coding&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Yet when I job-hunt, I use TDD religiously&lt;sup id=&quot;fnref:coding&quot;&gt;&lt;a href=&quot;#fn:coding&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. It has been tremendously helpful.&lt;/p&gt;
 
-&lt;h4 id=&quot;wait-why&quot;&gt;Wait, why?&lt;/h4&gt;
-&lt;p&gt;Any technical challenge is actually two challenges.&lt;/p&gt;
+&lt;h4 id=&quot;hmpf-why&quot;&gt;Hmpf. Why?&lt;/h4&gt;
+&lt;p&gt;Most interview challenges actually come in two parts.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Can you take a broadly-worded problem and nail it down into something unambiguous?&lt;/li&gt;
-  &lt;li&gt;Can you implement challenging but unambiguous spec in the allotted time?&lt;/li&gt;
+  &lt;li&gt;Can you implement a challenging but unambiguous spec in the allotted time?&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;TDD forces you into the ideal mindset for nailing down (1) problem definitions. There’s no better way to properly grok a problem than to have to think through all the fun ways an implementation could be slightly off.&lt;/p&gt;
@@ -38,7 +38,7 @@
 
 &lt;p&gt;Instead, force yourself to fully think through the test cases for an &lt;em&gt;arbitrary implementation&lt;/em&gt;. Make it a dialog - “what if the same element is in the array multiple times?” Get the interviewer engaged. Show you care.&lt;/p&gt;
 
-&lt;p&gt;By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you comfort that subsequent clean up / refactor didn’t inadvertantly break your implemenation.&lt;/p&gt;
+&lt;p&gt;By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you the comfort that your subsequent clean up / refactoring doesn’t inadvertantly break your implemenation.&lt;/p&gt;
 
 &lt;h4 id=&quot;yeah-but-i-can-always-just-write-tests-later&quot;&gt;Yeah, but I can always just write tests later.&lt;/h4&gt;
 &lt;p&gt;When I conduct interviews, I keep running into candidates clever enough to power through engineering challenges on raw talent&lt;sup id=&quot;fnref:smarter&quot;&gt;&lt;a href=&quot;#fn:smarter&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. The candidate implements an &lt;em&gt;optimal&lt;/em&gt; solution within fifteen minutes. Then it’s time for tests and she just &lt;strong&gt;cannot&lt;/strong&gt; think of cases beyond the common path, which makes her look like &lt;a href=&quot;http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/&quot;&gt;a cowboy&lt;/a&gt;.&lt;/p&gt;
@@ -74,7 +74,7 @@ for test_case in test_cases:
 &lt;p&gt;If you insist on being fancy, you can do that thing where you ask your interviewer if they’d like you to use a proper testing framework first, and of course they don’t, but now it looks like you &lt;em&gt;could&lt;/em&gt; and you’re just doing them a favor by using asserts, cause you’re like, super assertive.&lt;/p&gt;
 
 &lt;h4 id=&quot;ok-so-now-what&quot;&gt;Ok so now what?&lt;/h4&gt;
-&lt;p&gt;Well obviously you should come &lt;a href=&quot;https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p&quot;&gt;work at Opendoor&lt;/a&gt; with me! We have &lt;a href=&quot;https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg&quot;&gt;the good coconut water&lt;/a&gt; and don’t run out of it until like noon, 12:30 on good days. Plus, there’s a decent chance you’ll run into me on your phone screen and we can that awkward interaction of trying to figurue out why my name sounds familiar.&lt;/p&gt;
+&lt;p&gt;Well obviously you should come &lt;a href=&quot;https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p&quot;&gt;work at Opendoor&lt;/a&gt; with me! We have &lt;a href=&quot;https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg&quot;&gt;the good coconut water&lt;/a&gt; and don’t run out of it until like noon, 12:30 on good days. Plus, there’s a decent chance you’ll run into me on your phone screen and we can that awkward interaction of trying to figure out why my name sounds familiar.&lt;/p&gt;
 
 &lt;hr /&gt;
 
