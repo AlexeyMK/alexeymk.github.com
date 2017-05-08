@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-05-07T19:44:59-07:00</updated>
+ <updated>2017-05-07T19:51:08-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -146,7 +146,9 @@ Yefim &amp;amp; Ceasar made the wise decision of not doing much contributing wor
 &lt;p&gt;We still played some soccer, though. Greg was way better at soccer than the rest of us.&lt;/p&gt;
 
 &lt;h4 id=&quot;get-other-maintainers-they-said&quot;&gt;Get other maintainers, they said&lt;/h4&gt;
-&lt;p&gt;We had two pretty helpful maintainers turn up: First, &lt;a href=&quot;https://github.com/gterrono/houston/commits?author=zurawiki&quot;&gt;Roger&lt;/a&gt; decided to redesign our UI from basic boostrap to the line-green version you see today. Second, sometime around late 2014, this Swiss dude named &lt;a href=&quot;https://github.com/matteodem&quot;&gt;Matteo&lt;/a&gt; showed up and &lt;a href=&quot;https://github.com/gterrono/houston/issues/251&quot;&gt;fixed&lt;/a&gt; a bunch of things. That was awesome, and we talked to him on Skype and gave him write access as somebody had suggested for growing your maintainers. Later in 2015, my friend &lt;a href=&quot;https://github.com/samcorcos&quot;&gt;Sam&lt;/a&gt; came in and added some more tests.&lt;/p&gt;
+&lt;p&gt;We had two pretty helpful maintainers turn up: First, &lt;a href=&quot;https://github.com/gterrono/houston/commits?author=zurawiki&quot;&gt;Roger&lt;/a&gt; decided to redesign our UI from basic boostrap to the line-green version you see today. Second, sometime around late 2014, this Swiss dude named &lt;a href=&quot;https://github.com/matteodem&quot;&gt;Matteo&lt;/a&gt; showed up and &lt;a href=&quot;https://github.com/gterrono/houston/issues/251&quot;&gt;fixed&lt;/a&gt; a bunch of things. That was awesome, and we talked to him on Skype and gave him write access as somebody had suggested for growing your maintainers.&lt;/p&gt;
+
+&lt;p&gt;Later, in 2015, my friend &lt;a href=&quot;https://github.com/samcorcos&quot;&gt;Sam&lt;/a&gt; came in and added some proper tests, but development had largely ceased by then.&lt;/p&gt;
 
 &lt;p&gt;Still, for whatever reason, nobody stuck around and answered issues, etc, for the long term, so it was still up to us.&lt;/p&gt;
 
@@ -174,10 +176,14 @@ Yefim &amp;amp; Ceasar made the wise decision of not doing much contributing wor
   &lt;li&gt;I don’t know. What did we learn Greg?&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&quot;one-more-thing&quot;&gt;…one more thing&lt;/h4&gt;
+&lt;p&gt;I leave you with the contributions over time graph, which tells the whole story, but with graphics.
+&lt;img src=&quot;/images/contributions.gif&quot; alt=&quot;contributions over time&quot; /&gt;&lt;/p&gt;
+
 &lt;h4 id=&quot;thank-you&quot;&gt;Thank you&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;To Greg, who despite everything else was an awesome partner on this project.&lt;/li&gt;
+  &lt;li&gt;To Greg, the prospect of collaborating with whom kept me in the project as long as it did.&lt;/li&gt;
   &lt;li&gt;The Yefim, Ceasar, Matteo, Roger, Sam and other contributors!&lt;/li&gt;
   &lt;li&gt;The the Meteor Development Group folks for their contributions to realtime web development, whose ideas will live on independent of Meteor’s future, and also for the free snacks and t-shirts and the Pebbles we won at that hackathon back at 2013.&lt;/li&gt;
 &lt;/ul&gt;
