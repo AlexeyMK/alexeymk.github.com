@@ -4,13 +4,202 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-05-07T12:44:32-07:00</updated>
+ <updated>2017-05-07T19:31:34-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
    <email>alexey@alexeymk.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Confessions of a Deadbeat Open Source Maintainer</title>
+   <link href="http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer.html"/>
+   <updated>2017-05-06T18:06:24-07:00</updated>
+   <id>http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://photos-3.dropbox.com/t/2/AACqlHa01vTx7VJbXwRn6QaEPPg0T3rH_m4QE-Ta8uA6gg/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2018.00.15.png/EN7ohOsEGKsDIAIoAg/EoUc0F7j_rtNPD5R8ryVk4J3oJyseI5EgVzq_RGNon0?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;a user sums it up&quot; title=&quot;source: https://github.com/gterrono/houston/issues/294#issuecomment-238914107&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Create an open source project, they said.&lt;/p&gt;
+
+&lt;p&gt;It’ll be great for your resume, they said.&lt;/p&gt;
+
+&lt;h3 id=&quot;part-0-wherein-we-provide-context&quot;&gt;Part 0: Wherein we provide context&lt;/h3&gt;
+&lt;p&gt;The year was 2013, Meteor was the hip new kid on the block and Coffeescript was a reasonable JS dialect choice. We were fresh out of college.  Meteor was hosting their first ‘Summer Hackathon’ in San Francisco on 10th and Minna, and we figured this was our shot.&lt;/p&gt;
+
+&lt;p&gt;Sequestering ourselves on the second floor of the hackspace, a couple of college friends and I acquired a whiteboard and some markers, and jotted down our big idea list. Not lacking for ambition, the first thing we figured we would fix was server-side rendering. Turned out this &lt;em&gt;seemingly simple&lt;/em&gt; task was already on Meteor’s &lt;a href=&quot;https://trello.com/c/Lz07fBAm/7-server-side-rendering&quot;&gt;Trello Roadmap&lt;/a&gt;, so, what the heck, we figured we’d pitch in.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://photos-1.dropbox.com/t/2/AACNsTO7oEEM3UaFhVyWpRjRWF-9kH96MF43WmVz7sHDOw/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2015.58.16.png/EN7ohOsEGKoDIAIoAg/YtjyBR_uyKzlBB2XxhUQl7k4C9DxnbMylRiOmid3qGw?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;I inquire about server-side rendering&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Speaking with the actual development team a few hours later, we learned that server side was (1) hard and (2) coming soon anyway&lt;sup id=&quot;fnref:ssr&quot;&gt;&lt;a href=&quot;#fn:ssr&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fair enough - we’d solve our other painpoint, the lack of a proper admin DSL.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1-introducing-z-the-mongo-admin&quot;&gt;Part 1: introducing Z, the Mongo Admin&lt;/h2&gt;
+&lt;p&gt;Coming from Django land, one of my favorite Framework features had always been being able to describe Admin UIs with a very high level DSL - stuff like&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.db&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CharField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CharField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;birth_date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DateField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;blank&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;leading to auto-generated pages that look like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://docs.djangoproject.com/en/1.11/_images/list_filter.png&quot; alt=&quot;django admin screenshot, from tutorial&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Meteor didn’t have an admin DSL&lt;sup id=&quot;fnref:genghis&quot;&gt;&lt;a href=&quot;#fn:genghis&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; yet. I wanted very much to build one, and a zero-config one (IE, automatically discover your models) at that. I kept suggesting this idea until the others agreed. Leadership.&lt;/p&gt;
+
+&lt;p&gt;We cranked out a desired feature-list on a whiteboard. It looked like this.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-list&quot;&gt;The List&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;document view&lt;/li&gt;
+  &lt;li&gt;dealing with arrays&lt;/li&gt;
+  &lt;li&gt;dealing with nested objects&lt;/li&gt;
+  &lt;li&gt;boolean fields&lt;/li&gt;
+  &lt;li&gt;integer fields&lt;/li&gt;
+  &lt;li&gt;editing&lt;/li&gt;
+  &lt;li&gt;auto-discovery &amp;amp; Schema&lt;/li&gt;
+  &lt;li&gt;collection (table) view&lt;/li&gt;
+  &lt;li&gt;home page view&lt;/li&gt;
+  &lt;li&gt;doesn’t look terrible&lt;/li&gt;
+  &lt;li&gt;wrapping the admin into a package.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then we got started. I hid in a corner and tried to figure out how to get a list of Collections, and the fields in each collection, out of an arbitrary Meteor app. It turned out there was no official way but if I poked under the covers of the undocumented &lt;code&gt;Meteor._RemoteCollectionDriver.mongo.db.collections&lt;/code&gt; call.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/AlexeyMK/84ed89aaa30da0aea9170974f038955e.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;It turned out you had to ‘warm up’ the _RemoteCollectionDriver (by creating an arbitrary collection) to get the collections loaded. This was the way things worked around Meteor 0.6.&lt;/p&gt;
+
+&lt;p&gt;Package loading was the other relatively painful thing - since we couldn’t figure out &lt;em&gt;quite&lt;/em&gt; how to get our package loaded last (since we relied on a router and a number of other packages), Yefim solved the problem the pragmatic Hackathon way, and named the package Z-Meteor Admin. This way, unless we relied on a package that decided to start with two Z’s, Meteor would load us last.&lt;/p&gt;
+
+&lt;h4 id=&quot;launching-with-the-mvp&quot;&gt;Launching with the MVP&lt;/h4&gt;
+&lt;p&gt;Surprisingly, it kind of worked.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/2b2811cfc1308e19f99a3b31bf2b9b8d9b4dd008/68747470733a2f2f7261772e6769746875622e636f6d2f67746572726f6e6f2f6d6574656f722d61646d696e2d75692f6d61737465722f646f632f636f6c6c656374696f6e2e706e67&quot; alt=&quot;an early version of the UI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We demoed at the Hackathon and even &lt;a href=&quot;https://blog.meteor.com/congratulations-to-the-meteor-summer-hackathon-2013-teams-c2ec782e9b53&quot;&gt;won the ‘Award for Most Technically Impressive’&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Greg and I kept working on the project throughout the summer and fall of 2013. We cleaned it up and released 1.0 in December 2013, after gaining over 200 stars on Github.&lt;/p&gt;
+
+&lt;p&gt;For our 1.0 release, I demoed a slightly-less-hacky-and-&lt;a href=&quot;https://github.com/gterrono/houston/issues/37&quot;&gt;now-renamed&lt;/a&gt; Houston Admin at Meteor Devshop 10:&lt;/p&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; src=&quot;//www.youtube.com/embed/8ASwWEZsAog&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Here’s &lt;a href=&quot;http://alexeymk.com/2013/12/19/houston-admin-talk-at-meteor-devshop-10.html&quot;&gt;the blog post&lt;/a&gt; I wrote to celebrate the event.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-2-a-primer-on-gas-tank-emptying&quot;&gt;Part 2: A primer on gas tank emptying&lt;/h2&gt;
+
+&lt;p&gt;Between the 1.0 in December 2013 and roughly summer 2014, our enthusiasm for working on the project waned. There were many reasons, but here are some:&lt;/p&gt;
+
+&lt;h4 id=&quot;we-had-shit-to-do&quot;&gt;1. We had shit to do.&lt;/h4&gt;
+&lt;p&gt;Greg finished school and was working for Gumroad, not in Meteor.
+I was doing consulting/startup prototyping work, also mostly not in Meteor.
+Yefim &amp;amp; Ceasar made the wise decision of not doing much contributing work past the initial release.&lt;/p&gt;
+
+&lt;h4 id=&quot;we-were-no-longer-scratching-our-own-itch&quot;&gt;2. We were no longer scratching our own itch.&lt;/h4&gt;
+&lt;p&gt;Originally, Yefim and I used Houston for the Intern Dinners we were running that summer. It was pretty helpful, and if we needed more UI stuff, we’d just add it. That was summer 2013.&lt;/p&gt;
+
+&lt;p&gt;Even though many of the feature requests we were getting were quite sensible (and we implemented a bunch of them), we really weren’t scratching our own itch after summer 2013.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-do-i-even-esque-github-issues&quot;&gt;3. ‘How do I even’-esque Github Issues&lt;/h4&gt;
+&lt;p&gt;Actually, having gone through some of the ~270 &lt;a href=&quot;https://github.com/gterrono/houston/issues&quot;&gt;Github Issues&lt;/a&gt; on the project, I’m surprised by how good many of them were and how attentive and friendly we were about them. Still, there were a few bad apples, like &lt;a href=&quot;https://github.com/gterrono/houston/issues/216&quot;&gt;css not rendering&lt;/a&gt;, &lt;a href=&quot;https://github.com/gterrono/houston/issues/274&quot;&gt;how to upload files&lt;/a&gt; and &lt;a href=&quot;https://github.com/gterrono/houston/issues/301&quot;&gt;Cannot login on Heroku app&lt;/a&gt; that either failed to provide enough context and/or were coming from folks who were not otherwise yet competent Meteor (or even JS) developers.&lt;/p&gt;
+
+&lt;p&gt;Those definitely drained the enthusiasm tank.
+#### 4. Meteor doesn’t support Mounting &amp;amp; hacky CSS.
+Meteor bundles all CSS &amp;amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example &lt;code&gt;$(&#39;.save&#39;).disable()&lt;/code&gt; and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did [some crazy things] to avoid the namespace collissions.&lt;/p&gt;
+
+&lt;p&gt;Django solves this problem through &lt;a href=&quot;https://docs.djangoproject.com/en/1.11/topics/http/urls/#url-namespaces&quot;&gt;URL namespaces&lt;/a&gt;, allowing the ‘admin’ to behave largely like its own app. Express.js allows for &lt;a href=&quot;https://expressjs.com/en/api.html&quot;&gt;‘mounting’&lt;/a&gt; of multiple sub-apps on certain directory paths - in either case, no shared CSS/JS is bundled for these cases, avoiding collissions like the above.&lt;/p&gt;
+
+&lt;p&gt;Meteor did not support Mounting out of the box. I bugged the devs about it at a later Devshop, and got an off-hand note that this was not a priority for now. Later on we tried to add Mounting to Meteor and/or host the Admin as a separate app that shared only the database with the parent app, but by then lacked the enthusiasm to bring the projects to completion.&lt;/p&gt;
+
+&lt;h4 id=&quot;testing-is-tough&quot;&gt;5. Testing is tough!&lt;/h4&gt;
+&lt;p&gt;Reactive apps with not a ton of business logic are &lt;em&gt;tough&lt;/em&gt; to test! Perhaps we simply lacked the experience here, but when Greg and I tried to add proper integration tests to the app, we spent tens of hours being our heads against the wall, time that would have been better spent actually fixing bugs.&lt;/p&gt;
+
+&lt;h4 id=&quot;router-wars&quot;&gt;6. Router Wars&lt;/h4&gt;
+&lt;p&gt;When we created Houston in summer 2013, there was a router that I believe was just called Router. Later, Iron-Router becames the default router (perhaps this was a rename?) - and even later, Flow-Router became the preferred router. Here’s &lt;a href=&quot;https://kadira.io/blog/meteor/flow-router-4-0-and-future-of-routing-in-meteor&quot;&gt;a post&lt;/a&gt; on the state of routing as of Summer 2015.&lt;/p&gt;
+
+&lt;p&gt;The point was, you couldn’t really use both routers and so we would need lots of clever work to see if we could support both paths.  We discussed this in &lt;a href=&quot;https://github.com/gterrono/houston/issues/294&quot;&gt;a Github Issue&lt;/a&gt; and I &lt;a href=&quot;https://github.com/gterrono/houston/pull/343&quot;&gt;wrote up a prototype&lt;/a&gt; but ultimately just didn’t have enough time/energy to ship a supports-both solution.&lt;/p&gt;
+
+&lt;h4 id=&quot;when-undocumented-internal-dependencies-change&quot;&gt;7. When Undocumented Internal Dependencies Change&lt;/h4&gt;
+&lt;p&gt;Remember that &lt;code&gt;_RemoteCollectionDriver&lt;/code&gt; hack? In most every release (0.7, 0.8) my ‘whatever, go ask mongo what collections there are’ hack kept breaking and I had to re-implement a new hack based on whichever refactor the Meteor Development Group implemented internally.&lt;/p&gt;
+
+&lt;p&gt;Not particularly taxing, but just a drain.&lt;/p&gt;
+
+&lt;h4 id=&quot;we-never-stepped-back-and-thought-about-architecture&quot;&gt;8. We never stepped back and thought about architecture.&lt;/h4&gt;
+&lt;p&gt;Things were in slighly better shape than they were back during the hackathon, but there was never a “how should this package be properly architected” conversation. As a result, in later months as I tried to go back and implement changes, it was never clear to me what was where or why, or what edge cases I would need to consider and support. This made “weekend-a-month” type support less useful over time as I knew the codebase less and less well.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-3-where-we-go-to-costa-rica-and-try-to-turn-things-around&quot;&gt;Part 3: Where we go to Costa Rica and try to turn things around&lt;/h2&gt;
+
+&lt;h4 id=&quot;the-costa-rica-summit&quot;&gt;The Costa Rica summit&lt;/h4&gt;
+
+&lt;p&gt;Around Summer 2014, a year after we started, things were going kind of slumpey. As an effort to regroup, I invited Greg to Costa Rica where I was staying for a few months:
+&lt;img src=&quot;https://photos-6.dropbox.com/t/2/AAAltNxC49gA0_nV8K1pVzxBcnchKBaPEyOe5JxRNePJDQ/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2018.45.21.png/EN7ohOsEGKwDIAIoAg/newgorKxXuuCpftyoFoUKZtGt70naOVvETo0LOsn3Zg?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;Hey Greg, come to Costa Rica!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The plan was basically to unbreak the critical stuff and make a plan for what we wanted to do next, and maybe also play some soccer on the beach.&lt;/p&gt;
+
+&lt;h5 id=&quot;what-actually-happened&quot;&gt;What actually happened&lt;/h5&gt;
+&lt;p&gt;I got bogged down on a consulting project that was a bit behind schedule as Greg visited. So we got maybe 1-2 days of work done, which instead of dealing with any of the issues on my part was shipping a new feature I decided I wanted, called &lt;a href=&quot;https://github.com/gterrono/houston#custom-actions&quot;&gt;Custom Actions&lt;/a&gt;, which were kind of cool but not at all the problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/dbf805a68e8d8ea7e5afa28ad991035ae97530d7/68747470733a2f2f7261772e6769746875622e636f6d2f67746572726f6e6f2f686f7573746f6e2f6d61737465722f646f632f637573746f6d2d616374696f6e732e706e67&quot; alt=&quot;Custom Actions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We still played some soccer, though. Greg was way better at soccer than the rest of us.&lt;/p&gt;
+
+&lt;h4 id=&quot;get-other-maintainers-they-said&quot;&gt;Get other maintainers, they said&lt;/h4&gt;
+&lt;p&gt;We had two pretty helpful maintainers turn up: First, &lt;a href=&quot;https://github.com/gterrono/houston/commits?author=zurawiki&quot;&gt;Roger&lt;/a&gt; decided to redesign our UI from basic boostrap to the line-green version you see today. Second, sometime around late 2014, this Swiss dude named &lt;a href=&quot;https://github.com/matteodem&quot;&gt;Matteo&lt;/a&gt; showed up and &lt;a href=&quot;https://github.com/gterrono/houston/issues/251&quot;&gt;fixed&lt;/a&gt; a bunch of things. That was awesome, and we talked to him on Skype and gave him write access as somebody had suggested for growing your maintainers. Later in 2015, my friend &lt;a href=&quot;https://github.com/samcorcos&quot;&gt;Sam&lt;/a&gt; came in and added some more tests.&lt;/p&gt;
+
+&lt;p&gt;Still, for whatever reason, nobody stuck around and answered issues, etc, for the long term, so it was still up to us.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-4-decline-and-fall-of-the-houston-admin&quot;&gt;Part 4: Decline and Fall of the Houston Admin&lt;/h2&gt;
+
+&lt;h4 id=&quot;meteor-10-is-released&quot;&gt;Meteor 1.0 is released!&lt;/h4&gt;
+&lt;p&gt;Coinciding with Greg’s visit, Meteor finally &lt;a href=&quot;https://blog.meteor.com/meteor-1-0-d0702aab3ef&quot;&gt;released 1.0&lt;/a&gt; in October 2014. Perhaps we’ll no longer have to adjust the incompatible hacks we use to figure out which collections are to be added and we can focus on the good stuff!&lt;/p&gt;
+
+&lt;h4 id=&quot;blaze-vs-react&quot;&gt;Blaze vs React&lt;/h4&gt;
+&lt;p&gt;If only. A year later, the big question up in the air becomes whether to use Meteor’s original Blaze templating or &lt;a href=&quot;https://www.discovermeteor.com/blog/blaze-react-meteor/&quot;&gt;switch to a react-based front-end&lt;/a&gt;. React is great and all, but we for one are not up for yet anothe rewrite of this thing we haven’t really gotten to use for our own stuff in like, two years.&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;1.3&lt;/h4&gt;
+&lt;p&gt;To add insult to injury, The Meteor Development Group ignores the principles of &lt;a href=&quot;http://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt; to release 1.3 in April 2016 with &lt;a href=&quot;https://guide.meteor.com/1.3-migration.html&quot;&gt;Breaking Changes&lt;/a&gt; - and our package is &lt;a href=&quot;https://github.com/gterrono/houston/issues/372&quot;&gt;broken yet again. Maybe.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;part-5-an-epilogue&quot;&gt;Part 5, an Epilogue&lt;/h2&gt;
+&lt;p&gt;Perhaps the most poignant symptom of the sort of stagnancy that the project fell into is that I had an idea to write this blog-post in early 2015, and it took two years to even get the post-mortem for this project done.&lt;/p&gt;
+
+&lt;p&gt;I think Greg may have fixed the 1.3 issue, but the last change I can see in the codebase is in March 2016 and frankly I just don’t care anymore. On the bright side, it looks like there’s a &lt;a href=&quot;https://github.com/yogiben/meteor-admin&quot;&gt;half-decent competitor&lt;/a&gt; that people who want an admin can use&lt;sup id=&quot;fnref:yogiben&quot;&gt;&lt;a href=&quot;#fn:yogiben&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Also, the Meteor Development Group looks like it’s less interested in Meteor and focusing on &lt;a href=&quot;http://www.apollodata.com/&quot;&gt;GraphQL tools&lt;/a&gt; these days, so maybe nobody needs this. On the bright side, 880 stars on Github, so that’s cool!&lt;/p&gt;
+
+&lt;h4 id=&quot;what-have-we-learned&quot;&gt;What have we learned?&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Open-source maintenance is hard, especially if your only remaining motivation is altruism. &lt;a href=&quot;https://twitter.com/schneems&quot;&gt;Richard Schneeman&lt;/a&gt; gave a great talk about &lt;a href=&quot;https://www.schneems.com/2016/05/31/saving-sprockets.html&quot;&gt;Saving Sprockets&lt;/a&gt; last year which nailed it.&lt;/li&gt;
+  &lt;li&gt;Perhaps we should have quit while we were ahead and put an “not actively maintained, looking for maintainers” on the README back in 2014. That would have been a bit more responsible.&lt;/li&gt;
+  &lt;li&gt;I don’t know. What did we learn Greg?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;thank-you&quot;&gt;Thank you&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To Greg, who despite everything else was an awesome partner on this project.&lt;/li&gt;
+  &lt;li&gt;The Yefim, Ceasar, Matteo, Roger, Sam and other contributors!&lt;/li&gt;
+  &lt;li&gt;The the Meteor Development Group folks for their contributions to realtime web development, whose ideas will live on independent of Meteor’s future, and also for the free snacks and t-shirts and the Pebbles we won at that hackathon back at 2013.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:ssr&quot;&gt;
+      &lt;p&gt;as far as I know, Meteor still doesn’t have proper Server-Side rendering. Arunoda &lt;a href=&quot;https://meteorrhacks.com/server-side-rendering/&quot;&gt;wrote a community library&lt;/a&gt; in 2015, but given the Blaze/React split, I’m uncertain how much of this has come to pass. &lt;a href=&quot;#fnref:ssr&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:genghis&quot;&gt;
+      &lt;p&gt;Ironically, the closest thing to an Meteor Admin at the time was &lt;a href=&quot;genghisapp.com&quot;&gt;Genghis&lt;/a&gt;, a standalone one-page PHP-based Mongo editor by &lt;a href=&quot;https://twitter.com/bobthecow&quot;&gt;Justin Hileman&lt;/a&gt;, whose younger brother I had somehow hired the year prior. Silicon Valley is a small place. &lt;a href=&quot;#fnref:genghis&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:yogiben&quot;&gt;
+      &lt;p&gt;though it too looks like it has not been updated in 10 months :-/. &lt;a href=&quot;#fnref:yogiben&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Test Driven Interviewing</title>
