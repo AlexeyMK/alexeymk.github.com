@@ -62,6 +62,118 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2012/07/15/weekend-hack--a-markov-baby-name-generator.html">Weekend Hack: A Markov Baby Name Generator</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2012-07-15T11:00:11-07:00" datetime="2012-07-15T11:00:11-07:00" pubdate>
+                <span class="month"><abbr>July</abbr></span>
+                <span class="day">15</span>
+                <span class="year">2012</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>My weekend hack is a <a href="http://en.wikipedia.org/wiki/Markov_chain">Markov Chain</a> baby name generator.  <a href="http://twitter.com/markovbaby">@MarkovBaby</a> will come up with a new baby name once an hour and tweets it out.</p>
+
+<p><strong>The result</strong>: <a href="http://twitter.com/markovbaby">Follow @markovbaby on Twitter</a>.</p>
+
+<script src="http://storify.com/alexeymk/sample-names.js"></script>
+<noscript>[<a href="http://storify.com/alexeymk/sample-names" target="_blank">View the story "Sample Names" on Storify</a>]</noscript>
+
+<h2 id="what-is-a-markov-chain">What is a Markov Chain?</h2>
+<p>Read <a href="http://en.wikipedia.org/wiki/Markov_chain">the wikipedia entry</a> for a more thorough introduction, but in our case, a Markov Chain is a simple random process to generate text that looks sort of like other text.</p>
+
+<p>For example: as we’re generating baby names, say we start with the letter “C”.  What should be our next letter?  Well, what kind of letters usually come after a “C” in names?  Let’s look through our <a href="https://github.com/AlexeyMK/markov-baby-names/blob/master/boys.txt">list of existing names</a> and see what usually comes next.</p>
+
+<p><img src="/images/letters_after_c.png" />&lt;/img&gt;</p>
+
+<p>Great.  Let’s pick the next character at random from within this list, weighing each possibility by how often it appears.  If we get ‘end of word’, we’re done.</p>
+
+<p>But let’s say we’ve picked ‘h’.  Great - so far the name starts with a ‘ch’ - let’s look for the next character: what tends to follow an ‘h’ in our existing names?  And so on.</p>
+
+<h2 id="results">Results</h2>
+
+<p>The result are a rather eclectic set of names.  Some are silly and non-sensical (C, Ieahaholijayson), while others seem pretty reasonable (Marin, Gacon).  A lot of them sound like they belong in Middle Earth (Miaviria), to Weseteros (Josth, Mindron).  Occasionaly it’ll accidentally recreate a real name. Those are my favorite.</p>
+
+<p><a href="http://twitter.com/markovbaby">@MarkovBaby</a> may be suitable for an expecting couple with just the appropriate amount of eccentricity and love of statistics.</p>
+
+<h2 id="the-code">The code</h2>
+
+<p><a href="https://github.com/AlexeyMK/markov-baby-names">Is available on my github</a>.  Hopefully nothing too complicated; random.choice and collections.defaultdict proved rather helpful. I hadn’t touched Markov Chains since proving things about them in Randomized Algorithms class, so it was good to know that with a bit of clever python you could write one in a few dozen lines.  For reference, mine was an ‘order-1’ (IE, only look at one previous character) chain.</p>
+
+<script src="https://gist.github.com/3119751.js"> </script>
+
+<p>See also, <a href="http://www.cs.bell-labs.com/cm/cs/pearls/sec153.html">a discussion on Markov Chain implementations in Programming Pearls</a>.</p>
+
+<h2 id="possible-extensions">Possible extensions</h2>
+
+<ul>
+  <li>Favorite or RT your favorite baby names, and I’ll put up a leaderboard for favorite ones.</li>
+  <li>Apply the same techniques (and same code) to startup names, using crunchbase: Markov 2.0.</li>
+</ul>
+
+<p>If you’ve got a twitter bot missing in your life, <a href="http://twitter.com/markovbaby">follow @markovbaby on Twitter</a>.  Or <a href="http://twitter.com/alexeymk">follow me</a>. That would be cool too.</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/hack/">hack</a>,</li>
+                
+                <li><a href="/tag/technical/">technical</a>,</li>
+                
+                <li><a href="/tag/parody/">parody</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2012/07/15/weekend-hack--a-markov-baby-name-generator.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2012/07/07/lessons-learned-on-nontechnical-hiring.html">Non-Technical Hiring, Lessons Learned</a></h1>
 					</div><!-- unit-inner -->
             
@@ -431,99 +543,11 @@
 </article>
 
   
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/dont-take-your-highest-paying-internship-offe/index.html">Don't take your highest-paying internship offer</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2012-05-19T03:37:00-07:00" datetime="2012-05-19T03:37:00-07:00" pubdate>
-                <span class="month"><abbr>May</abbr></span>
-                <span class="day">19</span>
-                <span class="year">2012</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>"Well, I wasn't really going to intern at X (say, Zynga, or Morgan Stanley) but they offered more than anybody else."</p>
-<p><strong>Don't do that.</strong></p>
-<p>It's easy to focus on the financial aspect of an offer, especially if it's the first time you've had a chance to make anywhere near this much. It feels kind of surreal.</p>
-<p>It's not that money isn't a valuable proxy for how valuable the company perceives you to be. If you get an offer of "housing + we give you options in the company," that's a good sign that you are talking to <a href="http://WhartoniteSeeksCodeMonkey.com">Whartonite Seeks Code Monkey</a>-esque enterpreneurs and if you have anything remotely more interesting available you should go do that instead.</p>
-<p>But the point of an internship is not to maximize your profits - it's to <a href="http://alexeymk.com/a-brief-guide-to-tech-internships">learn what kind of work or industry you want to be in once you graduate</a>, to try things out and live in cool places, and (more immediately) learn about how real-world software engineering works.</p>
-<p>When you go out into the real world with six figures of college loans, sure: try to negotiate up your offers, consider the difference between $80k and $100k a year. &nbsp;This will make a substantial difference in how soon you will be free from debt. &nbsp;But when you are deciding where to spend your summer, the difference of a few $k is a small price to pay for learning about a potential industry or position or company that you are interested in as a career.</p>
-<p>PS. &nbsp;In case you're wondering, here's an approximate price that companies are paying these days for technical interns. I imagine this'll be out of date reasonably soon, but here it goes*:</p>
-<ul>
-<li>~$10k/month - crazy financial hedge-funds where they have you do algorithms trading or something along those lines. Expect +$2k/month for every greek letter in their name.</li>
-<li>~$7.5k/month - Google. I think Google still makes a point of paying 10-20% more than anybody else, but I haven't checked recently. Edit: Palantir appears to be in this bracket as well.</li>
-<li>~$6-7k/month - Facebook, Dropbox, Twitter, Microsoft, Apple, etc - top-tier tech companies. &nbsp;</li>
-<li>~$4-6k/month - Various smaller companies and legit startups. &nbsp;I think normal finance-tech jobs are in this range as well.</li>
-<li>~$2-4k/month - Less prestigious (or non Bay-Area) start-ups or small tech firms.</li>
-<li>~$0-2k/month - Summer of Code, non-profit work, non-funded or silly start-ups.</li>
-</ul>
-<p><em>* Note: I'm including housing in all of these.&nbsp;</em></p>
-<p>Keep in mind that a number of these companies also adjust by year, more willing to pay a rising senior than a rising freshman. &nbsp;I've seen this be a factor of up to 50%.</p>
-<p>[edited with suggestions from <a href="http://news.ycombinator.com/item?id=3996537">Hacker News</a> comments]</p>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/advice/">advice</a>,</li>
-                
-                <li><a href="/tag/internships/">internships</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/dont-take-your-highest-paying-internship-offe/index.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
   </ol>
 </div>
 <!-- Pagination links -->
 <div class="pagination">
-  <span class="page_number ">Page: 5 of 13</span>
+  <span class="page_number ">Page: 5 of 14</span>
   
     | <a href="/6" class="next">Next</a>
   

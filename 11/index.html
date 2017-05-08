@@ -62,6 +62,97 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/the-go-command/index.html">The 'go' command</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2011-03-15T15:13:00-07:00" datetime="2011-03-15T15:13:00-07:00" pubdate>
+                <span class="month"><abbr>March</abbr></span>
+                <span class="day">15</span>
+                <span class="year">2011</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p><a href="http://www.twitter.com/thezachw">Zach Wasserman</a>&nbsp;created something I've been wanting for a long time and have been to lazy to implement myself: <a href="http://zwass.wordpress.com/2011/03/16/the-go-command/">the 'go' command</a>.</p>
+<p>Often, I'll be looking for some file on the command line, I'll type cd and be&nbsp;tab-completing and end up getting to the file itself. Of course, "cd ~/my/stuff/file.txt" doesn't make much sense. &nbsp;</p>
+<div class="CodeRay">
+  <div class="code"><pre>bash: cd: stuff.txt: Not a directory</pre></div>
+</div>
+
+<p>I end up changing cd to vim, but it's kind of a waste. The solution, then, is to follow the 'click on something' paradigm from modern GUIs: clicking on a directory opens that directory and shows its contents; clicking on a file opens that file in whatever the default for that file type is. &nbsp;For simplicity, let's just use the $EDITOR for files.</p>
+<p>Behold, the 'go' command:</p>
+<p><span style="font-family: Georgia, Bitstream Charter, serif; font-size: 16px; color: #333333; line-height: 24px;"> </span></p>
+<div class="CodeRay">
+  <div class="code"><pre>go()
+{
+if [ -f $1 ]
+then
+    $EDITOR $1
+else
+    cd $1 &amp;&amp; ls
+fi
+}</pre></div>
+</div>
+
+<p>Add it to your .bashrc file. <a href="http://zwass.wordpress.com/2011/03/16/the-go-command/">http://zwass.wordpress.com/2011/03/16/the-go-command/</a>&nbsp;for details.</p>
+<p>Thanks, Zach and Andrew.</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/technical/">technical</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/the-go-command/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/recruiting-penn-engineers-a-case-study/index.html">Recruiting Penn Engineers: A Case Study </a></h1>
 					</div><!-- unit-inner -->
             
@@ -469,92 +560,11 @@
 </article>
 
   
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/the-recruiting-email-that-wasnt/index.html">The recruiting email that wasn't</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2011-01-28T07:15:00-08:00" datetime="2011-01-28T07:15:00-08:00" pubdate>
-                <span class="month"><abbr>January</abbr></span>
-                <span class="day">28</span>
-                <span class="year">2011</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>Here's an email I'd like to see:</p>
-<blockquote>
-<p>Hello there,</p>
-<p>I am contacting you on behalf of a next-generation Social Networking start-up that is looking for some ninja coders who know PHP and maybe some Python. &nbsp;<span style="font-family: arial, sans-serif;">The idea is, you can follow your friends and see what they are up to. &nbsp;Here's the twist, though - you can "check in" somewhere and then your friends can see and comment on it. It's also a Q&amp;A service.</span></p>
-<p>The company was started by&nbsp;two Harvard students, a Psych and an Econ major. &nbsp;I don't want to get into too many financial details but we have a lot of really impressive high-profile investors interested in funding us. This is going to be a multi-billion dollar company. For sure.</p>
-<p>We have gotten a ton of interest from people who want to work with us so you should be pretty good if you're going to apply. &nbsp;This is a <strong>ONCE IN A LIFETIME</strong> opportunity and if you miss out now you'll regret it forever, I'm telling you.</p>
-<p>Interested? Apply <a href="http://www.facebook.com/careers/">here.</a></p>
-</blockquote>
-<p>[<em>As an aside: if you're into this type of thing, be sure to check out <a href="http://whartoniteseekscodemonkey.tumblr.com">whartoniteseekscodemonkey.tumblr.com</a>]</em></p>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/jobs/">jobs</a>,</li>
-                
-                <li><a href="/tag/parody/">parody</a>,</li>
-                
-                <li><a href="/tag/penn/">penn</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/the-recruiting-email-that-wasnt/index.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
   </ol>
 </div>
 <!-- Pagination links -->
 <div class="pagination">
-  <span class="page_number ">Page: 11 of 13</span>
+  <span class="page_number ">Page: 11 of 14</span>
   
     | <a href="/12" class="next">Next</a>
   

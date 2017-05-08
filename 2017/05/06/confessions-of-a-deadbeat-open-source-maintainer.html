@@ -170,7 +170,7 @@ Yefim &amp; Ceasar made the wise decision of not doing much contributing work pa
 <p>Actually, having gone through some of the ~270 <a href="https://github.com/gterrono/houston/issues">Github Issues</a> on the project, I’m surprised by how good many of them were and how attentive and friendly we were about them. Still, there were a few bad apples, like <a href="https://github.com/gterrono/houston/issues/216">css not rendering</a>, <a href="https://github.com/gterrono/houston/issues/274">how to upload files</a> and <a href="https://github.com/gterrono/houston/issues/301">Cannot login on Heroku app</a> that either failed to provide enough context and/or were coming from folks who were not otherwise yet competent Meteor (or even JS) developers.</p>
 
 <h4 id="meteor-doesnt-support-mounting--hacky-css">4. Meteor doesn’t support Mounting &amp; hacky CSS.</h4>
-<p>Meteor bundles all CSS &amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example <code>$('.save').disable()</code> and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did [some crazy things] to avoid the namespace collissions.</p>
+<p>Meteor bundles all CSS &amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example <code>$('.save').disable()</code> and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did <a href="https://github.com/gterrono/houston/issues/172">some crazy things</a> to avoid the namespace collissions.</p>
 
 <p>Django solves this problem through <a href="https://docs.djangoproject.com/en/1.11/topics/http/urls/#url-namespaces">URL namespaces</a>, allowing the ‘admin’ to behave largely like its own app. Express.js allows for <a href="https://expressjs.com/en/api.html">‘mounting’</a> of multiple sub-apps on certain directory paths - in either case, no shared CSS/JS is bundled for these cases, avoiding collissions like the above.</p>
 
@@ -236,7 +236,7 @@ Yefim &amp; Ceasar made the wise decision of not doing much contributing work pa
 <ul>
   <li>Open-source maintenance is hard, especially if your only remaining motivation is altruism. <a href="https://twitter.com/schneems">Richard Schneeman</a> gave a great talk about <a href="https://www.schneems.com/2016/05/31/saving-sprockets.html">Saving Sprockets</a> last year which nailed it.</li>
   <li>Perhaps we should have quit while we were ahead and put an “not actively maintained, looking for maintainers” on the README back in 2014. That would have been a bit more responsible.</li>
-  <li>I don’t know. What did we learn Greg?</li>
+  <li>On the bright side, building a key piece of infrastructure for a hip new development framework turned out to be a great way to get a lot of users for your open source project.</li>
 </ul>
 
 <h4 id="one-more-thing">…one more thing</h4>
