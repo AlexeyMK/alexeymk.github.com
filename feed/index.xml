@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-05-07T19:31:34-07:00</updated>
+ <updated>2017-05-07T19:38:07-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -17,7 +17,7 @@
    <link href="http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer.html"/>
    <updated>2017-05-06T18:06:24-07:00</updated>
    <id>http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer</id>
-   <content type="html">&lt;p&gt;&lt;img src=&quot;https://photos-3.dropbox.com/t/2/AACqlHa01vTx7VJbXwRn6QaEPPg0T3rH_m4QE-Ta8uA6gg/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2018.00.15.png/EN7ohOsEGKsDIAIoAg/EoUc0F7j_rtNPD5R8ryVk4J3oJyseI5EgVzq_RGNon0?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;a user sums it up&quot; title=&quot;source: https://github.com/gterrono/houston/issues/294#issuecomment-238914107&quot; /&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/images/abandoned-project.gif&quot; alt=&quot;a user sums it up&quot; title=&quot;source: https://github.com/gterrono/houston/issues/294#issuecomment-238914107&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Create an open source project, they said.&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;Sequestering ourselves on the second floor of the hackspace, a couple of college friends and I acquired a whiteboard and some markers, and jotted down our big idea list. Not lacking for ambition, the first thing we figured we would fix was server-side rendering. Turned out this &lt;em&gt;seemingly simple&lt;/em&gt; task was already on Meteor’s &lt;a href=&quot;https://trello.com/c/Lz07fBAm/7-server-side-rendering&quot;&gt;Trello Roadmap&lt;/a&gt;, so, what the heck, we figured we’d pitch in.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://photos-1.dropbox.com/t/2/AACNsTO7oEEM3UaFhVyWpRjRWF-9kH96MF43WmVz7sHDOw/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2015.58.16.png/EN7ohOsEGKoDIAIoAg/YtjyBR_uyKzlBB2XxhUQl7k4C9DxnbMylRiOmid3qGw?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;I inquire about server-side rendering&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/server-side-rendering.gif&quot; alt=&quot;I inquire about server-side rendering&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Speaking with the actual development team a few hours later, we learned that server side was (1) hard and (2) coming soon anyway&lt;sup id=&quot;fnref:ssr&quot;&gt;&lt;a href=&quot;#fn:ssr&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fair enough - we’d solve our other painpoint, the lack of a proper admin DSL.&lt;/p&gt;
 
@@ -135,7 +135,7 @@ Meteor bundles all CSS &amp;amp; Javascript together when it compiles. This is n
 &lt;h4 id=&quot;the-costa-rica-summit&quot;&gt;The Costa Rica summit&lt;/h4&gt;
 
 &lt;p&gt;Around Summer 2014, a year after we started, things were going kind of slumpey. As an effort to regroup, I invited Greg to Costa Rica where I was staying for a few months:
-&lt;img src=&quot;https://photos-6.dropbox.com/t/2/AAAltNxC49gA0_nV8K1pVzxBcnchKBaPEyOe5JxRNePJDQ/12/599642615/png/32x32/1/_/1/2/Screenshot%202017-05-07%2018.45.21.png/EN7ohOsEGKwDIAIoAg/newgorKxXuuCpftyoFoUKZtGt70naOVvETo0LOsn3Zg?size=2048x1536&amp;amp;size_mode=3&quot; alt=&quot;Hey Greg, come to Costa Rica!&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/images/costa-rica-summit.gif&quot; alt=&quot;Hey Greg, come to Costa Rica!&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The plan was basically to unbreak the critical stuff and make a plan for what we wanted to do next, and maybe also play some soccer on the beach.&lt;/p&gt;
 
