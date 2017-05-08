@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2017-05-07T19:38:07-07:00</updated>
+ <updated>2017-05-07T19:38:55-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -106,9 +106,8 @@ Yefim &amp;amp; Ceasar made the wise decision of not doing much contributing wor
 &lt;h4 id=&quot;how-do-i-even-esque-github-issues&quot;&gt;3. ‘How do I even’-esque Github Issues&lt;/h4&gt;
 &lt;p&gt;Actually, having gone through some of the ~270 &lt;a href=&quot;https://github.com/gterrono/houston/issues&quot;&gt;Github Issues&lt;/a&gt; on the project, I’m surprised by how good many of them were and how attentive and friendly we were about them. Still, there were a few bad apples, like &lt;a href=&quot;https://github.com/gterrono/houston/issues/216&quot;&gt;css not rendering&lt;/a&gt;, &lt;a href=&quot;https://github.com/gterrono/houston/issues/274&quot;&gt;how to upload files&lt;/a&gt; and &lt;a href=&quot;https://github.com/gterrono/houston/issues/301&quot;&gt;Cannot login on Heroku app&lt;/a&gt; that either failed to provide enough context and/or were coming from folks who were not otherwise yet competent Meteor (or even JS) developers.&lt;/p&gt;
 
-&lt;p&gt;Those definitely drained the enthusiasm tank.
-#### 4. Meteor doesn’t support Mounting &amp;amp; hacky CSS.
-Meteor bundles all CSS &amp;amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example &lt;code&gt;$(&#39;.save&#39;).disable()&lt;/code&gt; and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did [some crazy things] to avoid the namespace collissions.&lt;/p&gt;
+&lt;h4 id=&quot;meteor-doesnt-support-mounting--hacky-css&quot;&gt;4. Meteor doesn’t support Mounting &amp;amp; hacky CSS.&lt;/h4&gt;
+&lt;p&gt;Meteor bundles all CSS &amp;amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example &lt;code&gt;$(&#39;.save&#39;).disable()&lt;/code&gt; and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did [some crazy things] to avoid the namespace collissions.&lt;/p&gt;
 
 &lt;p&gt;Django solves this problem through &lt;a href=&quot;https://docs.djangoproject.com/en/1.11/topics/http/urls/#url-namespaces&quot;&gt;URL namespaces&lt;/a&gt;, allowing the ‘admin’ to behave largely like its own app. Express.js allows for &lt;a href=&quot;https://expressjs.com/en/api.html&quot;&gt;‘mounting’&lt;/a&gt; of multiple sub-apps on certain directory paths - in either case, no shared CSS/JS is bundled for these cases, avoiding collissions like the above.&lt;/p&gt;
 
