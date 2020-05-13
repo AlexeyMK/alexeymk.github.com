@@ -1164,6 +1164,10 @@ hr {
 }
 
 /* AlexeyMK Hacky stuff */
+footer h5 {
+  font-size: large;
+  margin: 0;
+}
 h1 a {
   border: none !important;
 }
