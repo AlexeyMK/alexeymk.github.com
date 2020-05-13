@@ -20,12 +20,12 @@ def generate_new_post(name, date):
   )
 
   open(result_filename, 'w').write(result_content)
-  print "Sample written into %s" % result_filename
+  print("Sample written into %s" % result_filename)
 
 
 if __name__ == '__main__':
   if len(argv) != 2:
-    print "Usage: new_post.py 'Post Title Goes Here'"
+    print("Usage: new_post.py 'Post Title Goes Here'")
     exit()
 
   postname = argv[1]

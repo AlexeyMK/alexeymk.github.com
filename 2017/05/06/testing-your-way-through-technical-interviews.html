@@ -80,9 +80,9 @@
 
 			<div class="bd">
 				<div class="entry-content">
-          <p>For most<sup id="fnref:tdd"><a href="#fn:tdd" class="footnote">1</a></sup> engineering tasks, I prefer to avoid TDD, or Test Driven Development.</p>
+          <p>For most<sup id="fnref:tdd" role="doc-noteref"><a href="#fn:tdd" class="footnote">1</a></sup> engineering tasks, I prefer to avoid TDD, or Test Driven Development.</p>
 
-<p>Yet when I job-hunt, I use TDD religiously<sup id="fnref:coding"><a href="#fn:coding" class="footnote">2</a></sup>. It has been tremendously helpful.</p>
+<p>Yet when I job-hunt, I use TDD religiously<sup id="fnref:coding" role="doc-noteref"><a href="#fn:coding" class="footnote">2</a></sup>. It has been tremendously helpful.</p>
 
 <h4 id="hmpf-why">Hmpf. Why?</h4>
 <p>Most interview challenges actually come in two parts.</p>
@@ -104,7 +104,7 @@
 <p>By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you the comfort that your subsequent clean up / refactoring doesn’t inadvertantly break your implemenation.</p>
 
 <h4 id="yeah-but-i-can-always-just-write-tests-later">Yeah, but I can always just write tests later.</h4>
-<p>When I conduct interviews, I keep running into candidates clever enough to power through engineering challenges on raw talent<sup id="fnref:smarter"><a href="#fn:smarter" class="footnote">3</a></sup>. The candidate implements an <em>optimal</em> solution within fifteen minutes. Then it’s time for tests and she just <strong>cannot</strong> think of cases beyond the common path, which makes her look like <a href="http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/">a cowboy</a>.</p>
+<p>When I conduct interviews, I keep running into candidates clever enough to power through engineering challenges on raw talent<sup id="fnref:smarter" role="doc-noteref"><a href="#fn:smarter" class="footnote">3</a></sup>. The candidate implements an <em>optimal</em> solution within fifteen minutes. Then it’s time for tests and she just <strong>cannot</strong> think of cases beyond the common path, which makes her look like <a href="http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/">a cowboy</a>.</p>
 
 <p>I blame the <a href="https://hbr.org/2006/12/the-curse-of-knowledge;at/1">curse of knowledge</a> - once you’ve solved the problem, it’s harder to think about what wrong turns you could have taken. It all feels trivial.</p>
 
@@ -112,7 +112,7 @@
 
 <p>¯\_(ツ)_/¯, I just use asserts and print statements. If I’m feeling fancy, I’ll create an array of test case scenarios and run them like</p>
 
-<pre><code>test_cases = [
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test_cases = [
   [[2, 2], 4],
   [[1, 2, 3, 4], 10],
   [[], 0],
@@ -132,7 +132,7 @@ for test_case in test_cases:
     print("UH OH!")
 
   # (or you could just do: assert answer == expected_answer)
-</code></pre>
+</code></pre></div></div>
 
 <p>If you insist on being fancy, you can do that thing where you ask your interviewer if they’d like you to use a proper testing framework first, and of course they don’t, but now it looks like you <em>could</em> and you’re just doing them a favor by using asserts, cause you’re like, super assertive.</p>
 
@@ -143,16 +143,16 @@ for test_case in test_cases:
 
 <p>Thanks to Vaibhav, Joe, Nick, Gayle, Tess, Charlie, Kevin, Zain, and Yahel for giving feedback on earlier drafts that I incorporated.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:tdd">
-      <p>Don’t get me wrong, TDD <a href="https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847/">has its uses</a>, but we often mistake what Kent Beck meant by <a href="https://martinfowler.com/bliki/UnitTest.html">‘unit’</a>. Testing ‘just right’ is hard. <a href="#fnref:tdd" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:tdd" role="doc-endnote">
+      <p>Don’t get me wrong, TDD <a href="https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847/">has its uses</a>, but we often mistake what Kent Beck meant by <a href="https://martinfowler.com/bliki/UnitTest.html">‘unit’</a>. Testing ‘just right’ is hard. <a href="#fnref:tdd" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:coding">
-      <p>To be clear, TDD won’t help you with interview where you don’t actually code (IE, whiteboard interviews)  You’ll <a href="https://medium.com/green-river-web-mobile-developers/surviving-your-first-technical-interview-inquisition-tips-tricks-live-demos-739ca0f8f845fuq">still have to start by asking questions</a>, though. <a href="#fnref:coding" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:coding" role="doc-endnote">
+      <p>To be clear, TDD won’t help you with interview where you don’t actually code (IE, whiteboard interviews)  You’ll <a href="https://medium.com/green-river-web-mobile-developers/surviving-your-first-technical-interview-inquisition-tips-tricks-live-demos-739ca0f8f845fuq">still have to start by asking questions</a>, though. <a href="#fnref:coding" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:smarter">
-      <p>I used to have that problem earlier in my career. I’ve addressed it, largely by becoming dumber. <a href="#fnref:smarter" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:smarter" role="doc-endnote">
+      <p>I used to have that problem earlier in my career. I’ve addressed it, largely by becoming dumber. <a href="#fnref:smarter" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

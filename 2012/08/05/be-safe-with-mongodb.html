@@ -90,9 +90,9 @@
 
 <p>** But I LIKE knowing about integrity errors**.  Me too, especially when testing locally.</p>
 
-<p><strong>Here’s the fix</strong>: set <a href="http://www.mongodb.org/display/DOCS/Connections"><code>safe=True</code> in your Mongo connection object</a>.  In django non-rel, this means setting</p>
+<p><strong>Here’s the fix</strong>: set <a href="http://www.mongodb.org/display/DOCS/Connections"><code class="highlighter-rouge">safe=True</code> in your Mongo connection object</a>.  In django non-rel, this means setting</p>
 
-<pre><code>DATABASES = {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATABASES = {
   'default': {
     ...
     'OPTIONS': {
@@ -100,7 +100,7 @@
     },
   },
 }
-</code></pre>
+</code></pre></div></div>
 
 <p>in settings.py.</p>
 
@@ -142,7 +142,7 @@
 							<li class="pipe"> | </li>
 							
 							
-							<li class="next"><a class="internal" rel="next"  href="/2012/08/12/fundersclub---getting-crowdfunding-right.html" title="View FundersClub: getting Crowdfunding right">FundersClub: getting Crowdfunding right &raquo;</a></li>
+							<li class="next"><a class="internal" rel="next"  href="/2012/08/12/fundersclub-getting-crowdfunding-right.html" title="View FundersClub: getting Crowdfunding right">FundersClub: getting Crowdfunding right &raquo;</a></li>
 							
 						</ul>
 					</nav>
