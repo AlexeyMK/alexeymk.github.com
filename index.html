@@ -62,6 +62,178 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager.html">Lessons Learned: Giving Feedback as an Engineering Manager</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2020-06-20T07:23:09-07:00" datetime="2020-06-20T07:23:09-07:00" pubdate>
+                <span class="month"><abbr>June</abbr></span>
+                <span class="day">20</span>
+                <span class="year">2020</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>“Alexey, do you feel the points you bring up during our post-mortems are productive?” my tech lead asked at our 1:1.</p>
+
+<p>Well, shit. I had thought so, but apparently not.</p>
+
+<p>Earlier in the year, I became the Engineering Manager on a team responsible for half of the outages at our 2,000 person company. After each incident, the on-call engineer would write-up a doc and schedule a meeting.</p>
+
+<p>“How come this wasn’t caught in unit tests?” I found myself asking, in front of the assembled team. Next post-mortem, same thing. “I get that we didn’t have monitoring for this particular metric, but why not?” Week after week.</p>
+
+<p>The tech lead had asked a great question. Was my approach working?</p>
+
+<p>“I want to set high expectations,” I told him. “It’s not pleasant being critiqued in a group setting, but my hope is that the team internalizes my ‘good post-mortem’ bar.”</p>
+
+<p>The words sounded wrong even as I said them.</p>
+
+<p>“Thanks for the feedback.” I said “Let me think on it.”</p>
+
+<h2 id="feedback-budgets">Feedback budgets</h2>
+<p>I thought about it.</p>
+
+<p>There’s a limited budget for criticism one can ingest productively in a single sitting. Managers will try to extend this budget through famed best-practices like the shit-sandwich and the not-really-a-question question. Employees learn these approaches over time and develop an immunity.</p>
+
+<p>This happened here. Once my questioning reached the criticism threshold, I was no longer “improving the post-mortem culture.” I was “building resentment and defensiveness”.</p>
+
+<p>I had run over budget. And yet, there was important feedback to give!</p>
+
+<h2 id="change-the-template-change-the-world">Change the template, change the world</h2>
+<p>Upon reflection, I ended up <a href="#post-mortem-changes">updating our post-mortem template</a>. My questions became part of the template that got filled in before meeting.</p>
+
+<p>This way, it was the template pestering the post-mortem author. My role was simply to insist that the template be filled out; an entirely reasonable ask.</p>
+
+<p>Surprisingly enough, this worked; post-mortems became more substantive. The team to pared down outage frequency and met OKR goals.</p>
+
+<h2 id="process-linters">Process linters</h2>
+
+<p>One Simple Trick I had stumbled into was that there was a way to get around feedback budgets.
+Turns out there’s this other, vaster budget to tap into: the budget of process automation. When feedback is automated, it arrives sooner, feels confidential, and lacks judgement. This makes it palatable; this is why the budget is vaster.</p>
+
+<p>The technical analogy here is how we use linters. “Nit: don’t forget to explicitly handle the return value” during code review feels mildly frustrating. Ugh. It’s “just a style thing” and “the code works”. I’ll make the change, but with slight resentment.</p>
+
+<p>Yet, if that same “unhandled return value” nudge arrives in the form of a linter, it’s a different story. I got the feedback before submitting the code for review; no human had to see my minor incompetence.</p>
+
+<p>As a software engineer, Have Good Linters is an obvious, uncontroversial best practice. The revelatory moment for me was that templates for documents were just another kind of linter.</p>
+
+<h2 id="happy-ending">Happy Ending</h2>
+
+<p>My insight completely transformed the way Opendoor Engineering thinks about feedback; I crowd-surfed, held aloft by the team’s grateful arms, to receive my due praise as the master of all process improvement.</p>
+
+<p>Just kidding; COVID-19 happened and I switched jobs.</p>
+
+<hr />
+
+<h3 id="the-appendices-three">The Appendices Three</h3>
+<h4 id="i-process-linters-seen-in-the-wild">I: Process linters seen in the wild</h4>
+
+<h5 id="meetings">Meetings</h5>
+<p>Feedback “we have too many meetings”; “what’s the point of this meeting”; “do I need to be here”
+Linter mandate no-meetings days; mandate agendas; mandate a hard max on attendee count.</p>
+
+<h5 id="progress-updates">Progress Updates</h5>
+<p>Feedback “Hey, how’s that project going? Haven’t heard from you in a bit”
+Linter Daily stand-ups (synchronous or in slack/an app); issue trackers (Linear, Asana, Jira, Trello)</p>
+
+<h5 id="bug-reports">Bug Reports</h5>
+<p>Feedback “Hey, a friend who uses the app said that our unsubscribe page is broken?”
+Linter Quality pre-deploy test coverage, automated error reporting (Sentry), Alerting on pages or business metrics having anomalous activity patterns (Datadog).</p>
+
+<h4 id="ii-youve-gone-too-far-with-this-process-crap">II: You’ve gone too far with this process crap</h4>
+
+<p>The process budget is vaster than the feedback budget, but it isn’t unlimited. A mature company is going to have lots of legacy process - process debt, if you will.</p>
+
+<p>Process requires maintenance and pruning, to avoid “we do this because we’ve always done this” type problems. High-process managers are just as likely to generate unhappy employees as high-feedback managers.</p>
+
+<p><a name="post-mortem-changes"></a></p>
+<h4 id="iii-the-post-mortem-template-changes-if-thats-what-youre-here-for">III: The post-mortem template changes, if that’s what you’re here for</h4>
+
+<h5 id="a-5-whys-prompts">A. “5 Whys” Prompts</h5>
+<p>Our original 5 Whys prompt was “Why did this outage occur.”  During the post-mortem review, I kept asking questions like “but why didn’t this get caught in regression testing?”</p>
+
+<p>So, after discussion, I added my evergreen questions to the post-mortem template. They are:</p>
+
+<ul>
+  <li>Why didn’t the issue get caught by unit tests?</li>
+  <li>Why didn’t the issue get caught by integration/smoke tests?</li>
+  <li>Why didn’t the issue get flagged in Code Review?</li>
+  <li>Why didn’t the issue get caught during manual QA?</li>
+  <li>If the outage took over an hour to get discovered, why didn’t the monitoring page our on-call?</li>
+</ul>
+
+<h5 id="b-defining-root-cause">B. Defining “Root Cause”</h5>
+<p>“5 Whys” recommends continuing to ask why until you’re about five levels deep. We were often stopping at one or two.</p>
+
+<p>To make stopping less ambiguous, here are a set of “root causes” that I think are close to exhaustive:</p>
+
+<ul>
+  <li><strong>trade-off</strong> we were aware of this concern but explicitly made the speed-vs-quality trade-off (IE, not adding tests for an experiment). This was tech debt coming back to bite us.</li>
+  <li><strong>knowledge gap</strong> the person doing the work was not aware that this kind of error was even possible (IE, tricky race conditions, worker starvation)</li>
+  <li>
+    <p><strong>brain fart</strong> now that we look at it, we should have caught this earlier. “Just didn’t get enough sleep that night” kind of thing.</p>
+
+    <p>If you keep asking “why” but haven’t gotten to an answer that boils down to one of these, keep going deeper (or get a second opinion).</p>
+  </li>
+</ul>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/engineering-management/">engineering-management</a>,</li>
+                
+                <li><a href="/tag/advice/">advice</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2020/05/12/working-remotely-crossed-the-chasm-on-may-12-2C-2020.html">Working Remotely Crossed the Chasm on May 12, 2020</a></h1>
 					</div><!-- unit-inner -->
             
@@ -755,97 +927,6 @@ Maintain a healthy sleep schedule (7+ hours of sleep and in bed by 1AM, 95% of t
             <div class="social">
               <ul class="list-linear">
                 <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2017/01/03/two-steps-forward-two-steps-back.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2016/03/10/dependonate-donate-to-your-dependencies.html">Dependonate: Donate to your dependencies</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2016-03-10T12:51:31-08:00" datetime="2016-03-10T12:51:31-08:00" pubdate>
-                <span class="month"><abbr>March</abbr></span>
-                <span class="day">10</span>
-                <span class="year">2016</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>Giving back to open source projects you benefit from is one of those obviously-good-in-theory-confusing-in-practice ideas, like eating healthy or being carbon-neutral.</p>
-
-<p>Many services - flattr, bountysource and gratify, among others, offer widgets that developers can put on their projects to encourage subscription donations. None has been a breakout success.</p>
-
-<p>There needs to be a fast and straightforward tool to empower an engineering manager to say “sure, let’s do it.”</p>
-
-<h3 id="dependonate">Dependonate</h3>
-<p>Here’s how it would work.</p>
-
-<h4 id="dependency-file">Dependency File</h4>
-<p>Most projects I work on these days have a file with a list of package dependencies - <code class="highlighter-rouge">Gemfile</code> for ruby, <code class="highlighter-rouge">requirements.txt</code> for python, <code class="highlighter-rouge">package.json</code> for node, and plenty more.</p>
-
-<h4 id="list-of-dependencies">List of Dependencies</h4>
-<p>Piggybacking on package managers files, Dependonate would take a project’s dependency file and generate a list of direct and indirect projects. Each of those projects can then be parsed to see whether their Readme file includes links to any of the popular donate options (flattr, bountysource, gratify, paypal, etc).</p>
-
-<h4 id="actionable-next-steps">Actionable Next Steps</h4>
-<p>Finally, Dependonate would open up the various URLs that would make donating as registering and entering your credit card on the services above, the lists of desired projects to contribute to having been auto-filled.</p>
-
-<p>Dependonate would also generate a pretty report for the company to put up on their website as proponents of Open Source, somewhere near the engineering hiring page.</p>
-
-<p>Hit me up if you build something like this, or if your company would be up for donating through it.</p>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/ideas/">ideas</a>,</li>
-                
-                <li><a href="/tag/open-source/">open-source</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2016/03/10/dependonate-donate-to-your-dependencies.html" data-via="" data-lang="en">Tweet</a></div></li>
                 <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
               </ul>
             </div>

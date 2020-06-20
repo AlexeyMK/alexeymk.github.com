@@ -1176,6 +1176,10 @@ h1 a:hover {
   border-bottom: 1px dashed #d08688 !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 4px;
+}
+
 .gist {
   font-size: 14px;
 }

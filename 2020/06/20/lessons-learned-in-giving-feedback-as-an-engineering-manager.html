@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Lessons Learned: Giving Feedback as an Engineering Manager</title>
+	<meta name="author" content="">
+	<link href='/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="Lessons Learned: Giving Feedback as an Engineering Manager" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script type="text/javascript">
+    // google analytics
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18901708-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    // Heap
+    window.heap=window.heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+    heap.load("2484576110");
+  </script>
+</head>
+<body>
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+          <ul>
+            <li class="logo"><a href="/">Alexey needs a web presence</a></li>
+            <div id="stick-together">
+              <li class="page"><a href="/about">about</a></li>
+              <li class="page"><a href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence">subscribe</a></li>
+              <li class="page"><a href="http://twitter.com/alexeymk">twitter</a></li>
+              <li class="page"><a href="mailto:alexey.at.alexeymk.com">contact</a></li>
+            </div>
+          </ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+
+
+
+
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager.html">Lessons Learned: Giving Feedback as an Engineering Manager</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2020-06-20T07:23:09-07:00" datetime="2020-06-20T07:23:09-07:00" pubdate>
+                <span class="month"><abbr>June</abbr></span>
+                <span class="day">20</span>
+                <span class="year">2020</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>“Alexey, do you feel the points you bring up during our post-mortems are productive?” my tech lead asked at our 1:1.</p>
+
+<p>Well, shit. I had thought so, but apparently not.</p>
+
+<p>Earlier in the year, I became the Engineering Manager on a team responsible for half of the outages at our 2,000 person company. After each incident, the on-call engineer would write-up a doc and schedule a meeting.</p>
+
+<p>“How come this wasn’t caught in unit tests?” I found myself asking, in front of the assembled team. Next post-mortem, same thing. “I get that we didn’t have monitoring for this particular metric, but why not?” Week after week.</p>
+
+<p>The tech lead had asked a great question. Was my approach working?</p>
+
+<p>“I want to set high expectations,” I told him. “It’s not pleasant being critiqued in a group setting, but my hope is that the team internalizes my ‘good post-mortem’ bar.”</p>
+
+<p>The words sounded wrong even as I said them.</p>
+
+<p>“Thanks for the feedback.” I said “Let me think on it.”</p>
+
+<h2 id="feedback-budgets">Feedback budgets</h2>
+<p>I thought about it.</p>
+
+<p>There’s a limited budget for criticism one can ingest productively in a single sitting. Managers will try to extend this budget through famed best-practices like the shit-sandwich and the not-really-a-question question. Employees learn these approaches over time and develop an immunity.</p>
+
+<p>This happened here. Once my questioning reached the criticism threshold, I was no longer “improving the post-mortem culture.” I was “building resentment and defensiveness”.</p>
+
+<p>I had run over budget. And yet, there was important feedback to give!</p>
+
+<h2 id="change-the-template-change-the-world">Change the template, change the world</h2>
+<p>Upon reflection, I ended up <a href="#post-mortem-changes">updating our post-mortem template</a>. My questions became part of the template that got filled in before meeting.</p>
+
+<p>This way, it was the template pestering the post-mortem author. My role was simply to insist that the template be filled out; an entirely reasonable ask.</p>
+
+<p>Surprisingly enough, this worked; post-mortems became more substantive. The team to pared down outage frequency and met OKR goals.</p>
+
+<h2 id="process-linters">Process linters</h2>
+
+<p>One Simple Trick I had stumbled into was that there was a way to get around feedback budgets.
+Turns out there’s this other, vaster budget to tap into: the budget of process automation. When feedback is automated, it arrives sooner, feels confidential, and lacks judgement. This makes it palatable; this is why the budget is vaster.</p>
+
+<p>The technical analogy here is how we use linters. “Nit: don’t forget to explicitly handle the return value” during code review feels mildly frustrating. Ugh. It’s “just a style thing” and “the code works”. I’ll make the change, but with slight resentment.</p>
+
+<p>Yet, if that same “unhandled return value” nudge arrives in the form of a linter, it’s a different story. I got the feedback before submitting the code for review; no human had to see my minor incompetence.</p>
+
+<p>As a software engineer, Have Good Linters is an obvious, uncontroversial best practice. The revelatory moment for me was that templates for documents were just another kind of linter.</p>
+
+<h2 id="happy-ending">Happy Ending</h2>
+
+<p>My insight completely transformed the way Opendoor Engineering thinks about feedback; I crowd-surfed, held aloft by the team’s grateful arms, to receive my due praise as the master of all process improvement.</p>
+
+<p>Just kidding; COVID-19 happened and I switched jobs.</p>
+
+<hr />
+
+<h3 id="the-appendices-three">The Appendices Three</h3>
+<h4 id="i-process-linters-seen-in-the-wild">I: Process linters seen in the wild</h4>
+
+<h5 id="meetings">Meetings</h5>
+<p>Feedback “we have too many meetings”; “what’s the point of this meeting”; “do I need to be here”
+Linter mandate no-meetings days; mandate agendas; mandate a hard max on attendee count.</p>
+
+<h5 id="progress-updates">Progress Updates</h5>
+<p>Feedback “Hey, how’s that project going? Haven’t heard from you in a bit”
+Linter Daily stand-ups (synchronous or in slack/an app); issue trackers (Linear, Asana, Jira, Trello)</p>
+
+<h5 id="bug-reports">Bug Reports</h5>
+<p>Feedback “Hey, a friend who uses the app said that our unsubscribe page is broken?”
+Linter Quality pre-deploy test coverage, automated error reporting (Sentry), Alerting on pages or business metrics having anomalous activity patterns (Datadog).</p>
+
+<h4 id="ii-youve-gone-too-far-with-this-process-crap">II: You’ve gone too far with this process crap</h4>
+
+<p>The process budget is vaster than the feedback budget, but it isn’t unlimited. A mature company is going to have lots of legacy process - process debt, if you will.</p>
+
+<p>Process requires maintenance and pruning, to avoid “we do this because we’ve always done this” type problems. High-process managers are just as likely to generate unhappy employees as high-feedback managers.</p>
+
+<p><a name="post-mortem-changes"></a></p>
+<h4 id="iii-the-post-mortem-template-changes-if-thats-what-youre-here-for">III: The post-mortem template changes, if that’s what you’re here for</h4>
+
+<h5 id="a-5-whys-prompts">A. “5 Whys” Prompts</h5>
+<p>Our original 5 Whys prompt was “Why did this outage occur.”  During the post-mortem review, I kept asking questions like “but why didn’t this get caught in regression testing?”</p>
+
+<p>So, after discussion, I added my evergreen questions to the post-mortem template. They are:</p>
+
+<ul>
+  <li>Why didn’t the issue get caught by unit tests?</li>
+  <li>Why didn’t the issue get caught by integration/smoke tests?</li>
+  <li>Why didn’t the issue get flagged in Code Review?</li>
+  <li>Why didn’t the issue get caught during manual QA?</li>
+  <li>If the outage took over an hour to get discovered, why didn’t the monitoring page our on-call?</li>
+</ul>
+
+<h5 id="b-defining-root-cause">B. Defining “Root Cause”</h5>
+<p>“5 Whys” recommends continuing to ask why until you’re about five levels deep. We were often stopping at one or two.</p>
+
+<p>To make stopping less ambiguous, here are a set of “root causes” that I think are close to exhaustive:</p>
+
+<ul>
+  <li><strong>trade-off</strong> we were aware of this concern but explicitly made the speed-vs-quality trade-off (IE, not adding tests for an experiment). This was tech debt coming back to bite us.</li>
+  <li><strong>knowledge gap</strong> the person doing the work was not aware that this kind of error was even possible (IE, tricky race conditions, worker starvation)</li>
+  <li>
+    <p><strong>brain fart</strong> now that we look at it, we should have caught this earlier. “Just didn’t get enough sleep that night” kind of thing.</p>
+
+    <p>If you keep asking “why” but haven’t gotten to an answer that boils down to one of these, keep going deeper (or get a second opinion).</p>
+  </li>
+</ul>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/engineering-management/">engineering-management</a>,</li>
+                
+                <li><a href="/tag/advice/">advice</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2020/05/12/working-remotely-crossed-the-chasm-on-may-12-2C-2020.html" title="View Working Remotely Crossed the Chasm on May 12, 2020">&laquo; Working Remotely Crossed the Chasm on May 12, 2020</a></li>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+          
+          <h4 id="about">about</h4>
+<p><img class="footer-portrait" src="/images/alexey.jpg" /></p>
+
+<h5 id="june-2020">June 2020+</h5>
+<p>Growth Eng @ MasterClass</p>
+
+<h5 id="past">Past</h5>
+<ul>
+  <li>Engineering at <a href="https://opendoor.com">Opendoor</a>, 2016-2020</li>
+  <li><a href="http://hackerparadise.org">Hacker Paradise</a>, the remote-work-group-trip thing.</li>
+  <li>UPenn <a href="http://www.cis.upenn.edu/">CIS ‘12</a></li>
+  <li>Projects you may know me for:
+    <ul>
+      <li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
+      <li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
+      <li><a href="http://pennapps.com">PennApps</a>, the student hackathon</li>
+    </ul>
+  </li>
+</ul>
+
+<p>More at <a href="/about">about.alexeymk.com</a></p>
+
+      </div><!-- misc -->
+        <br />
+				<p class="license">
+					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+</body>
+</html>

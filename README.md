@@ -11,11 +11,15 @@ bundle exec jekyll s
 python new_post.py "Title of new post"
 ```
 # 3. Publishing
+```
+sh publish.sh "change commit message"
+```
 
-So this is the tricky bit! Turns out we now have two different repos.
+Got it working.
+
+### Note:
+this is the tricky bit! Turns out we now have two different repos.
 
 You want `https://github.com/AlexeyMK/alexeymk.github.com`
 
 Basically, take _site and push it to master on that repo.
-
-I have limited faith in `publish.sh` but if you're feeling generous, you could make it work again

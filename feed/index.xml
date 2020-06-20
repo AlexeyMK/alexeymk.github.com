@@ -4,13 +4,123 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2020-05-13T02:14:00-07:00</updated>
+ <updated>2020-06-20T14:50:23-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
    <email>alexey@alexeymk.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Lessons Learned: Giving Feedback as an Engineering Manager</title>
+   <link href="http://alexeymk.com/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager.html"/>
+   <updated>2020-06-20T07:23:09-07:00</updated>
+   <id>http://alexeymk.com/2020/06/20/lessons-learned-in-giving-feedback-as-an-engineering-manager</id>
+   <content type="html">&lt;p&gt;“Alexey, do you feel the points you bring up during our post-mortems are productive?” my tech lead asked at our 1:1.&lt;/p&gt;
+
+&lt;p&gt;Well, shit. I had thought so, but apparently not.&lt;/p&gt;
+
+&lt;p&gt;Earlier in the year, I became the Engineering Manager on a team responsible for half of the outages at our 2,000 person company. After each incident, the on-call engineer would write-up a doc and schedule a meeting.&lt;/p&gt;
+
+&lt;p&gt;“How come this wasn’t caught in unit tests?” I found myself asking, in front of the assembled team. Next post-mortem, same thing. “I get that we didn’t have monitoring for this particular metric, but why not?” Week after week.&lt;/p&gt;
+
+&lt;p&gt;The tech lead had asked a great question. Was my approach working?&lt;/p&gt;
+
+&lt;p&gt;“I want to set high expectations,” I told him. “It’s not pleasant being critiqued in a group setting, but my hope is that the team internalizes my ‘good post-mortem’ bar.”&lt;/p&gt;
+
+&lt;p&gt;The words sounded wrong even as I said them.&lt;/p&gt;
+
+&lt;p&gt;“Thanks for the feedback.” I said “Let me think on it.”&lt;/p&gt;
+
+&lt;h2 id=&quot;feedback-budgets&quot;&gt;Feedback budgets&lt;/h2&gt;
+&lt;p&gt;I thought about it.&lt;/p&gt;
+
+&lt;p&gt;There’s a limited budget for criticism one can ingest productively in a single sitting. Managers will try to extend this budget through famed best-practices like the shit-sandwich and the not-really-a-question question. Employees learn these approaches over time and develop an immunity.&lt;/p&gt;
+
+&lt;p&gt;This happened here. Once my questioning reached the criticism threshold, I was no longer “improving the post-mortem culture.” I was “building resentment and defensiveness”.&lt;/p&gt;
+
+&lt;p&gt;I had run over budget. And yet, there was important feedback to give!&lt;/p&gt;
+
+&lt;h2 id=&quot;change-the-template-change-the-world&quot;&gt;Change the template, change the world&lt;/h2&gt;
+&lt;p&gt;Upon reflection, I ended up &lt;a href=&quot;#post-mortem-changes&quot;&gt;updating our post-mortem template&lt;/a&gt;. My questions became part of the template that got filled in before meeting.&lt;/p&gt;
+
+&lt;p&gt;This way, it was the template pestering the post-mortem author. My role was simply to insist that the template be filled out; an entirely reasonable ask.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly enough, this worked; post-mortems became more substantive. The team to pared down outage frequency and met OKR goals.&lt;/p&gt;
+
+&lt;h2 id=&quot;process-linters&quot;&gt;Process linters&lt;/h2&gt;
+
+&lt;p&gt;One Simple Trick I had stumbled into was that there was a way to get around feedback budgets.
+Turns out there’s this other, vaster budget to tap into: the budget of process automation. When feedback is automated, it arrives sooner, feels confidential, and lacks judgement. This makes it palatable; this is why the budget is vaster.&lt;/p&gt;
+
+&lt;p&gt;The technical analogy here is how we use linters. “Nit: don’t forget to explicitly handle the return value” during code review feels mildly frustrating. Ugh. It’s “just a style thing” and “the code works”. I’ll make the change, but with slight resentment.&lt;/p&gt;
+
+&lt;p&gt;Yet, if that same “unhandled return value” nudge arrives in the form of a linter, it’s a different story. I got the feedback before submitting the code for review; no human had to see my minor incompetence.&lt;/p&gt;
+
+&lt;p&gt;As a software engineer, Have Good Linters is an obvious, uncontroversial best practice. The revelatory moment for me was that templates for documents were just another kind of linter.&lt;/p&gt;
+
+&lt;h2 id=&quot;happy-ending&quot;&gt;Happy Ending&lt;/h2&gt;
+
+&lt;p&gt;My insight completely transformed the way Opendoor Engineering thinks about feedback; I crowd-surfed, held aloft by the team’s grateful arms, to receive my due praise as the master of all process improvement.&lt;/p&gt;
+
+&lt;p&gt;Just kidding; COVID-19 happened and I switched jobs.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;the-appendices-three&quot;&gt;The Appendices Three&lt;/h3&gt;
+&lt;h4 id=&quot;i-process-linters-seen-in-the-wild&quot;&gt;I: Process linters seen in the wild&lt;/h4&gt;
+
+&lt;h5 id=&quot;meetings&quot;&gt;Meetings&lt;/h5&gt;
+&lt;p&gt;Feedback “we have too many meetings”; “what’s the point of this meeting”; “do I need to be here”
+Linter mandate no-meetings days; mandate agendas; mandate a hard max on attendee count.&lt;/p&gt;
+
+&lt;h5 id=&quot;progress-updates&quot;&gt;Progress Updates&lt;/h5&gt;
+&lt;p&gt;Feedback “Hey, how’s that project going? Haven’t heard from you in a bit”
+Linter Daily stand-ups (synchronous or in slack/an app); issue trackers (Linear, Asana, Jira, Trello)&lt;/p&gt;
+
+&lt;h5 id=&quot;bug-reports&quot;&gt;Bug Reports&lt;/h5&gt;
+&lt;p&gt;Feedback “Hey, a friend who uses the app said that our unsubscribe page is broken?”
+Linter Quality pre-deploy test coverage, automated error reporting (Sentry), Alerting on pages or business metrics having anomalous activity patterns (Datadog).&lt;/p&gt;
+
+&lt;h4 id=&quot;ii-youve-gone-too-far-with-this-process-crap&quot;&gt;II: You’ve gone too far with this process crap&lt;/h4&gt;
+
+&lt;p&gt;The process budget is vaster than the feedback budget, but it isn’t unlimited. A mature company is going to have lots of legacy process - process debt, if you will.&lt;/p&gt;
+
+&lt;p&gt;Process requires maintenance and pruning, to avoid “we do this because we’ve always done this” type problems. High-process managers are just as likely to generate unhappy employees as high-feedback managers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;post-mortem-changes&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;iii-the-post-mortem-template-changes-if-thats-what-youre-here-for&quot;&gt;III: The post-mortem template changes, if that’s what you’re here for&lt;/h4&gt;
+
+&lt;h5 id=&quot;a-5-whys-prompts&quot;&gt;A. “5 Whys” Prompts&lt;/h5&gt;
+&lt;p&gt;Our original 5 Whys prompt was “Why did this outage occur.”  During the post-mortem review, I kept asking questions like “but why didn’t this get caught in regression testing?”&lt;/p&gt;
+
+&lt;p&gt;So, after discussion, I added my evergreen questions to the post-mortem template. They are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Why didn’t the issue get caught by unit tests?&lt;/li&gt;
+  &lt;li&gt;Why didn’t the issue get caught by integration/smoke tests?&lt;/li&gt;
+  &lt;li&gt;Why didn’t the issue get flagged in Code Review?&lt;/li&gt;
+  &lt;li&gt;Why didn’t the issue get caught during manual QA?&lt;/li&gt;
+  &lt;li&gt;If the outage took over an hour to get discovered, why didn’t the monitoring page our on-call?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;b-defining-root-cause&quot;&gt;B. Defining “Root Cause”&lt;/h5&gt;
+&lt;p&gt;“5 Whys” recommends continuing to ask why until you’re about five levels deep. We were often stopping at one or two.&lt;/p&gt;
+
+&lt;p&gt;To make stopping less ambiguous, here are a set of “root causes” that I think are close to exhaustive:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;trade-off&lt;/strong&gt; we were aware of this concern but explicitly made the speed-vs-quality trade-off (IE, not adding tests for an experiment). This was tech debt coming back to bite us.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;knowledge gap&lt;/strong&gt; the person doing the work was not aware that this kind of error was even possible (IE, tricky race conditions, worker starvation)&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;brain fart&lt;/strong&gt; now that we look at it, we should have caught this earlier. “Just didn’t get enough sleep that night” kind of thing.&lt;/p&gt;
+
+    &lt;p&gt;If you keep asking “why” but haven’t gotten to an answer that boils down to one of these, keep going deeper (or get a second opinion).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Working Remotely Crossed the Chasm on May 12, 2020</title>
