@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2020-06-20T15:48:00-07:00</updated>
+ <updated>2020-06-20T22:50:42-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -47,7 +47,7 @@
 
 &lt;p&gt;This way, it was the template pestering the post-mortem author. My role was simply to insist that the template be filled out; an entirely reasonable ask.&lt;/p&gt;
 
-&lt;p&gt;Surprisingly enough, this worked; post-mortems became more substantive. The team to pared down outage frequency and met OKR goals.&lt;/p&gt;
+&lt;p&gt;Surprisingly enough, this worked; post-mortems became more substantive. The team pared down outage frequency and met OKR goals.&lt;/p&gt;
 
 &lt;h2 id=&quot;process-linters&quot;&gt;Process linters&lt;/h2&gt;
 

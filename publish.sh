@@ -13,7 +13,7 @@ if [[ $# -eq 0 ]] ; then
 fi
 
 # ensure the content in /_site is up to date
-rm -r $TMP_LOC || echo "Couldn't remove"
+rm -rf $TMP_LOC || echo "Couldn't remove"
 mkdir $TMP_LOC
 git clone $PUBLISH_REPO $TMP_LOC
 jekyll build --destination $TMP_LOC
