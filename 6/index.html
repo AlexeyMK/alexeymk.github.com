@@ -62,6 +62,91 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2012/07/01/moving-to-github-pages-and-jekyll.html">Migrating from Posterous to Jekyll on GitHub Pages</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2012-07-01T16:30:00-07:00" datetime="2012-07-01T16:30:00-07:00" pubdate>
+                <span class="month"><abbr>July</abbr></span>
+                <span class="day">01</span>
+                <span class="year">2012</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>I may be a bit late to the <a href="http://jekyllrb.com">Jekyll</a> party, but with Posterous being acquired by twitter a few months ago, I figured why not try it out. Two weekends later I’ve migrated enough that I’m comfortable shipping, though I imagine a bunch of silly bugs will remain. Please <a href="mailto:alexey-at-alexeymk.com">email me</a> with any issues you find, and I’ll get to them when I can.</p>
+
+<p>In the meantime…</p>
+
+<h4 id="moving-from-posterous-to-jekyll-what-you-need-to-know">Moving from Posterous to Jekyll: What you need to know.</h4>
+
+<ul>
+  <li><strong><a href="http://jekyllrb.com">Jekyll</a></strong> is a static site generator created by GitHub for GitHub Pages.  It is rather extensible, so people have built things like <a href="http://str8.to/jekyll-boostrap">Jekyll-Bootstrap</a> and <a href="http://str8.to/jekyll-octopress">Octopress</a> on top of it.  I sort of half-used the former (adapted a theme) and didn’t know about the latter until it was too late.  Maybe/probably use Octopress if you go this route.</li>
+  <li><strong>Migrating from Posterous</strong> kinda-sorta works.  The migrator that includes images/permalinks is <a href="https://github.com/pepijndevos/jekyll/blob/patch-1/lib/jekyll/migrators/posterous.rb">on github here</a>.  Some ruby required.  Here’s <a href="https://github.com/AlexeyMK/alexeymk.github.com/blob/master/posterous_import.rb">my hacky version</a>, with a couple of updates.</li>
+  <li><strong>Comments</strong> I haven’t moved mine yet but a <a href="http://blog.jrmoran.com/blog/2012/01/31/importing-posterous-comments-into-disqus/">guide to move posterous comments to disqus</a> is available.  The decision to have comments (even moderated ones) is not one I’ve made yet. We’ll see.</li>
+  <li><strong>RSS</strong> Here’s the <a href="http://recursive-design.com/blog/2010/09/14/integrating-jekyll-with-feedburner/">jekyll+feedburner guide</a></li>
+  <li><strong>Developing Locally</strong> I used <a href="https://github.com/therabidbanana/guard-jekyll">guard to auto re-generate pages</a> as I was iterating on the CSS hackery.  Pretty useful, especially if you’re already reasonably comfortable with guard.</li>
+  <li><strong>Hosting</strong> GitHub Pages will host for you at yourusername.github.com + let you host on your domain <a href="http://imakewebthings.com/blog/github-pages-email/">if you add a CNAME to your distribution</a>.  I’m about to try it.  Fingers crossed.  Also, I don’t know how much I trust GitHub to be so generous in the long run, but my next migration is going to be far less painful - “it’s just static content”.  <strong>Note</strong>: I was worried about where to stick draft posts, since the repo needs to be public, and my solution was to have both a public and a private repository, so releasing is “git commit -a &amp;&amp; git push public master.”</li>
+  <li><strong>Markdown</strong> I admit I’m not too experienced with Markdown. Here’s <a href="http://nestacms.com/docs/creating-content/markdown-cheat-sheet">my cheatsheet</a>.</li>
+</ul>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/technical/">technical</a>,</li>
+                
+                <li><a href="/tag/writing/">writing</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2012/07/01/moving-to-github-pages-and-jekyll.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/my-first-time-with-an-exec/index.html">My first time with an Exec</a></h1>
 					</div><!-- unit-inner -->
             
@@ -391,163 +476,6 @@
             <div class="social">
               <ul class="list-linear">
                 <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/so-those-co-founder-slides-turned-into-a-tech/index.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/a-brief-guide-to-tech-internships/index.html">A brief guide to tech internships</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2012-01-30T00:12:00-08:00" datetime="2012-01-30T00:12:00-08:00" pubdate>
-                <span class="month"><abbr>January</abbr></span>
-                <span class="day">30</span>
-                <span class="year">2012</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p><em>Planning to be an Intern in the Bay Area during Summer 2012? Make sure to read&nbsp;<a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CDoQFjAA&amp;url=http%3A%2F%2Falexeymk.com%2Fan-interns-guide-to-a-summer-in-the-bay-area&amp;ei=KF8mT9SeNsqriQLMxtnIBw&amp;usg=AFQjCNH48TCQjkJmZLznLS-yre_cx7UY5w&amp;sig2=0EgCK7UCUVvQjpIKWecrKg">an Intern's Guide to the Bay Area</a>, and join the&nbsp;<a href="https://www.facebook.com/groups/237984646237494/">2012 Facebook group</a>.</em></p>
-<p><em>&nbsp;</em><img src="http://i.imgur.com/zmhnE.png" alt="" style="border-color: initial;" /><em>(via&nbsp;<a href="http://truths-secrets.blogspot.com/2011/11/next-step-in-my-life.html">this guy</a>, via&nbsp;<a href="http://flavors.me/stussified">this guy</a>)</em><p />Joel Spolsky, from the <a href="http://joelonsoftware.com">Joel On Software blog</a> and StackOverflow, wrote an article with <a href="http://joelonsoftware.com/articles/CollegeAdvice.html">Advice for Computer Science College Students</a> back in '05. According to Joel,&nbsp;</p>
-<blockquote><span style="font-size: medium;">No matter what you do, get a good summer internship.</span></blockquote>
-<p>As such: here&rsquo;s everything you ever wanted to know about tech internships, plus some bloviating about my experience. The <strong>TL;DR is, </strong><strong>try to have at least two internships: one at a small start-up and one at a tech company.</strong></p>
-<p><strong><span style="font-size: medium;">Wait, who are you?</span></strong></p>
-<p>I'm a CS senior at the University of Pennsylvania. I have interned at Facebook (Summer 2010), where I worked on application privacy, and as a generalist at <a href="http://2bkco.com">2bkco</a> (Summer 2011), a new startup from serial enterpreneur <a href="http://www.caterina.net">Caterina Fake</a> (Flickr, Hunch). &nbsp;Both internships were great and invaluable. They were also very, very different, in terms of both the type of work I had to do and what I gained from the experience.</p>
-<p><strong style="font-size: large;">1) How do I get a good internship?</strong></p>
-<p>Luckily, a number of great posts have been written about this subject already.</p>
-<ul>
-<li><a href="http://www.andrewmunn.com">Andrew Munn</a> has a great piece on<a href="http://www.andrewmunn.com/2011/01/how-to-land-an-internship-at-a-top-tier-software-company/"> interviewing and applying for tech internships</a>, focusing primarily on what larger companies are looking for.</li>
-<li><a href="http://technologywoman.com">Gayle Laakmann</a>, author of <a href="http://str8.to/cracking-the-coding-interview">Cracking the Coding Interview</a>, has a <a href="http://2011f.pennapps.com/blog/2011/9/15/size-matters-how-coding-resumes-differ-between-big-companies.html">post on the difference between what startups and tech companies</a> are looking for.</li>
-</ul>
-<p>To which I add <strong>my two cents</strong>:</p>
-<ul>
-<li><strong>Start thinking about summer internships around Winter Break</strong>. Make a list of potential companies and start applying. &nbsp;Don't be worried if the entire process takes until April or so, though.</li>
-<li><strong>Get a referral</strong> rather than applying directly whenever possible. &nbsp; Ask upperclassmen you know (think: TAs that like you) who could make a referral. &nbsp;For earlier-stage companies, if they don't have an explicitly-listed referral program, don't worry about it: email the CEO. <em>Hint</em>: they are probably at <a href="mailto:firstname@startup.com">firstname@startup.com</a>. <img src="http://i.imgur.com/CAA1j.jpg" alt="" />
-<div><em>(via&nbsp;<a href="http://gapingvoid.com">Hugh MacLeod</a>)</em>&nbsp;</div>
-</li>
-<li><strong>Practice technical interviews.</strong>&nbsp;If you're nervous about writing code on the whiteboard, try some combination of being drilled by upperclassmen, buying (and practicing going through) Gayle's <a href="http://str8.to/cracking-the-coding-interview">Cracking the Coding Interview</a>. Others also recommend interviewing with the companies you aren't as interested in first, using them to train.</li>
-<li><strong>Optimize for what you can get. </strong>Bigger companies are going to (generally) look for a high GPA and good performance on brain teasers. &nbsp;Smaller companies are going to prioritize a history of <a href="http://www.joelonsoftware.com/items/2007/06/05.html">initiative and automony</a>, as shown by cool projects on your resume. &nbsp;If you've got a high GPA (at least 3.7 at Penn, say) and are good at brain teasers, you should be OK with larger companies; if not, start with a start-up.</li>
-<li><strong>Your timing is great! </strong>Literally everybody is looking for software engineers right now, and internships are one of the key ways to recruit for companies. The market could not be any better for us. If you feel like you're not getting anywhere, make sure to apply beyond whatever is immediately available on campus. Competing with the general populace may be easier than competing with others at your university.</li>
-<li><strong>Consider a mass-application or 'summer program', </strong>which are often offered by venture capital firms and have&nbsp;gained popularity in recent years. &nbsp;Make sure to check out (and potentially apply via):&nbsp;<a href="http://hackny.org/a/students/">hackNY fellows</a>, <a href="http://a16z.com/talent-services/">Andreesen Horowitz</a>,&nbsp;<a href="http://www.firstround.com/university">First Round Capital</a>, <a href="http://www.trueventures.com/tec/">True Ventures</a>,&nbsp;<a href="http://kpcbfellows.com/">Kleiner Perkins Fellows</a>, <a href="http://www.baincapitalventures.com/startupacademy/">Bane's StartUp Academy</a>, <a href="http://nycturingfellows.org/">NYC Turing Fellows</a>,&nbsp;<a href="http://interviewstreet.com">InterviewStreet</a> and <a href="http://internmatch.com">InternMatch</a>. None of these are a substitute for applying to companies individually (and I haven't tried them myself) but given the reasonably short time required to apply, they are probably worth doing.</li>
-<li><strong>Location is a pretty big deal.</strong>&nbsp;Try to be in the Bay Area (Silicon Valley, San Francisco, Mountain View, Palo Alto, etc) if you can - <a href="http://alexeymk.com/the-bay-area-is-awesome">it's awesome</a>. and there are a ton of other interns around. &nbsp;I hear <a href="http://articles.businessinsider.com/2011-12-09/tech/30449324_1_techstars-zocdoc-onswipe">New York</a> is getting pretty fun as well, but don't have any personal experience. Other tech regions like Boston or Austin (and maybe LA and Philly) aren't bad, but make sure not to get stuck in the middle of nowhere, living in the suburbs as the only tech intern at a huge company. &nbsp;That does not a fun summer make.</li>
-</ul>
-<p><strong style="font-size: large;">2) How do I pick where to apply/work?</strong></p>
-<p>Before applying, consider: "Am I excited about the products this company makes? Would I be excited to know that I work there?" It's much easier to get motivated (and show excitement) for a company you are excited about. I was Dropbox user #2001, which I did not neglect to mention when I applied. It helped. I think.</p>
-<p>I strongly advice looking for internships with a big tech company or a startup, rather than a non-tech company (esp. financial) company that happens to have engineers. The explanation is a little long, so I'll just assume you nod along hummingly here. For the inquisitive:&nbsp;<a href="http://alexeymk.com/private/ysfskqeqtu">here's a longer argument</a>.</p>
-<p><strong><span style="font-size: medium;">Picking a startup</span><br /></strong>You want to work for (and learn from) the start-ups that are going to be successful, but as the Venture Capital industry knows <a href="http://www.smartmoney.com/small-business/small-business/pet-project-history-lessons-for-a-petfood-startup-1306600428322/?link=SM_smallbiz_featStory">full</a>&nbsp;<a href="http://www.cnet.com/1990-11136_1-6278387-1.html">well</a>, it's not always easy to pick winners.</p>
-<p>There are, however, a few hints that you can pick up on and prioritize for when thinking about where to work:</p>
-<ul>
-<li><strong>Has the founder had a successful start-up venture in the past</strong>? They must have done something right; past performance appears to be the best guarantor of success for tech enterpreneurs.</li>
-<li><strong>Is the founder (or a large portion of the founding team) technical</strong>? Are they writing code? Do they come from a strong technical background, whether at a startup or from a top tech company?</li>
-<li><strong>Does the company or its employees have a track record of being good mentors</strong>? &nbsp;I wrote a <a href="http://alexeymk.com/the-mentorship-test-9-questions-for-your-pote">Mentorship Checklist</a>: questions worth asking to find out.</li>
-<li><strong>Is the company pre or post "<a href="http://thisisapipe.com/escape-startup-flatland/what-is-product-market-fit">product-market fit</a>?"</strong> &nbsp;That is, are they figuring out what the heck it is that they are going to do that makes money, or have they figured it out and are trying to scale and make sure the servers don't melt with all the new traffic? &nbsp;Both are exciting times in the life of a start-up; consider a pre-product market fit company if you're looking to get a big opportunity to contribute creatively and try new things, and a product-market fit company if you are interested in the technical challenge of quickly scaling a codebase.</li>
-<li><strong>Is this a 'well known' startup?&nbsp;</strong>One of the downsides about working at a startup is that it doesn't usually yield the brand recognition of a 'Facebook' or a 'Google' on your resume. Working at a small company people have heard of (TechCrunch coverage/Twitter buzz being a reasonable proxy for 'heard of') helps negate that. Think (again) Quora, Path, Uber, Square, etc - small teams but well-known products.</li>
-</ul>
-<p><strong><span style="font-size: medium;">Picking between larger companies</span><br /></strong></p>
-<ul>
-<li>The easiest way to figure out if a larger company is worth working for is by their reputation: ask upperclassmen, friends and professors. &nbsp;</li>
-<li>Does the company have an official internship program? Does it sound awesome? Can you speak to somebody (ideally from your school, but from the company if not) who has been through the program as an intern? Talk about both intern housing and make sure to run through the Mentorship Checklist.</li>
-<li>Sites like <a href="http://glassdoor.com">glassdoor.com</a>, which offer anonymous feedback from employees, a tremendously useful service as you try to figure out if this is one of those 'magical companies'. The sample size is not large enough to use for companies smaller than a few hundred employees, unfortunately.</li>
-<li>It's not always immediately clear whether a company is or is not a 'tech company' - Amazon and Barnes and Noble both sell books online and have e-readers available, but (from my intuition) Amazon is a tech company that happens to sell books on-line, whereas B&amp;N is a book retailer that has been forced online and into e-readers by the prevailing winds of change. Which one sounds more fun to work at?</li>
-<li>One sign of an innovative company is a technical or product person in the CEO role - think of Larry Page's involvement with Google products compared to somebody like Lowell McAdam (who?) at Verizon. &nbsp;It's more fun to work for a culture trying to build the future than one trying to maximize this quarter's revenues and '<a href="http://www.forbes.com/sites/stevedenning/2011/11/28/maximizing-shareholder-value-the-dumbest-idea-in-the-world/">maximize shareholder value</a>.'</li>
-<li>In general, newer companies will have less middle-management cruft and set-in-their-wayedness than older ones. &nbsp;There are some older companies with solid programs, like <a href="http://www-01.ibm.com/employment/us/extremeblue/">IBM's Extreme Blue</a>, and some&nbsp;newer companies with&nbsp;<a href="http://kotaku.com/5862913/nobody-likes-zynga">terrible reputations</a> I would advise against.</li>
-</ul>
-<p><span style="font-size: medium;"><span style="font-weight: bold; font-size: large;">3) What you learn</span><br /><span style="font-size: small;"><em>(or at least what I learned)</em></span></span></p>
-<p>In short, working with top technical people will teach you software engineering 'done right' (IE, no more turning in ugly code for your homework assignment that is going to be auto-graded once and then filed away forever). That means different things at earlier and later stage companies, though, and I can only relate my experience.</p>
-<p><span style="font-size: medium;"><strong>What I learned at Facebook<br /></strong></span>First and foremost, I learned to write 'good code'. My first non-trivial commit (15 lines or so) was rejected 6 or 7 times until I finally put the right amount of spacing in an "if (" and fixed my trailing whitespace. These were important, brilliant engineers politely telling an intern, time and time again, something that he should have found in the coding guidelines doc. I've been a little bit embarrased to show a lot of my pre-Facebook code, as a result - the improvement, at least for me, was significant.&nbsp;</p>
-<p>In general, the experience taught me that Code is Culture. The fact that top FB engineers were willing to spend so much of their time on code reviews was a fantastic way to show-not-tell Facebook's commitment to good code. I can't say that I've been able to pay the overhead of 100% code reviews on every project or team I've worked on since, but having the background of working in a 'code quality matters' team has infused the way I think about programming today.</p>
-<p>I also learned that engineers are not immune to politics, even at great companies. I was playing around with a hackathon improvement to one of the sharing features, but the engineer who understood most of the code would not reply to my emails for weeks and claimed he was busy (which he was) when I walked over to his desk. My original pitch for the feature I wanted to work on was "You know what sucks about Facebook? X. &nbsp;We should fix it." In retrospect, I did not do nearly a good enough job of trying to get the person on board or show respect for the work that had already been done.</p>
-<p><span style="font-size: medium;"><strong>What I learned at 2bkco<br /></strong></span>I joined the team several weeks after the engineering work had begun. It was very humbling to see the ease with which <a href="http://hackerengineer.net">Eric</a>&nbsp;would put together a component and then decide, several days later, that there was a better way to do something and throw it all away. When you know your code has a good chance of being thrown away, the priority becomes writing quickly in a way that can be cleaned up later (which is different than writing sloppily or writing 'homework' code).</p>
-<p>I also got a lot of training in breadth: 2bkco required me to be close-enough to fluent in Javascript (Coffeescript), Ruby on Rails and HTML/CSS. It was too early in the life of the company for me to specialize, which meant a lot of time on Google and StackOverflow, learning how to do a ton of things as I went. I became much more comfortable forking Github projects of things that did sort of what I wanted.</p>
-<p><strong><span style="font-size: large;">Fin.</span></strong></p>
-<p>That's it. That's all I've got. Mostly. Comment with questions, or just <a href="http://twitter.com/alexeymk">tweet me, yo</a>.</p>
-<p>Some valid points brought up via this post's <a href="http://news.ycombinator.com/item?id=3529493">discussion on Hacker News</a>.</p>
-<p><em>Planning to be in the Bay Area during Summer 2012? Make sure to read <a href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CDoQFjAA&amp;url=http%3A%2F%2Falexeymk.com%2Fan-interns-guide-to-a-summer-in-the-bay-area&amp;ei=KF8mT9SeNsqriQLMxtnIBw&amp;usg=AFQjCNH48TCQjkJmZLznLS-yre_cx7UY5w&amp;sig2=0EgCK7UCUVvQjpIKWecrKg">an Intern's Guide to the Bay Area</a>, and join the <a href="https://www.facebook.com/groups/237984646237494/">2012 Facebook group</a>.</em></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>...I see you're still here. Alright.</p>
-<p><strong style="font-size: large;">PS. What about other types of internships/summer activities?</strong></p>
-<p><img src="http://i.imgur.com/PNNGb.jpg" alt="" /></p>
-<div>(<em>via&nbsp;<a href="http://twitpic.com/1ap8p5">Dave Miller</a></em>)</div>
-<p>I spent the summer after my freshmen year doing all sorts of odd things, from playing a lot of Settler of Catan online to working in recruiting for my father, to travelling around in France. It was a mixed bag, unstructured in a way that (in retrospect) I found less than ideal.</p>
-<p>There's nothing to say that working all three summers is strictly necessary, or that the two internship types I recommend are your best options (though I happen to think so). &nbsp;Here are some other options for either a third internship or an alternative to the first two, in something resembling-but-not-quite a ranked order.</p>
-<ul>
-<li><strong>Intern as a Product/Project Manager&nbsp;</strong>-&nbsp;A lot of larger companies offer these; though they require a technical background, day-to-day involves more management and product work than coding itself. &nbsp;Harder to get (as far as I know) than a software position, but worth trying if you are interested in that sort of thing. Google has a particularly prestigious&nbsp;<a href="http://www.google.com/jobs/students/tech/internships/uscanada/associate-product-manager-intern-summer-mountain-view-1/index.html">APM</a>&nbsp;position that appears to be a blast from what I've heard.</li>
-<li><strong>Research</strong> - find a professor you like that is working on something cool and spend a summer in their lab. This doesn't pay quite as well as an internship but is worthwhile doing if you are considering getting a PhD and want to experience the research process first hand. &nbsp;This is also worth doing earlier in your undergraduate career, since the positions seems generally easier to get and the work you do will help with internships later on.</li>
-<li><strong>Open Source</strong> - consider applying for <a href="http://str8.to/google-summer-of-code">Google Summer of Code</a>&nbsp;or contributing to one of Apache's projects. Again, the pay (if you are in a structured program) isn't as great, but you still get to learn a ton from talented developers and get the feeling that you are contributing to something that a lot of people depend on. &nbsp;Again, having a substantial open source contribution is a great resume builder.&nbsp;</li>
-<li><strong>Freelance/own projects</strong>&nbsp;- If you've got the self-motivation and enough HTML/CSS/simple back-end skills, everybody and their mother seems to want a simple website built for a few hundred bucks. &nbsp;Spending a summer working on a lot of simpler projects is helpful if you're interested in learning the business side as well as pick up pretty good design skills - just make sure to be in an area with a designer/developer community, so you have more than the internet to rely on for finding clients and getting advice.</li>
-<li><strong>Work for a small dev shop</strong> - A lot of higher-end freelance and consulting in the US is done by small freelance shops like ThoughtBot and (originally) 37Signals. A lot of innovation in software development (Ruby on Rails, for example) has come from shops like these. &nbsp;Plus, working on a lot of projects means a lot of breadth. The caveat is that the pay isn't as good, the deadlines are set in part by the client's needs, and there is less creativity on the product end.</li>
-<li><strong>Non-technical internship (or travelling, or non-profit work) -</strong>&nbsp;These can be fun, but if you're looking for a career in tech, make sure that your non-technical internship is not done at the expense of getting enough coding experience by the time you graduate. &nbsp;Companies looking to hire you as an engineer will be far more interested in what coding work you've done than in anything not directly related.</li>
-<li><strong>Tech internship at a non-tech company, especially in finance:</strong> Most of these will not pay as well and not (typically) have first-class engineers. Finance is an interesting case here: the pay can often be several times larger, if you are working on algorithmic or high-frequency trading (largely at smaller firms run by technical people). Still, in most finance firms, the traders are first-class; I've had some friends who have enjoyed their finance internships, but a lot have not. Buyer beware: the difference between a $5k and a $7k a month internship doesn't buy happiness.<p /></li>
-</ul>
-<p><span style="font-size: medium;"><strong>PPS. Notes for International Students</strong></span></p>
-<p><img src="http://i.imgur.com/KmpO1.jpg" alt="" /></p>
-<p><em>Update - didn't do your undergrad in the US? You can still do an internship via a J-1 visa</em>. <a href="http://blog.jorilallo.com/post/17144715009/how-to-intern-in-silicon-valley-and-get-a-j1-visa">Jori explains.</a></p>
-<p>In general, the situation is a bit of a mess. But: if you're studying in the US on an F-1 visa like I am, here's what I've learned:</p>
-<ul>
-<li>After you graduate, you are allowed up to 12 months of OPT to work in the US without needing an H1-B or similar visa, which is great because H1-Bs are non-trivial to get. &nbsp;You also get 17 months after that, via the STEM extension (ask your International Programs office). &nbsp;</li>
-<li>There are two ways you can stay for an internship in the US in the summer: OPT (Optional Practical Training) and CPT (Curricular Practical Training).</li>
-<li>Applying for OPT means you need to apply by February or March at the latest, and (eventually) have an offer letter from your company. &nbsp;Unfortunately, the time you take eats away from your post-graduation OPT allowance. &nbsp;Larger companies will be better suited than smaller ones for dealing with the paperwork that OPT entails.</li>
-<li>Applying for CPT is much faster (the University, rather than the State Department, approves these), but CPT means that you're taking an independent study with a professor as part of your internship (for me, this meant writing weekly reports). It also means you're paying for your summer class, which cuts into your profit from the internship. &nbsp;It does not, however, cut into post-graduation OPT time. Speak to your department about precedents of CPT being done - generally, somebody will be familiar with the process.</li>
-<li>Alternately, if you work on campus, there is some sort of interesting exception where the work doesn't need to be under either OPT or CPT.&nbsp;</li>
-</ul>
-<ul>
-</ul>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/advice/">advice</a>,</li>
-                
-                <li><a href="/tag/jobs/">jobs</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/a-brief-guide-to-tech-internships/index.html" data-via="" data-lang="en">Tweet</a></div></li>
                 <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
               </ul>
             </div>

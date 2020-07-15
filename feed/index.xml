@@ -4,13 +4,115 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2020-06-20T22:50:42-07:00</updated>
+ <updated>2020-07-14T19:54:42-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
    <email>alexey@alexeymk.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Lies, Damn Lies, and Front-end Tracking</title>
+   <link href="http://alexeymk.com/2020/07/14/lies-damn-list-and-front-end-tracking.html"/>
+   <updated>2020-07-14T12:31:22-07:00</updated>
+   <id>http://alexeymk.com/2020/07/14/lies-damn-list-and-front-end-tracking</id>
+   <content type="html">&lt;p&gt;I’m here to warn you about the dangers of front-end user tracking. Not because &lt;a href=&quot;https://donttrack.us/&quot;&gt;Google is tracking you&lt;/a&gt;, but because it doesn’t track you quite well enough.&lt;/p&gt;
+
+&lt;p&gt;What follows is a story in three parts: the front-end tracking trap I fell into, how we dug ourselves out, and how you can go around the trap altogether.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1-a-cautionary-tale&quot;&gt;Part 1: A Cautionary Tale&lt;/h2&gt;
+
+&lt;p&gt;The year was 2019. Opendoor was signing my paychecks.&lt;/p&gt;
+
+&lt;p&gt;We were launching our shiny new homepage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://paper-attachments.dropbox.com/s_797F39BD41EFDEC54D5CBA97D7296FCBDAF1FBE1044BD81BCD0D8F34808AEF50_1593573820734_image.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We had spent a month migrating our landing pages from the Rails monolith to a shiny new Next.JS app. The new site was way faster and would therefore convert better, saving us millions of dollars annually in Facebook and Google ad costs.&lt;/p&gt;
+
+&lt;p&gt;Being responsible, we ran the roll-out as an A/B test, sending half of the traffic to the old site so we could quantify our impact&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;The impact we’d made was making things worse. Way worse. The new site got crushed.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-happened&quot;&gt;What happened?&lt;/h3&gt;
+
+&lt;p&gt;WTF. Google &lt;a href=&quot;https://web.dev/measure/&quot;&gt;had told us&lt;/a&gt; our new page was way better. The new site even felt snappier.&lt;/p&gt;
+
+&lt;p&gt;“Figure it out.” The engineers on revamp paired up with a Data Scientist and went to go figure out what the hell was going on. They started digging into every nook and cranny of the relaunch.&lt;/p&gt;
+
+&lt;p&gt;A week went by. Our director peaked in curiously. Murmurs about postponing the big launch started to circle. Weight was gained; hair was lost.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, the clue that cracked the case was bounces. Bounces (IE, people leaving right away) were way up on the new site. But it was clear the new site loaded much faster. Bounce rates should have gone down, not up.&lt;/p&gt;
+
+&lt;p&gt;How did we measure bounce rates? We dug in.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-bounces-work&quot;&gt;How bounces work&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.shopify.com/s/files/1/2017/9247/products/Bebop-8-in-1-bouncy-castle-with-kids_600x.jpg?v=1553009477&quot; alt=&quot;&quot; /&gt;
+ When the homepage loads, the front-end tracking code records a ‘page view’ event. If the ‘page view’ event was recorded, but then nothing else happens, analytics will consider that user to have “bounced”.&lt;/p&gt;
+
+&lt;p&gt;It turned out that the old site was so slow that many folks left before their ‘page view’ ever got recorded. In other words, the old site was dramatically under-reporting bounces.&lt;/p&gt;
+
+&lt;p&gt;It was like comparing two diet plans and saying the one where half the subjects quit was better because the survivors tended to lose weight.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-2-how-we-fixed-bounces&quot;&gt;Part 2: How we fixed bounces&lt;/h2&gt;
+
+&lt;p&gt;If the front-end was under-reporting bounces, could we find a way to track a ‘page view’ without relying on the client?&lt;/p&gt;
+
+&lt;p&gt;There was. It was on the server - though in our example, we tracked the event in Cloudflare, &lt;a href=&quot;https://medium.com/opendoor-labs/cloudflare-workers-opendoor-landing-page-infrastructure-824853a34551&quot;&gt;which we were already using&lt;/a&gt; for our A/B test setup.&lt;/p&gt;
+
+&lt;p&gt;We started logging a &lt;code class=&quot;highlighter-rouge&quot;&gt;page-about-to-be-viewed&lt;/code&gt; event instead of the &lt;code class=&quot;highlighter-rouge&quot;&gt;page view&lt;/code&gt; event, which was really &lt;code class=&quot;highlighter-rouge&quot;&gt;page-viewed-long-enough-for-the-tracking-javascript-to-load&lt;/code&gt; event. We updated our bounce metrics calculation.&lt;/p&gt;
+
+&lt;p&gt;Lo and behold, the new infra was better after all!  We had been giving our old page too much credit this entire time, but nobody was incentivized to cry wolf.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-3-front-end-tracking-done-right&quot;&gt;Part 3: Front-end tracking done right&lt;/h2&gt;
+&lt;p&gt;Forsake the front-end. Tis a terrible place to track things, for at least three reasons.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-performance&quot;&gt;1. Performance&lt;/h3&gt;
+&lt;p&gt;The less JavaScript (especially third-party) you have on your landing pages, the better. It’s a better customer experience, and it improves your page’s conversion and quality score.&lt;/p&gt;
+
+&lt;p&gt;We calculated that getting rid of Segment and Google Tag Manager on our landing pages would yield about 10-15 points of &lt;a href=&quot;https://kinsta.com/blog/google-pagespeed-insights/&quot;&gt;Google PageSpeed&lt;/a&gt;. Google takes PageSpeed into account for Quality Score, which in turn makes your CPMs/CPC cheaper.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-fidelity&quot;&gt;2. Fidelity&lt;/h3&gt;
+&lt;p&gt;Somewhere between a &lt;a href=&quot;https://www.socialmediatoday.com/news/global-ad-blocking-behavior-2019-infographic/551716/&quot;&gt;half and a quarter&lt;/a&gt; of all users have ad-blockers set up. If you’re relying on a pixel event to inform Google / Facebook of conversions, you’re not telling them about everybody.
+ This makes it harder for their machine learning to optimize which customers to send your way. Which means you’re paying more for the same traffic.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-powerlessness&quot;&gt;3. Powerlessness&lt;/h3&gt;
+&lt;p&gt;You want to believe that you have control of the JavaScript running on your page, but how many browser extensions does the user have? How much has actually loaded? Wait, what version of IE is this person on?&lt;/p&gt;
+
+&lt;h3 id=&quot;what-should-i-do-instead&quot;&gt;What should i do instead?&lt;/h3&gt;
+
+&lt;p&gt;Take all your client-side tracking, and move it&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;to &lt;a href=&quot;https://www.cloudflare.com/learning/serverless/glossary/what-is-edge-computing/&quot;&gt;the edge&lt;/a&gt; for things like page views (the server is fine, here, though, if you &lt;a href=&quot;https://en.wikipedia.org/wiki/KISS_principle&quot;&gt;KISS&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;to the server for events that have consequences, like button presses.&lt;/li&gt;
+  &lt;li&gt;to publishers for paid traffic conversion, inform Google/Facebook via their server-side APIs when feasible, instead of trying to load a pixel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;faqs--caveats&quot;&gt;FAQs &amp;amp; Caveats&lt;/h3&gt;
+
+&lt;h4 id=&quot;does-your-approach-break-identifying--cookie-ing-users-so-you-can-retarget-effectively&quot;&gt;Does your approach break identifying &amp;amp; cookie-ing users, so you can retarget effectively?&lt;/h4&gt;
+&lt;p&gt;Shouldn’t. We used Segment to &lt;code class=&quot;highlighter-rouge&quot;&gt;identify&lt;/code&gt; anonymous users; the change was just calling &lt;code class=&quot;highlighter-rouge&quot;&gt;.identify()&lt;/code&gt; in Cloudflare (and handling the user cookie there).&lt;/p&gt;
+
+&lt;h4 id=&quot;i-heard-server-side-conversion-tracking-for-google-and-facebook-doesnt-perform-as-well&quot;&gt;I heard server-side conversion tracking for google and facebook doesn’t perform as well.&lt;/h4&gt;
+&lt;p&gt;I’ve heard (and experienced) this as well. We’re entering black magic territory here… try it.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-end&quot;&gt;The End.&lt;/h2&gt;
+
+&lt;p&gt;Want to tell me I’m misinformed / on-point / needed? &lt;a href=&quot;mailto:alexey+forsake-the-front-end@alexeymk.com&quot;&gt;Hit me up&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;We explicitly only changed the infra which served our landing pages, and kept the content - the HTML/CSS/JS - identical. Once the new infra was shown to work, we would begin to experiment with the website itself. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Lessons Learned: Giving Feedback as an Engineering Manager</title>
