@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2020-07-14T19:54:42-07:00</updated>
+ <updated>2020-07-18T23:40:25-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Lies, Damn Lies, and Front-end Tracking</title>
+   <title>Lies, Damned Lies, and Front-end Tracking</title>
    <link href="http://alexeymk.com/2020/07/14/lies-damn-list-and-front-end-tracking.html"/>
    <updated>2020-07-14T12:31:22-07:00</updated>
    <id>http://alexeymk.com/2020/07/14/lies-damn-list-and-front-end-tracking</id>
@@ -41,7 +41,7 @@
 
 &lt;p&gt;“Figure it out.” The engineers on revamp paired up with a Data Scientist and went to go figure out what the hell was going on. They started digging into every nook and cranny of the relaunch.&lt;/p&gt;
 
-&lt;p&gt;A week went by. Our director peaked in curiously. Murmurs about postponing the big launch started to circle. Weight was gained; hair was lost.&lt;/p&gt;
+&lt;p&gt;A week went by. Our director peeked in curiously. Murmurs about postponing the big launch started to circle. Weight was gained; hair was lost.&lt;/p&gt;
 
 &lt;p&gt;Ultimately, the clue that cracked the case was bounces. Bounces (IE, people leaving right away) were way up on the new site. But it was clear the new site loaded much faster. Bounce rates should have gone down, not up.&lt;/p&gt;
 
