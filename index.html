@@ -62,6 +62,233 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2020/12/05/technical-interview-superforcasters.html">Technical Interview Superforcasters</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2020-12-05T04:24:03-08:00" datetime="2020-12-05T04:24:03-08:00" pubdate>
+                <span class="month"><abbr>December</abbr></span>
+                <span class="day">05</span>
+                <span class="year">2020</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p><em>Originally published as a <a href="https://blog.interviewing.io/technical-phone-screen-superforecasters/">guest blog post</a> on <a href="https://interviewing.io/">interviewing.io</a>. Thanks <a href="https://twitter.com/alinelernerLLC">Aline</a>!</em></p>
+
+<p>“The new VP wants us to double engineering’s headcount in the next six months. If we have a chance in hell to hit the hiring target, you seriously need to reconsider how fussy you’ve become.”</p>
+
+<p>It’s never good to have a recruiter ask engineers to lower their hiring bar, but he had a point. It can take upwards of <a href="https://blog.interviewing.io/you-probably-dont-factor-in-engineering-time-when-calculating-cost-per-hire-heres-why-you-really-should/">100 engineering hours</a> to hire a single candidate, and we had over 50 engineers to hire.  Even with the majority of the team chipping in, engineers would often spend multiple hours a week in interviews. Folks began to complain about interview burnout.</p>
+
+<p>Also, fewer people were actually getting offers; the <em>onsite pass rate</em> had fallen by almost a third, from ~40% to under 30%. This meant we needed even more interviews for every hire.</p>
+
+<p><a href="http://twitter.com/visnup">Visnu</a> and I were early engineers bothered most by the state of our hiring process. We dug in. Within a few months, the onsite pass rate went back up, and interviewing burnout receded.</p>
+
+<p>We didn’t lower the hiring bar, though. There was a better way.</p>
+
+<h1 id="introducing-the-phone-screen-team">Introducing: the Phone Screen Team</h1>
+
+<p>We took the company’s best technical interviewers and organized them into a dedicated Phone Screen Team. No longer would engineers be assigned between onsite interviews and preliminary phone screens at recruiting coordinators’ whims. The Phone Screen Team specialized in phone screens; everybody else did onsites.</p>
+
+<h4 id="why-did-you-think-this-would-be-a-good-idea">Why did you think this would be a good idea?</h4>
+
+<p>Honestly, all I wanted at the start was to see if I was a higher-signal interviewer than my buddy Joe. So I graphed people’s <strong>phone screen pass rate</strong> against how those candidates performed in their <strong>onsite pass rate.</strong></p>
+
+<p>Joe turned out to be the better interviewer. More importantly, I stumbled into the fact that a number of engineers doing phone screens performed <strong>consistently</strong> better across the board. They both had more candidates pass their phone screens and then those candidates would get offers at a higher rate.</p>
+
+<!-- _includes/image.html -->
+<!-- from https://superdevresources.com/image-caption-jekyll/ -->
+<div class="image-wrapper">
+    
+        <img src="https://blog.interviewing.io/wp-content/uploads/2020/11/alexeypost1.png" alt="" />
+    
+    
+        <p class="image-caption">Sample Data, recreated for Illustrative Purposes.</p>
+    
+</div>
+
+<p>These numbers were consistent, quarter over quarter.  As we compared the top quartile of phone screeners to everybody else, the difference was stark. Each group included a mix of strict and lenient phone screeners; on average, both groups had a <strong>phone screen pass rate</strong> of 40%.</p>
+
+<p>The similarities ended there: the top quartile’s invitees were twice as likely to get an offer after the onsite (50% vs 25%). These results also were consistent across quarters.</p>
+
+<p>Armed with newfound knowledge of phone screen <a href="https://en.wikipedia.org/wiki/Superforecaster">superforecasters</a>, the obvious move was to have them do all the interviews. In retrospect, it <a href="https://medium.com/@alexallain/what-ive-learned-interviewing-500-people-the-interviewer-skills-ladder-for-high-growth-software-37778d2aae85">made a ton of sense</a> that some interviewers were “just better” than others.</p>
+
+<p>A quarter after implementing the new process, the “phone screen to onsite” rate stayed constant, but the “onsite pass rate” climbed from ~30% to ~40%, shaving more than 10 hours-per-hire (footnote 2). Opendoor was still running this process when I left several years later.</p>
+
+<p>You should too (footnote 3, footnote 4).</p>
+
+<h1 id="starting-your-own-phone-screen-team">Starting your own Phone Screen Team</h1>
+<h4 id="1-identifying-interviewers-footnote-5">1. Identifying Interviewers (footnote 5)</h4>
+
+<p>Get your Lever or Greenhouse (or <a href="https://en.wikipedia.org/wiki/Applicant_tracking_system">ATS</a> of choice) into an analyzable place somewhere, and then quantify how well interviewers perform. There’s lots of ways to analyze performance; here’s a simple approach which favors folks who generated lots of offers from as few as possible onsites and phone screens.</p>
+
+<p><img src="https://blog.interviewing.io/wp-content/uploads/2020/11/Screen-Shot-2020-11-25-at-10.52.57-AM.png" alt="formula" /></p>
+
+<p>You can adjust the constants to where zero would match a median interviewer. A score of zero, then, is good.</p>
+
+<p>Your query will look something like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Interviewer</th>
+      <th>Phone Screens</th>
+      <th>Onsites</th>
+      <th>Offers</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accurate Alice</td>
+      <td>20</td>
+      <td>5</td>
+      <td>3</td>
+      <td>(45 - 20 - 20) / 20 = 0.25</td>
+    </tr>
+    <tr>
+      <td>Friendly Fred</td>
+      <td>20</td>
+      <td>9</td>
+      <td>4</td>
+      <td>(60 - 36 - 20) / 20 = 0.2</td>
+    </tr>
+    <tr>
+      <td>Strict Sally</td>
+      <td>20</td>
+      <td>4</td>
+      <td>2</td>
+      <td>(30 - 16 - 20) / 20 = -0.3</td>
+    </tr>
+    <tr>
+      <td>Chaotic Chris</td>
+      <td>20</td>
+      <td>10</td>
+      <td>3</td>
+      <td>(45 - 40 - 20) / 20 = -0.75</td>
+    </tr>
+    <tr>
+      <td>No Good Nick</td>
+      <td>20</td>
+      <td>12</td>
+      <td>2</td>
+      <td>(30 - 48 - 20) / 30 = -1.9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ideally, hires would also be included in the funnel, since a great phone screen experience would make a candidate more likely to join. I tried including them; unfortunately, the numbers get too small and we start running out of statistical predictive power.</p>
+
+<h4 id="2-logistics--scheduling">2. Logistics &amp; Scheduling</h4>
+
+<p>Phone Screen interviewers no longer do onsite interviews (except as emergency backfills). The questions they ask are now retired from the onsite interview pool to avoid collisions.</p>
+
+<p>Ask the engineers to identify and block off 4 hour-long weekly slots to make available to recruiting (recruiting coordinators will love you). Use a tool like <a href="http://youcanbook.me">youcanbook.me</a> or <a href="http://calendly.com">calendly</a> to create a unified availability calendar. Aim to have no more than ~2.5 interviews per interviewer per week. To minimize burnout, one thing we tried was to take 2 weeks off interviewing every 6 weeks.</p>
+
+<p>To avoid conflict, ensure that interviewers’ managers are bought in to the time commitment and incorporate their participation during performance reviews.</p>
+
+<h4 id="3-onboarding-interviewers">3. Onboarding Interviewers</h4>
+
+<p>When new engineers join the company and start interviewing, they will initially conduct on-site interviews only. If they perform well, consider inviting them into the phone screen team as slots open up. Encourage new members to keep the same question they were already calibrated on, but adapt it to the phone format as needed. In general, it helps to <a href="https://triplebyte.com/blog/how-to-interview-engineers">make the question easier and shorter</a> than if you were conducting the interview in person.</p>
+
+<p>When onboarding a new engineer onto the team, have them shadow a current member twice, then be reverse-shadowed by that member twice. Discuss and offer feedback after each shadowing.</p>
+
+<h4 id="4-continuous-improvement">4. Continuous Improvement</h4>
+
+<p>Interviewing can get repetitive and lonely. Fight this head-on by having recruiting coordinators add a second interviewer (not necessarily from the team) to join 10% or so of interviews and discuss afterwords.</p>
+
+<p>Hold a monthly retrospective with the team and recruiting, with three items on the agenda:</p>
+
+<ul>
+  <li>discuss potential process improvements to the interviewing process</li>
+  <li>review borderline interviews with the group to review together, if <a href="http://coderpad.io">your interviewing tool</a> supports recording and playback</li>
+  <li>have interviewers read through feedback their candidates got from onsite interviewers and look for consistent patterns.</li>
+</ul>
+
+<h4 id="5-retention">5. Retention</h4>
+
+<p>Eventually, interviewers may get burnt out and say things like “I’m interviewing way more people than others on my actual team - why? I could just go do onsite interviews.” This probably means it’s time to rotate them out. Six months feels about right for a typical “phone screen team” tour of duty, to give people a rest. Some folks may not mind and stay on the team for longer.</p>
+
+<p>Buy exclusive swag for team members. Swag are cheap and these people are doing incredibly valuable work. Leaderboards (“Sarah interviewed 10 of the new hires this year”) help raise awareness. Appreciation goes a long way.</p>
+
+<p>Also, people want to be on teams with cool names. Come up with a cooler name than “Phone Screen Team.” My best idea so far is “Ambassadors.”</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>There’s something very Dunder Mifflin about companies that create Growth Engineering organizations to micro-optimize conversion, only to have those very growth engineers struggle to focus due to interview thrash from an inefficient hiring process. These companies invest millions into hiring, coaching and retaining the very best sales people. Then they leave recruiting - selling the idea of working at the company - in the hands of an engineer that hasn’t gotten a lick of feedback on their interviewing since joining two years ago, with a tight project deadline on the back of her mind.</p>
+
+<p>If you accept the simple truth that not all interviewers are created equal, that the same rigorous quantitative process with which you improve the business should also be used to improve your internal operations, and if you’re trying to hire quickly, you should consider creating a Technical Phone Screen Team.</p>
+
+<h1 id="faqs-caveats-and-pre-emptive-defensiveness">FAQs, Caveats, and Pre-emptive Defensiveness</h1>
+<ol>
+  <li><strong>Was this statistically significant, or are you conducting pseudoscience?</strong> Definitely pseudoscience. Folks in the sample were conducting about 10 interviews a month, ~25 per quarter. Perhaps not yet ready to <a href="https://www.nature.com/articles/d41586-019-00857-9">publish in Nature</a> but meaningful enough to infer from, especially considering the relatively low cost of being wrong.</li>
+  <li><strong>Why didn’t the on-site pass rate double, as predicted?</strong>
+ First, not all of the top folks ended up joining the team. Second, the best performers did well because of a combination of skill (great interviewers, friendly, high signal) and luck (got better candidates). Luck is fleeting, resulting in a <a href="https://en.wikipedia.org/wiki/Regression_toward_the_mean">regression to the mean</a>.</li>
+  <li><strong>What size does this start to make sense at?</strong>
+ Early on, you should just identify who you believe your best interviewers are and have them (or yourself) do all the phone screens. Then, once you start hiring rapidly enough that you are doing about 5-10 phone screens a week, run the numbers and invite your best 2-3 onsite interviewers to join and create the team.</li>
+  <li><strong>What did you do for specialized engineering roles?</strong>
+ They had their own dedicated processes. Data Science ran a take home, Front-End engineers had their own Phone Screen sub-team, and Data and ML Engineers went through the general full-stack engineer phone screen.</li>
+  <li><strong>Didn’t shrinking your Phone Screener pool hurt your diversity?</strong>
+ In fact, the opposite happened. First, the phone screener pool had a higher percentage of women than the engineering organization at the time; second, a common interviewing anti-pattern is “hazing” - asking difficult questions and then rejecting somebody for “not even remembering about Kahn’s algorithm, lolz.”  The best phone screeners don’t haze, bringing a more diverse group onsite.</li>
+</ol>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/engineering-management/">engineering-management</a>,</li>
+                
+                <li><a href="/tag/recruiting/">recruiting</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2020/12/05/technical-interview-superforcasters.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2020/07/14/lies-damn-list-and-front-end-tracking.html">Lies, Damned Lies, and Front-end Tracking</a></h1>
 					</div><!-- unit-inner -->
             
@@ -778,154 +1005,6 @@ Yefim &amp; Ceasar made the wise decision of not doing much contributing work pa
             <div class="social">
               <ul class="list-linear">
                 <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2017/05/06/testing-your-way-through-technical-interviews.html">Test Driven Interviewing</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2017-05-06T11:31:37-07:00" datetime="2017-05-06T11:31:37-07:00" pubdate>
-                <span class="month"><abbr>May</abbr></span>
-                <span class="day">06</span>
-                <span class="year">2017</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>For most<sup id="fnref:tdd" role="doc-noteref"><a href="#fn:tdd" class="footnote">1</a></sup> engineering tasks, I prefer to avoid TDD, or Test Driven Development.</p>
-
-<p>Yet when I job-hunt, I use TDD religiously<sup id="fnref:coding" role="doc-noteref"><a href="#fn:coding" class="footnote">2</a></sup>. It has been tremendously helpful.</p>
-
-<h4 id="hmpf-why">Hmpf. Why?</h4>
-<p>Most interview challenges actually come in two parts.</p>
-
-<ol>
-  <li>Can you take a broadly-worded problem and nail it down into something unambiguous?</li>
-  <li>Can you implement a challenging but unambiguous spec in the allotted time?</li>
-</ol>
-
-<p>TDD forces you into the ideal mindset for nailing down (1) problem definitions. There’s no better way to properly grok a problem than to have to think through all the fun ways an implementation could be slightly off.</p>
-
-<p>The implementation itself (2) also gets easier since you no longer have to assume that your code “probably” works, or fiddle with a REPL each time you’re ready to check.</p>
-
-<h4 id="so-how-do-i-do-it">So how do I do it?</h4>
-<p>As soon as you hear the problem, resist the urge to rush straight to the solution.</p>
-
-<p>Instead, force yourself to fully think through the test cases for an <em>arbitrary implementation</em>. Make it a dialog - “what if the same element is in the array multiple times?” Get the interviewer engaged. Show you care.</p>
-
-<p>By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you the comfort that your subsequent clean up / refactoring doesn’t inadvertantly break your implemenation.</p>
-
-<h4 id="yeah-but-i-can-always-just-write-tests-later">Yeah, but I can always just write tests later.</h4>
-<p>When I conduct interviews, I keep running into candidates clever enough to power through engineering challenges on raw talent<sup id="fnref:smarter" role="doc-noteref"><a href="#fn:smarter" class="footnote">3</a></sup>. The candidate implements an <em>optimal</em> solution within fifteen minutes. Then it’s time for tests and she just <strong>cannot</strong> think of cases beyond the common path, which makes her look like <a href="http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/">a cowboy</a>.</p>
-
-<p>I blame the <a href="https://hbr.org/2006/12/the-curse-of-knowledge;at/1">curse of knowledge</a> - once you’ve solved the problem, it’s harder to think about what wrong turns you could have taken. It all feels trivial.</p>
-
-<h4 id="seriously-though-are-you-going-to-make-me-import-a-testing-framework-like-mocha-or-cucumber-ugh">Seriously though, are you going to make me import a testing framework? Like, Mocha or Cucumber? Ugh.</h4>
-
-<p>¯\_(ツ)_/¯, I just use asserts and print statements. If I’m feeling fancy, I’ll create an array of test case scenarios and run them like</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test_cases = [
-  [[2, 2], 4],
-  [[1, 2, 3, 4], 10],
-  [[], 0],
-  [[-3, 2], 1],
-  [[100, 2], 102],
-  [["banana"], None]
-]
-
-for test_case in test_cases:
-  args, expected_answer = test_case
-  answer = quantum_addition(args)
-
-  print("called add({}) and got {}, expected {}"
-    .format(args, answer, expected_answer))
-
-  if answer != expected_answer:
-    print("UH OH!")
-
-  # (or you could just do: assert answer == expected_answer)
-</code></pre></div></div>
-
-<p>If you insist on being fancy, you can do that thing where you ask your interviewer if they’d like you to use a proper testing framework first, and of course they don’t, but now it looks like you <em>could</em> and you’re just doing them a favor by using asserts, cause you’re like, super assertive.</p>
-
-<h4 id="ok-so-now-what">Ok so now what?</h4>
-<p>Well obviously you should come <a href="https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p">work at Opendoor</a> with me! We have <a href="https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg">the good coconut water</a> and don’t run out of it until like noon, 12:30 on good days. Plus, there’s a decent chance you’ll run into me on your phone screen and we can have that awkward interaction of trying to figure out why my name sounds familiar.</p>
-
-<hr />
-
-<p>Thanks to Vaibhav, Joe, Nick, Gayle, Tess, Charlie, Kevin, Zain, and Yahel for giving feedback on earlier drafts that I incorporated.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:tdd" role="doc-endnote">
-      <p>Don’t get me wrong, TDD <a href="https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847/">has its uses</a>, but we often mistake what Kent Beck meant by <a href="https://martinfowler.com/bliki/UnitTest.html">‘unit’</a>. Testing ‘just right’ is hard. <a href="#fnref:tdd" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:coding" role="doc-endnote">
-      <p>To be clear, TDD won’t help you with interview where you don’t actually code (IE, whiteboard interviews)  You’ll <a href="https://medium.com/green-river-web-mobile-developers/surviving-your-first-technical-interview-inquisition-tips-tricks-live-demos-739ca0f8f845fuq">still have to start by asking questions</a>, though. <a href="#fnref:coding" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:smarter" role="doc-endnote">
-      <p>I used to have that problem earlier in my career. I’ve addressed it, largely by becoming dumber. <a href="#fnref:smarter" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/interviews/">interviews</a>,</li>
-                
-                <li><a href="/tag/technical/">technical</a>,</li>
-                
-                <li><a href="/tag/advice/">advice</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2017/05/06/testing-your-way-through-technical-interviews.html" data-via="" data-lang="en">Tweet</a></div></li>
                 <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
               </ul>
             </div>

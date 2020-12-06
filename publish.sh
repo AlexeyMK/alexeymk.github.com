@@ -16,7 +16,7 @@ fi
 rm -rf $TMP_LOC || echo "Couldn't remove"
 mkdir $TMP_LOC
 git clone $PUBLISH_REPO $TMP_LOC
-jekyll build --destination $TMP_LOC
+bundle exec jekyll build --destination $TMP_LOC
 
 # commit everything
 cd $TMP_LOC

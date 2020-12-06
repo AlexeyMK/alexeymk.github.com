@@ -1164,6 +1164,34 @@ hr {
 }
 
 /* AlexeyMK Hacky stuff */
+/* image with caption hax: https://superdevresources.com/image-caption-jekyll/ */
+
+table {
+  width: 100%;
+  margin: 20px;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  text-align: center;
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+.image-wrapper img {
+  margin-bottom: 0px;
+}
+
+.image-wrapper .image-caption {
+  font-style: italic;
+}
+
 footer h5 {
   font-size: large;
   margin: 0;

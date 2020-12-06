@@ -62,6 +62,154 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2017/05/06/testing-your-way-through-technical-interviews.html">Test Driven Interviewing</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2017-05-06T11:31:37-07:00" datetime="2017-05-06T11:31:37-07:00" pubdate>
+                <span class="month"><abbr>May</abbr></span>
+                <span class="day">06</span>
+                <span class="year">2017</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>For most<sup id="fnref:tdd" role="doc-noteref"><a href="#fn:tdd" class="footnote">1</a></sup> engineering tasks, I prefer to avoid TDD, or Test Driven Development.</p>
+
+<p>Yet when I job-hunt, I use TDD religiously<sup id="fnref:coding" role="doc-noteref"><a href="#fn:coding" class="footnote">2</a></sup>. It has been tremendously helpful.</p>
+
+<h4 id="hmpf-why">Hmpf. Why?</h4>
+<p>Most interview challenges actually come in two parts.</p>
+
+<ol>
+  <li>Can you take a broadly-worded problem and nail it down into something unambiguous?</li>
+  <li>Can you implement a challenging but unambiguous spec in the allotted time?</li>
+</ol>
+
+<p>TDD forces you into the ideal mindset for nailing down (1) problem definitions. There’s no better way to properly grok a problem than to have to think through all the fun ways an implementation could be slightly off.</p>
+
+<p>The implementation itself (2) also gets easier since you no longer have to assume that your code “probably” works, or fiddle with a REPL each time you’re ready to check.</p>
+
+<h4 id="so-how-do-i-do-it">So how do I do it?</h4>
+<p>As soon as you hear the problem, resist the urge to rush straight to the solution.</p>
+
+<p>Instead, force yourself to fully think through the test cases for an <em>arbitrary implementation</em>. Make it a dialog - “what if the same element is in the array multiple times?” Get the interviewer engaged. Show you care.</p>
+
+<p>By the time you’ve written good tests and the interviewer agrees, you’re all set.  Even though you tried not to, you probably already have a decent solution in mind. Your tests will let you know you’re done. They’ll also give you the comfort that your subsequent clean up / refactoring doesn’t inadvertantly break your implemenation.</p>
+
+<h4 id="yeah-but-i-can-always-just-write-tests-later">Yeah, but I can always just write tests later.</h4>
+<p>When I conduct interviews, I keep running into candidates clever enough to power through engineering challenges on raw talent<sup id="fnref:smarter" role="doc-noteref"><a href="#fn:smarter" class="footnote">3</a></sup>. The candidate implements an <em>optimal</em> solution within fifteen minutes. Then it’s time for tests and she just <strong>cannot</strong> think of cases beyond the common path, which makes her look like <a href="http://blog.thefirehoseproject.com/posts/best-team-tactics-to-write-software/">a cowboy</a>.</p>
+
+<p>I blame the <a href="https://hbr.org/2006/12/the-curse-of-knowledge;at/1">curse of knowledge</a> - once you’ve solved the problem, it’s harder to think about what wrong turns you could have taken. It all feels trivial.</p>
+
+<h4 id="seriously-though-are-you-going-to-make-me-import-a-testing-framework-like-mocha-or-cucumber-ugh">Seriously though, are you going to make me import a testing framework? Like, Mocha or Cucumber? Ugh.</h4>
+
+<p>¯\_(ツ)_/¯, I just use asserts and print statements. If I’m feeling fancy, I’ll create an array of test case scenarios and run them like</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test_cases = [
+  [[2, 2], 4],
+  [[1, 2, 3, 4], 10],
+  [[], 0],
+  [[-3, 2], 1],
+  [[100, 2], 102],
+  [["banana"], None]
+]
+
+for test_case in test_cases:
+  args, expected_answer = test_case
+  answer = quantum_addition(args)
+
+  print("called add({}) and got {}, expected {}"
+    .format(args, answer, expected_answer))
+
+  if answer != expected_answer:
+    print("UH OH!")
+
+  # (or you could just do: assert answer == expected_answer)
+</code></pre></div></div>
+
+<p>If you insist on being fancy, you can do that thing where you ask your interviewer if they’d like you to use a proper testing framework first, and of course they don’t, but now it looks like you <em>could</em> and you’re just doing them a favor by using asserts, cause you’re like, super assertive.</p>
+
+<h4 id="ok-so-now-what">Ok so now what?</h4>
+<p>Well obviously you should come <a href="https://jobs.lever.co/opendoor/f1bace9e-8d29-4d45-a72b-98e2c06bf2c1?lever-via=aHMDi1LN8p">work at Opendoor</a> with me! We have <a href="https://static1.squarespace.com/static/544a7286e4b0e537e01eb8e0/583e0f3c59cc68a8c3dcbc35/5841eb973e00be994a516b61/1480715164561/slide1%402x.jpg">the good coconut water</a> and don’t run out of it until like noon, 12:30 on good days. Plus, there’s a decent chance you’ll run into me on your phone screen and we can have that awkward interaction of trying to figure out why my name sounds familiar.</p>
+
+<hr />
+
+<p>Thanks to Vaibhav, Joe, Nick, Gayle, Tess, Charlie, Kevin, Zain, and Yahel for giving feedback on earlier drafts that I incorporated.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:tdd" role="doc-endnote">
+      <p>Don’t get me wrong, TDD <a href="https://www.facebook.com/notes/kent-beck/rip-tdd/750840194948847/">has its uses</a>, but we often mistake what Kent Beck meant by <a href="https://martinfowler.com/bliki/UnitTest.html">‘unit’</a>. Testing ‘just right’ is hard. <a href="#fnref:tdd" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:coding" role="doc-endnote">
+      <p>To be clear, TDD won’t help you with interview where you don’t actually code (IE, whiteboard interviews)  You’ll <a href="https://medium.com/green-river-web-mobile-developers/surviving-your-first-technical-interview-inquisition-tips-tricks-live-demos-739ca0f8f845fuq">still have to start by asking questions</a>, though. <a href="#fnref:coding" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:smarter" role="doc-endnote">
+      <p>I used to have that problem earlier in my career. I’ve addressed it, largely by becoming dumber. <a href="#fnref:smarter" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/interviews/">interviews</a>,</li>
+                
+                <li><a href="/tag/technical/">technical</a>,</li>
+                
+                <li><a href="/tag/advice/">advice</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2017/05/06/testing-your-way-through-technical-interviews.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2017/01/03/two-steps-forward-two-steps-back.html">Two Steps Forward, Two Steps Back: 2016 in review</a></h1>
 					</div><!-- unit-inner -->
             
@@ -434,90 +582,6 @@ Maintain a healthy sleep schedule (7+ hours of sleep and in bed by 1AM, 95% of t
             <div class="social">
               <ul class="list-linear">
                 <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2015/06/22/hackathon-a-retrospective-a-talk.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2014/08/01/did-i-say-estonia-3F-i-meant-costa-rica.html">Did I say Estonia? I meant Costa Rica</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2014-08-01T04:27:40-07:00" datetime="2014-08-01T04:27:40-07:00" pubdate>
-                <span class="month"><abbr>August</abbr></span>
-                <span class="day">01</span>
-                <span class="year">2014</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>I’m putting <a href="/2014/07/03/when-visas-turn-into-pumpkins.html">Estonia</a> on hold - still excited to go there, and hoping to do so in April or May, once it warms up again.</p>
-
-<p>In the meanwhile, I’m heading to Costa Rica to help facilitate <a href="http://hackerparadise.org">Hacker Paradise</a> a 12-week digital retreat. The location has all the benefits of nomadism (cheap, beautiful location with delicious food and friendly people) while bringing together a small community of hackers working on individual learning, contracting or their own companies.</p>
-
-<p>Here’s how it happened: <a href="https://twitter.com/CaseyRosengren">Casey Rosengren</a>, a Penn classmate and fellow <a href="http://www.hackthechange.org/">Penn Hackathon organizer</a>, was doing the whole travel-and-freelance thing and did some work for a boutique hotel that was down to give Casey the entire place for a couple of months, leading to the creation of Hacker Paradise. I saw one of Casey’s posts about the place, and offered to come help.</p>
-
-<p>In short: I’ll be hacking by the pool in Costa Rica until November if you need me.</p>
-
-<p><img src="http://www.hackerparadise.org/assets/img/portfolio/xfolio04.jpg.pagespeed.ic.7kj395nNtx.jpg" />&lt;/img&gt;</p>
-
-<p>PS. Care to join, either for the whole 12 weeks or for a shorter trip? We’re <a href="http://hackerparadise.org">keeping a couple of spots open</a>.</p>
-
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/meta/">meta</a>,</li>
-                
-                <li><a href="/tag/nomad/">nomad</a>,</li>
-                
-                <li><a href="/tag/hackerparadise/">hackerparadise</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2014/08/01/did-i-say-estonia-3F-i-meant-costa-rica.html" data-via="" data-lang="en">Tweet</a></div></li>
                 <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
               </ul>
             </div>
