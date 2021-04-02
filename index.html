@@ -62,6 +62,188 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2021/04/01/a-toolset-for-tackling-technical-debt.html">A toolset for tackling technical debt</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2021-04-01T12:59:39-07:00" datetime="2021-04-01T12:59:39-07:00" pubdate>
+                <span class="month"><abbr>April</abbr></span>
+                <span class="day">01</span>
+                <span class="year">2021</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <blockquote>
+  <p>Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all.</p>
+
+  <p>– Douglas Adams, Dirk Gently’s Holistic Detective Agency</p>
+</blockquote>
+
+<h3 id="the-situation">The Situation</h3>
+
+<p>“Ugh, the codebase is just such a mess,” my new Tech Lead said. “It’s just cruft on top of cruft, never cleaned up, always ‘after the next release’.  No wonder we keep getting bug reports faster than we can fix them.”</p>
+
+<p>Not what you want to hear as the freshly-appointed Engineering Manager on a critical team. Leadership expects the team to deliver on key new features, but also, <em>there better not be any voluntary churn</em>.</p>
+
+<p>I went to talk to the Product Manager. “Tech Debt?” he said, “sure, we can tackle some tech debt - but let’s make sure to get some credibility first by hitting our OKRs. It won’t be easy.”</p>
+
+<h3 id="how-did-it-get-this-bad">How did it get this bad?</h3>
+
+<p>Cut to three years earlier. I was a new hire on that very team. My onboarding buddy - let’s call him Buddy - and I bumped into a strange corner of the codebase.</p>
+
+<p>“Oh weird,” I said. “Should we fix that?”</p>
+
+<p>“I have a strategy for this that you can use,” Buddy said. “When you run into code that seems off, that feels worth fixing, you write the issue down in a separate text file. Then you go do useful work.”</p>
+
+<p>“Oh, I see. And eventually, you get back to the text file and fix the issues?”</p>
+
+<p>“Nope. But at least you’ve written it down.”</p>
+
+<p>Wikipedia describes <a href="https://en.wikipedia.org/wiki/Learned_helplessness">learned helplessness</a> as “behavior exhibited by a subject after enduring repeated aversive stimuli beyond their control.”  Without support, this is how engineers come to feel about tech debt.</p>
+
+<p>When I came back to this team as a manager, I reached out to Buddy, who had left years ago. “The code is crap at Airbnb too,” he told me when we caught up, “but at least they pay well and I don’t have to work very hard.”</p>
+
+<h3 id="so-what-did-you-do">So what did you do?</h3>
+
+<p>I joined Airbnb.</p>
+
+<p>That’s not true. We tackled the tech debt. We shipped leadership’s key features, hit our OKRs, and cleaned up some terrible, long-overdue-for-deletion no-good code. Within 3 months, the team’s attitude about technical debt had begun to turn around.</p>
+
+<p>Here’s how.</p>
+
+<h1 id="tackling-technical-debt-in-three-easy-steps">Tackling Technical Debt In Three Easy Steps</h1>
+
+<p>Guaranteed<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<h3 id="step-1-empower">Step 1. Empower</h3>
+
+<p>The biggest reason technical debt exists is because Engineers have internalized that it’s not their job to fix it. Start-up mantras like “focus” and “let small fires burn” have lead to just that - small fires everywhere.</p>
+
+<p><img src="/images/small_fires.png" alt="" /></p>
+
+<p>“Get shit done” is a great mantra, but you still have to clean up after yourself.</p>
+
+<p>The fix here is cultural. Make it clear that engineers who identify debt and take time to tackle it are appreciated. Celebrate their work to peers. A friend once created a slack bot that called out any PR that deleted a significant amount of code. Engineers all across the company began striving to get featured.</p>
+
+<p>Now of course, the team does have actual work that needs doing. Empower doesn’t mean “ignore our actual work” - it means, “if you take a Friday to fix something that’s bothering you, I have your back.”</p>
+
+<h3 id="step-2-identify">Step 2. Identify</h3>
+
+<p>If you’re on a team that hasn’t been rigorous about tackling tech debt, there’s probably lots of it and it’s unclear what could even be done. This is fixable.</p>
+
+<p>Organize a brainstorm with prompts like</p>
+
+<ul>
+  <li>What tasks take longer than they should?</li>
+  <li>What is the most embarrassing part of our code to explain to new hires?</li>
+  <li>What key pieces of our code have we under-invested in?</li>
+</ul>
+
+<p>This’ll set you up with a solid initial list for your Tech Debt backlog. For more ideas, run your codebase through a tool like CodeClimate to algorithmically point out the rough spots.</p>
+
+<p>The first time we ran a brainstorm like this, everybody agreed that we had a handful of ideas that were so easy and valuable enough that we should do them right away. Like, that day. It felt like a breath of fresh air. Things are fixable.</p>
+
+<p>Encourage folks to add to the Backlog anytime they ran into annoyances and didn’t have time to fix it right there and then. In future team retros or brainstorms, identify any tech debt that comes up and add it onto the backlog.</p>
+
+<h3 id="step-3-prioritize">Step 3. Prioritize</h3>
+
+<p>Having a tech debt backlog and ignoring it is worse than none at all.</p>
+
+<p>Time to play Product Manager and use ICE to prioritize your tech debt on effort required to fix,  impact that a fix would have on velocity, and confidence that the fix will actually work.</p>
+
+<p>This gives you a list of potential projects. Some will take months; others, hours.</p>
+
+<p>Now they just need to get done. That’ll require buy-in from your Product Manager.</p>
+
+<h4 id="getting-buy-in">Getting Buy-in</h4>
+<p>When it’s time to have “the talk” with your PM, I‘ve found “how often should you clean your room” to be useful analogy.</p>
+
+<blockquote>
+  <p>Never cleaning your room is a bad idea and obviously so.  Over time it becomes unlivable. This is how our engineers feel. At the same time, if you’re cleaning your room all day every day, that’s not a clean room, that’s excessive and no longer helpful.  In moderation, messiness is healthy - it means you’re prioritizing. We don’t need a glistening-clean room, but we do need to do more than nothing. At the end of the day, a clean room is a productive room.</p>
+</blockquote>
+
+<h4 id="tackling-small-debt">Tackling Small Debt</h4>
+<p>Come together with your Product Manager and agree to a rate at which small debt projects can get added to the team’s ticket queue. With a spiel like the above, you can hopefully get ~10% of all work done to focus on debt, depending on the maturity of the team and the company.</p>
+
+<p>For ~week-long projects, try to leverage particular times of year like Hack Weeks and pitch high-value projects to engineers looking for a fun project.</p>
+
+<h4 id="tackling-heavy-debt">Tackling Heavy Debt</h4>
+<p>This is where good leadership helps. At this particular company, Engineering leadership had rolled out “Quality OKRs”. Every quarter, each team had to sign up for a meaningful “quality” OKR goal.</p>
+
+<p>What is a “quality” goal? This was left up to teams, but the gist of it was, just go fix the most painful thing that isn’t already translated in your business metrics.</p>
+
+<p>During quarterly planning, we whittled the top three “heavy tech debt” projects into proposals, got buy-in from leadership, then brought the ideas back to the group.</p>
+
+<p>Since quality projects had been blessed from top-down and indisputable, the PM had air cover to support the work without pushback.</p>
+
+<h2 id="so-what-happened">So what happened?</h2>
+
+<p>Was there still tech debt? Yes. Did it continue to accumulate? Of course. But did it feel inexorable? Not anymore.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Not guaranteed. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/engineering-management/">engineering-management</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2021/04/01/a-toolset-for-tackling-technical-debt.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2020/12/05/technical-interview-superforcasters.html">Technical Interview Superforcasters</a></h1>
 					</div><!-- unit-inner -->
             
@@ -777,267 +959,11 @@ Linter Quality pre-deploy test coverage, automated error reporting (Sentry), Ale
 </article>
 
   
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer.html">Confessions of a Deadbeat Open Source Maintainer</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2017-05-06T18:06:24-07:00" datetime="2017-05-06T18:06:24-07:00" pubdate>
-                <span class="month"><abbr>May</abbr></span>
-                <span class="day">06</span>
-                <span class="year">2017</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p><img src="/images/abandoned-project.gif" alt="a user sums it up" title="source: https://github.com/gterrono/houston/issues/294#issuecomment-238914107" /></p>
-
-<p>Create an open source project, they said.</p>
-
-<p>It’ll be great for your resume, they said.</p>
-
-<h3 id="part-0-wherein-we-provide-context">Part 0: Wherein we provide context</h3>
-<p>The year was 2013, Meteor was the hip new kid on the block and Coffeescript was a reasonable JS dialect choice. We were fresh out of college.  Meteor was hosting their first ‘Summer Hackathon’ in San Francisco on 10th and Minna, and we figured this was our shot.</p>
-
-<p>Sequestering ourselves on the second floor of the hackspace, a couple of college friends and I acquired a whiteboard and some markers, and jotted down our big idea list. Not lacking for ambition, the first thing we figured we would fix was server-side rendering. Turned out this <em>seemingly simple</em> task was already on Meteor’s <a href="https://trello.com/c/Lz07fBAm/7-server-side-rendering">Trello Roadmap</a>, so, what the heck, we figured we’d pitch in.</p>
-
-<p><img src="/images/server-side-rendering.gif" alt="I inquire about server-side rendering" /></p>
-
-<p>Speaking with the actual development team a few hours later, we learned that server side was (1) hard and (2) coming soon anyway<sup id="fnref:ssr" role="doc-noteref"><a href="#fn:ssr" class="footnote">1</a></sup>. Fair enough - we’d solve our other painpoint, the lack of a proper admin DSL.</p>
-
-<h2 id="part-1-introducing-z-the-mongo-admin">Part 1: introducing Z, the Mongo Admin</h2>
-<p>Coming from Django land, one of my favorite Framework features had always been being able to describe Admin UIs with a very high level DSL - stuff like</p>
-
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
-
-<span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">models</span><span class="p">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">birth_date</span> <span class="o">=</span> <span class="n">models</span><span class="p">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">blank</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></figure>
-
-<p>leading to auto-generated pages that look like:</p>
-
-<p><img src="https://docs.djangoproject.com/en/1.11/_images/list_filter.png" alt="django admin screenshot, from tutorial" /></p>
-
-<p>Meteor didn’t have an admin DSL<sup id="fnref:genghis" role="doc-noteref"><a href="#fn:genghis" class="footnote">2</a></sup> yet. I wanted very much to build one, and a zero-config one (IE, automatically discover your models) at that. I kept suggesting this idea until the others agreed. Leadership.</p>
-
-<p>We cranked out a desired feature-list on a whiteboard. It looked like this.</p>
-
-<h4 id="the-list">The List</h4>
-
-<ul>
-  <li>document view</li>
-  <li>dealing with arrays</li>
-  <li>dealing with nested objects</li>
-  <li>boolean fields</li>
-  <li>integer fields</li>
-  <li>editing</li>
-  <li>auto-discovery &amp; Schema</li>
-  <li>collection (table) view</li>
-  <li>home page view</li>
-  <li>doesn’t look terrible</li>
-  <li>wrapping the admin into a package.</li>
-</ul>
-
-<p>Then we got started. I hid in a corner and tried to figure out how to get a list of Collections, and the fields in each collection, out of an arbitrary Meteor app. It turned out there was no official way but if I poked under the covers of the undocumented <code class="highlighter-rouge">Meteor._RemoteCollectionDriver.mongo.db.collections</code> call.</p>
-
-<script src="https://gist.github.com/AlexeyMK/84ed89aaa30da0aea9170974f038955e.js"></script>
-
-<p>It turned out you had to ‘warm up’ the _RemoteCollectionDriver (by creating an arbitrary collection) to get the collections loaded. This was the way things worked around Meteor 0.6.</p>
-
-<p>Package loading was the other relatively painful thing - since we couldn’t figure out <em>quite</em> how to get our package loaded last (since we relied on a router and a number of other packages), Yefim solved the problem the pragmatic Hackathon way, and named the package Z-Meteor Admin. This way, unless we relied on a package that decided to start with two Z’s, Meteor would load us last.</p>
-
-<h4 id="launching-with-the-mvp">Launching with the MVP</h4>
-<p>Surprisingly, it kind of worked.</p>
-
-<p><img src="https://camo.githubusercontent.com/2b2811cfc1308e19f99a3b31bf2b9b8d9b4dd008/68747470733a2f2f7261772e6769746875622e636f6d2f67746572726f6e6f2f6d6574656f722d61646d696e2d75692f6d61737465722f646f632f636f6c6c656374696f6e2e706e67" alt="an early version of the UI" /></p>
-
-<p>We demoed at the Hackathon and even <a href="https://blog.meteor.com/congratulations-to-the-meteor-summer-hackathon-2013-teams-c2ec782e9b53">won the ‘Award for Most Technically Impressive’</a>.</p>
-
-<p>Greg and I kept working on the project throughout the summer and fall of 2013. We cleaned it up and released 1.0 in December 2013, after gaining over 200 stars on Github.</p>
-
-<p>For our 1.0 release, I demoed a slightly-less-hacky-and-<a href="https://github.com/gterrono/houston/issues/37">now-renamed</a> Houston Admin at Meteor Devshop 10:</p>
-
-<iframe width="640" height="360" src="//www.youtube.com/embed/8ASwWEZsAog" frameborder="0" allowfullscreen=""></iframe>
-
-<p>Here’s <a href="http://alexeymk.com/2013/12/19/houston-admin-talk-at-meteor-devshop-10.html">the blog post</a> I wrote to celebrate the event.</p>
-
-<h2 id="part-2-a-primer-on-gas-tank-emptying">Part 2: A primer on gas tank emptying</h2>
-
-<p>Between the 1.0 in December 2013 and roughly summer 2014, our enthusiasm for working on the project waned. There were many reasons, but here are some:</p>
-
-<h4 id="1-we-had-shit-to-do">1. We had shit to do.</h4>
-<p>Greg finished school and was working for Gumroad, not in Meteor.
-I was doing consulting/startup prototyping work, also mostly not in Meteor.
-Yefim &amp; Ceasar made the wise decision of not doing much contributing work past the initial release.</p>
-
-<h4 id="2-we-were-no-longer-scratching-our-own-itch">2. We were no longer scratching our own itch.</h4>
-<p>Originally, Yefim and I used Houston for the Intern Dinners we were running that summer. It was pretty helpful, and if we needed more UI stuff, we’d just add it. That was summer 2013.</p>
-
-<p>Even though many of the feature requests we were getting were quite sensible (and we implemented a bunch of them), we really weren’t scratching our own itch after summer 2013.</p>
-
-<h4 id="3-how-do-i-even-esque-github-issues">3. ‘How do I even’-esque Github Issues</h4>
-<p>Actually, having gone through some of the ~270 <a href="https://github.com/gterrono/houston/issues">Github Issues</a> on the project, I’m surprised by how good many of them were and how attentive and friendly we were about them. Still, there were a few bad apples, like <a href="https://github.com/gterrono/houston/issues/216">css not rendering</a>, <a href="https://github.com/gterrono/houston/issues/274">how to upload files</a> and <a href="https://github.com/gterrono/houston/issues/301">Cannot login on Heroku app</a> that either failed to provide enough context and/or were coming from folks who were not otherwise yet competent Meteor (or even JS) developers.</p>
-
-<h4 id="4-meteor-doesnt-support-mounting--hacky-css">4. Meteor doesn’t support Mounting &amp; hacky CSS.</h4>
-<p>Meteor bundles all CSS &amp; Javascript together when it compiles. This is not the ideal behavior for UI libraries, since if the parent app has some logic that say, for example <code class="highlighter-rouge">$('.save').disable()</code> and later the user goes to Houston, all of a sudden all of our ‘save’ buttons are disabled and its unclear why. Likewise, any global CSS rules the parent app chooses to use, like (say) making table columns 200 pixels high, will also make our table columns 200 pixels high. Greg did <a href="https://github.com/gterrono/houston/issues/172">some crazy things</a> to avoid the namespace collissions.</p>
-
-<p>Django solves this problem through <a href="https://docs.djangoproject.com/en/1.11/topics/http/urls/#url-namespaces">URL namespaces</a>, allowing the ‘admin’ to behave largely like its own app. Express.js allows for <a href="https://expressjs.com/en/api.html">‘mounting’</a> of multiple sub-apps on certain directory paths - in either case, no shared CSS/JS is bundled for these cases, avoiding collissions like the above.</p>
-
-<p>Meteor did not support Mounting out of the box. I bugged the devs about it at a later Devshop, and got an off-hand note that this was not a priority for now. Later on we tried to add Mounting to Meteor and/or host the Admin as a separate app that shared only the database with the parent app, but by then lacked the enthusiasm to bring the projects to completion.</p>
-
-<h4 id="5-testing-is-tough">5. Testing is tough!</h4>
-<p>Reactive apps with not a ton of business logic are <em>tough</em> to test! Perhaps we simply lacked the experience here, but when Greg and I tried to add proper integration tests to the app, we spent tens of hours being our heads against the wall, time that would have been better spent actually fixing bugs.</p>
-
-<h4 id="6-router-wars">6. Router Wars</h4>
-<p>When we created Houston in summer 2013, there was a router that I believe was just called Router. Later, Iron-Router becames the default router (perhaps this was a rename?) - and even later, Flow-Router became the preferred router. Here’s <a href="https://kadira.io/blog/meteor/flow-router-4-0-and-future-of-routing-in-meteor">a post</a> on the state of routing as of Summer 2015.</p>
-
-<p>The point was, you couldn’t really use both routers and so we would need lots of clever work to see if we could support both paths.  We discussed this in <a href="https://github.com/gterrono/houston/issues/294">a Github Issue</a> and I <a href="https://github.com/gterrono/houston/pull/343">wrote up a prototype</a> but ultimately just didn’t have enough time/energy to ship a supports-both solution.</p>
-
-<h4 id="7-when-undocumented-internal-dependencies-change">7. When Undocumented Internal Dependencies Change</h4>
-<p>Remember that <code class="highlighter-rouge">_RemoteCollectionDriver</code> hack? In most every release (0.7, 0.8) my ‘whatever, go ask mongo what collections there are’ hack kept breaking and I had to re-implement a new hack based on whichever refactor the Meteor Development Group implemented internally.</p>
-
-<p>Not particularly taxing, but just a drain.</p>
-
-<h4 id="8-we-never-stepped-back-and-thought-about-architecture">8. We never stepped back and thought about architecture.</h4>
-<p>Things were in slighly better shape than they were back during the hackathon, but there was never a “how should this package be properly architected” conversation. As a result, in later months as I tried to go back and implement changes, it was never clear to me what was where or why, or what edge cases I would need to consider and support. This made “weekend-a-month” type support less useful over time as I knew the codebase less and less well.</p>
-
-<h2 id="part-3-where-we-go-to-costa-rica-and-try-to-turn-things-around">Part 3: Where we go to Costa Rica and try to turn things around</h2>
-
-<h4 id="costa-rica-the-plan">Costa Rica: the plan</h4>
-
-<p>Around Summer 2014, a year after we started, things were going kind of slumpey. As an effort to regroup, I invited Greg to Costa Rica where I was staying for a few months:
-<img src="/images/costa-rica-summit.gif" alt="Hey Greg, come to Costa Rica!" /></p>
-
-<p>The plan was basically to unbreak the critical stuff and make a plan for what we wanted to do next, and maybe also play some soccer on the beach.</p>
-
-<h4 id="costa-rica-what-actually-happened">Costa Rica: what actually happened</h4>
-<p>I got bogged down on a consulting project that was a bit behind schedule as Greg visited. So we got maybe 1-2 days of work done, which instead of dealing with any of the issues on my part was shipping a new feature I decided I wanted, called <a href="https://github.com/gterrono/houston#custom-actions">Custom Actions</a>, which were kind of cool but not at all the problem.</p>
-
-<p><img src="https://camo.githubusercontent.com/dbf805a68e8d8ea7e5afa28ad991035ae97530d7/68747470733a2f2f7261772e6769746875622e636f6d2f67746572726f6e6f2f686f7573746f6e2f6d61737465722f646f632f637573746f6d2d616374696f6e732e706e67" alt="Custom Actions" /></p>
-
-<p>We still played some soccer, though. Greg was way better at soccer than the rest of us.</p>
-
-<h4 id="get-other-maintainers-they-said">Get other maintainers, they said</h4>
-<p>We had two pretty helpful maintainers turn up: First, <a href="https://github.com/gterrono/houston/commits?author=zurawiki">Roger</a> decided to redesign our UI from basic boostrap to the line-green version you see today. Second, sometime around late 2014, this Swiss dude named <a href="https://github.com/matteodem">Matteo</a> showed up and <a href="https://github.com/gterrono/houston/issues/251">fixed</a> a bunch of things. That was awesome, and we talked to him on Skype and gave him write access as somebody had suggested for growing your maintainers.</p>
-
-<p>Later, in 2015, my friend <a href="https://github.com/samcorcos">Sam</a> came in and added some proper tests, but development had largely ceased by then.</p>
-
-<p>Still, for whatever reason, nobody stuck around and answered issues, etc, for the long term, so it was still up to us.</p>
-
-<h2 id="part-4-decline-and-fall-of-the-houston-admin">Part 4: Decline and Fall of the Houston Admin</h2>
-
-<h4 id="meteor-10-is-released">Meteor 1.0 is released!</h4>
-<p>Coinciding with Greg’s visit, Meteor finally <a href="https://blog.meteor.com/meteor-1-0-d0702aab3ef">released 1.0</a> in October 2014. Perhaps we’ll no longer have to adjust the incompatible hacks we use to figure out which collections are to be added and we can focus on the good stuff!</p>
-
-<h4 id="blaze-vs-react">Blaze vs React</h4>
-<p>If only. A year later, the big question up in the air becomes whether to use Meteor’s original Blaze templating or <a href="https://www.discovermeteor.com/blog/blaze-react-meteor/">switch to a react-based front-end</a>. React is great and all, but we for one are not up for yet anothe rewrite of this thing we haven’t really gotten to use for our own stuff in like, two years.</p>
-
-<h4 id="13">1.3</h4>
-<p>To add insult to injury, The Meteor Development Group ignores the principles of <a href="http://semver.org/">Semantic Versioning</a> to release 1.3 in April 2016 with <a href="https://guide.meteor.com/1.3-migration.html">Breaking Changes</a> - and our package is <a href="https://github.com/gterrono/houston/issues/372">broken yet again. Maybe.</a></p>
-
-<h2 id="part-5-an-epilogue">Part 5, an Epilogue</h2>
-<p>Perhaps the most poignant symptom of the sort of stagnancy that the project fell into is that I had an idea to write this blog-post in early 2015, and it took two years to even get the post-mortem for this project done.</p>
-
-<p>I think Greg may have fixed the 1.3 issue, but the last change I can see in the codebase is in March 2016 and frankly I just don’t care anymore. On the bright side, it looks like there’s a <a href="https://github.com/yogiben/meteor-admin">half-decent competitor</a> that people who want an admin can use<sup id="fnref:yogiben" role="doc-noteref"><a href="#fn:yogiben" class="footnote">3</a></sup>. Also, the Meteor Development Group looks like it’s less interested in Meteor and focusing on <a href="http://www.apollodata.com/">GraphQL tools</a> these days, so maybe nobody needs this. On the bright side, 880 stars on Github, so that’s cool!</p>
-
-<h4 id="what-have-we-learned">What have we learned?</h4>
-
-<ul>
-  <li>Open-source maintenance is hard, especially if your only remaining motivation is altruism. <a href="https://twitter.com/schneems">Richard Schneeman</a> gave a great talk about <a href="https://www.schneems.com/2016/05/31/saving-sprockets.html">Saving Sprockets</a> last year which nailed it.</li>
-  <li>Perhaps we should have quit while we were ahead and put an “not actively maintained, looking for maintainers” on the README back in 2014. That would have been a bit more responsible.</li>
-  <li>On the bright side, building a key piece of infrastructure for a hip new development framework turned out to be a great way to get a lot of users for your open source project.</li>
-</ul>
-
-<h4 id="one-more-thing">…one more thing</h4>
-<p>I leave you with the contributions over time graph, which tells the whole story, but with graphics.
-<img src="/images/contributions.gif" alt="contributions over time" /></p>
-
-<h4 id="thank-you">Thank you</h4>
-
-<ul>
-  <li>To Greg, the prospect of collaborating with whom kept me in the project as long as it did.</li>
-  <li>The Yefim, Ceasar, Matteo, Roger, Sam and other contributors!</li>
-  <li>The the Meteor Development Group folks for their contributions to realtime web development, whose ideas will live on independent of Meteor’s future, and also for the free snacks and t-shirts and the Pebbles we won at that hackathon back at 2013.</li>
-</ul>
-
-<hr />
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:ssr" role="doc-endnote">
-      <p>as far as I know, Meteor still doesn’t have proper Server-Side rendering. Arunoda <a href="https://meteorrhacks.com/server-side-rendering/">wrote a community library</a> in 2015, but given the Blaze/React split, I’m uncertain how much of this has come to pass. <a href="#fnref:ssr" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:genghis" role="doc-endnote">
-      <p>Ironically, the closest thing to an Meteor Admin at the time was <a href="genghisapp.com">Genghis</a>, a standalone one-page PHP-based Mongo editor by <a href="https://twitter.com/bobthecow">Justin Hileman</a>, whose younger brother I had somehow hired the year prior. Silicon Valley is a small place. <a href="#fnref:genghis" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:yogiben" role="doc-endnote">
-      <p>though it too looks like it has not been updated in 10 months :-/. <a href="#fnref:yogiben" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/reflection/">reflection</a>,</li>
-                
-                <li><a href="/tag/open source/">open source</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2017/05/06/confessions-of-a-deadbeat-open-source-maintainer.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
   </ol>
 </div>
 <!-- Pagination links -->
 <div class="pagination">
-  <span class="page_number ">Page: 1 of 14</span>
+  <span class="page_number ">Page: 1 of 15</span>
   
     | <a href="/2" class="next">Next</a>
   

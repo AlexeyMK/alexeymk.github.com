@@ -62,6 +62,78 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/bluffn-from-hackny/index.html">@Bluffn from HackNY</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2011-04-12T08:18:00-07:00" datetime="2011-04-12T08:18:00-07:00" pubdate>
+                <span class="month"><abbr>April</abbr></span>
+                <span class="day">12</span>
+                <span class="year">2011</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>I was at <a href="http://www.hackny.org">HackNY</a>&nbsp;over the weekend; our resulting demo is below (starting at the 9 minute mark).</p>
+<p><iframe scrolling="no" src="http://cdn.livestream.com/embed/internetsocietychapters?layout=4&amp;clip=pla_ed48f97f-1ab4-4896-8af6-47b7067f0801&amp;color=0xe7e7e7&amp;autoPlay=false&amp;mute=false&amp;iconColorOver=0x888888&amp;iconColor=0x777777&amp;allowchat=true" frameborder="0" height="385" width="640"></iframe></p>
+<p>Given a chance, I'm hoping to put together a longer article about solid Hackathon demos and building the product vs building the demo.</p>
+<p>We didn't win anything, but (until my __real__ bug) I was pretty happy with the quality and interactivity that we were able to achieve.</p>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/hackathons/">hackathons</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/bluffn-from-hackny/index.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/permission-denied-for-chmod-cygwin-on-windows/index.html">Permission Denied for chmod: Cygwin on Windows 7 doesn't play nice with files in Dropbox</a></h1>
 					</div><!-- unit-inner -->
             
@@ -375,102 +447,11 @@
 </article>
 
   
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/the-go-command/index.html">The 'go' command</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2011-03-15T15:13:00-07:00" datetime="2011-03-15T15:13:00-07:00" pubdate>
-                <span class="month"><abbr>March</abbr></span>
-                <span class="day">15</span>
-                <span class="year">2011</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p><a href="http://www.twitter.com/thezachw">Zach Wasserman</a>&nbsp;created something I've been wanting for a long time and have been to lazy to implement myself: <a href="http://zwass.wordpress.com/2011/03/16/the-go-command/">the 'go' command</a>.</p>
-<p>Often, I'll be looking for some file on the command line, I'll type cd and be&nbsp;tab-completing and end up getting to the file itself. Of course, "cd ~/my/stuff/file.txt" doesn't make much sense. &nbsp;</p>
-<div class="CodeRay">
-  <div class="code"><pre>bash: cd: stuff.txt: Not a directory</pre></div>
-</div>
-
-<p>I end up changing cd to vim, but it's kind of a waste. The solution, then, is to follow the 'click on something' paradigm from modern GUIs: clicking on a directory opens that directory and shows its contents; clicking on a file opens that file in whatever the default for that file type is. &nbsp;For simplicity, let's just use the $EDITOR for files.</p>
-<p>Behold, the 'go' command:</p>
-<p><span style="font-family: Georgia, Bitstream Charter, serif; font-size: 16px; color: #333333; line-height: 24px;"> </span></p>
-<div class="CodeRay">
-  <div class="code"><pre>go()
-{
-if [ -f $1 ]
-then
-    $EDITOR $1
-else
-    cd $1 &amp;&amp; ls
-fi
-}</pre></div>
-</div>
-
-<p>Add it to your .bashrc file. <a href="http://zwass.wordpress.com/2011/03/16/the-go-command/">http://zwass.wordpress.com/2011/03/16/the-go-command/</a>&nbsp;for details.</p>
-<p>Thanks, Zach and Andrew.</p>
-
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/technical/">technical</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/the-go-command/index.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-        
-			</div><!-- bd -->
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
   </ol>
 </div>
 <!-- Pagination links -->
 <div class="pagination">
-  <span class="page_number ">Page: 11 of 14</span>
+  <span class="page_number ">Page: 11 of 15</span>
   
     | <a href="/12" class="next">Next</a>
   

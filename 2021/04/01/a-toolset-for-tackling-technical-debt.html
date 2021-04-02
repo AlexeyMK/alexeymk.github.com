@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>A toolset for tackling technical debt</title>
+	<meta name="author" content="">
+	<link href='/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="A toolset for tackling technical debt" type="application/atom+xml">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script type="text/javascript">
+    // google analytics
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18901708-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    // Heap
+    window.heap=window.heap||[];heap.load=function(a){window._heapid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){heap.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)heap[e[f]]=d(e[f])};
+    heap.load("2484576110");
+  </script>
+</head>
+<body>
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-head-inner">
+				<nav class="nav-global">
+          <ul>
+            <li class="logo"><a href="/">Alexey needs a web presence</a></li>
+            <div id="stick-together">
+              <li class="page"><a href="/about">about</a></li>
+              <li class="page"><a href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence">subscribe</a></li>
+              <li class="page"><a href="http://twitter.com/alexeymk">twitter</a></li>
+              <li class="page"><a href="mailto:alexey.at.alexeymk.com">contact</a></li>
+            </div>
+          </ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+
+
+
+
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2021/04/01/a-toolset-for-tackling-technical-debt.html">A toolset for tackling technical debt</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2021-04-01T12:59:39-07:00" datetime="2021-04-01T12:59:39-07:00" pubdate>
+                <span class="month"><abbr>April</abbr></span>
+                <span class="day">01</span>
+                <span class="year">2021</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <blockquote>
+  <p>Let us prepare to grapple with the ineffable itself, and see if we may not eff it after all.</p>
+
+  <p>– Douglas Adams, Dirk Gently’s Holistic Detective Agency</p>
+</blockquote>
+
+<h3 id="the-situation">The Situation</h3>
+
+<p>“Ugh, the codebase is just such a mess,” my new Tech Lead said. “It’s just cruft on top of cruft, never cleaned up, always ‘after the next release’.  No wonder we keep getting bug reports faster than we can fix them.”</p>
+
+<p>Not what you want to hear as the freshly-appointed Engineering Manager on a critical team. Leadership expects the team to deliver on key new features, but also, <em>there better not be any voluntary churn</em>.</p>
+
+<p>I went to talk to the Product Manager. “Tech Debt?” he said, “sure, we can tackle some tech debt - but let’s make sure to get some credibility first by hitting our OKRs. It won’t be easy.”</p>
+
+<h3 id="how-did-it-get-this-bad">How did it get this bad?</h3>
+
+<p>Cut to three years earlier. I was a new hire on that very team. My onboarding buddy - let’s call him Buddy - and I bumped into a strange corner of the codebase.</p>
+
+<p>“Oh weird,” I said. “Should we fix that?”</p>
+
+<p>“I have a strategy for this that you can use,” Buddy said. “When you run into code that seems off, that feels worth fixing, you write the issue down in a separate text file. Then you go do useful work.”</p>
+
+<p>“Oh, I see. And eventually, you get back to the text file and fix the issues?”</p>
+
+<p>“Nope. But at least you’ve written it down.”</p>
+
+<p>Wikipedia describes <a href="https://en.wikipedia.org/wiki/Learned_helplessness">learned helplessness</a> as “behavior exhibited by a subject after enduring repeated aversive stimuli beyond their control.”  Without support, this is how engineers come to feel about tech debt.</p>
+
+<p>When I came back to this team as a manager, I reached out to Buddy, who had left years ago. “The code is crap at Airbnb too,” he told me when we caught up, “but at least they pay well and I don’t have to work very hard.”</p>
+
+<h3 id="so-what-did-you-do">So what did you do?</h3>
+
+<p>I joined Airbnb.</p>
+
+<p>That’s not true. We tackled the tech debt. We shipped leadership’s key features, hit our OKRs, and cleaned up some terrible, long-overdue-for-deletion no-good code. Within 3 months, the team’s attitude about technical debt had begun to turn around.</p>
+
+<p>Here’s how.</p>
+
+<h1 id="tackling-technical-debt-in-three-easy-steps">Tackling Technical Debt In Three Easy Steps</h1>
+
+<p>Guaranteed<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<h3 id="step-1-empower">Step 1. Empower</h3>
+
+<p>The biggest reason technical debt exists is because Engineers have internalized that it’s not their job to fix it. Start-up mantras like “focus” and “let small fires burn” have lead to just that - small fires everywhere.</p>
+
+<p><img src="/images/small_fires.png" alt="" /></p>
+
+<p>“Get shit done” is a great mantra, but you still have to clean up after yourself.</p>
+
+<p>The fix here is cultural. Make it clear that engineers who identify debt and take time to tackle it are appreciated. Celebrate their work to peers. A friend once created a slack bot that called out any PR that deleted a significant amount of code. Engineers all across the company began striving to get featured.</p>
+
+<p>Now of course, the team does have actual work that needs doing. Empower doesn’t mean “ignore our actual work” - it means, “if you take a Friday to fix something that’s bothering you, I have your back.”</p>
+
+<h3 id="step-2-identify">Step 2. Identify</h3>
+
+<p>If you’re on a team that hasn’t been rigorous about tackling tech debt, there’s probably lots of it and it’s unclear what could even be done. This is fixable.</p>
+
+<p>Organize a brainstorm with prompts like</p>
+
+<ul>
+  <li>What tasks take longer than they should?</li>
+  <li>What is the most embarrassing part of our code to explain to new hires?</li>
+  <li>What key pieces of our code have we under-invested in?</li>
+</ul>
+
+<p>This’ll set you up with a solid initial list for your Tech Debt backlog. For more ideas, run your codebase through a tool like CodeClimate to algorithmically point out the rough spots.</p>
+
+<p>The first time we ran a brainstorm like this, everybody agreed that we had a handful of ideas that were so easy and valuable enough that we should do them right away. Like, that day. It felt like a breath of fresh air. Things are fixable.</p>
+
+<p>Encourage folks to add to the Backlog anytime they ran into annoyances and didn’t have time to fix it right there and then. In future team retros or brainstorms, identify any tech debt that comes up and add it onto the backlog.</p>
+
+<h3 id="step-3-prioritize">Step 3. Prioritize</h3>
+
+<p>Having a tech debt backlog and ignoring it is worse than none at all.</p>
+
+<p>Time to play Product Manager and use ICE to prioritize your tech debt on effort required to fix,  impact that a fix would have on velocity, and confidence that the fix will actually work.</p>
+
+<p>This gives you a list of potential projects. Some will take months; others, hours.</p>
+
+<p>Now they just need to get done. That’ll require buy-in from your Product Manager.</p>
+
+<h4 id="getting-buy-in">Getting Buy-in</h4>
+<p>When it’s time to have “the talk” with your PM, I‘ve found “how often should you clean your room” to be useful analogy.</p>
+
+<blockquote>
+  <p>Never cleaning your room is a bad idea and obviously so.  Over time it becomes unlivable. This is how our engineers feel. At the same time, if you’re cleaning your room all day every day, that’s not a clean room, that’s excessive and no longer helpful.  In moderation, messiness is healthy - it means you’re prioritizing. We don’t need a glistening-clean room, but we do need to do more than nothing. At the end of the day, a clean room is a productive room.</p>
+</blockquote>
+
+<h4 id="tackling-small-debt">Tackling Small Debt</h4>
+<p>Come together with your Product Manager and agree to a rate at which small debt projects can get added to the team’s ticket queue. With a spiel like the above, you can hopefully get ~10% of all work done to focus on debt, depending on the maturity of the team and the company.</p>
+
+<p>For ~week-long projects, try to leverage particular times of year like Hack Weeks and pitch high-value projects to engineers looking for a fun project.</p>
+
+<h4 id="tackling-heavy-debt">Tackling Heavy Debt</h4>
+<p>This is where good leadership helps. At this particular company, Engineering leadership had rolled out “Quality OKRs”. Every quarter, each team had to sign up for a meaningful “quality” OKR goal.</p>
+
+<p>What is a “quality” goal? This was left up to teams, but the gist of it was, just go fix the most painful thing that isn’t already translated in your business metrics.</p>
+
+<p>During quarterly planning, we whittled the top three “heavy tech debt” projects into proposals, got buy-in from leadership, then brought the ideas back to the group.</p>
+
+<p>Since quality projects had been blessed from top-down and indisputable, the PM had air cover to support the work without pushback.</p>
+
+<h2 id="so-what-happened">So what happened?</h2>
+
+<p>Was there still tech debt? Yes. Did it continue to accumulate? Of course. But did it feel inexorable? Not anymore.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Not guaranteed. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/engineering-management/">engineering-management</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2021/04/01/a-toolset-for-tackling-technical-debt.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+        
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/2020/12/05/technical-interview-superforcasters.html" title="View Technical Interview Superforcasters">&laquo; Technical Interview Superforcasters</a></li>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+          
+          <h4 id="about">about</h4>
+<p><img class="footer-portrait" src="/images/alexey.jpg" /></p>
+
+<h5 id="current">Current</h5>
+<p>Leading Growth Engineering @ MasterClass</p>
+
+<h5 id="past">Past</h5>
+<ul>
+  <li>Engineering at <a href="https://opendoor.com">Opendoor</a>, 2016-2020</li>
+  <li><a href="http://hackerparadise.org">Hacker Paradise</a>, the remote-work-group-trip thing.</li>
+  <li>UPenn <a href="http://www.cis.upenn.edu/">CIS ‘12</a></li>
+  <li>Projects you may know me for:
+    <ul>
+      <li><a href="http://atmosphere.meteor.com/package/houston">Houston</a>, the Meteor Admin.</li>
+      <li><a href="http://baydin.com/blog/2013/07/new-to-boomerang-calendar-schedule-meetings-in-a-single-email/">Boomerang Calendar</a></li>
+      <li><a href="http://pennapps.com">PennApps</a>, the student hackathon</li>
+    </ul>
+  </li>
+</ul>
+
+<p>More at <a href="/about">about.alexeymk.com</a></p>
+
+      </div><!-- misc -->
+        <br />
+				<p class="license">
+					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+</body>
+</html>
