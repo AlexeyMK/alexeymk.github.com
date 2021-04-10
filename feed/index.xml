@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2021-04-01T20:11:07-07:00</updated>
+ <updated>2021-04-09T17:20:13-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -165,7 +165,7 @@
 &lt;!-- from https://superdevresources.com/image-caption-jekyll/ --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt;
     
-        &lt;img src=&quot;https://blog.interviewing.io/wp-content/uploads/2020/11/alexeypost1.png&quot; alt=&quot;&quot; /&gt;
+        &lt;img src=&quot;/images/phone-screen-chart.png&quot; alt=&quot;&quot; /&gt;
     
     
         &lt;p class=&quot;image-caption&quot;&gt;Sample Data, recreated for Illustrative Purposes.&lt;/p&gt;
@@ -187,7 +187,7 @@
 
 &lt;p&gt;Get your Lever or Greenhouse (or &lt;a href=&quot;https://en.wikipedia.org/wiki/Applicant_tracking_system&quot;&gt;ATS&lt;/a&gt; of choice) into an analyzable place somewhere, and then quantify how well interviewers perform. There’s lots of ways to analyze performance; here’s a simple approach which favors folks who generated lots of offers from as few as possible onsites and phone screens.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://blog.interviewing.io/wp-content/uploads/2020/11/Screen-Shot-2020-11-25-at-10.52.57-AM.png&quot; alt=&quot;formula&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/phone-screen-formula.png&quot; alt=&quot;formula&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can adjust the constants to where zero would match a median interviewer. A score of zero, then, is good.&lt;/p&gt;
 
