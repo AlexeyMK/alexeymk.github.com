@@ -4,13 +4,100 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2021-04-09T17:20:13-07:00</updated>
+ <updated>2021-09-16T00:20:40-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
    <email>alexey@alexeymk.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Hamtips, or why I still run the Technical Phone Screen as the Hiring Manager</title>
+   <link href="http://alexeymk.com/2021/09/15/hamtips.html"/>
+   <updated>2021-09-15T16:51:08-07:00</updated>
+   <id>http://alexeymk.com/2021/09/15/hamtips</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Caveat: Yes, yes, almost everything about the interviewing / recruiting process is broken. Sometimes though, you just have to play the hand you’re dealt and settle for minor improvements.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The 75-minute HMTPS is my proposed minor improvement.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;!-- from https://superdevresources.com/image-caption-jekyll/ --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;/images/oatmeal-interviewing-1.png&quot; alt=&quot;&quot; /&gt;
+    
+    
+        &lt;p class=&quot;image-caption&quot;&gt;Hat tip to The Oatmeal&lt;/p&gt;
+    
+&lt;/div&gt;
+
+&lt;h2 id=&quot;what-is-the-hmtps&quot;&gt;What is the HMTPS&lt;/h2&gt;
+&lt;p&gt;It stands for “Hiring Manager Technical Phone Screen.” Since you asked, I’ve been pronouncing it “ham-tips.” It’s the call a candidate will have after their RPS (Recruiter Phone Screen) but before their onsite.&lt;/p&gt;
+
+&lt;p&gt;This combines two calls - the Technical Phone Screen (TPS), which is a coding exercise, and usually happens before the onsite, and the HMS call, which is a call with the Hiring Manager (your would-be manager), which I’ve seen done before an onsite, or after, or not at all.&lt;/p&gt;
+
+&lt;p&gt;So I combine these into one.  It takes 75 minutes.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-combine-the-two-interviews&quot;&gt;Why combine the two interviews?&lt;/h2&gt;
+&lt;p&gt;An ideal interview loop has as few steps as necessary and gets to a decision ASAP. Combine these two steps to shorten intro-to-offer by ~1 week and reduce candidate drop-off by 5-10%.&lt;/p&gt;
+
+&lt;p&gt;It’s also a lot less work for recruiters playing scheduling battleship&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, Hiring Managers will, on average, be better at selling working at the company - it’s kind of their job.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-75-minutes&quot;&gt;Why 75 minutes?&lt;/h2&gt;
+&lt;p&gt;We’re combining a 30-minute call and a 60-minute call, and combining the 15-minute Q&amp;amp;A at the end of each into one.&lt;/p&gt;
+
+&lt;h4 id=&quot;tps-60m&quot;&gt;TPS (60m)&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;5m Intros&lt;/li&gt;
+  &lt;li&gt;45m We write some code in Coderpad together&lt;/li&gt;
+  &lt;li&gt;10m Ask me Anything&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;hm-call-30m&quot;&gt;HM call (30m)&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;5m Intros&lt;/li&gt;
+  &lt;li&gt;10m Dig into relevant experience &amp;amp; what candidate wants from next job&lt;/li&gt;
+  &lt;li&gt;15m AMA time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;hmtps-75m&quot;&gt;HMTPS (75m)&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;5m Intros&lt;/li&gt;
+  &lt;li&gt;15m Dig into relevant experience &amp;amp; what candidate wants from next job&lt;/li&gt;
+  &lt;li&gt;30m Coderpad&lt;/li&gt;
+  &lt;li&gt;15m AMA time.&lt;/li&gt;
+  &lt;li&gt;10m buffer time (inevitably one of these will go long in an interesting way)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m also more comfortable shortening the ~50 minute technical question into 30 minutes because (a) I’m pretty calibrated on my question, having run it 200+ times at this point, and so can get most of the signal I’m looking for within the first 30 minutes.&lt;/p&gt;
+
+&lt;p&gt;I’ve tried doing this call in 60 minutes and it ends up feeling pretty rushed; not to say somebody else couldn’t pull that off, but I’ve appreciated the bit of space. Also, since most candidates don’t schedule in 15-minute increments, we can always go a little long (up to the 90 minute mark) if we need to.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-this-good-for-the-hiring-manager&quot;&gt;Why is this good for the Hiring Manager?&lt;/h2&gt;
+&lt;p&gt;First, it’s easier to schedule (usually towards the end of the day). Second, it usually gives me enough time with the candidate so that I end up being pretty confident about how they’ll do both at the job and on the onsite. I haven’t quantified this yet, but anecdotally I have been surprised by onsite interviewer feedback much more rarely when I do this.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-this-good-for-the-candidate&quot;&gt;Why is this good for the candidate?&lt;/h2&gt;
+&lt;p&gt;It’s one fewer hoop to jump through. Also, whether or not they get along with me as their future manager - both technically and interpersonally - can and should be a pretty strong determinant as to whether they should continue with the process. This gives stronger signal since we are both coding together and talking about work.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-is-this-a-bad-idea&quot;&gt;When is this a bad idea?&lt;/h2&gt;
+&lt;p&gt;This makes the Hiring Manager a bit of a bottleneck in interviewing; once a company gets to the point where you are interviewing for titles like “Senior Software Engineer, Team TBD” you have to round robin TPS-es to the rest of your [Phone Screen Team](/2020/12/05/technical-interview-superforcasters.html.&lt;/p&gt;
+
+&lt;p&gt;Also, as the HM I likely have some unreasonable biases (Golang engineers, I’m looking at you), and making me the bottleneck in interviewing exacerbates those. That said, the HM’s bias is going to be applied sooner or later in the interview process, and my take is that the benefits outlined are worth it.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Tuesday at 4? You sunk my Grooming Session! &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>A toolset for tackling technical debt</title>
