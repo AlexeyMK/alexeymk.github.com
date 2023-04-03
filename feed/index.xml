@@ -4,7 +4,7 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2021-09-16T00:24:03-07:00</updated>
+ <updated>2023-04-03T16:20:29-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
@@ -25,7 +25,7 @@
 &lt;!-- from https://superdevresources.com/image-caption-jekyll/ --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt;
     
-        &lt;img src=&quot;/images/oatmeal-interviewing-1.png&quot; alt=&quot;&quot; /&gt;
+        &lt;img src=&quot;/images/oatmeal-interviewing-1.png&quot; alt=&quot;&quot; style=&quot;&quot; /&gt;
     
     
         &lt;p class=&quot;image-caption&quot;&gt;Hat tip to The Oatmeal&lt;/p&gt;
@@ -85,7 +85,7 @@
 &lt;p&gt;It’s one fewer hoop to jump through. Also, whether or not they get along with me as their future manager - both technically and interpersonally - can and should be a pretty strong determinant as to whether they should continue with the process. This gives stronger signal since we are both coding together and talking about work.&lt;/p&gt;
 
 &lt;h2 id=&quot;when-is-this-a-bad-idea&quot;&gt;When is this a bad idea?&lt;/h2&gt;
-&lt;p&gt;This makes the Hiring Manager a bit of a bottleneck in interviewing; once a company gets to the point where you are interviewing for titles like “Senior Software Engineer, Team TBD” you have to round robin TPS-es to the rest of your [Phone Screen Team](/2020/12/05/technical-interview-superforcasters.html.&lt;/p&gt;
+&lt;p&gt;This makes the Hiring Manager a bit of a bottleneck in interviewing; once a company gets to the point where you are interviewing for titles like “Senior Software Engineer, Team TBD” you have to round robin TPS-es to the rest of your &lt;a href=&quot;/2020/12/05/technical-interview-superforcasters.html.&quot;&gt;Phone Screen Team&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Also, as the HM I likely have some unreasonable biases (Golang engineers, I’m looking at you), and making me the bottleneck in interviewing exacerbates those. That said, the HM’s bias is going to be applied sooner or later in the interview process, and my take is that the benefits outlined are worth it.&lt;/p&gt;
 
@@ -252,7 +252,7 @@
 &lt;!-- from https://superdevresources.com/image-caption-jekyll/ --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt;
     
-        &lt;img src=&quot;/images/phone-screen-chart.png&quot; alt=&quot;&quot; /&gt;
+        &lt;img src=&quot;/images/phone-screen-chart.png&quot; alt=&quot;&quot; style=&quot;&quot; /&gt;
     
     
         &lt;p class=&quot;image-caption&quot;&gt;Sample Data, recreated for Illustrative Purposes.&lt;/p&gt;

@@ -6,10 +6,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Migrating from Posterous to Jekyll on GitHub Pages</title>
+	<title>About Me</title>
 	<meta name="author" content="">
 	<link href='/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="Migrating from Posterous to Jekyll on GitHub Pages" type="application/atom+xml">
+	<link href="http://feeds.feedburner.com/AlexeyNeedsAWebPresence" rel="alternate" title="About Me" type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
   <script type="text/javascript">
     // google analytics
@@ -54,52 +54,47 @@
 					
 
 
-
-
 <article class="unit-article layout-post">
 	<div class="unit-inner unit-article-inner">
 		<div class="content">
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2012/07/01/moving-to-github-pages-and-jekyll.html">Migrating from Posterous to Jekyll on GitHub Pages</a></h1>
+            <h1 class="h2 entry-title"><a href="/about/index.md.sb-57392f00-QKn1ur">About Me</a></h1>
 					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2012-07-01T16:30:00-07:00" datetime="2012-07-01T16:30:00-07:00" pubdate>
-                <span class="month"><abbr>July</abbr></span>
-                <span class="day">01</span>
-                <span class="year">2012</span>
-                </date>
-              </p>
             
 				</div><!-- unit-head -->
 			</header>
 
 			<div class="bd">
 				<div class="entry-content">
-          <p>I may be a bit late to the <a href="http://jekyllrb.com">Jekyll</a> party, but with Posterous being acquired by twitter a few months ago, I figured why not try it out. Two weekends later I’ve migrated enough that I’m comfortable shipping, though I imagine a bunch of silly bugs will remain. Please <a href="mailto:alexey-at-alexeymk.com">email me</a> with any issues you find, and I’ll get to them when I can.</p>
+          *Last updated April 2023.*
 
-<p>In the meantime…</p>
+These days, I'm living in Tokyo and [helping start-ups scale up their Growth Engineering practice](/growth-eng).
 
-<h4 id="moving-from-posterous-to-jekyll-what-you-need-to-know">Moving from Posterous to Jekyll: What you need to know.</h4>
+I spent the last 7 years running Growth Engineering teams, most recently as Head of Growth Engineering at [MasterClass](https://www.masterclass.com), and a Growth EM at [Opendoor](https://www.opendoor.com).  I spent the years as a contract developer, helping clients such as Dropbox, Pebble, Boomerang, and Binti prototype and build out new lines of business.
 
-<ul>
-  <li><strong><a href="http://jekyllrb.com">Jekyll</a></strong> is a static site generator created by GitHub for GitHub Pages.  It is rather extensible, so people have built things like <a href="http://str8.to/jekyll-boostrap">Jekyll-Bootstrap</a> and <a href="http://str8.to/jekyll-octopress">Octopress</a> on top of it.  I sort of half-used the former (adapted a theme) and didn’t know about the latter until it was too late.  Maybe/probably use Octopress if you go this route.</li>
-  <li><strong>Migrating from Posterous</strong> kinda-sorta works.  The migrator that includes images/permalinks is <a href="https://github.com/pepijndevos/jekyll/blob/patch-1/lib/jekyll/migrators/posterous.rb">on github here</a>.  Some ruby required.  Here’s <a href="https://github.com/AlexeyMK/alexeymk.github.com/blob/master/posterous_import.rb">my hacky version</a>, with a couple of updates.</li>
-  <li><strong>Comments</strong> I haven’t moved mine yet but a <a href="http://blog.jrmoran.com/blog/2012/01/31/importing-posterous-comments-into-disqus/">guide to move posterous comments to disqus</a> is available.  The decision to have comments (even moderated ones) is not one I’ve made yet. We’ll see.</li>
-  <li><strong>RSS</strong> Here’s the <a href="http://recursive-design.com/blog/2010/09/14/integrating-jekyll-with-feedburner/">jekyll+feedburner guide</a></li>
-  <li><strong>Developing Locally</strong> I used <a href="https://github.com/therabidbanana/guard-jekyll">guard to auto re-generate pages</a> as I was iterating on the CSS hackery.  Pretty useful, especially if you’re already reasonably comfortable with guard.</li>
-  <li><strong>Hosting</strong> GitHub Pages will host for you at yourusername.github.com + let you host on your domain <a href="http://imakewebthings.com/blog/github-pages-email/">if you add a CNAME to your distribution</a>.  I’m about to try it.  Fingers crossed.  Also, I don’t know how much I trust GitHub to be so generous in the long run, but my next migration is going to be far less painful - “it’s just static content”.  <strong>Note</strong>: I was worried about where to stick draft posts, since the repo needs to be public, and my solution was to have both a public and a private repository, so releasing is “git commit -a &amp;&amp; git push public master.”</li>
-  <li><strong>Markdown</strong> I admit I’m not too experienced with Markdown. Here’s <a href="http://nestacms.com/docs/creating-content/markdown-cheat-sheet">my cheatsheet</a>.</li>
-</ul>
+In 2014, I co-founded a [boutique work+travel company, Hacker Paradise](http://hackerparadise.org). The "forever workation" retreat company has been going strong [for almost 10 years now](https://edition.cnn.com/travel/article/workation-digital-nomad-retreats/index.html).
+
+**Engineer**
+I've long been forward to saying something like "I've been coding for over 20 years."  Well, I have. I got into programming when I was 15, starting out by recreasing GameBoy games in Visual Basic. I've worked as an engineer at Meta and Dropbox, but my proudest technical accomplishments are probably the initial scheduling feature on [Boomerang](https://www.boomerangapp.com/meeting-scheduling/) and authoring the [Houston Admin](https://github.com/gterrono/houston), a (once-popular) zero-config admin for Meteor.
+
+**Tech Community Organizer**
+From 2009-2012 I focused on making Penn's CS department more start-up friendly; to that end, I started the <a href="http://pandodaily.com/2013/01/21/the-worlds-largest-student-run-hackathon-isnt-at-stanford-or-mit-its-at-penn/">PennApps hackathon</a>, (the first major student-run hackathon in the US), and <a href="http://pennlabs.org">Penn Labs</a>, a student-run, school-funded development group that focuses on improving student-run technology. I received the <a href="http://www.seas.upenn.edu/undergraduate/student-life/award-recipients.php#student_choice">C N. Weygandt Award</a> for my contributions to the school.
+
+In 2014, I was one of the organizers of [HackCon](http://hackcon.io), a two-day conference for hackathon organizers, and remain an advisor to [Major League Hacking](http://mlh.io).
+
+**Writer**
+AlexeyMK.com has had over 600k page views since October 2010; several pieces, whether on <a href="http://alexeymk.com/tag/hackathons">hackathons</a>, the <a href="http://alexeymk.com/a-brief-guide-to-tech-internships">internship process</a>, or (strangely enough) <a href="http://alexeymk.com/dear-dr-stallman-an-open-letter">Richard Stallman</a> gain some popularity. <br><br>I have also been featured on <a href="http://techcrunch.com/2012/04/15/stop-looking-for-a-technical-co-founder/">TechCrunch</a> and spent a semester as a columnist for the <a href="http://thedp.com">Daily Pennsylvanian</a>.
+<!-- 250k page views from posterous before transition -->
+
+**Get in touch**: Feel free to [contact me](mailto:alexey-at-alexeymk.com). I'm also on <a href="http://twitter.com/alexeymk">the twitter</a> these days.
 
           <div class="misc-content">
             <div class="social">
               <ul class="list-linear">
                 <li><div class="subscribe"><a href="https://tinyletter.com/engineering-growth">✉️ Subscribe to Newsletter</a></li>
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2012/07/01/moving-to-github-pages-and-jekyll.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/about/index.md.sb-57392f00-QKn1ur" data-via="" data-lang="en">Tweet</a></div></li>
                 <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
               </ul>
             </div>
@@ -107,19 +102,6 @@
             </div>
           </div><!-- misc-content -->
           
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/technical/">technical</a>,</li>
-                
-                <li><a href="/tag/writing/">writing</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-        
 			</div><!-- bd -->
 
 
@@ -128,13 +110,7 @@
 					<nav class="pagination">
 						<ul>
 							
-							<li class="prev"><a class="internal" rel="prev"  href="/my-first-time-with-an-exec/index.html" title="View My first time with an Exec">&laquo; My first time with an Exec</a></li>
 							
-							
-							<li class="pipe"> | </li>
-							
-							
-							<li class="next"><a class="internal" rel="next"  href="/2012/07/07/lessons-learned-on-nontechnical-hiring.html" title="View Non-Technical Hiring, Lessons Learned">Non-Technical Hiring, Lessons Learned &raquo;</a></li>
 							
 						</ul>
 					</nav>
