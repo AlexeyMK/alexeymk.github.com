@@ -4,13 +4,100 @@
 <title>Alexey needs a web presence</title>
  <link href="http://alexeymk.com/feed/" rel="self"/>
  <link href="http://alexeymk.com/"/>
- <updated>2023-04-03T16:20:29-07:00</updated>
+ <updated>2023-04-05T00:26:08-07:00</updated>
  <id>http://alexeymk.com/</id>
  <author>
    <name>Alexey Komissarouk</name>
    <email>alexey@alexeymk.com</email>
  </author>
 
+ 
+ <entry>
+   <title>There's no such thing as Organic Traffic</title>
+   <link href="http://alexeymk.com/2023/04/04/there-27s-no-such-thing-as-organic-traffic.html"/>
+   <updated>2023-04-04T09:00:29-07:00</updated>
+   <id>http://alexeymk.com/2023/04/04/there%27s-no-such-thing-as-organic-traffic</id>
+   <content type="html">&lt;p&gt;From a recent investor update:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…and 40% of our purchases in Q1 came from organic traffic&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I, uhh, don’t believe you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A purchase from organic traffic is:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;the customer had the problem your product solves&lt;/li&gt;
+  &lt;li&gt;they googled&lt;/li&gt;
+  &lt;li&gt;they clicked on your website from the &lt;strong&gt;organic&lt;/strong&gt; search results&lt;/li&gt;
+  &lt;li&gt;and then bought it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I too would rather live in a world where this was still a thing. But this was probably not what happened.&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-the-big-deal-you-pedant&quot;&gt;What’s the big deal, you pedant?&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;One-half of the money I spend for advertising is wasted, but I have never been able to decide which half&lt;/p&gt;
+
+  &lt;p&gt;- &lt;a href=&quot;https://quoteinvestigator.com/2022/04/11/advertising/&quot;&gt;John Wanamaker&lt;/a&gt;, Department Store Magnate, 1919ish&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;John Wanamaker, a Department store magnate, said this in 1919 or so. So that’s literally a century year old excuse. You can do better.&lt;/p&gt;
+
+&lt;p&gt;The customer acquisition team’s job is to double down on what works. Somebody on your team deserves a bigger budget - knowing who is part of the job.&lt;/p&gt;
+
+&lt;h3 id=&quot;ok-but-for-real-these-customers-did-come-from-organic-search&quot;&gt;OK but for real, these customers did come from organic search&lt;/h3&gt;
+&lt;p&gt;Sure, but that is only a superficial explanation of their “source.” What motivated them to search? Here’s an (in-exhaustive) decision tree of possibilities and initiatives deserving credit.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;At the point they googled for it, had they heard of your product earlier?
+    &lt;ul&gt;
+      &lt;li&gt;Yes - give credit to how they originally heard about it
+        &lt;ul&gt;
+          &lt;li&gt;Did they hear/see an ad? ➡️ Paid ad channel&lt;/li&gt;
+          &lt;li&gt;Was it from a friend/colleague? ➡️ Word of mouth&lt;/li&gt;
+          &lt;li&gt;From an existing user? ➡️ Referral&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;No - credit should go to your SEO &amp;amp; brand efforts.  Were they searching for…
+        &lt;ul&gt;
+          &lt;li&gt;Your company name explicitly (ie, hotels.com) ➡️  brand effort for domain&lt;/li&gt;
+          &lt;li&gt;The problem you solve (keyword) ➡️  SEO / content team.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fixing-organic-search&quot;&gt;Fixing “Organic Search”&lt;/h3&gt;
+&lt;p&gt;First, unless you actually rank for your category’s generic domain name, re-label the “organic” traffic as “unattributed.”&lt;/p&gt;
+
+&lt;p&gt;At that point, there are a few ways to allocate the unattributed conversions:&lt;/p&gt;
+
+&lt;h4 id=&quot;simplest-spread-evenly-across-known-channels&quot;&gt;Simplest: spread evenly across known channels&lt;/h4&gt;
+&lt;p&gt;Let’s say your purchases come from 40% paid social, 10% referrals, and 20% SEM. You have 30% left unattributed, so allocate these proportionally.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/distributing-unnatributed-traffic-evenly-example.png&quot; alt=&quot;distributing organic traffic evenly&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note: I am terrified of this approach because obviously different channels can have different amounts of “search later” halo effects, but at least it is less wrong than “Organic” and it can be done entirely post-facto.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;slightly-better-incorporate-how-did-you-hear-about-us-hdyhau&quot;&gt;Slightly better: Incorporate How did you hear about us? (HDYHAU)&lt;/h4&gt;
+&lt;p&gt;Once customers have purchased, ask them how they first heard about you, via a &lt;a href=&quot;https://userloop.io/post/what-is-a-hdyhau-survey&quot;&gt;HDYHAU survey&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, look, many customers will skip the survey and others just won’t remember, but the answers you do get from the unattributed crowd are still worth applying to your estimates. It’ll help realize things like “oh, most people who are unattributed are actually coming from Instagram - as are a bunch of people we thought were referrals” and adjust your focus accordingly.&lt;/p&gt;
+
+&lt;h4 id=&quot;fancy-marketing-mix-modeling&quot;&gt;Fancy: &lt;a href=&quot;https://towardsdatascience.com/market-mix-modeling-mmm-101-3d094df976f9?gi=fbff256e5795&quot;&gt;Marketing Mix Modeling&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;At some point you get big and successful enough that you hire a fancy full-time marketing analytics leader, who will understand this subject way better than either you or me.&lt;/p&gt;
+
+&lt;p&gt;They’ll bring in tactics like incrementality testing, where Google or Meta will start running internal tests for you where they exclude a handful of their userbase from your ads and show you the effect it has. Or you’ll do something simpler like turn off specific channels in specific countries or US states and see how much their purchases fall. They’ll talk you through whether “&lt;a href=&quot;https://thecorrespondent.com/100/the-new-dot-com-bubble-is-here-its-called-online-advertising&quot;&gt;online advertising is a lie&lt;/a&gt;” and help figure out how proportionally distribute credit for any sale across multiple channels, first touch vs last touch, and other fun things of that nature.&lt;/p&gt;
+
+&lt;p&gt;You will eventually reach a scale where this investment will be justified. Until then, just realize there’s (probably) no such thing as organic traffic.&lt;/p&gt;
+
+&lt;h4 id=&quot;ps-only-getting-harder-over-time&quot;&gt;PS. Only getting harder over time&lt;/h4&gt;
+&lt;p&gt;Between the ever-increasing popularity of ad-blockers, common pattern of “see it on mobile, buy it on desktop” cross-device purchase behavior, iOS14 and government-driven private regulations, the % of your purchases that are unattributed will only go up over time.
+If scaling up customer acquisition is important to you, get it right.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Hamtips, or why I still run the Technical Phone Screen as the Hiring Manager</title>
