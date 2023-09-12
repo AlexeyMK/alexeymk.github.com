@@ -1,0 +1,103 @@
+“Wait, are we Charlatans:” a growth engineer’s war story about staying intellectually honest
+“You guys claim your experiments add up to 18% conversion improvements last quarter,” said the Chief Product Officer.  “But when I look at the actual numbers, the conversion rate has barely budged.  What gives?”
+
+An entirely fair question.  In cases like this, there are two possible explanations:
+
+1. Conversion really has improved, but…
+
+Facebook & Google ate it.
+There’s an old joke that goes
+
+> Software Engineering is a competition between software engineers creating better idiot-proof code, and god creating better idiots.
+
+In this mold, Paid Marketing is a competition between Growth teams creating better converting websites, and Facebook finding and sending over less-interested users to balance out.
+
+Andrew Chen calls this the law of shitty clickthroughs - eventually, all tactics stop working.
+
+And/or, the competitors ate it
+Alternately, we can blame the Red Queen Hypothesis:
+
+> Now, here, you see, it takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that!
+> 
+> - Lewis Carroll’s Alice Through the Looking Glass
+
+See, we weren’t the only ones busy running experiments. Even though we convert better now, so do our competitors.   If other industry players would have had the decency to stay perfectly still, we would have seen the improved conversions. Instead, thank goodness we made enough improvements that we didn’t lose market share in the first place.
+
+Alternately,
+
+2. We did the math wrong. Best case we’re incompetent, possibly we’re just frauds.
+
+Winner’s Curse
+Let’s start with the obvious.  If you have 5 experiment winners, you can’t just add up their conversion improvement to describe the cumulative improvement.
+
+
+![Thanks, Airbnb!](https://paper-attachments.dropboxusercontent.com/s_E9AD75E1D7E3C8844C5C4CC99B191D1474C3D61E2A773332B56A1688036ABA55_1681284048279_image.png)
+
+
+Milan Shen explains why in a great article from Airbnb.  TL;DR, a “5% win” isn’t really a 5% win, it’s a probability distribution that says the true win is somewhere between 2 and 8% (or whatever your margin of error truly is).  
+
+To save you the Ph.D-level statistics lesson, a reasonable 80/20 here is to set a “50% winner’s curse discount” when reporting your team’s quarterly impact; if your experiments “add up” to 20%, report a 10%-adjusted win.
+
+In the above case, the delta between reported and reality wasn’t 2x - it was 10x.  So the winner’s curse alone is not a sufficient explanation.
+
+
+Answering the “Red Queen vs Charlatan” question
+
+As the CPO rightfully pointed out, “are you for real” is kind of a big deal. If it’s not helping, the team should be dissolved.
+
+But how can you tell whether the team is actually having an impact?
+
+
+Option 1: Hold on, hold out
+
+Consider running a meta-experiment called “did team X help move the business metric this quarter?”  Take ~5% of your users (whatever your MDE will allow) and put them in a holdout group (kind of a control group).  Run all of the team’s experiments on the 95%. When an experiment winner gets rolled out, only roll it out to the 95%.
+
+
+![Source. In this example, two 10% winners were rolled out - one in week 2, another in week 7.  If this is what your holdout results look like, you’re in pretty good shape.](https://paper-attachments.dropboxusercontent.com/s_E9AD75E1D7E3C8844C5C4CC99B191D1474C3D61E2A773332B56A1688036ABA55_1681370827632_file.png)
+
+
+At the end of the quarter, compare the conversion rate over time between the “holdout” and the “subjects” group.  If the delta between the two groups is slowly growing over time, and your “reported wins vs actual improvement over holdout” ends up within 2x or so, you are doing fine.  If it’s any more than that, something funky is going on.
+
+If only it were so simple.  If you are experimenting on registered users, this is probably a sufficient approach to keep yourself honest. However, if you’re working on optimizing not-yet-identified traffic, this won’t be enough.
+
+The multiple device problem
+An increasingly common behavioral pattern these days is “explore on mobile, purchase on desktop.”  This breaks holdouts.  A customer arriving on your website from multiple devices is at risk of contamination - IE, being exposed to multiple variants of an experiment during their purchasing journey, since when they arrive on a second device, you don’t know that it’s the same person and you’ll bucket them again into all the experiments. 
+
+For evenly distributed buckets (IE, a 50/50) experiment, this largely washes out. For a 95/5 holdout-style experiment, however, that contamination is deadly - you are not truly getting a “holdout” group, after all, since most of the customers will have been exposed to the “subject” experiments as well.  
+
+This brings us to…
+
+
+Option 2: The Re-run
+
+If you’re experimenting on not-yet-registered users, and your purchase decision requires consideration (IE, costs money or time), a holdout won’t be sufficient to diagnose the situation. 
+
+Since uneven bucketing is untrustworthy, let’s run our “does this team make a difference” experiment as a 50/50.  “There’s no way in hell I get to take 50% of our traffic for the quarter and intentionally degrade their experience” you say.  I hear you. Yes - this is true.  We should be in 50/50 mode for as little time as possible - typically, a week.
+
+
+![Yes, it seems like a lot of traffic, but if you end up summing up the total exposure compared to a holdout, it ends up being about the same. Source](https://paper-attachments.dropboxusercontent.com/s_E9AD75E1D7E3C8844C5C4CC99B191D1474C3D61E2A773332B56A1688036ABA55_1681372062083_file.png)
+
+
+A re-run is an experiment fundamentally asking the same question as a hold-out: “is this team’s impact moving the needle?”  It has two branches - control, which matches the world at the start of the quarter, and a variant that includes the current “state of the art” - all of the winners combined together in one super-variant.
+
+Depending on the number and complexity of the quarter’s winners, implementing a re-run may end up being a non-trivial effort, taking up to a week of an engineer's time.  As a result, you may not want to run a full re-run every quarter; however, once or twice a year feels reasonable given the importance of keeping a team honest.
+
+
+How to analyze the results
+
+When the CPO says “you guys haven’t moved the needle on conversion”, they’re comparing start-of-quarter (baseline) conversion to current overall conversion.  But the cleaner comparison is  between the “what if we hadn’t done anything” group (holdout or re-run control) to “what we actually did.”  If the red queen hypothesis is true, you should see 
+
+AMK from here - more diagrams.
+
+What happens if you do get a false positive?
+
+
+- quote
+- the problem
+- how to diagnose it 
+    - simple answer, 
+    - complicated answer (multiple device)
+- what we did
+- what happened
+    - how we addressed it
+- recommendation

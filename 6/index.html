@@ -61,6 +61,104 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
+            <h1 class="h2 entry-title"><a href="/2012/08/05/be-safe-with-mongodb.html">Being safe with mongodb</a></h1>
+					</div><!-- unit-inner -->
+            
+              <p class="date-publish">
+                Published:
+                <date class="date-pub" title="2012-08-05T16:45:08-07:00" datetime="2012-08-05T16:45:08-07:00" pubdate>
+                <span class="month"><abbr>August</abbr></span>
+                <span class="day">05</span>
+                <span class="year">2012</span>
+                </date>
+              </p>
+            
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+          <p>A quick public service announcement about MongoDB, for those of us new to NoSQL land:</p>
+
+<p>** By default, mongo will not let you know if a query that you ran failed miserably.**</p>
+
+<p>On the bright side, you on longer need to wait for mongo to unblock for updates or inserts, which makes production code run quicker.</p>
+
+<p>Unfortunately, this also means you’re going to spend more time tracking down bugs that would have been caught by IntegrityErrors (or the equivalent) in good old SQLite.</p>
+
+<p>** But I LIKE knowing about integrity errors**.  Me too, especially when testing locally.</p>
+
+<p><strong>Here’s the fix</strong>: set <a href="http://www.mongodb.org/display/DOCS/Connections"><code class="highlighter-rouge">safe=True</code> in your Mongo connection object</a>.  In django non-rel, this means setting</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DATABASES = {
+  'default': {
+    ...
+    'OPTIONS': {
+      'safe': True
+    },
+  },
+}
+</code></pre></div></div>
+
+<p>in settings.py.</p>
+
+<p>Good luck!</p>
+
+          <div class="misc-content">
+            <div class="social">
+              <ul class="list-linear">
+                <li><div class="subscribe"><a href="https://tinyletter.com/engineering-growth">✉️ Subscribe to Newsletter</a></li>
+                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2012/08/05/be-safe-with-mongodb.html" data-via="" data-lang="en">Tweet</a></div></li>
+                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+              </ul>
+            </div>
+            <div class="comment">
+            </div>
+          </div><!-- misc-content -->
+          
+            <div class="meta">
+              <ul class="list-tag list-linear">
+                <li class="list-head">tags: </li>
+                
+                
+                <li><a href="/tag/technical/">technical</a>,</li>
+                
+                <li><a href="/tag/advice/">advice</a></li>
+                
+              </ul>
+            </div><!-- meta -->
+          </div><!-- entry-content -->
+        
+			</div><!-- bd -->
+
+
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							
+							
+						</ul>
+					</nav>
+					<p class="gotop">
+						<a href="#page">Back to Top</a>
+					</p>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+  
+    
+    <article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
             <h1 class="h2 entry-title"><a href="/2012/07/29/sidecar-and-reputation-systems.html">Sidecar and Digital Reputation Systems</a></h1>
 					</div><!-- unit-inner -->
             
@@ -424,94 +522,6 @@
                 <li><a href="/tag/advice/">advice</a>,</li>
                 
                 <li><a href="/tag/enterpreneurship/">enterpreneurship</a></li>
-                
-              </ul>
-            </div><!-- meta -->
-          </div><!-- entry-content -->
-        
-			</div><!-- bd -->
-
-
-			<footer class="unit-foot">
-				<div class="unit-inner unit-foot-inner">
-					<nav class="pagination">
-						<ul>
-							
-							
-							
-						</ul>
-					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
-				</div>
-			</footer>
-
-		</div><!-- content -->
-	</div><!-- unit-inner -->
-</article>
-
-  
-    
-    <article class="unit-article layout-post">
-	<div class="unit-inner unit-article-inner">
-		<div class="content">
-			<header>
-				<div class="unit-head">
-					<div class="unit-inner unit-head-inner">
-            <h1 class="h2 entry-title"><a href="/2012/07/01/moving-to-github-pages-and-jekyll.html">Migrating from Posterous to Jekyll on GitHub Pages</a></h1>
-					</div><!-- unit-inner -->
-            
-              <p class="date-publish">
-                Published:
-                <date class="date-pub" title="2012-07-01T16:30:00-07:00" datetime="2012-07-01T16:30:00-07:00" pubdate>
-                <span class="month"><abbr>July</abbr></span>
-                <span class="day">01</span>
-                <span class="year">2012</span>
-                </date>
-              </p>
-            
-				</div><!-- unit-head -->
-			</header>
-
-			<div class="bd">
-				<div class="entry-content">
-          <p>I may be a bit late to the <a href="http://jekyllrb.com">Jekyll</a> party, but with Posterous being acquired by twitter a few months ago, I figured why not try it out. Two weekends later I’ve migrated enough that I’m comfortable shipping, though I imagine a bunch of silly bugs will remain. Please <a href="mailto:alexey-at-alexeymk.com">email me</a> with any issues you find, and I’ll get to them when I can.</p>
-
-<p>In the meantime…</p>
-
-<h4 id="moving-from-posterous-to-jekyll-what-you-need-to-know">Moving from Posterous to Jekyll: What you need to know.</h4>
-
-<ul>
-  <li><strong><a href="http://jekyllrb.com">Jekyll</a></strong> is a static site generator created by GitHub for GitHub Pages.  It is rather extensible, so people have built things like <a href="http://str8.to/jekyll-boostrap">Jekyll-Bootstrap</a> and <a href="http://str8.to/jekyll-octopress">Octopress</a> on top of it.  I sort of half-used the former (adapted a theme) and didn’t know about the latter until it was too late.  Maybe/probably use Octopress if you go this route.</li>
-  <li><strong>Migrating from Posterous</strong> kinda-sorta works.  The migrator that includes images/permalinks is <a href="https://github.com/pepijndevos/jekyll/blob/patch-1/lib/jekyll/migrators/posterous.rb">on github here</a>.  Some ruby required.  Here’s <a href="https://github.com/AlexeyMK/alexeymk.github.com/blob/master/posterous_import.rb">my hacky version</a>, with a couple of updates.</li>
-  <li><strong>Comments</strong> I haven’t moved mine yet but a <a href="http://blog.jrmoran.com/blog/2012/01/31/importing-posterous-comments-into-disqus/">guide to move posterous comments to disqus</a> is available.  The decision to have comments (even moderated ones) is not one I’ve made yet. We’ll see.</li>
-  <li><strong>RSS</strong> Here’s the <a href="http://recursive-design.com/blog/2010/09/14/integrating-jekyll-with-feedburner/">jekyll+feedburner guide</a></li>
-  <li><strong>Developing Locally</strong> I used <a href="https://github.com/therabidbanana/guard-jekyll">guard to auto re-generate pages</a> as I was iterating on the CSS hackery.  Pretty useful, especially if you’re already reasonably comfortable with guard.</li>
-  <li><strong>Hosting</strong> GitHub Pages will host for you at yourusername.github.com + let you host on your domain <a href="http://imakewebthings.com/blog/github-pages-email/">if you add a CNAME to your distribution</a>.  I’m about to try it.  Fingers crossed.  Also, I don’t know how much I trust GitHub to be so generous in the long run, but my next migration is going to be far less painful - “it’s just static content”.  <strong>Note</strong>: I was worried about where to stick draft posts, since the repo needs to be public, and my solution was to have both a public and a private repository, so releasing is “git commit -a &amp;&amp; git push public master.”</li>
-  <li><strong>Markdown</strong> I admit I’m not too experienced with Markdown. Here’s <a href="http://nestacms.com/docs/creating-content/markdown-cheat-sheet">my cheatsheet</a>.</li>
-</ul>
-
-          <div class="misc-content">
-            <div class="social">
-              <ul class="list-linear">
-                <li><div class="subscribe"><a href="https://tinyletter.com/engineering-growth">✉️ Subscribe to Newsletter</a></li>
-                <li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-url="http://alexeymk.com/2012/07/01/moving-to-github-pages-and-jekyll.html" data-via="" data-lang="en">Tweet</a></div></li>
-                <li><div class="twitter-follow"><a href="https://twitter.com/" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-              </ul>
-            </div>
-            <div class="comment">
-            </div>
-          </div><!-- misc-content -->
-          
-            <div class="meta">
-              <ul class="list-tag list-linear">
-                <li class="list-head">tags: </li>
-                
-                
-                <li><a href="/tag/technical/">technical</a>,</li>
-                
-                <li><a href="/tag/writing/">writing</a></li>
                 
               </ul>
             </div><!-- meta -->
